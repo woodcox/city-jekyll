@@ -1,0 +1,8 @@
+<div class="square-accordion">
+  {% for item in page.square-accordion %}
+    <li><input id="square-accordion{{ forloop.index }}" type="checkbox" />
+      <label for="square-accordion{{ forloop.index }}"><strong>{{ item.title }}</strong></label>
+      <div class="accord-content">{{ item.content | markdownify }}</div>
+    </li>
+  {% endfor %}
+</div>

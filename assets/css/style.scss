@@ -1,0 +1,42 @@
+---
+---
+
+/*! 
+ * Primitive UI | MIT License
+ *
+ * A minimalist front-end design toolkit built with Sass for developing 
+ * responsive, browser-consistent web apps.
+ *
+ * Author: Tania Rascia <hello@taniarascia.com>
+ * Source: https://github.com/taniarascia/primitive
+ * Documentation: https://taniarascia.github.io/primitive
+ */
+
+//==============================================================================
+// Configuration
+//==============================================================================
+
+@import 'base/variables';
+@import 'base/mixins';
+@import 'base/fontface';
+
+//==============================================================================
+// Reset
+//==============================================================================
+
+@import 'base/normalize';
+@import 'base/reset';
+
+//==============================================================================
+// Components
+//==============================================================================
+
+@import 'components/scaffolding';
+@import 'components/grid';
+@import 'components/helpers';
+@import 'components/buttons';
+@import 'components/forms';
+@import 'components/tables';
+@import 'components/accordion';
+@import 'components/navigation';
+@import 'components/layout';

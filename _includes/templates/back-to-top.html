@@ -1,0 +1,17 @@
+<a href="#top" id="top-button" class="kill-underlines" onclick="scrollToTop();return false">
+       <img src="/../uploads/down-arrow.png" alt="Back to Top">
+    </a>
+    
+</footer>
+
+<script>
+    // ----------------------------------------------------------
+    // Back To Top
+    // ----------------------------------------------------------
+    function scrollToTop() {
+        if (document.body.scrollTop !== 0 || document.documentElement.scrollTop !== 0) {
+            window.scrollBy(0, -100);
+            requestAnimationFrame(scrollToTop);
+        }
+    }
+</script>

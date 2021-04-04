@@ -1,0 +1,25 @@
+<footer class="footer text-center">
+  <div class="medium-container"> 
+    <div class="flex-row">
+      <div class="flex-small footer-feature">
+        <h4> Policies </h4>
+        <p class="feature-description"><a href="/privacy/">Privacy</a> | <a href="/accessibility/">Accessibility</a> | <a href="/cookies/">Cookies</a></p>
+        <p class="feature-description"><a href="/we-believe/">Our beliefs</a> | <a href="/safeguarding/">Safeguarding</a></p>
+      </div>
+      <div class="flex-small footer-feature">
+        <h4> Credits </h4>
+        <p class="footer-feature-description copyright-icon"> {{ site.title }} {{ "now" | date: "%Y" }}</p>
+        <p class="footer-feature-description">Artwork by <a href="https://linktr.ee/AP.art" target="_blank" rel="noopener">A.Pullen Art</a></p>
+        <p class="footer-feature-description github-icon">Powered by <a href="https://github.com/woodcock3/city-jekyll" target="_blank" rel="noopener">GitHub</a> </p>
+      </div> 
+    </div>
+  </div>
+</footer>
+
+<script src="{{ '/assets/js/site.js' | relative_url }}"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+{% include modules/cookie-consent.html %}
+
+</body>
+</html>

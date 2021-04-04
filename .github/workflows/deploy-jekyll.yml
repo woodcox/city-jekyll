@@ -1,0 +1,50 @@
+name: Jekyll Deploy
+
+on:
+  push:
+    branches:
+      - master
+    paths-ignore:
+      - 'Gemfile'
+      - 'README.md'
+      - 'LICENSE.txt'
+
+jobs:
+  build_and_deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: GitHub Checkout
+        uses: actions/checkout@v2.1.0
+      - name: Bundler Cache
+        uses: actions/cache@v2.1.0
+        with:
+          path: vendor/bundle
+          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-gems-
+      - name: Build & Deploy to GitHub Pages
+        uses: woodcock3/jekyll4-deploy-gh-pages@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ secrets.GITHUB_REPOSITORY }}
+          GITHUB_ACTOR: ${{ secrets.GITHUB_ACTOR }}
+
+
+
+# deploy to host
+#on: push
+#name: Publish Website
+#jobs:
+#  FTP-Deploy-Action:
+#    name: FTP-Deploy-Action
+#    runs-on: ubuntu-latest
+#    steps:
+#    - uses: actions/checkout@v2.1.0
+#      with:
+#        fetch-depth: 2
+#    - name: FTP-Deploy-Action
+#      uses: woodcock3/FTP-Deploy-Action
+#      with:
+#        ftp-server: ftp://ftp.cecleeds.co.uk
+#        ftp-username: ${{ secrets.FTP_USER }}
+#        ftp-password: ${{ secrets.FTP_PASSWORD }}
