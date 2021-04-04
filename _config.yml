@@ -9,7 +9,7 @@ safe: false
 exclude: [CNAME, README.md, .gitignore]
 permalink: /:title ## disables post output
 url: "https://woodcock3.github.io"
-baseurl: "/primitive-jekyll"
+baseurl: "/city-jekyll"
 timezone: null
 lsi: false
 markdown: kramdown
