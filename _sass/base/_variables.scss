@@ -32,7 +32,7 @@ $accent-color: #cdcdcd !default;
 $alternate-background: #fafafa !default;
 $alternate-color: #404040 !default;
 $link-color: black !default;
-$link-hover-color: darken($link-color, 15%) !default;
+$link-hover-color: darken($primary-color, 15%) !default;
 $highlight: #ffeea8 !default;
 $error: #d33c40 !default;
 $success: #29de7d !default;
