@@ -18,9 +18,14 @@
 
 @import 'base/variables';
 @import 'base/mixins';
+
+//==============================================================================
+// Fonts
+//==============================================================================
+
 @import 'fonts/webfonts';
 @import 'fonts/fontawesomesvg.scss';
-@import 'base/syntax-highlight';
+@import 'fonts/syntax-highlight';
 
 //==============================================================================
 // Reset
