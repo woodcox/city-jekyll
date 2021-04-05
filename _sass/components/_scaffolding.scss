@@ -119,6 +119,7 @@ a {
   &:focus {
     color: $link-hover-color;
     text-decoration: underline;
+    text-transform: uppercase;
   }
 }
 
