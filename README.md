@@ -4,9 +4,9 @@
 
 Please note this is a work in progress. The theme has not been created yet. This is what I am working towards. 
 
-Welcome to the **city-jekyll** theme! This is the theme for [City Evangelical Church](https://cecleeds.co.uk) website. It's built using [Jekyll](https://jekyllrb.com/) and [Primitive UI](https://taniarascia.github.io/primitive). The theme is a front-end design toolkit for developing responsive static websites with helpful, browser-consistent styling for default HTML elements - buttons, forms, tables, lists, and typography.
+Welcome to the **city-jekyll** theme! This is the theme for [City Evangelical Church](https://cecleeds.co.uk) website. It's built using [Jekyll](https://jekyllrb.com/) and [Primitive UI](https://taniarascia.github.io/primitive). The theme is a design toolkit for developing fast sass-y, responsive websites with browser-consistent styling.
 
-Demo available: [here](http://woodcock3.github.io/primitive-jekyll/)
+Demo available: [here](http://woodcock3.github.io/city-jekyll/)
 
 ## Primitive UI
 
