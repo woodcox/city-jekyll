@@ -183,19 +183,18 @@ Regular ordered and unordered lists have no special styling applied to them.
 </ul>
 ~~~
 
-<div class="row">
-  <div class="large-50">
+
 - List item one
     - Nested list item
 - List item two
 - List item three
-  <div class="large-50">
+
+
 1. List item one
     1. Nested list item
 2. List item two
 3. List item three
-  </div>
-</div>
+
 
 ### Definition Lists
 Definition titles are bold, and margins have been placed after each description.
@@ -217,9 +216,9 @@ Definition titles are bold, and margins have been placed after each description.
 </dl>
 
 ## Code
-Style has been added for inline <code><code></code> tags, and <code>&lt;kbd&gt;</code> is a <kbd>keyboard input</kbd>.
+Style has been added for inline <code>{{ "<code>" | escape }}</code> tags, and <code>{{ "<kbd>" | escape }}</code> is a <kbd>keyboard input</kbd>.
 
-Place blocks of preformatted code in a ~~~ html <pre><code> ~~~ or in markdown.
+Place blocks of preformatted code in a  {{ "<pre><code>" | escape }} or in markdown, e.g. {{ "~~~ html" | escape }}.
 
 ~~~ html
 class Voila {
