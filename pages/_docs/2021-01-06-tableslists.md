@@ -171,15 +171,16 @@ Regular ordered and unordered lists have no special styling applied to them.
 
 ~~~ html
 <ul>
-	<li>List item one
-		<ul>
-			<li>Nested list item</li>
-		</ul>
-	</li>
-	<li>List item two</li>
-	<li>List item three</li>
+  <li>List item one
+    <ul>
+      <li>Nested list item</li>
+    </ul>
+  </li>
+  <li>List item two</li>
+  <li>List item three</li>
 </ul>
 ~~~
+
 <div class="row">
   <div class="large-50">
 - List item one
