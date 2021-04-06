@@ -216,7 +216,7 @@ Definition titles are bold, and margins have been placed after each description.
 </dl>
 
 ## Code
-Style has been added for inline <code>{{ "<code>" | escape }}</code> tags, and <code>{{ "<kbd>" | escape }}</code> is a <kbd>keyboard input</kbd>.
+Style has been added for inline {{ "<code>" | escape }} <code>code tags</code>, and {{ "<kbd>" | escape }} is a <kbd>keyboard input</kbd>.
 
 Place blocks of preformatted code in a  {{ "<pre><code>" | escape }} or in markdown, e.g. {{ "~~~ html" | escape }}.
 
