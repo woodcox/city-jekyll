@@ -33,7 +33,7 @@ $alternate-background: #fafafa !default;
 $alternate-color: #404040 !default;
 $link-color: black !default;
 $link-hover-color: darken($secondary-color, 15%) !default;
-$highlight: #ffeea8 !default;
+$highlight: $secondary-color lighten($secondary-color, 15%) !default;
 $error: #d33c40 !default;
 $success: #29de7d !default;
 $bq-border: 16px solid #f0f0f0 !default;
