@@ -154,6 +154,7 @@ pre {
   font-family: $code-family;
   font-size: $code-size;
   margin: 0 0 $margins 0;
+  overflow: auto;
 
   code {
     font-family: $code-family;
