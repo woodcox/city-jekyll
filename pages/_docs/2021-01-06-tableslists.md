@@ -135,7 +135,7 @@ Wrap the table in a <code>contain-table</code> class to prevent tables with a lo
 <table class="contain-table">
   <thead>
     <tr>
-      <th><a href="{{ site.url }}{{ site.baseurl }}">{{ site.url }}{{ site.baseurl }}</a></th>
+      <th>Head 1</th>
       <th>Head 2</th>
       <th>Head 3</th>
     </tr>
@@ -149,7 +149,7 @@ Wrap the table in a <code>contain-table</code> class to prevent tables with a lo
   </tfoot>
   <tbody>
     <tr>
-      <td>Description 1</td>
+      <td><a href="{{ site.url }}{{ site.baseurl }}">{{ site.url }}{{ site.baseurl }}</a></td>
       <td>Description 2</td>
       <td>Description 3</td>
     </tr>
