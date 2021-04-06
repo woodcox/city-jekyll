@@ -217,7 +217,7 @@ Definition titles are bold, and margins have been placed after each description.
 ## Code
 Style has been added for inline <code><code></code> tags, and <code>&lt;kbd&gt;</code> is a <kbd>keyboard input</kbd>.
 
-Place blocks of preformatted code in a <pre><code> or in markdown: ~~~ html.
+Place blocks of preformatted code in a ~~~ html <pre><code> ~~~ or in markdown.
 
 ~~~ html
 class Voila {
