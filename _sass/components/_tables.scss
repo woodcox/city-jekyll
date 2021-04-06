@@ -43,10 +43,11 @@ caption {
 // Container for responsive tables
 .contain-table {
   overflow-x: auto;
+  white-space: nowrap;
 }
 
 @include small-breakpoint {
   .contain-table {
-    overflow-x: auto;
+    width: 100%;
   }
 }
