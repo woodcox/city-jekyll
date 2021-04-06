@@ -132,39 +132,41 @@ Wrap the table in a <code>contain-table</code> class to prevent tables with a lo
 </div>
 ~~~
 
-<table class="contain-table">
-  <thead>
-    <tr>
-      <th>Head 1</th>
-      <th>Head 2</th>
-      <th>Head 3</th>
-    </tr>
-  </thead>
-  <tfoot>
-    <tr>
-      <th>Footer 1</th>
-      <th>Footer 2</th>
-      <th>Footer 3</th>
-    </tr>
-  </tfoot>
-  <tbody>
-    <tr>
-      <td><a href="{{ site.url }}{{ site.baseurl }}">{{ site.url }}{{ site.baseurl }}</a></td>
-      <td>Description 2</td>
-      <td>Description 3</td>
-    </tr>
-    <tr>
-      <td>Description 1</td>
-      <td>Description 2</td>
-      <td>Description 3</td>
-    </tr>
-    <tr>
-      <td>Description 1</td>
-      <td>Description 2</td>
-      <td>Description 3</td>
-    </tr>
-  </tbody>
-</table>
+<div class="contain-table">
+  <table>
+    <thead>
+      <tr>
+        <th>Head 1</th>
+        <th>Head 2</th>
+        <th>Head 3</th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <th>Footer 1</th>
+        <th>Footer 2</th>
+        <th>Footer 3</th>
+      </tr>
+    </tfoot>
+    <tbody>
+      <tr>
+        <td><a href="{{ site.url }}{{ site.baseurl }}">{{ site.url }}{{ site.baseurl }}</a></td>
+        <td>Description 2</td>
+        <td>Description 3</td>
+      </tr>
+      <tr>
+        <td>Description 1</td>
+        <td>Description 2</td>
+        <td>Description 3</td>
+      </tr>
+      <tr>
+        <td>Description 1</td>
+        <td>Description 2</td>
+        <td>Description 3</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 ## Lists
 Regular ordered and unordered lists have no special styling applied to them.
