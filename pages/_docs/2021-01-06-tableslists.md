@@ -199,10 +199,10 @@ Definition titles are bold, and margins have been placed after each description.
 
 ~~~ html
 <dl>
-	<dt>Definition Title One</dt>
-	<dd>First definition description</dd>
-	<dt>Definition Title Two</dt>
-	<dd>First definition description</dd>
+  <dt>Definition Title One</dt>
+  <dd>First definition description</dd>
+  <dt>Definition Title Two</dt>
+  <dd>First definition description</dd>
 </dl>
 ~~~
 
@@ -216,7 +216,7 @@ Definition titles are bold, and margins have been placed after each description.
 ## Code
 Style has been added for inline <code><code></code> tags, and <code>&lt;kbd&gt;</code> is a <kbd>keyboard input</kbd>.
 
-Place blocks of preformatted code in a <pre><code> {% raw %}{% hightlight html %}{% endraw %} or in markdown: ~~~ html.
+Place blocks of preformatted code in a <pre><code> or in markdown: ~~~ html.
 
 ~~~ html
 class Voila {
