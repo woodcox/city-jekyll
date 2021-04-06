@@ -47,7 +47,6 @@ caption {
 
 @include small-breakpoint {
   .contain-table {
-    width: 100%;
-    overflow-x: scroll;
+    overflow-x: auto;
   }
 }
