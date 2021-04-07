@@ -57,14 +57,14 @@
 }
 
 // keep embedded videos fluid
-.icontain {
+.fluid-video {
   position: relative;
   height: 0;
   overflow: hidden;
   padding-bottom: 56.25%; // keep 16x9 Aspect Ratio
 }
 .i4x3 { padding-bottom: 75.00%; } // keep 4x3 Aspect Ratio
-.icontain iframe {
+.fluid-video iframe {
   position: absolute;
   top:0;
   left: 0;
