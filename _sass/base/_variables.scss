@@ -184,13 +184,13 @@ $code-borders: $borders !default;
 // Navigation
 //==============================================================================
 
-$hamburger-menu-size: 60px !default;
+$hamburger-menu-size: 60px;
 $hamburger-menu-border-radius: .12em !default;
 $hamburger-menu-bg-color: rgba($primary-color, 0.75) !default;
-$hamburger-menu-line-height: 2px !default;
+$hamburger-menu-line-height: 2px;
 $hover-line-height: $hamburger-menu-line-height;
-$menu-link-color: $button-color !default;
+$menu-text-color: $button-color;
 $menu-hover-color: $link-hover-color !default;
 $content-bg-color: rgba($third-color, 0.97) !default;
-$anim-duration: 0.4s !default;
+$anim-duration: 0.4s;
 
