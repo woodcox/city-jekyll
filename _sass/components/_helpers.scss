@@ -56,14 +56,14 @@
   height: auto;
 }
 
-/* keep embedded videos fluid! */
+// keep embedded videos fluid
 .icontain {
   position: relative;
   height: 0;
   overflow: hidden;
-  padding-bottom: 56.25%; /* keep 16x9 Aspect Ratio */
+  padding-bottom: 56.25%; // keep 16x9 Aspect Ratio
 }
-.i4x3 { padding-bottom: 75.00%; } /* keep 4x3 Aspect Ratio */
+.i4x3 { padding-bottom: 75.00%; } // keep 4x3 Aspect Ratio
 .icontain iframe {
   position: absolute;
   top:0;
