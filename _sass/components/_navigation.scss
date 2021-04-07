@@ -1,3 +1,196 @@
 /*
  * Navigation
  */
+.outer-menu {
+  position: fixed;
+  top: 10vh;
+  left: 0;
+  z-index: 1;
+
+  .checkbox-toggle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    cursor: pointer;
+    width: $hamburger-menu-size;
+    height: $hamburger-menu-size;
+    opacity: 0;
+
+    &:checked {
+      + .hamburger > div {
+        transform: rotate(135deg);
+
+        &:before {
+          top: 0;
+          transform: rotate(90deg);
+        }
+
+        &:after {
+          top: 0;
+          transform: rotate(90deg);
+          opacity: 0;
+        }
+      }
+
+      ~ .menu {
+        pointer-events: auto;
+        visibility: visible;
+
+        > div {
+          transform: scale(1);
+          transition-duration: 0.75s;
+
+          > div {
+            opacity: 1;
+            transition: opacity $anim-duration ease $anim-duration;
+          }
+        }
+      }
+    }
+
+    &:hover + .hamburger {
+      box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    &:checked:hover + .hamburger > div {
+      transform: rotate(225deg);
+    }
+  }
+
+  .hamburger {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: $hamburger-menu-size;
+    height: $hamburger-menu-size;
+    padding: 0.5em 1em;
+    background: $hamburger-menu-bg-color;
+    border-radius: 0 $hamburger-menu-border-radius $hamburger-menu-border-radius 0;
+    cursor: pointer;
+    transition: box-shadow $anim-duration ease;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    > div {
+      position: relative;
+      flex: none;
+      width: 100%;
+      height: $hamburger-menu-line-height;
+      background: $menu-link-color;
+      transition: all $anim-duration ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &:before,
+      &:after {
+        content: "";
+        position: absolute;
+        z-index: 1;
+        top: -$hamburger-menu-size / 6;
+        left: 0;
+        width: 100%;
+        height: $hamburger-menu-line-height;
+        background: inherit;
+        transition: all $anim-duration ease;
+      }
+      &:after {
+        top: $hamburger-menu-size / 6;
+      }
+    }
+  }
+
+  .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    visibility: hidden;
+    overflow: hidden;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    outline: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    > div {
+      width: 200vw;
+      height: 200vw;
+      color: $menu-link-color;
+      background: $content-bg-color;
+      border-radius: 50%;
+      transition: all $anim-duration ease;
+      flex: none;
+      transform: scale(0);
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      > div {
+        text-align: center;
+        max-width: 90vw;
+        max-height: 100vh;
+        opacity: 0;
+        transition: opacity $anim-duration ease;
+        overflow-y: auto;
+        flex: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        > ul {
+          list-style: none;
+          padding: 0 1em;
+          margin: 0;
+          display: block;
+          max-height: 100vh;
+
+          > li {
+            padding: 0;
+            margin: 1em;
+            font-size: 24px;
+            display: block;
+
+            > a {
+              position: relative;
+              display: inline;
+              cursor: pointer;
+              transition: color $anim-duration ease;
+
+              &:hover {
+                color: $menu-hover-color;
+
+                &:after {
+                  width: 100%;
+                }
+              }
+
+              &:after {
+                content: "";
+                position: absolute;
+                z-index: 1;
+                bottom: -0.15em;
+                left: 0;
+                width: 0;
+                height: $hover-line-height;
+                background: $menu-hover-color;
+                transition: width $anim-duration ease;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
