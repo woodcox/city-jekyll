@@ -179,3 +179,18 @@ $code-size: 14px !default;
 $code-family: Menlo, monospace !default;
 $code-background: transparent !default;
 $code-borders: $borders !default;
+
+//==============================================================================
+// Navigation
+//==============================================================================
+
+$hamburger-menu-size: 60px;
+$hamburger-menu-border-radius: .12em;
+$hamburger-menu-bg-color: rgba($primary-color, 0.75);
+$hamburger-menu-line-height: 2px;
+$hover-line-height: $hamburger-menu-line-height;
+$menu-link-color: $button-color;
+$menu-hover-color: $link-hover-color;
+$content-bg-color: rgba(#2962ff, 0.97);
+$anim-duration: 0.4s;
+
