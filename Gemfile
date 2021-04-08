@@ -4,5 +4,5 @@ gem 'jekyll'
 
 group :jekyll_plugins do
   gem 'jekyll-get-json'
-  gem 'hologram'
+  gem 'jekyll-autoprefixer'
 end
