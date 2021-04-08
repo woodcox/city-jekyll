@@ -167,6 +167,8 @@
               display: inline;
               cursor: pointer;
               transition: color $anim-duration ease;
+              color: $menu-text-color;
+              text-decoration: none;
 
               &:hover {
                 color: $menu-hover-color;
