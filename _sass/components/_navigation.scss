@@ -92,7 +92,7 @@
         content: "";
         position: absolute;
         z-index: 1;
-        top: -$hamburger-menu-size / 5;
+        top: -$hamburger-menu-size / 6;
         left: 0;
         width: 100%;
         height: $hamburger-menu-line-height;
@@ -100,7 +100,7 @@
         transition: all $anim-duration ease;
       }
       &:after {
-        top: $hamburger-menu-size / 5;
+        top: $hamburger-menu-size / 6;
       }
     }
   }
