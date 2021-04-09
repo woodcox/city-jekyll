@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/woodcock3/jekyll-autoprefixer
-  revision: 6450f4ab035012f6613123d8a1368174f1fd0be1
+  revision: d0416931d42b8d29fb33134c2550dccb99b52c25
   specs:
     jekyll-autoprefixer (1.0.2)
       autoprefixer-rails (~> 9.3)
