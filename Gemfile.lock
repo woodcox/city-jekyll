@@ -71,8 +71,8 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll
-  jekyll-autoprefixer
+  jekyll-autoprefixer (~> 1.0)
   jekyll-get-json
 
 BUNDLED WITH
-   2.2.15
+   2.2.16
