@@ -4,5 +4,5 @@ gem 'jekyll'
 
 group :jekyll_plugins do
   gem 'jekyll-get-json'
-  gem 'jekyll-autoprefixer', '~> 1.0'
+  gem 'jekyll-autoprefixer', git: 'https://github.com/woodcock3/jekyll-autofixer'
 end
