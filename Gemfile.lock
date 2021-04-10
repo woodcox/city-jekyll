@@ -1,10 +1,3 @@
-GIT
-  remote: https://github.com/woodcock3/jekyll-autoprefixer
-  revision: 6450f4ab035012f6613123d8a1368174f1fd0be1
-  specs:
-    jekyll-autoprefixer (1.0.2)
-      autoprefixer-rails (~> 9.3)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -40,6 +33,8 @@ GEM
       rouge (~> 3.0)
       safe_yaml (~> 1.0)
       terminal-table (~> 2.0)
+    jekyll-autoprefixer (1.0.2)
+      autoprefixer-rails (~> 9.3)
     jekyll-get-json (1.0.0)
       deep_merge (~> 1.2)
       jekyll (>= 3.0)
@@ -76,7 +71,7 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll
-  jekyll-autoprefixer!
+  jekyll-autoprefixer
   jekyll-get-json
 
 BUNDLED WITH
