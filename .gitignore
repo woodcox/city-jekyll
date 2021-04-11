@@ -4,3 +4,4 @@ _site/
 # Sass Cache
 .sass-cache
 .DS_Store
+node_modules
