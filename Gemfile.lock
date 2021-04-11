@@ -51,11 +51,14 @@ GEM
       rexml
     kramdown-parser-gfm (1.1.0)
       kramdown (~> 2.0)
+    libv8 (8.4.255.0)
     liquid (4.0.3)
     listen (3.5.1)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
     mercenary (0.4.0)
+    mini_racer (0.3.1)
+      libv8 (~> 8.4.255)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
     public_suffix (4.0.6)
@@ -78,6 +81,7 @@ DEPENDENCIES
   jekyll
   jekyll-autoprefixer!
   jekyll-get-json
+  mini_racer
 
 BUNDLED WITH
    2.2.16
