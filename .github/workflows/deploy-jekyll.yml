@@ -10,25 +10,35 @@ on:
       - 'LICENSE.txt'
 
 jobs:
-  build_and_deploy:
+  github-pages:
     runs-on: ubuntu-latest
-    steps:
-      - name: GitHub Checkout
-        uses: actions/checkout@v2.1.0
-      - name: Bundler Cache
-        uses: actions/cache@v2.1.0
-        with:
-          path: vendor/bundle
-          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-gems-
-      - name: Build & Deploy to GitHub Pages
-        uses: woodcock3/jekyll4-deploy-gh-pages@master
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GITHUB_REPOSITORY: ${{ secrets.GITHUB_REPOSITORY }}
-          GITHUB_ACTOR: ${{ secrets.GITHUB_ACTOR }}
 
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      # Install Ruby to be able to build the site using Jekyll
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 2.6
+      # Install Node as this is needed for PurgeCSS
+      - name: Setup Node
+        uses: actions/setup-node@v1
+        with:
+          node-version: '14'
+      # Install PurgeCSS (needs to be in your package.json)
+      - run: npm install
+      # Build site
+      - name: Install dependencies & Build Site
+        uses: limjh16/jekyll-action-ts@v2
+        with:
+          enable_cache: true
+      # Push the compiled _site-folder as branch into your GitHub repository
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site
 
 
 # deploy to host
