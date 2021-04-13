@@ -1,6 +1,3 @@
----
----
-
 /* Primitive */
 
 a {
@@ -19,7 +16,7 @@ a:focus {
 
 header {
 	margin-top: 60px;
-	background: #2A55F1 url('{{ '/docs/images/grid.png' | relative_url }}') no-repeat left center / cover;
+	background: #2A55F1 url('/city-jekyll/docs/images/grid.png') no-repeat left center / cover;
 	padding: 60px 0;
 }
 

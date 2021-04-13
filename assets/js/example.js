@@ -1,12 +1,9 @@
----
----
-
 $(document).ready(function () {
 	$('#eighties').click(function () {
-		$('link[href="{{ 'assets/css/example.css' | relative_url }}"]').attr('href', '{{ 'assets/css/eighties.css?version=2' | relative_url }}');
+		$('link[href="/city-jekyll/assets/css/example.css"]').attr('href', '/city-jekyll/assets/css/eighties.css?version=2');
 	});
 	$('#boring').click(function () {
-		$('link[href="{{ 'assets/css/eighties.css?version=2' | relative_url }}"]').attr('href', '{{ 'assets/css/example.css' | relative_url }}');
+		$('link[href="/city-jekyll/assets/css/eighties.css?version=2"]').attr('href', '/city-jekyll/assets/css/example.css');
 	});
 	$(document).on("scroll", onScroll);
 
