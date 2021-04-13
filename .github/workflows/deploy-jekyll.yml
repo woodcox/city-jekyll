@@ -25,7 +25,6 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: 2.6 # can change this to 2.7 or whatever version you prefer
-          bundler-cache: true
         # Install Node as this is needed for PurgeCSS
       - name: Setup Node
         uses: actions/setup-node@v1
@@ -36,8 +35,8 @@ jobs:
         # Build site
       - name: 🔨 install dependencies & build site
         uses: limjh16/jekyll-action-ts@v2
-        # with:
-          # enable_cache: true
+        with:
+          enable_cache: true
           ### Enables caching. Similar to https://github.com/actions/cache.
           #
           # format_output: true
