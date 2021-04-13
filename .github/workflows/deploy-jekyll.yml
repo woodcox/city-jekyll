@@ -9,7 +9,6 @@ on:
       - 'README.md'
       - 'LICENSE.txt'
 
-
 jobs:
   jekyll:
     runs-on: ubuntu-latest # can change this to ubuntu-16.04 if you prefer
@@ -78,10 +77,10 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./_site
+          # publish_dir: ./_site
           # if the repo you are deploying to is <username>.github.io, uncomment the line below.
           # if you are including the line below, DO NOT use master if your source files are in the master branch:
-          # publish_branch: gh-pages
+          publish_branch: gh-pages # default: gh-pages
 
 
 # deploy to host
