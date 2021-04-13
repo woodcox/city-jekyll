@@ -36,14 +36,14 @@ jobs:
         # Build site
       - name: 🔨 install dependencies & build site
         uses: limjh16/jekyll-action-ts@v2
-        with:
+        # with:
           # enable_cache: true
           ### Enables caching. Similar to https://github.com/actions/cache.
           #
-          format_output: true
+          # format_output: true
           ### Uses prettier https://prettier.io to format jekyll output HTML.
           #
-          prettier_opts: '{ "useTabs": true }'
+          # prettier_opts: '{ "useTabs": true }'
           ### Sets prettier options (in JSON) to format output HTML. For example, output tabs over spaces.
           ### Possible options are outlined in https://prettier.io/docs/en/options.html
           #
