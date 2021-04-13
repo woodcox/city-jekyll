@@ -357,6 +357,10 @@ article {
   border-radius: 4px;
 }
 
+::-moz-selection {
+  background: #ff2155;
+}
+
 ::selection {
   background: #ff2155;
 }
