@@ -1,0 +1,8 @@
+<div class="round-accordion">
+  {% for item in page.round-accordion %}
+    <li><input id="round-accordion{{ forloop.index }}" type="checkbox" />
+      <label for="round-accordion{{ forloop.index }}"><strong>{{ item.title }}</strong></label>
+      <div class="accord-content">{{ item.content | markdownify }}</div>
+    </li>
+  {% endfor %}
+</div>

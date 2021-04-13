@@ -1,0 +1,20 @@
+/* sanchez-black - latin */
+@font-face {
+  font-family: 'Sanchez';
+  src: url('../webfonts/sanchez/sanchez-black.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../webfonts/sanchez/sanchez-black.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+       url('../webfonts/sanchez/sanchez-black.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+}
+/* sanchez-regular - latin v8*/
+@font-face {
+  font-family: 'Sanchez-regular';
+  src: url('../webfonts/sanchez/sanchez-v8-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../webfonts/sanchez/sanchez-v8-latin-regular.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+       url('../webfonts/sanchez/sanchez-v8-latin-regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}

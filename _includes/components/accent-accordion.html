@@ -1,0 +1,8 @@
+<div class="accent-accordion">
+  {% for item in page.accent-accordion %}
+    <li><input id="accent-accordion{{ forloop.index }}" type="checkbox" />
+      <label for="accent-accordion{{ forloop.index }}"><strong>{{ item.title }}</strong></label>
+      <div class="accord-content">{{ item.content | markdownify }}</div>
+    </li>
+  {% endfor %}
+</div>

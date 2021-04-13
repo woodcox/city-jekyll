@@ -1,0 +1,7 @@
+# Ignore static pages
+_site/
+
+# Sass Cache
+.sass-cache
+.DS_Store
+node_modules

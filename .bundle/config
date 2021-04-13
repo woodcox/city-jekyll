@@ -1,0 +1,5 @@
+---
+BUNDLE_PATH: "/home/runner/work/city-jekyll/city-jekyll/vendor/bundle"
+BUNDLE_DEPLOYMENT: "true"
+BUNDLE_JOBS: "4"
+BUNDLE_RETRY: "3"

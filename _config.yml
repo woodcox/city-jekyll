@@ -1,0 +1,79 @@
+---
+
+port: 4000
+host: 0.0.0.0
+safe: false
+
+
+### site serving configuration ###
+exclude: [CNAME, README.md, .gitignore]
+permalink: /:title ## disables post output
+url: "https://woodcock3.github.io"
+baseurl: "/city-jekyll"
+timezone: null
+lsi: false
+markdown: kramdown
+highlighter: rouge
+
+
+### content configuration ###
+title:              "City-Jekyll"
+keywords:           "City, evangelical, church, Leeds, best, christian, Jesus, bible, gospel, Christ, God, Faith, Lord"
+description:        "A Jekyll theme &amp; Sass Boilerplate"
+author:             "woodcock3"
+source_link:        "https://github.com/woodcock3/city-jekyll"
+favicon:            "/assets/img/favicon/favicon.ico"
+favicon_16:         "/assets/img/favicon/favicon-16x16.png"
+favicon_32:         "/assets/img/favicon/favicon-32x32.png"
+touch_icon:         "/assets/img/favicon/apple-touch-icon.png" ## City logo as apple touch icon
+safari_pinned_tab:  "/assets/img/favicon/safari-pinned-tab.svg" ## put safari pinned tab svg icon here
+
+google_analytics_key: ## put YOUR key here to enable tracking! (blank to disable)
+
+
+### template colors, used site-wide via css ###
+colors:
+  white:        '#f8f8f8'
+  black:        '#2e2e2e'
+  ckyellow:     '#febd2e'
+  ckblue:       '#01a8ff'
+  teal:         '#009688'
+  cityorange:   '#f29526'
+  cityblue:     '#009ddf'
+
+kramdown:
+  auto_ids:  false
+
+collections_dir: pages
+
+collections:
+  sunday:
+    output: true
+    permalink: /sunday/
+  docs:
+    output: true
+    permalink: /docs/
+  example2:
+    output: true
+    permalink: /example2/
+
+### sass
+sass:
+  sass_dir: '_sass'
+  style: compressed
+
+### Import a json feed as data
+jekyll_get_json:
+  - data: cscalendar
+    json: 'https://cecleeds.churchsuite.co.uk/embed/calendar/json'
+
+### Compress html settings - http://jch.penibelst.de/
+compress_html:
+  clippings: [all]
+  comments: [all]
+  endings: [all]
+  ignore:
+    envs: []
+  blanklines: false
+  profile: false
+  startings: []
