@@ -9,17 +9,6 @@ on:
       - 'README.md'
       - 'LICENSE.txt'
 
-name: build site with jekyll and deploy on github pages
-
-# when push or PR to main branch
-on:
-  push: 
-    branches: 
-      - main
-  pull_request:
-    branches: 
-      - main
-
 # then build out site using jekyll
 jobs:
   jekyll:
