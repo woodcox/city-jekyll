@@ -81,6 +81,7 @@ jobs:
           # if the repo you are deploying to is <username>.github.io, uncomment the line below.
           # if you are including the line below, DO NOT use master if your source files are in the master branch:
           publish_branch: gh-pages # default: gh-pages
+          enable_jekyll: true
 
 
 # deploy to host
