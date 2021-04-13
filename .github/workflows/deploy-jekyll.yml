@@ -52,7 +52,7 @@ jobs:
           ### Useful if the file is exceptionally large, so formatting it takes a while.
           ### Also useful if HTML compression is enabled for that file / formatting messes it up.
           #
-          jekyll_src: master
+          # jekyll_src: 
           ### If the jekyll website source is not in root, specify the directory.
           ### By default, this is not required as the action searches for a _config.yml automatically.
           #
@@ -77,7 +77,7 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          # publish_dir: ./_site
+          publish_dir: ./ # default is public 
           # if the repo you are deploying to is <username>.github.io, uncomment the line below.
           # if you are including the line below, DO NOT use master if your source files are in the master branch:
           publish_branch: gh-pages # default: gh-pages
