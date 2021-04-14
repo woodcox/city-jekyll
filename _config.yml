@@ -60,7 +60,7 @@ collections:
 ### sass
 sass:
   sass_dir: '_sass'
-  style: compressed
+  style: compact
 
 ### Import a json feed as data
 jekyll_get_json:
