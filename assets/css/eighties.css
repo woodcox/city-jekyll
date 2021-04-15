@@ -129,7 +129,9 @@ a.example-button:focus {
 
 aside {
   padding: 0.5rem;
-  flex: 0;
+  -webkit-box-flex: 0;
+      -ms-flex: 0;
+          flex: 0;
   background: #010101;
   border-bottom: 1px solid #ddd;
   position: fixed;
@@ -217,7 +219,8 @@ input:focus,
 select:active,
 select:focus {
   border: 1px solid #ff2155 !important;
-  box-shadow: 0 !important;
+  -webkit-box-shadow: 0 !important;
+          box-shadow: 0 !important;
 }
 
 .fa {
@@ -259,6 +262,8 @@ select:focus {
 }
 
 .flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -303,7 +308,9 @@ article {
   }
   aside {
     display: block;
-    flex: 0 0 220px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 220px;
+            flex: 0 0 220px;
     width: 220px;
     border-bottom: 0;
   }
@@ -322,7 +329,9 @@ article {
     display: none;
   }
   .content {
-    flex: 7.5;
+    -webkit-box-flex: 7.5;
+        -ms-flex: 7.5;
+            flex: 7.5;
     max-width: calc(100% - 220px);
   }
   .margin {
@@ -339,7 +348,9 @@ article {
 
 @media screen and (min-width: 800px) {
   .flex-50 {
-    flex: 5;
+    -webkit-box-flex: 5;
+        -ms-flex: 5;
+            flex: 5;
   }
 }
 
@@ -485,7 +496,8 @@ a.muted-button:focus {
 }
 
 input.has-error {
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   border: 1px solid #ff2155;
 }
 
@@ -511,7 +523,8 @@ select,
 textarea {
   background: rgba(40, 40, 40, 0.95);
   border: 1px solid rgba(80, 80, 80, 0.95) !important;
-  box-shadow: 0;
+  -webkit-box-shadow: 0;
+          box-shadow: 0;
 }
 
 pre,

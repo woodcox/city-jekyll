@@ -77,7 +77,9 @@ a.example-button:focus {
 
 aside {
 	padding: .5rem;
-	flex: 0;
+	-webkit-box-flex: 0;
+	    -ms-flex: 0;
+	        flex: 0;
 	background: #ffffff;
 	border-bottom: 1px solid #ddd;
 	position: fixed;
@@ -184,6 +186,8 @@ aside li a.active:focus {
 }
 
 .flex-container {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 }
 
@@ -225,7 +229,9 @@ article {
 	}
 	aside {
 		display: block;
-		flex: 0 0 220px;
+		-webkit-box-flex: 0;
+		    -ms-flex: 0 0 220px;
+		        flex: 0 0 220px;
 		width: 220px;
 		border-bottom: 0;
 	}
@@ -244,7 +250,9 @@ article {
 		display: none;
 	}
 	.content {
-		flex: 7.5;
+		-webkit-box-flex: 7.5;
+		    -ms-flex: 7.5;
+		        flex: 7.5;
 		max-width: calc(100% - 220px);
 		padding: 0 2rem;
 	}
@@ -262,7 +270,9 @@ article {
 
 @media screen and (min-width: 800px) {
 	.flex-50 {
-		flex: 5;
+		-webkit-box-flex: 5;
+		    -ms-flex: 5;
+		        flex: 5;
 	}
 }
 
