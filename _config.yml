@@ -57,6 +57,13 @@ collections:
     output: true
     permalink: /example2/
 
+responsive_image:
+  template: _includes/components/responsive-image.html
+  sizes:
+    - width: 320
+    - width: 480
+    - width: 800
+
 ### sass
 sass:
   sass_dir: '_sass'
