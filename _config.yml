@@ -58,7 +58,7 @@ collections:
     permalink: /example2/
 
 responsive_image:
-  template: _includes/components/responsive-image.html
+  template: _includes/components/srcset-images.html
   sizes:
     - width: 320
     - width: 480
