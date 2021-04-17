@@ -29,7 +29,7 @@ jobs:
         with:
           node-version: '14'
         # Install PurgeCSS (needs to be in your package.json)
-      - run: npm install
+      - run: npm install sharp
 
       # use jekyll-action-ts to build
       # https://github.com/limjh16/jekyll-action-ts
