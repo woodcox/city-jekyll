@@ -13,19 +13,24 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     # Resize images
-    - name: Image Resizer Action
+    - name: Image Resize to 600x
       uses: sharadcodes/img-resizer@v1.1
       with:
         image-folder: 'assets/img/master' # This has original images
         new-resolution: '600x' # default is 400x
         output-folder: "assets/img/600"
-    - name: Image Resizer Inplace
-      uses: xprilion/img-resizer-inplace@v1
+    - name: Image Resizer to 800x
+      uses: sharadcodes/img-resizer@v1.1
       with:
-        # Folder in which images are stored
-        target: assets/img/1000 # default is images
-        # New resolution for images
-        dimensions: 1000x # default is 500x
+        image-folder: 'assets/img/master' # This has original images
+        new-resolution: '800x' # default is 400x
+        output-folder: "assets/img/800"
+    - name: Image Resize to 1000x
+      uses: sharadcodes/img-resizer@v1.1
+      with:
+        image-folder: 'assets/img/master' # This has original images
+        new-resolution: '1000x' # default is 400x
+        output-folder: "assets/img/1000"
     - name: Create pull request
       uses: thomaseizinger/create-pull-request@master
       with:
