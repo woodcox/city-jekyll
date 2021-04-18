@@ -5,7 +5,7 @@ on:
     branches:
       - master
     paths:
-      - 'assets/img'
+      - 'assets/img/master/**.jpg'
 
 jobs:
   pull-request:
