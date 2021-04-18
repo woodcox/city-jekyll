@@ -1,8 +1,5 @@
 {
   "devDependencies": {
     "libvips": "^0.0.2"
-  },
-  "dependencies": {
-    "sharp": "^0.28.1"
   }
 }
