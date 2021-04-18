@@ -8,16 +8,14 @@ on:
       - 'Gemfile'
       - 'README.md'
       - 'LICENSE.txt'
-      - 'assets/img/master/**.jpg'
 
-# '**/README.md then build out site using jekyll
+# Build site using jekyll
 jobs:
   jekyll:
     runs-on: ubuntu-latest
     steps:
       # checkout code
       - uses: actions/checkout@v2
-
       # Use ruby/setup-ruby to shorten build times
       # https://github.com/ruby/setup-ruby
       - uses: ruby/setup-ruby@v1
@@ -31,7 +29,7 @@ jobs:
       #    node-version: '14'
         # Install PurgeCSS (needs to be in your package.json)
       # - run: npm install sharp
-            # use jekyll-action-ts to build
+      # use jekyll-action-ts to build
       # https://github.com/limjh16/jekyll-action-ts
       - uses: limjh16/jekyll-action-ts@v2
         with:
