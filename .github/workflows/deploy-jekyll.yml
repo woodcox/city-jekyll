@@ -35,7 +35,7 @@ jobs:
         uses: xprilion/img-resizer-inplace@v1
         with:
           # Folder in which images are stored
-          target: assets/images/1000 # default is images
+          target: assets/img/1000 # default is images
           # New resolution for images
           dimensions: 1000x # default is 500x
 
