@@ -26,12 +26,11 @@ jobs:
         target: assets/img/1000 # default is images
         # New resolution for images
         dimensions: 1000x # default is 500x
-      # use actions-gh-pages to deploy
-      # https://github.com/peaceiris/actions-gh-pages
-    - name: Deploy
-      uses: peaceiris/actions-gh-pages@v3
+    - name: Create pull request
+      uses: thomaseizinger/create-pull-request@master
       with:
-        # GITHUB_TOKEN secret is set up automatically
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_branch: master
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        head: ${{ github.ref }}
+        base: master
+        title: "An automatically created PR!"
 
