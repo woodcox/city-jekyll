@@ -30,7 +30,12 @@ jobs:
           node-version: '14'
         # Install PurgeCSS (needs to be in your package.json)
       - run: npm install sharp
-
+      - name: Image Resizer Action
+        uses: sharadcodes/img-resizer@v1.1
+        with:
+          image-folder: 'assets/img/master' # This has original images
+          new-resolution: '600x' # default is 400x
+          output-folder: "assets/img/600"
       - name: Image Resizer Inplace
         uses: xprilion/img-resizer-inplace@v1
         with:
