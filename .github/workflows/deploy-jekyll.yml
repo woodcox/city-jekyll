@@ -8,9 +8,9 @@ on:
       - 'Gemfile'
       - 'README.md'
       - 'LICENSE.txt'
-      - 'assets/img'
+      - 'assets/img/master/**.jpg'
 
-# then build out site using jekyll
+# '**/README.md then build out site using jekyll
 jobs:
   jekyll:
     runs-on: ubuntu-latest
