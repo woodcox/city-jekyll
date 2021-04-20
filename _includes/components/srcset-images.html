@@ -6,3 +6,11 @@
 {% endcapture %}
 
 <img src="/{{ largest.path }}" alt="{{ alt }}" srcset="{{ srcset | strip_newlines }} /{{ path }} {{ original.width }}w">
+
+
+<img src="{{ page.image }}.jpeg"
+  srcset="
+    {% for size in page.image.sizes %}
+    /assets/img/{{ page.image.size }}/{{ page.image }}.jpeg {{ page.image.size }}W,
+    {% endfor %}
+   "/>
