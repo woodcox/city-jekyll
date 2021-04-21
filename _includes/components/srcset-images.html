@@ -1,4 +1,4 @@
-<img srcset="{% for size in page.imagesize %}{% capture imgurl %}/assets/img/{{ size }}/{{ page.imagetitle }}.jpg {% endcapture %}{{ imgurl | relative_url }} {{ size }}W,{% endfor %}"
+<responsive-image srcset="{% for size in page.imagesize %}{% capture imgurl %}/assets/img/{{ size }}/{{ page.imagetitle }}.jpg {% endcapture %}{{ imgurl | relative_url }} {{ size }}W,{% endfor %}"
      sizes="(max-width: 600px) 600px,
             800px,
             1000px"
