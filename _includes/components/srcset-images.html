@@ -1,7 +1,7 @@
 <picture>
   <source 
-    srcset="{% for size in page.imagesize %}{% capture imgurl %}/assets/img/{{ size }}/{{ page.imagetitle }}.jpg {% endcapture %}{{ imgurl | relative_url }} {{ size }}W,{% endfor %}"
+    srcset="{% for size in page.image-size %}{% capture imgurl %}/assets/img/{{ size }}/{{ page.image-title }}.jpg {% endcapture %}{{ imgurl | relative_url }} {{ size }}W,{% endfor %}"
     sizes="(mid-width: 100vw) 100vw">
-  <img src="{% capture url %}/assets/img/600/{{ page.imagetitle }}.jpg{% endcapture %}{{ url | relative_url }}"
-       alt="Hillside Children's Centre, Beeston">
+  <img src="{% capture url %}/assets/img/600/{{ page.image-title }}.jpg{% endcapture %}{{ url | relative_url }}"
+       alt="{{ image-alt-text }}">
 </picture>     
