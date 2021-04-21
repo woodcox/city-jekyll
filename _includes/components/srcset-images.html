@@ -1,3 +1,3 @@
-<img srcset="{% for size in page.imagesize %}{% capture imgurl %}/assets/img/{{ size }}/{{ page.imagetitle }}.jpeg {% endcapture %}{{ imgurl | relative_url }} {{ size }}W,{% endfor %}
+<img srcset="{% for size in page.imagesize %}{% capture imgurl %}/assets/img/{{ size }}/{{ page.imagetitle }}.jpeg {% endcapture %}{{ imgurl | relative_url }} {{ size }}W,{% endfor %}"
      src="{% capture url %}/assets/img/master/{{ page.imagetitle }}.jpeg{% endcapture %}{{ url | relative_url }}"
      alt="Hillside Children's Centre, Beeston">
