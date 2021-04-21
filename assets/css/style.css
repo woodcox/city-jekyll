@@ -1,426 +1,1512 @@
-/*!  Primitive UI | MIT License A minimalist front-end design toolkit built with Sass for developing  responsive, browser-consistent web apps. Author: Tania Rascia <hello@taniarascia.com> Source: https://github.com/taniarascia/primitive Documentation: https://taniarascia.github.io/primitive */
-/** Variables The majority of the configuration for the toolkit. */
+/*! 
+ * Primitive UI | MIT License
+ *
+ * A minimalist front-end design toolkit built with Sass for developing 
+ * responsive, browser-consistent web apps.
+ *
+ * Author: Tania Rascia <hello@taniarascia.com>
+ * Source: https://github.com/taniarascia/primitive
+ * Documentation: https://taniarascia.github.io/primitive
+ */
+/**
+ * Variables
+ *
+ * The majority of the configuration for the toolkit.
+ */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
-/* Document ========================================================================== */
-/** 1. Correct the line height in all browsers. 2. Prevent adjustments of font size after orientation changes in iOS. */
-html { line-height: 1.15; /* 1 */ -webkit-text-size-adjust: 100%; /* 2 */ }
-
-/* Sections ========================================================================== */
-/** Remove the margin in all browsers. */
-body { margin: 0; }
-
-/** Render the `main` element consistently in IE. */
-main { display: block; }
-
-/** Correct the font size and margin on `h1` elements within `section` and `article` contexts in Chrome, Firefox, and Safari. */
-h1 { font-size: 2em; margin: 0.67em 0; }
-
-/* Grouping content ========================================================================== */
-/** 1. Add the correct box sizing in Firefox. 2. Show the overflow in Edge and IE. */
-hr { -webkit-box-sizing: content-box; box-sizing: content-box; /* 1 */ height: 0; /* 1 */ overflow: visible; /* 2 */ }
-
-/** 1. Correct the inheritance and scaling of font size in all browsers. 2. Correct the odd `em` font sizing in all browsers. */
-pre { font-family: monospace, monospace; /* 1 */ font-size: 1em; /* 2 */ }
-
-/* Text-level semantics ========================================================================== */
-/** Remove the gray background on active links in IE 10. */
-a { background-color: transparent; }
-
-/** 1. Remove the bottom border in Chrome 57- 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari. */
-abbr[title] { border-bottom: none; /* 1 */ text-decoration: underline; /* 2 */ -webkit-text-decoration: underline dotted; text-decoration: underline dotted; /* 2 */ }
-
-/** Add the correct font weight in Chrome, Edge, and Safari. */
-b, strong { font-weight: bolder; }
-
-/** 1. Correct the inheritance and scaling of font size in all browsers. 2. Correct the odd `em` font sizing in all browsers. */
-code, kbd, samp { font-family: monospace, monospace; /* 1 */ font-size: 1em; /* 2 */ }
-
-/** Add the correct font size in all browsers. */
-small { font-size: 80%; }
-
-/** Prevent `sub` and `sup` elements from affecting the line height in all browsers. */
-sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
-
-sub { bottom: -0.25em; }
-
-sup { top: -0.5em; }
-
-/* Embedded content ========================================================================== */
-/** Remove the border on images inside links in IE 10. */
-img { border-style: none; }
-
-/* Forms ========================================================================== */
-/** 1. Change the font styles in all browsers. 2. Remove the margin in Firefox and Safari. */
-button, input, optgroup, select, textarea { font-family: inherit; /* 1 */ font-size: 100%; /* 1 */ line-height: 1.15; /* 1 */ margin: 0; /* 2 */ }
-
-/** Show the overflow in IE. 1. Show the overflow in Edge. */
-button, input { /* 1 */ overflow: visible; }
-
-/** Remove the inheritance of text transform in Edge, Firefox, and IE. 1. Remove the inheritance of text transform in Firefox. */
-button, select { /* 1 */ text-transform: none; }
-
-/** Correct the inability to style clickable types in iOS and Safari. */
-button, [type='button'], [type='reset'], [type='submit'] { -webkit-appearance: button; }
-
-/** Remove the inner border and padding in Firefox. */
-button::-moz-focus-inner, [type='button']::-moz-focus-inner, [type='reset']::-moz-focus-inner, [type='submit']::-moz-focus-inner { border-style: none; padding: 0; }
-
-/** Restore the focus styles unset by the previous rule. */
-button:-moz-focusring, [type='button']:-moz-focusring, [type='reset']:-moz-focusring, [type='submit']:-moz-focusring { outline: 1px dotted ButtonText; }
-
-/** Correct the padding in Firefox. */
-fieldset { padding: 0.35em 0.75em 0.625em; }
-
-/** 1. Correct the text wrapping in Edge and IE. 2. Correct the color inheritance from `fieldset` elements in IE. 3. Remove the padding so developers are not caught out when they zero out `fieldset` elements in all browsers. */
-legend { -webkit-box-sizing: border-box; box-sizing: border-box; /* 1 */ color: inherit; /* 2 */ display: table; /* 1 */ max-width: 100%; /* 1 */ padding: 0; /* 3 */ white-space: normal; /* 1 */ }
-
-/** Add the correct vertical alignment in Chrome, Firefox, and Opera. */
-progress { vertical-align: baseline; }
-
-/** Remove the default vertical scrollbar in IE 10+. */
-textarea { overflow: auto; }
-
-/** 1. Add the correct box sizing in IE 10. 2. Remove the padding in IE 10. */
-[type='checkbox'], [type='radio'] { -webkit-box-sizing: border-box; box-sizing: border-box; /* 1 */ padding: 0; /* 2 */ }
-
-/** Correct the cursor style of increment and decrement buttons in Chrome. */
-[type='number']::-webkit-inner-spin-button, [type='number']::-webkit-outer-spin-button { height: auto; }
-
-/** 1. Correct the odd appearance in Chrome and Safari. 2. Correct the outline style in Safari. */
-[type='search'] { -webkit-appearance: textfield; /* 1 */ outline-offset: -2px; /* 2 */ }
-
-/** Remove the inner padding in Chrome and Safari on macOS. */
-[type='search']::-webkit-search-decoration { -webkit-appearance: none; }
-
-/** 1. Correct the inability to style clickable types in iOS and Safari. 2. Change font properties to `inherit` in Safari. */
-::-webkit-file-upload-button { -webkit-appearance: button; /* 1 */ font: inherit; /* 2 */ }
-
-/* Interactive ========================================================================== */
-/* Add the correct display in Edge, IE 10+, and Firefox. */
-details { display: block; }
-
-/* Add the correct display in all browsers. */
-summary { display: list-item; }
-
-/* Misc ========================================================================== */
-/** Add the correct display in IE 10+. */
-template { display: none; }
-
-/** Add the correct display in IE 10. */
-[hidden] { display: none; }
-
-html { -webkit-box-sizing: border-box; box-sizing: border-box; }
-
-*, *::before, *::after { -webkit-box-sizing: inherit; box-sizing: inherit; }
-
-figure { margin: 0; }
-
-/** Scaffolding */
-html { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font: normal normal normal 1rem/1.6 -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, sans-serif; font-size: 1rem; }
-
-body { color: #404040; background: white; font-size: 1rem; }
-
-p, ol, ul, dl, table { margin: 0 0 1.5rem 0; }
-
-ul li ul { margin-bottom: 0; }
-
-ol li ol { margin-bottom: 0; }
-
-h1, h2, h3, h4, h5 { margin: 1.5rem 0; font-weight: 900; font-family: Sanchez, -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, sans-serif; line-height: 1.2; color: #404040; }
-
-h1:not(:first-child), h2:not(:first-child), h3:not(:first-child), h4:not(:first-child), h5:not(:first-child) { margin: 1.5rem 0; }
-
-h1:not(:first-child), h2:not(:first-child), h3:not(:first-child) { margin-top: 2rem; }
-
-h1 { font-size: 1.75rem; }
-
-h2 { font-size: 1.5rem; }
-
-h3 { font-size: 1.25rem; }
-
-h4 { font-size: 1.1rem; }
-
-h5 { font-size: 1rem; }
-
-@media (min-width: 600px) { h1:not(:first-child), h2:not(:first-child), h3:not(:first-child) { margin-top: 2.5rem; } h1 { font-size: 2.25rem; } h2 { font-size: 2rem; } h3 { font-size: 1.75rem; } h4 { font-size: 1.5rem; } h5 { font-size: 1.25rem; } }
-
-a { color: black; text-decoration: underline; }
-
-a:hover, a:active, a:focus { color: #be6d0c; text-decoration: underline; }
-
-mark { background: #f6b76e; padding: 0 0.2rem; }
-
-blockquote { margin: 0 0 1.5rem 0; border-left: 16px solid #f0f0f0; padding: 0 1.5rem; font-size: 1.5rem; }
-
-blockquote cite { display: block; margin-top: 1.5rem; font-size: 1rem; text-align: right; }
-
-pre { border: 0; border-radius: 4px; background: transparent; padding: 1rem; -moz-tab-size: 2; -o-tab-size: 2; tab-size: 2; color: #404040; font-family: Menlo, monospace; font-size: 14px; margin: 0 0 1.5rem 0; overflow: auto; }
-
-pre code { font-family: Menlo, monospace; line-height: 1.2; }
-
-kbd { background-color: #f7f7f7; border: 1px solid #ccc; border-radius: 3px; -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 0 0 2px #fff inset; box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 0 0 2px #fff inset; color: #333; display: inline-block; font-family: Helvetica, Arial, sans-serif; font-size: 13px; line-height: 1.4; margin: 0 0.1em; padding: 0.1em 0.6em; text-shadow: 0 1px 0 #fff; }
-
-:not(pre) > code { color: #404040; background: transparent; font-family: Menlo, monospace; font-size: 14px; padding: 0 0.2rem; border: 1px solid #dedede; border-radius: 4px; }
-
-hr { height: 0; border: 0; border-top: 1px solid #dedede; }
-
-dt { font-weight: 600; }
-
-dd { margin-bottom: 0.5rem; }
-
-.full-container { max-width: 100%; padding: 0 1rem; }
-
-.container, .medium-container, .small-container { max-width: 1200px; padding: 0 1rem; margin-left: auto; margin-right: auto; }
-
-.small-container { max-width: 800px; }
-
-.medium-container { max-width: 1000px; }
-
-.content-section { padding: 30px 0; }
-
-@media (min-width: 600px) { .content-section { padding: 60px 0; } }
-
-/** Grid */
-.flex-small, .flex-large { padding-left: 1rem; padding-right: 1rem; }
-
-.flex-row { margin-left: -1rem; margin-right: -1rem; }
-
-.flex-row { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -ms-flex-wrap: wrap; flex-wrap: wrap; }
-
-.flex-small, .flex-large { -ms-flex-preferred-size: 100%; flex-basis: 100%; margin-bottom: 1rem; }
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type='button']::-moz-focus-inner,
+[type='reset']::-moz-focus-inner,
+[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type='button']:-moz-focusring,
+[type='reset']:-moz-focusring,
+[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type='checkbox'],
+[type='radio'] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type='number']::-webkit-inner-spin-button,
+[type='number']::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type='search'] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type='search']::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+figure {
+  margin: 0;
+}
+
+/**
+ * Scaffolding
+ */
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font: normal normal normal 1rem/1.6 -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+}
+
+body {
+  color: #404040;
+  background: white;
+  font-size: 1rem;
+}
+
+p,
+ol,
+ul,
+dl,
+table {
+  margin: 0 0 1.5rem 0;
+}
+
+ul li ul {
+  margin-bottom: 0;
+}
+
+ol li ol {
+  margin-bottom: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 1.5rem 0;
+  font-weight: 900;
+  font-family: Sanchez, -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, sans-serif;
+  line-height: 1.2;
+  color: #404040;
+}
+
+h1:not(:first-child),
+h2:not(:first-child),
+h3:not(:first-child),
+h4:not(:first-child),
+h5:not(:first-child) {
+  margin: 1.5rem 0;
+}
+
+h1:not(:first-child),
+h2:not(:first-child),
+h3:not(:first-child) {
+  margin-top: 2rem;
+}
+
+h1 {
+  font-size: 1.75rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+h4 {
+  font-size: 1.1rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+@media (min-width: 600px) {
+  h1:not(:first-child),
+h2:not(:first-child),
+h3:not(:first-child) {
+    margin-top: 2.5rem;
+  }
+  h1 {
+    font-size: 2.25rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1.75rem;
+  }
+  h4 {
+    font-size: 1.5rem;
+  }
+  h5 {
+    font-size: 1.25rem;
+  }
+}
+
+a {
+  color: black;
+  text-decoration: underline;
+}
+
+a:hover, a:active, a:focus {
+  color: #be6d0c;
+  text-decoration: underline;
+}
+
+mark {
+  background: #f6b76e;
+  padding: 0 0.2rem;
+}
+
+blockquote {
+  margin: 0 0 1.5rem 0;
+  border-left: 16px solid #f0f0f0;
+  padding: 0 1.5rem;
+  font-size: 1.5rem;
+}
+
+blockquote cite {
+  display: block;
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  text-align: right;
+}
+
+pre {
+  border: 0;
+  border-radius: 4px;
+  background: transparent;
+  padding: 1rem;
+  -moz-tab-size: 2;
+    -o-tab-size: 2;
+       tab-size: 2;
+  color: #404040;
+  font-family: Menlo, monospace;
+  font-size: 14px;
+  margin: 0 0 1.5rem 0;
+  overflow: auto;
+}
+
+pre code {
+  font-family: Menlo, monospace;
+  line-height: 1.2;
+}
+
+kbd {
+  background-color: #f7f7f7;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 0 0 2px #fff inset;
+          box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 0 0 2px #fff inset;
+  color: #333;
+  display: inline-block;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 1.4;
+  margin: 0 0.1em;
+  padding: 0.1em 0.6em;
+  text-shadow: 0 1px 0 #fff;
+}
+
+:not(pre) > code {
+  color: #404040;
+  background: transparent;
+  font-family: Menlo, monospace;
+  font-size: 14px;
+  padding: 0 0.2rem;
+  border: 1px solid #dedede;
+  border-radius: 4px;
+}
+
+hr {
+  height: 0;
+  border: 0;
+  border-top: 1px solid #dedede;
+}
+
+dt {
+  font-weight: 600;
+}
+
+dd {
+  margin-bottom: 0.5rem;
+}
+
+.full-container {
+  max-width: 100%;
+  padding: 0 1rem;
+}
+
+.container, .medium-container, .small-container {
+  max-width: 1200px;
+  padding: 0 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.small-container {
+  max-width: 800px;
+}
+
+.medium-container {
+  max-width: 1000px;
+}
+
+.content-section {
+  padding: 30px 0;
+}
+
+@media (min-width: 600px) {
+  .content-section {
+    padding: 60px 0;
+  }
+}
+
+/**
+ * Grid
+ */
+.flex-small,
+.flex-large {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.flex-row {
+  margin-left: -1rem;
+  margin-right: -1rem;
+}
+
+.flex-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.flex-small,
+.flex-large {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  margin-bottom: 1rem;
+}
 
 /* Small screen breakpoint */
-@media (min-width: 600px) { .flex-small { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; margin-bottom: 0; } .flex-small.half { -webkit-box-flex: 0; -ms-flex: 0 0 calc(1 / 2 * 100%); flex: 0 0 calc(1 / 2 * 100%); } .flex-small.one-fourth { -webkit-box-flex: 0; -ms-flex: 0 0 calc(1 / 4 * 100%); flex: 0 0 calc(1 / 4 * 100%); } .flex-small.three-fourths { -webkit-box-flex: 0; -ms-flex: 0 0 calc(3 / 4 * 100%); flex: 0 0 calc(3 / 4 * 100%); } .flex-small.one-third { -webkit-box-flex: 0; -ms-flex: 0 0 calc(1 / 3 * 100%); flex: 0 0 calc(1 / 3 * 100%); } .flex-small.two-thirds { -webkit-box-flex: 0; -ms-flex: 0 0 calc(2 / 3 * 100%); flex: 0 0 calc(2 / 3 * 100%); } }
+@media (min-width: 600px) {
+  .flex-small {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    margin-bottom: 0;
+  }
+  .flex-small.half {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 calc(1 / 2 * 100%);
+            flex: 0 0 calc(1 / 2 * 100%);
+  }
+  .flex-small.one-fourth {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 calc(1 / 4 * 100%);
+            flex: 0 0 calc(1 / 4 * 100%);
+  }
+  .flex-small.three-fourths {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 calc(3 / 4 * 100%);
+            flex: 0 0 calc(3 / 4 * 100%);
+  }
+  .flex-small.one-third {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 calc(1 / 3 * 100%);
+            flex: 0 0 calc(1 / 3 * 100%);
+  }
+  .flex-small.two-thirds {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 calc(2 / 3 * 100%);
+            flex: 0 0 calc(2 / 3 * 100%);
+  }
+}
 
 /* Large screen breakpoint */
-@media (min-width: 1000px) { .flex-large { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; margin-bottom: 0; } .flex-large.half { -webkit-box-flex: 0; -ms-flex: 0 0 calc(1 / 2 * 100%); flex: 0 0 calc(1 / 2 * 100%); } .flex-large.one-fourth { -webkit-box-flex: 0; -ms-flex: 0 0 calc(1 / 4 * 100%); flex: 0 0 calc(1 / 4 * 100%); } .flex-large.three-fourths { -webkit-box-flex: 0; -ms-flex: 0 0 calc(3 / 4 * 100%); flex: 0 0 calc(3 / 4 * 100%); } .flex-large.one-third { -webkit-box-flex: 0; -ms-flex: 0 0 calc(1 / 3 * 100%); flex: 0 0 calc(1 / 3 * 100%); } .flex-large.two-thirds { -webkit-box-flex: 0; -ms-flex: 0 0 calc(2 / 3 * 100%); flex: 0 0 calc(2 / 3 * 100%); } }
-
-/** Helpers */
-.clearfix::before, .clearfix::after { content: ' '; display: block; }
-
-.clearfix:after { clear: both; }
-
-.text-left { text-align: left; }
-
-.text-right { text-align: right; }
-
-.text-center { text-align: center; }
-
-.text-justify { text-align: justify; }
-
-.block { display: block; }
-
-.inline-block { display: inline-block; }
-
-.inline { display: inline; }
-
-.vertical-center { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
-
-.responsive-image { max-width: 100%; height: auto; }
-
-.fluid-video { position: relative; height: 0; overflow: hidden; padding-bottom: 56.25%; }
-
-.i4x3 { padding-bottom: 75.00%; }
-
-.fluid-video iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
-
-.show { display: block !important; }
-
-.hide { display: none !important; }
-
-.invisible { visibility: hidden; }
-
-.no-padding-top { padding-top: 0; }
-
-.no-padding-bottom { padding-bottom: 0; }
-
-.padding-top { padding-top: 2rem; }
-
-.padding-bottom { padding-bottom: 2rem; }
-
-.no-margin-top { margin-top: 0; }
-
-.no-margin-bottom { margin-bottom: 0; }
-
-.margin-top { margin-top: 2rem; }
-
-.margin-bottom { margin-bottom: 2rem; }
-
-.alternate-background { background: #fafafa; color: #404040; }
-
-.space-between { -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
-
-.justify-center { -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
-
-.align-center { -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
-
-.screen-reader-text { clip: rect(1px, 1px, 1px, 1px); position: absolute !important; height: 1px; width: 1px; overflow: hidden; }
-
-/** Buttons */
-.button, a.button, button, [type=submit], [type=reset], [type=button] { -webkit-appearance: none; display: inline-block; border: 1px solid #259cd3; border-radius: 4px; background: #259cd3; color: #ffffff; font-weight: 600; font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, sans-serif; font-size: 1rem; text-transform: none; padding: 0.75rem 1.25rem; margin: 0 0 0.5rem 0; vertical-align: middle; text-align: center; cursor: pointer; text-decoration: none; line-height: 1; }
-
-.button:hover, button:hover, [type=submit]:hover, [type=reset]:hover, [type=button]:hover { border: 1px solid #1d7ca8; background: #1d7ca8; color: #ffffff; text-decoration: none; }
-
-.button:focus, .button:active, button:focus, button:active, [type=submit]:focus, [type=submit]:active, [type=reset]:focus, [type=reset]:active, [type=button]:focus, [type=button]:active { border: 1px solid #1d7ca8; background: #1d7ca8; color: #ffffff; text-decoration: none; }
-
-.button::-moz-focus-inner, a.button::-moz-focus-inner, button::-moz-focus-inner, [type=submit]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=button]::-moz-focus-inner { border: 0; padding: 0; }
-
-.accent-button, a.accent-button { color: #ffffff; border: 1px solid #f19426; background: #f19426; }
-
-.accent-button:hover, .accent-button:focus, .accent-button:active, a.accent-button:hover, a.accent-button:focus, a.accent-button:active { color: #ffffff; border: 1px solid #d67a0e; background: #d67a0e; }
-
-.muted-button, a.muted-button { background: transparent; border: 1px solid #cdcdcd; color: #4e4e4e; }
-
-.muted-button:hover, .muted-button:focus, .muted-button:active, a.muted-button:hover, a.muted-button:focus, a.muted-button:active { color: #4e4e4e; border: 1px solid #818181; background: transparent; }
-
-.round-button, a.round-button { border-radius: 40px; }
-
-.square-button, a.square-button { border-radius: 0; }
-
-.full-button, a.full-button { display: block; width: 100%; }
-
-/** Forms */
-[type=color], [type=date], [type=datetime], [type=datetime-local], [type=email], [type=month], [type=number], [type=password], [type=search], [type=tel], [type=text], [type=url], [type=week], [type=time], select, textarea { display: block; border: 1px solid #dedede; border-radius: 4px; padding: 0.75rem; outline: none; background: transparent; margin-bottom: 0.5rem; font-size: 1rem; width: 100%; max-width: 100%; line-height: 1; }
-
-[type=color]:hover, [type=date]:hover, [type=datetime]:hover, [type=datetime-local]:hover, [type=email]:hover, [type=month]:hover, [type=number]:hover, [type=password]:hover, [type=search]:hover, [type=tel]:hover, [type=text]:hover, [type=url]:hover, [type=week]:hover, [type=time]:hover, select:hover, textarea:hover { border: 1px solid #c5c5c5; }
-
-[type=color]:focus, [type=color]:active, [type=date]:focus, [type=date]:active, [type=datetime]:focus, [type=datetime]:active, [type=datetime-local]:focus, [type=datetime-local]:active, [type=email]:focus, [type=email]:active, [type=month]:focus, [type=month]:active, [type=number]:focus, [type=number]:active, [type=password]:focus, [type=password]:active, [type=search]:focus, [type=search]:active, [type=tel]:focus, [type=tel]:active, [type=text]:focus, [type=text]:active, [type=url]:focus, [type=url]:active, [type=week]:focus, [type=week]:active, [type=time]:focus, [type=time]:active, select:focus, select:active, textarea:focus, textarea:active { border: 1px solid #259cd3; -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1), 0 0 6px #4d4d4d; box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1), 0 0 6px #4d4d4d; }
-
-textarea { overflow: auto; height: auto; }
-
-fieldset { border: 1px solid #dedede; border-radius: 4px; padding: 1rem; margin: 1.5rem 0; }
-
-legend { padding: 0 0.5rem; font-weight: 600; }
-
-select { color: #404040; -webkit-appearance: none; -moz-appearance: none; background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAJBAMAAADN8WE8AAAAJ1BMVEUAAABHcEwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB9YSk7AAAADXRSTlPXABaehSjPsTwKw2xUcKPlSQAAADtJREFUCNdjMGBgYGAWBAKGACCLFcwSAbIcwSyhBAY2RTBLcAMDtyCENYthJZQlw3AQyhIsF4SxOiAsAFMMCKPY35E7AAAAAElFTkSuQmCC) right center no-repeat; line-height: 1; }
-
-select::-ms-expand { display: none; }
-
-[type='range'] { width: 100%; }
-
-label { font-weight: 600; max-width: 100%; display: block; margin: 1rem 0 0.5rem; }
-
-@media (min-width: 600px) { .split-form label { text-align: right; padding: 0 0.5rem; margin-bottom: 1rem; } }
-
-input.has-error, select.has-error, textarea.has-error { border: 1px solid #d33c40; -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1), 0 0 6px #f4cecf; box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1), 0 0 6px #f4cecf; }
-
-input.is-success, select.is-success, textarea.is-success { border: 1px solid #29de7d; -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1), 0 0 6px #97efc0; box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1), 0 0 6px #97efc0; }
-
-::-webkit-input-placeholder, ::-moz-placeholder, :-moz-placeholder, :-ms-input-placeholder { color: #9a9a9a; }
-
-/** Tables */
-table { border-collapse: collapse; border-spacing: 0; width: 100%; max-width: 100%; }
-
-thead th { border-bottom: 2px solid #dedede; }
-
-tfoot th { border-top: 2px solid #dedede; }
-
-td { border-bottom: 1px solid #dedede; }
-
-th, td { text-align: left; padding: 0.5rem; }
-
-caption { padding: 1rem 0; caption-side: bottom; color: #ababab; }
-
-.striped-table tbody tr:nth-child(odd) { background-color: #f8f8f8; }
-
-.contain-table { overflow-x: auto; white-space: nowrap; }
-
-@media (min-width: 600px) { .contain-table { width: 100%; } }
+@media (min-width: 1000px) {
+  .flex-large {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    margin-bottom: 0;
+  }
+  .flex-large.half {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 calc(1 / 2 * 100%);
+            flex: 0 0 calc(1 / 2 * 100%);
+  }
+  .flex-large.one-fourth {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 calc(1 / 4 * 100%);
+            flex: 0 0 calc(1 / 4 * 100%);
+  }
+  .flex-large.three-fourths {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 calc(3 / 4 * 100%);
+            flex: 0 0 calc(3 / 4 * 100%);
+  }
+  .flex-large.one-third {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 calc(1 / 3 * 100%);
+            flex: 0 0 calc(1 / 3 * 100%);
+  }
+  .flex-large.two-thirds {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 calc(2 / 3 * 100%);
+            flex: 0 0 calc(2 / 3 * 100%);
+  }
+}
+
+/**
+ * Helpers
+ */
+.clearfix::before,
+.clearfix::after {
+  content: ' ';
+  display: block;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.block {
+  display: block;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.inline {
+  display: inline;
+}
+
+.vertical-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.responsive-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.fluid-video {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+}
+
+.i4x3 {
+  padding-bottom: 75.00%;
+}
+
+.fluid-video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.show {
+  display: block !important;
+}
+
+.hide {
+  display: none !important;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.no-padding-top {
+  padding-top: 0;
+}
+
+.no-padding-bottom {
+  padding-bottom: 0;
+}
+
+.padding-top {
+  padding-top: 2rem;
+}
+
+.padding-bottom {
+  padding-bottom: 2rem;
+}
+
+.no-margin-top {
+  margin-top: 0;
+}
+
+.no-margin-bottom {
+  margin-bottom: 0;
+}
+
+.margin-top {
+  margin-top: 2rem;
+}
+
+.margin-bottom {
+  margin-bottom: 2rem;
+}
+
+.alternate-background {
+  background: #fafafa;
+  color: #404040;
+}
+
+.space-between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.justify-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.align-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+/**
+ * Buttons
+ */
+.button, a.button, button, [type=submit], [type=reset], [type=button] {
+  -webkit-appearance: none;
+  display: inline-block;
+  border: 1px solid #259cd3;
+  border-radius: 4px;
+  background: #259cd3;
+  color: #ffffff;
+  font-weight: 600;
+  font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  text-transform: none;
+  padding: 0.75rem 1.25rem;
+  margin: 0 0 0.5rem 0;
+  vertical-align: middle;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  line-height: 1;
+}
+
+.button:hover, button:hover, [type=submit]:hover, [type=reset]:hover, [type=button]:hover {
+  border: 1px solid #1d7ca8;
+  background: #1d7ca8;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.button:focus, .button:active, button:focus, button:active, [type=submit]:focus, [type=submit]:active, [type=reset]:focus, [type=reset]:active, [type=button]:focus, [type=button]:active {
+  border: 1px solid #1d7ca8;
+  background: #1d7ca8;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.button::-moz-focus-inner, a.button::-moz-focus-inner, button::-moz-focus-inner, [type=submit]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=button]::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+.accent-button,
+a.accent-button {
+  color: #ffffff;
+  border: 1px solid #f19426;
+  background: #f19426;
+}
+
+.accent-button:hover, .accent-button:focus, .accent-button:active,
+a.accent-button:hover,
+a.accent-button:focus,
+a.accent-button:active {
+  color: #ffffff;
+  border: 1px solid #d67a0e;
+  background: #d67a0e;
+}
+
+.muted-button,
+a.muted-button {
+  background: transparent;
+  border: 1px solid #cdcdcd;
+  color: #4e4e4e;
+}
+
+.muted-button:hover, .muted-button:focus, .muted-button:active,
+a.muted-button:hover,
+a.muted-button:focus,
+a.muted-button:active {
+  color: #4e4e4e;
+  border: 1px solid #818181;
+  background: transparent;
+}
+
+.round-button,
+a.round-button {
+  border-radius: 40px;
+}
+
+.square-button,
+a.square-button {
+  border-radius: 0;
+}
+
+.full-button,
+a.full-button {
+  display: block;
+  width: 100%;
+}
+
+/**
+ * Forms
+ */
+[type=color], [type=date], [type=datetime], [type=datetime-local], [type=email], [type=month], [type=number], [type=password], [type=search], [type=tel], [type=text], [type=url], [type=week], [type=time], select, textarea {
+  display: block;
+  border: 1px solid #dedede;
+  border-radius: 4px;
+  padding: 0.75rem;
+  outline: none;
+  background: transparent;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  width: 100%;
+  max-width: 100%;
+  line-height: 1;
+}
+
+[type=color]:hover, [type=date]:hover, [type=datetime]:hover, [type=datetime-local]:hover, [type=email]:hover, [type=month]:hover, [type=number]:hover, [type=password]:hover, [type=search]:hover, [type=tel]:hover, [type=text]:hover, [type=url]:hover, [type=week]:hover, [type=time]:hover, select:hover, textarea:hover {
+  border: 1px solid #c5c5c5;
+}
+
+[type=color]:focus, [type=color]:active, [type=date]:focus, [type=date]:active, [type=datetime]:focus, [type=datetime]:active, [type=datetime-local]:focus, [type=datetime-local]:active, [type=email]:focus, [type=email]:active, [type=month]:focus, [type=month]:active, [type=number]:focus, [type=number]:active, [type=password]:focus, [type=password]:active, [type=search]:focus, [type=search]:active, [type=tel]:focus, [type=tel]:active, [type=text]:focus, [type=text]:active, [type=url]:focus, [type=url]:active, [type=week]:focus, [type=week]:active, [type=time]:focus, [type=time]:active, select:focus, select:active, textarea:focus, textarea:active {
+  border: 1px solid #259cd3;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1), 0 0 6px #4d4d4d;
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1), 0 0 6px #4d4d4d;
+}
+
+textarea {
+  overflow: auto;
+  height: auto;
+}
+
+fieldset {
+  border: 1px solid #dedede;
+  border-radius: 4px;
+  padding: 1rem;
+  margin: 1.5rem 0;
+}
+
+legend {
+  padding: 0 0.5rem;
+  font-weight: 600;
+}
+
+select {
+  color: #404040;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAJBAMAAADN8WE8AAAAJ1BMVEUAAABHcEwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB9YSk7AAAADXRSTlPXABaehSjPsTwKw2xUcKPlSQAAADtJREFUCNdjMGBgYGAWBAKGACCLFcwSAbIcwSyhBAY2RTBLcAMDtyCENYthJZQlw3AQyhIsF4SxOiAsAFMMCKPY35E7AAAAAElFTkSuQmCC) right center no-repeat;
+  line-height: 1;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+[type='range'] {
+  width: 100%;
+}
+
+label {
+  font-weight: 600;
+  max-width: 100%;
+  display: block;
+  margin: 1rem 0 0.5rem;
+}
+
+@media (min-width: 600px) {
+  .split-form label {
+    text-align: right;
+    padding: 0 0.5rem;
+    margin-bottom: 1rem;
+  }
+}
+
+input.has-error,
+select.has-error,
+textarea.has-error {
+  border: 1px solid #d33c40;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1), 0 0 6px #f4cecf;
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1), 0 0 6px #f4cecf;
+}
+
+input.is-success,
+select.is-success,
+textarea.is-success {
+  border: 1px solid #29de7d;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1), 0 0 6px #97efc0;
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1), 0 0 6px #97efc0;
+}
+
+::-webkit-input-placeholder,
+::-moz-placeholder,
+:-moz-placeholder,
+:-ms-input-placeholder {
+  color: #9a9a9a;
+}
+
+/**
+ * Tables
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  max-width: 100%;
+}
+
+thead th {
+  border-bottom: 2px solid #dedede;
+}
+
+tfoot th {
+  border-top: 2px solid #dedede;
+}
+
+td {
+  border-bottom: 1px solid #dedede;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 0.5rem;
+}
+
+caption {
+  padding: 1rem 0;
+  caption-side: bottom;
+  color: #ababab;
+}
+
+.striped-table tbody tr:nth-child(odd) {
+  background-color: #f8f8f8;
+}
+
+.contain-table {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+@media (min-width: 600px) {
+  .contain-table {
+    width: 100%;
+  }
+}
 
 /* Accordion styles */
-.round-accordion, .muted-accordion, .square-accordion, .accent-accordion, .accordion { width: 100%; position: relative; padding-bottom: 0; }
+.round-accordion, .muted-accordion, .square-accordion, .accent-accordion, .accordion {
+  width: 100%;
+  position: relative;
+  padding-bottom: 0;
+}
 
-.round-accordion li, .muted-accordion li, .square-accordion li, .accent-accordion li, .accordion li { list-style: none; margin-left: 0; }
+.round-accordion li, .muted-accordion li, .square-accordion li, .accent-accordion li, .accordion li {
+  list-style: none;
+  margin-left: 0;
+}
 
-.round-accordion li input, .muted-accordion li input, .square-accordion li input, .accent-accordion li input, .accordion li input { display: none; }
+.round-accordion li input, .muted-accordion li input, .square-accordion li input, .accent-accordion li input, .accordion li input {
+  display: none;
+}
 
-.round-accordion li label, .muted-accordion li label, .square-accordion li label, .accent-accordion li label, .accordion li label { display: -webkit-box; display: -ms-flexbox; display: flex; cursor: pointer; padding: 0.75rem 2.4rem 0.75rem 0; margin: 0; color: #ffffff; background: #259cd3; border-radius: 4px; margin-bottom: 3px; padding-left: 1.1rem; }
+.round-accordion li label, .muted-accordion li label, .square-accordion li label, .accent-accordion li label, .accordion li label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+  padding: 0.75rem 2.4rem 0.75rem 0;
+  margin: 0;
+  color: #ffffff;
+  background: #259cd3;
+  border-radius: 4px;
+  margin-bottom: 3px;
+  padding-left: 1.1rem;
+}
 
-.round-accordion li label:hover, .muted-accordion li label:hover, .square-accordion li label:hover, .accent-accordion li label:hover, .accordion li label:hover { background: #1d7ca8; }
+.round-accordion li label:hover, .muted-accordion li label:hover, .square-accordion li label:hover, .accent-accordion li label:hover, .accordion li label:hover {
+  background: #1d7ca8;
+}
 
-.round-accordion li .accord-content, .muted-accordion li .accord-content, .square-accordion li .accord-content, .accent-accordion li .accord-content, .accordion li .accord-content { display: none; padding-bottom: 1.2rem; background: white; padding-left: 1.1rem; }
+.round-accordion li .accord-content, .muted-accordion li .accord-content, .square-accordion li .accord-content, .accent-accordion li .accord-content, .accordion li .accord-content {
+  display: none;
+  padding-bottom: 1.2rem;
+  background: white;
+  padding-left: 1.1rem;
+}
 
-.round-accordion li input:checked + label, .muted-accordion li input:checked + label, .square-accordion li input:checked + label, .accent-accordion li input:checked + label, .accordion li input:checked + label { background: #1d7ca8; border-bottom-right-radius: 0; border-bottom-left-radius: 0; border-top-right-radius: 4px; border-top-left-radius: 4px; margin-bottom: 0px; }
+.round-accordion li input:checked + label, .muted-accordion li input:checked + label, .square-accordion li input:checked + label, .accent-accordion li input:checked + label, .accordion li input:checked + label {
+  background: #1d7ca8;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+  margin-bottom: 0px;
+}
 
-.round-accordion li input:checked + label + .accord-content, .muted-accordion li input:checked + label + .accord-content, .square-accordion li input:checked + label + .accord-content, .accent-accordion li input:checked + label + .accord-content, .accordion li input:checked + label + .accord-content { display: block; border: #1d7ca8; color: #404040; border-left: 1px solid #1d7ca8; border-right: 1px solid #1d7ca8; border-bottom: 1px solid #1d7ca8; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; border-top-right-radius: 0; border-top-left-radius: 0; margin-bottom: 4px; }
+.round-accordion li input:checked + label + .accord-content, .muted-accordion li input:checked + label + .accord-content, .square-accordion li input:checked + label + .accord-content, .accent-accordion li input:checked + label + .accord-content, .accordion li input:checked + label + .accord-content {
+  display: block;
+  border: #1d7ca8;
+  color: #404040;
+  border-left: 1px solid #1d7ca8;
+  border-right: 1px solid #1d7ca8;
+  border-bottom: 1px solid #1d7ca8;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  margin-bottom: 4px;
+}
 
-.round-accordion li label::before, .muted-accordion li label::before, .square-accordion li label::before, .accent-accordion li label::before, .accordion li label::before { content: "\276F"; font-weight: normal; font-size: 120%; line-height: 1.1rem; padding: 0; position: absolute; right: 1.1rem; -webkit-transition: all 0.20s ease-in-out; -o-transition: all 0.20s ease-in-out; transition: all 0.20s ease-in-out; }
+.round-accordion li label::before, .muted-accordion li label::before, .square-accordion li label::before, .accent-accordion li label::before, .accordion li label::before {
+  content: "\276F";
+  font-weight: normal;
+  font-size: 120%;
+  line-height: 1.1rem;
+  padding: 0;
+  position: absolute;
+  right: 1.1rem;
+  -webkit-transition: all 0.20s ease-in-out;
+  -o-transition: all 0.20s ease-in-out;
+  transition: all 0.20s ease-in-out;
+}
 
-.round-accordion li input:checked + label::before, .muted-accordion li input:checked + label::before, .square-accordion li input:checked + label::before, .accent-accordion li input:checked + label::before, .accordion li input:checked + label::before { -webkit-transform: rotate(90deg); -ms-transform: rotate(90deg); transform: rotate(90deg); }
+.round-accordion li input:checked + label::before, .muted-accordion li input:checked + label::before, .square-accordion li input:checked + label::before, .accent-accordion li input:checked + label::before, .accordion li input:checked + label::before {
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
 
-.accent-accordion li label { background: #f19426; }
+.accent-accordion li label {
+  background: #f19426;
+}
 
-.accent-accordion li label:hover { background: #d67a0e; }
+.accent-accordion li label:hover {
+  background: #d67a0e;
+}
 
-.accent-accordion li input:checked + label { background: #d67a0e; }
+.accent-accordion li input:checked + label {
+  background: #d67a0e;
+}
 
-.accent-accordion li input:checked + label + .accord-content { border-left: 1px solid #d67a0e; border-right: 1px solid #d67a0e; border-bottom: 1px solid #d67a0e; }
+.accent-accordion li input:checked + label + .accord-content {
+  border-left: 1px solid #d67a0e;
+  border-right: 1px solid #d67a0e;
+  border-bottom: 1px solid #d67a0e;
+}
 
-.square-accordion li label { border-radius: 0; }
+.square-accordion li label {
+  border-radius: 0;
+}
 
-.square-accordion li input:checked + label { border-radius: 0; }
+.square-accordion li input:checked + label {
+  border-radius: 0;
+}
 
-.square-accordion li input:checked + label + .accord-content { border-radius: 0; }
+.square-accordion li input:checked + label + .accord-content {
+  border-radius: 0;
+}
 
-.muted-accordion li label { background: transparent; border: 1px solid #cdcdcd; color: #4e4e4e; }
+.muted-accordion li label {
+  background: transparent;
+  border: 1px solid #cdcdcd;
+  color: #4e4e4e;
+}
 
-.muted-accordion li label:hover { color: #4e4e4e; border: 1px solid #818181; background: transparent; }
+.muted-accordion li label:hover {
+  color: #4e4e4e;
+  border: 1px solid #818181;
+  background: transparent;
+}
 
-.muted-accordion li input:checked + label { color: #4e4e4e; border-top: 1px solid #818181; border-left: 1px solid #818181; border-right: 1px solid #818181; border-bottom: 0; background: transparent; }
+.muted-accordion li input:checked + label {
+  color: #4e4e4e;
+  border-top: 1px solid #818181;
+  border-left: 1px solid #818181;
+  border-right: 1px solid #818181;
+  border-bottom: 0;
+  background: transparent;
+}
 
-.muted-accordion li input:checked + label + .accord-content { border: 1px solid #818181; border-top: 0; border-left: 1px solid #818181; border-right: 1px solid #818181; border-bottom: 1px solid #818181; background: transparent; }
+.muted-accordion li input:checked + label + .accord-content {
+  border: 1px solid #818181;
+  border-top: 0;
+  border-left: 1px solid #818181;
+  border-right: 1px solid #818181;
+  border-bottom: 1px solid #818181;
+  background: transparent;
+}
 
-.round-accordion li label { border-radius: 40px; }
+.round-accordion li label {
+  border-radius: 40px;
+}
 
-.round-accordion li input:checked + label { border-top-right-radius: 25px; border-top-left-radius: 25px; }
+.round-accordion li input:checked + label {
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+}
 
-.round-accordion li input:checked + label + .accord-content { border-bottom-right-radius: 25px; border-bottom-left-radius: 25px; }
+.round-accordion li input:checked + label + .accord-content {
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
 
-/* Navigation */
-.outer-menu { position: fixed; top: 0; left: 0; z-index: 1; }
+/*
+ * Navigation
+ */
+.outer-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
 
-.outer-menu .checkbox-toggle { position: absolute; top: 0; left: 0; z-index: 2; cursor: pointer; width: 45px; height: 45px; opacity: 0; }
+.outer-menu .checkbox-toggle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  cursor: pointer;
+  width: 45px;
+  height: 45px;
+  opacity: 0;
+}
 
-.outer-menu .checkbox-toggle:checked + .hamburger > div { -webkit-transform: rotate(135deg); -ms-transform: rotate(135deg); transform: rotate(135deg); }
+.outer-menu .checkbox-toggle:checked + .hamburger > div {
+  -webkit-transform: rotate(135deg);
+      -ms-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
 
-.outer-menu .checkbox-toggle:checked + .hamburger > div:before { top: 0; -webkit-transform: rotate(90deg); -ms-transform: rotate(90deg); transform: rotate(90deg); }
+.outer-menu .checkbox-toggle:checked + .hamburger > div:before {
+  top: 0;
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
 
-.outer-menu .checkbox-toggle:checked + .hamburger > div:after { top: 0; -webkit-transform: rotate(90deg); -ms-transform: rotate(90deg); transform: rotate(90deg); opacity: 0; }
+.outer-menu .checkbox-toggle:checked + .hamburger > div:after {
+  top: 0;
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+  opacity: 0;
+}
 
-.outer-menu .checkbox-toggle:checked ~ .menu { pointer-events: auto; visibility: visible; }
+.outer-menu .checkbox-toggle:checked ~ .menu {
+  pointer-events: auto;
+  visibility: visible;
+}
 
-.outer-menu .checkbox-toggle:checked ~ .menu > div { -webkit-transform: scale(1); -ms-transform: scale(1); transform: scale(1); -webkit-transition-duration: 0.75s; -o-transition-duration: 0.75s; transition-duration: 0.75s; }
+.outer-menu .checkbox-toggle:checked ~ .menu > div {
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition-duration: 0.75s;
+       -o-transition-duration: 0.75s;
+          transition-duration: 0.75s;
+}
 
-.outer-menu .checkbox-toggle:checked ~ .menu > div > div { opacity: 1; -webkit-transition: opacity 0.4s ease 0.4s; -o-transition: opacity 0.4s ease 0.4s; transition: opacity 0.4s ease 0.4s; }
+.outer-menu .checkbox-toggle:checked ~ .menu > div > div {
+  opacity: 1;
+  -webkit-transition: opacity 0.4s ease 0.4s;
+  -o-transition: opacity 0.4s ease 0.4s;
+  transition: opacity 0.4s ease 0.4s;
+}
 
-.outer-menu .checkbox-toggle:hover + .hamburger { -webkit-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1); box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1); }
+.outer-menu .checkbox-toggle:hover + .hamburger {
+  -webkit-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+          box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
-.outer-menu .checkbox-toggle:checked:hover + .hamburger > div { -webkit-transform: rotate(225deg); -ms-transform: rotate(225deg); transform: rotate(225deg); }
+.outer-menu .checkbox-toggle:checked:hover + .hamburger > div {
+  -webkit-transform: rotate(225deg);
+      -ms-transform: rotate(225deg);
+          transform: rotate(225deg);
+}
 
-.outer-menu .hamburger { position: absolute; top: 0; left: 0; z-index: 1; width: 45px; height: 45px; padding: 0.5em 0.75em; background: rgba(37, 156, 211, 0.75); border-radius: 0 0.12em 0.12em 0; cursor: pointer; -webkit-transition: -webkit-box-shadow 0.4s ease; transition: -webkit-box-shadow 0.4s ease; -o-transition: box-shadow 0.4s ease; transition: box-shadow 0.4s ease; transition: box-shadow 0.4s ease, -webkit-box-shadow 0.4s ease; -webkit-backface-visibility: hidden; backface-visibility: hidden; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+.outer-menu .hamburger {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 45px;
+  height: 45px;
+  padding: 0.5em 0.75em;
+  background: rgba(37, 156, 211, 0.75);
+  border-radius: 0 0.12em 0.12em 0;
+  cursor: pointer;
+  -webkit-transition: -webkit-box-shadow 0.4s ease;
+  transition: -webkit-box-shadow 0.4s ease;
+  -o-transition: box-shadow 0.4s ease;
+  transition: box-shadow 0.4s ease;
+  transition: box-shadow 0.4s ease, -webkit-box-shadow 0.4s ease;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
 
-.outer-menu .hamburger > div { position: relative; -webkit-box-flex: 0; -ms-flex: none; flex: none; width: 100%; height: 4px; background: #ffffff !important; -webkit-transition: all 0.4s ease; -o-transition: all 0.4s ease; transition: all 0.4s ease; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+.outer-menu .hamburger > div {
+  position: relative;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  width: 100%;
+  height: 4px;
+  background: #ffffff !important;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
 
-.outer-menu .hamburger > div:before, .outer-menu .hamburger > div:after { content: ""; position: absolute; z-index: 1; top: -7.5px; left: 0; width: 100%; height: 4px; background: inherit; -webkit-transition: all 0.4s ease; -o-transition: all 0.4s ease; transition: all 0.4s ease; }
+.outer-menu .hamburger > div:before, .outer-menu .hamburger > div:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: -7.5px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: inherit;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
 
-.outer-menu .hamburger > div:after { top: 7.5px; }
+.outer-menu .hamburger > div:after {
+  top: 7.5px;
+}
 
-.outer-menu .menu { position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; visibility: hidden; overflow: hidden; -webkit-backface-visibility: hidden; backface-visibility: hidden; outline: 1px solid transparent; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+.outer-menu .menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  visibility: hidden;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  outline: 1px solid transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
 
-.outer-menu .menu > div { width: 200vw; height: 200vw; color: #ffffff !important; background: rgba(64, 64, 64, 0.97); border-radius: 50%; -webkit-transition: all 0.4s ease; -o-transition: all 0.4s ease; transition: all 0.4s ease; -webkit-box-flex: 0; -ms-flex: none; flex: none; -webkit-transform: scale(0); -ms-transform: scale(0); transform: scale(0); -webkit-backface-visibility: hidden; backface-visibility: hidden; overflow: hidden; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+.outer-menu .menu > div {
+  width: 200vw;
+  height: 200vw;
+  color: #ffffff !important;
+  background: rgba(64, 64, 64, 0.97);
+  border-radius: 50%;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
 
-.outer-menu .menu > div > div { text-align: center; max-width: 90vw; max-height: 100vh; opacity: 0; -webkit-transition: opacity 0.4s ease; -o-transition: opacity 0.4s ease; transition: opacity 0.4s ease; overflow-y: auto; -webkit-box-flex: 0; -ms-flex: none; flex: none; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+.outer-menu .menu > div > div {
+  text-align: center;
+  max-width: 90vw;
+  max-height: 100vh;
+  opacity: 0;
+  -webkit-transition: opacity 0.4s ease;
+  -o-transition: opacity 0.4s ease;
+  transition: opacity 0.4s ease;
+  overflow-y: auto;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
 
-.outer-menu .menu > div > div > ul { list-style: none; padding: 0 1em; margin: 0; display: block; max-height: 100vh; }
+.outer-menu .menu > div > div > ul {
+  list-style: none;
+  padding: 0 1em;
+  margin: 0;
+  display: block;
+  max-height: 100vh;
+}
 
-.outer-menu .menu > div > div > ul > li { padding: 0; margin: 1em; font-size: 24px; display: block; }
+.outer-menu .menu > div > div > ul > li {
+  padding: 0;
+  margin: 1em;
+  font-size: 24px;
+  display: block;
+}
 
-.outer-menu .menu > div > div > ul > li > a { position: relative; display: inline; cursor: pointer; -webkit-transition: color 0.4s ease; -o-transition: color 0.4s ease; transition: color 0.4s ease; color: #ffffff !important; text-decoration: none; }
+.outer-menu .menu > div > div > ul > li > a {
+  position: relative;
+  display: inline;
+  cursor: pointer;
+  -webkit-transition: color 0.4s ease;
+  -o-transition: color 0.4s ease;
+  transition: color 0.4s ease;
+  color: #ffffff !important;
+  text-decoration: none;
+}
 
-.outer-menu .menu > div > div > ul > li > a:active, .outer-menu .menu > div > div > ul > li > a:hover { color: #be6d0c; }
+.outer-menu .menu > div > div > ul > li > a:active, .outer-menu .menu > div > div > ul > li > a:hover {
+  color: #be6d0c;
+}
 
-.outer-menu .menu > div > div > ul > li > a:active:after, .outer-menu .menu > div > div > ul > li > a:hover:after { width: 100%; }
+.outer-menu .menu > div > div > ul > li > a:active:after, .outer-menu .menu > div > div > ul > li > a:hover:after {
+  width: 100%;
+}
 
-.outer-menu .menu > div > div > ul > li > a:after { content: ""; position: absolute; z-index: 1; bottom: -0.15em; left: 0; width: 0; height: 4px; background: #be6d0c; -webkit-transition: width 0.4s ease; -o-transition: width 0.4s ease; transition: width 0.4s ease; }
+.outer-menu .menu > div > div > ul > li > a:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  bottom: -0.15em;
+  left: 0;
+  width: 0;
+  height: 4px;
+  background: #be6d0c;
+  -webkit-transition: width 0.4s ease;
+  -o-transition: width 0.4s ease;
+  transition: width 0.4s ease;
+}
 
-/** Layout */
+/**
+ * Layout
+ */
