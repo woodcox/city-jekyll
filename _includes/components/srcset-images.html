@@ -1,4 +1,4 @@
-<img src="../assets/img/master/{{ page.imagetitle }}.jpeg"
+<img src="{% capture url %}/assets/img/master/{{ page.imagetitle }}.jpeg{% endcapture %}{{ url | relative_url }}"
   srcset="
     {% for size in page.imagesize %}
     ../assets/img/{{ size }}/{{ page.imagetitle }}.jpeg {{ size }}W,
