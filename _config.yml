@@ -61,7 +61,7 @@ collections:
 ### sass
 sass:
   sass_dir: '_sass'
-  style: compact
+  style: expanded
 
 ### autoprefixer 
 autoprefixer:
