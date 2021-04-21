@@ -1,6 +1,6 @@
 <img src="{{ page.imagetitle }}.jpeg"
   srcset="
-    {% for size in page.image.sizes %}
+    {% for size in page.imagesize %}
     ./assets/img/{{ size }}/{{ page.imagetitle }}.jpeg {{ size }}W,
     {% endfor %}
    "/>
