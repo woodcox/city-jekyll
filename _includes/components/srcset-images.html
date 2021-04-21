@@ -1,3 +1,6 @@
 <img srcset="{% for size in page.imagesize %}{% capture imgurl %}/assets/img/{{ size }}/{{ page.imagetitle }}.jpg {% endcapture %}{{ imgurl | relative_url }} {{ size }}W,{% endfor %}"
+     sizes="(max-width: 600px) 600px,
+            800px,
+            1000px"
      src="{% capture url %}/assets/img/master/{{ page.imagetitle }}.jpg{% endcapture %}{{ url | relative_url }}"
      alt="Hillside Children's Centre, Beeston">
