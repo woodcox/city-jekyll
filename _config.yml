@@ -57,29 +57,6 @@ collections:
     output: true
     permalink: /example2/
 
-responsive_image:
-  template: _includes/components/srcset-images.html
-  sizes:
-    - width: 480  # [Required]
-      quality: 80 # [optional default is 85]
-    - width: 800
-    - width: 1400
-      quality: 90
-  base_path: docs/images
-  # [Optional, Default: assets/resized/%{filename}-%{width}x%{height}.%{extension}]
-  # The template used when generating filenames for resized images. Must be a
-  # relative path.
-  #
-  # Parameters available are:
-  #   %{dirname}     Directory of the file relative to `base_path` (assets/sub/dir/some-file.jpg => sub/dir)
-  #   %{basename}    Basename of the file (assets/some-file.jpg => some-file.jpg)
-  #   %{filename}    Basename without the extension (assets/some-file.jpg => some-file)
-  #   %{extension}   Extension of the file (assets/some-file.jpg => jpg)
-  #   %{width}       Width of the resized image
-  #   %{height}      Height of the resized image
-  #
-  output_path_format: docs/images/resized/%{width}/%{basename}
-  save_to_source: true
 
 ### sass
 sass:
