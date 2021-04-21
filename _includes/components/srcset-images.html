@@ -1,7 +1,7 @@
 <picture>
   <source 
     srcset="{% for size in page.imagesize %}{% capture imgurl %}/assets/img/{{ size }}/{{ page.imagetitle }}.jpg {% endcapture %}{{ imgurl | relative_url }} {{ size }}W,{% endfor %}"
-    sizes="100vw">
+    sizes="(mid-width: 100vw) 100vw">
   <img src="{% capture url %}/assets/img/600/{{ page.imagetitle }}.jpg{% endcapture %}{{ url | relative_url }}"
        alt="Hillside Children's Centre, Beeston">
 </picture>     
