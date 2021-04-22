@@ -1,6 +1,6 @@
 <picture>
   <source 
-    srcset="{%- for size in page.image-size -%}{%- capture imgurl -%}/assets/img/{{ size }}/{{ page.image-title }}.jpg {%- endcapture -%}{{ imgurl | relative_url }} {{ size }}W,{%- endfor -%}"
+    srcset="{%- for size in page.image-size -%}{%- capture imgurl -%}/assets/img/{{ size }}/{{ page.image-title }}.jpg {%- endcapture -%}{{ imgurl | relative_url }} {{ size }}W{% if forloop.last == false %}, {% endif %}{%- endfor -%}"
     sizes="(min-width: 70rem) 100vw,
            (min-width: 50rem) 100vw,
            100vw">
