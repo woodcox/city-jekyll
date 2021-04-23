@@ -1,5 +1,4 @@
-/* Lazy loading images
-<script>
+// Lazy loading images
 (function (root, factory) {
     if (typeof define === 'function' && define.amd) {
       define(function() {
@@ -134,7 +133,7 @@
     return echo;
   
   });
-</script>
+
 <script>
     echo.init({
       offset: 2500,
