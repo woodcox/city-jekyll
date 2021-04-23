@@ -1129,15 +1129,12 @@ dd {
 
 .gradient-text {
   /* Fallback: Set a background color. */
-  background-color: red;
+  background-color: #259cd3;
   /* Create the gradient. */
-  background-image: -o-linear-gradient(45deg, #f3ec78, #af4261);
-  background-image: linear-gradient(45deg, #f3ec78, #af4261);
-  /* Set the background size and repeat properties. */
+  background-image: -o-linear-gradient(45deg, #259cd3, #f19426);
+  background-image: linear-gradient(45deg, #259cd3, #f19426);
   background-size: 100%;
   background-repeat: repeat;
-  /* Use the text as a mask for the background. */
-  /* This will show the gradient as a text color rather than element bg. */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-background-clip: text;
