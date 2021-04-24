@@ -38,8 +38,24 @@ colors:
   ckyellow:     '#febd2e'
   ckblue:       '#01a8ff'
   teal:         '#009688'
-  cityorange:   '#f29526'
-  cityblue:     '#009ddf'
+  cityorange:   '#f19426'
+  cityblue:     '#259cd3'
+  citygreen:    '#06892f'
+  grey:         '#cdcdcd'
+  darkgrey:     '#404040'
+  whiteish:     '#fafafa'
+  jetblack:     'black'
+  sowhite:      'white'
+
+$background: white !default;
+$primary-color: #259cd3 !default; //blue
+$secondary-color: #f19426 !default; //orange
+$third-color: #06892f !default; //green
+$accent-color: #cdcdcd !default;
+$alternate-background: #fafafa !default;
+$alternate-color: #404040 !default;
+$footer-background: $primary-color;
+$link-color: black !default;
 
 kramdown:
   auto_ids:  false
