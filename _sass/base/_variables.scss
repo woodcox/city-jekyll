@@ -32,6 +32,7 @@ $third-color: #06892f !default; //green
 $accent-color: #cdcdcd !default;
 $alternate-background: #fafafa !default;
 $alternate-color: #404040 !default;
+$footer-background: $primary-color;
 $link-color: black !default;
 $link-hover-color: darken($secondary-color, 15%) !default;
 $highlight: lighten($secondary-color, 15%) !default;
