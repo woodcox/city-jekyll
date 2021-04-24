@@ -388,6 +388,11 @@ body {
   font-size: 1rem;
 }
 
+footer {
+  colour: white;
+  background: #259cd3;
+}
+
 p,
 ol,
 ul,
