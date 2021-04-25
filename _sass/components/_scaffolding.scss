@@ -126,6 +126,9 @@ a {
 footer {
   color: white; 
   background: $footer-background url('/city-jekyll/assets/img/CEC-building.svg');
+  a, h1, h2, h3, h4, h5, h6 {
+    color: white;
+  }
 }
 
 // Highlight
