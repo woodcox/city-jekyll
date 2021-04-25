@@ -18,8 +18,11 @@ body {
 }
 
 footer {
-  colour: white; 
+  color: white; 
   background: $footer-background;
+  ::before {
+  content: "";
+  background: url(/city-jekyll/assets/img/CEC-building.svg) bottom center;
 }
 
 p,
