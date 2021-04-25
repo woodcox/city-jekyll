@@ -488,6 +488,10 @@ footer {
   background: #259cd3 url("/city-jekyll/assets/img/CEC-building.svg");
 }
 
+footer a, footer h1, footer h2, footer h3, footer h4, footer h5, footer h6 {
+  color: white;
+}
+
 mark {
   background: #f6b76e;
   padding: 0 0.2rem;
