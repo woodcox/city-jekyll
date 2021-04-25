@@ -485,7 +485,7 @@ a:hover, a:active, a:focus {
 
 footer {
   color: white;
-  background: #259cd3 url("../assets/img/CEC-building.svg");
+  background: #259cd3 url("/assets/img/cec-building.svg");
 }
 
 footer a, footer h1, footer h2, footer h3, footer h4, footer h5, footer h6 {
