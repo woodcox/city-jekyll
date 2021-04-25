@@ -125,9 +125,15 @@ a {
 // Footer
 footer {
   color: $footer-font-color; 
-  background: $footer-background url($footer-bg-url);
+  background: $footer-background;
   a, h1, h2, h3, h4, h5, h6 {
     color: $footer-font-color;
+  }
+  ::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    background: url($footer-bg-url);
   }
 }
 
