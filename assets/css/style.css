@@ -388,16 +388,6 @@ body {
   font-size: 1rem;
 }
 
-footer {
-  color: white;
-  background: #259cd3;
-}
-
-footer ::before {
-  content: "";
-  background: url(/city-jekyll/assets/img/CEC-building.svg);
-}
-
 p,
 ol,
 ul,
@@ -491,6 +481,11 @@ a {
 a:hover, a:active, a:focus {
   color: #be6d0c;
   text-decoration: underline;
+}
+
+footer {
+  color: white;
+  background: #259cd3 url("/city-jekyll/assets/img/CEC-building.svg");
 }
 
 mark {
