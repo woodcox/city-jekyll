@@ -10,7 +10,7 @@
   .checkbox-toggle {
     position: absolute;
     top: 0;
-    left: 0;
+    right: 0;
     z-index: 2;
     cursor: pointer;
     width: $hamburger-menu-size;
@@ -61,7 +61,7 @@
   .hamburger {
     position: absolute;
     top: 0;
-    left: 0;
+    right: 0;
     z-index: 1;
     width: $hamburger-menu-size;
     height: $hamburger-menu-size;
