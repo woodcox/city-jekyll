@@ -18,6 +18,12 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@v2
       # Resize images
+      - name: Image Resize to 400x
+        uses: sharadcodes/img-resizer@v1.1
+        with:
+          image-folder: 'assets/img/master' # This has original images
+          new-resolution: '400x' # default is 400x
+          output-folder: "assets/img/400"
       - name: Image Resize to 600x
         uses: sharadcodes/img-resizer@v1.1
         with:
@@ -36,6 +42,12 @@ jobs:
           image-folder: 'assets/img/master' # This has original images
           new-resolution: '1000x' # default is 400x
           output-folder: "assets/img/1000"
+      - name: Image Resize to 1160x
+        uses: sharadcodes/img-resizer@v1.1
+        with:
+          image-folder: 'assets/img/master' # This has original images
+          new-resolution: '1160x' # default is 400x
+          output-folder: "assets/img/1160"
       - name: Compress Images
         uses: calibreapp/image-actions@main
         with:
