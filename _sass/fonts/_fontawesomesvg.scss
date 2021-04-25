@@ -826,13 +826,13 @@ $encoding-reference: (
 .github-icon {
   &:after{
     content: '';
-    @include fa($fa-github, black);
+    @include fa($fa-github, $footer-font-color);
   }
 }
 .copyright-icon {
   &:before{
     content: '';
-    @include fa($fa-copyright);
+    @include fa($fa-copyright), $footer-font-color;
   }
 }
 .facebook-icon {
