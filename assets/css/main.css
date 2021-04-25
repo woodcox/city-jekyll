@@ -1652,7 +1652,7 @@ caption {
 .outer-menu .checkbox-toggle {
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
   z-index: 2;
   cursor: pointer;
   width: 45px;
@@ -1716,7 +1716,7 @@ caption {
 .outer-menu .hamburger {
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
   z-index: 1;
   width: 45px;
   height: 45px;
