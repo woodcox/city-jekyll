@@ -17,15 +17,6 @@ body {
   font-size: $body-font-size;
 }
 
-footer {
-  color: white; 
-  background: $footer-background;
-  ::before {
-    content: "";
-    background: url(/city-jekyll/assets/img/CEC-building.svg);
-  }
-}
-
 p,
 ol,
 ul,
@@ -129,6 +120,12 @@ a {
     color: $link-hover-color;
     text-decoration: underline;
   }
+}
+
+// Footer
+footer {
+  color: white; 
+  background: $footer-background url('/city-jekyll/assets/img/CEC-building.svg');
 }
 
 // Highlight
