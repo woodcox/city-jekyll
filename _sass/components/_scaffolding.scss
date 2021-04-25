@@ -124,10 +124,10 @@ a {
 
 // Footer
 footer {
-  color: white; 
-  background: $footer-background url('/city-jekyll/assets/img/CEC-building.svg');
+  color: $footer-font-color; 
+  background: $footer-background url($footer-bg-url);
   a, h1, h2, h3, h4, h5, h6 {
-    color: white;
+    color: $footer-font-color;
   }
 }
 
