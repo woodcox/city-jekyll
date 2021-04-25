@@ -832,7 +832,7 @@ $encoding-reference: (
 .copyright-icon {
   &:before{
     content: '';
-    @include fa($fa-copyright), $footer-font-color;
+    @include fa($fa-copyright, $footer-font-color);
   }
 }
 .facebook-icon {
