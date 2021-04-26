@@ -1,8 +1,8 @@
-/* Works with .github/resize & lazysizes.min.js - https://github.com/aFarkas/lazysizes */
+/* Works with .github/workflow/resize-images.yml for resize & optimise & lazy loading - assets/js/lazysizes.min.js - https://github.com/aFarkas/lazysizes */
 <picture> {% for size in page.image-size %}
   <source 
     srcset="{% capture imgurl %}/assets/img/{{ size }}/{{ page.image-title }}.jpg {% endcapture %}{{ imgurl | relative_url }} {{ size }}w{% if forloop.last == false %}, {% endif %}"
     {% if forloop.last == false %}media="(max-width: {{ size }}px)"{% endif %} />{% endfor %}
-  <img class="responsive-image" src="{%- capture url -%}/assets/img/600/{{ page.image-title }}.jpg{%- endcapture -%}{{ url | relative_url }}"
+  <img class="responsive-image lazyload" src="{%- capture url -%}/assets/img/600/{{ page.image-title }}.jpg{%- endcapture -%}{{ url | relative_url }}"
        alt="{{ image-alt-text }}" />
 </picture>     
