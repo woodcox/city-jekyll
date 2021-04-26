@@ -2,8 +2,8 @@
 <picture> {% for size in page.image-size %}
   <source 
     srcset="{% capture imgurl %}/assets/img/{{ size }}/{{ page.image-title }}.jpg {% endcapture %}{{ imgurl | relative_url }} {{ size }}w{% if forloop.last == false %}, {% endif %}"
-    {% if forloop.last == false %}media="(max-width: {{ size }}px)"{% endif %}{% endfor %}
-    class= "responsive-image lazyload" />
+    {% if forloop.last == false %}media="(max-width: {{ size }}px)"{% endif %}
+    class= "responsive-image lazyload" />{% endfor %}
   <img class="responsive-image lazyload" src="{%- capture url -%}/assets/img/600/{{ page.image-title }}.jpg{%- endcapture -%}{{ url | relative_url }}"
        alt="{{ image-alt-text }}" />
 </picture>     
