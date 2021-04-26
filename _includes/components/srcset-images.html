@@ -1,4 +1,4 @@
-// Works with .github/workflow/resize-images.yml for resize & optimise & lazy loading - assets/js/lazysizes.min.js - https://github.com/aFarkas/lazysizes
+<! -- Works with .github/workflow/resize-images.yml for resize & optimise & lazy loading - assets/js/lazysizes.min.js - https://github.com/aFarkas/lazysizes -->
 <picture> {% for size in page.image-size %}
   <source 
     srcset="{% capture imgurl %}/assets/img/{{ size }}/{{ page.image-title }}.jpg {% endcapture %}{{ imgurl | relative_url }} {{ size }}w{% if forloop.last == false %}, {% endif %}"
