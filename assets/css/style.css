@@ -1486,3 +1486,17 @@ caption {
 /**
  * Layout
  */
+footer {
+  color: white;
+  background: #259cd3;
+}
+
+footer a, footer h1, footer h2, footer h3, footer h4, footer h5, footer h6 {
+  color: white;
+}
+
+footer svg ::before {
+  content: "";
+  width: 100%;
+  background: url("../img/cec-building.svg");
+}
