@@ -1481,6 +1481,11 @@ caption {
 /**
  * Layout
  */
+.alternate-background {
+  background: #fafafa;
+  color: #404040;
+}
+
 footer {
   color: white;
   background: #259cd3;
