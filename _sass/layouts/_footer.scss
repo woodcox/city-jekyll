@@ -18,8 +18,12 @@ footer {
   svg {
     ::before {
       content: "";
+      position: absolute;
+      top: 100%;
+      left: 0;
+      height: 20px;
       width: 100%;
-      background: url($footer-bg-url);
+      background: url($footer-bg-url) top center;
     }
   }
 }
