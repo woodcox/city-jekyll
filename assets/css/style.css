@@ -763,44 +763,6 @@ dd {
           justify-content: center;
 }
 
-.gradient-text {
-  /* Fallback: Set a background color. */
-  background-color: #259cd3;
-  /* Create the gradient. */
-  background-image: -o-linear-gradient(45deg, #259cd3, #f19426);
-  background-image: linear-gradient(45deg, #259cd3, #f19426);
-  background-size: 100%;
-  background-repeat: repeat;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-background-clip: text;
-  -moz-text-fill-color: transparent;
-}
-
-.responsive-image {
-  max-width: 100%;
-  height: auto;
-}
-
-.fluid-video {
-  position: relative;
-  height: 0;
-  overflow: hidden;
-  padding-bottom: 56.25%;
-}
-
-.i4x3 {
-  padding-bottom: 75.00%;
-}
-
-.fluid-video iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
 .show {
   display: block !important;
 }
