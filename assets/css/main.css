@@ -1914,10 +1914,7 @@ footer a, footer h1, footer h2, footer h3, footer h4, footer h5, footer h6 {
 }
 
 footer .footer-bg-image::before {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 0;
+  content: '';
   width: 100%;
   background: url("../img/cec-building.svg");
 }
