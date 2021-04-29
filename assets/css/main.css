@@ -1918,7 +1918,6 @@ footer footer-bg-image::before {
   position: absolute;
   top: 100%;
   left: 0;
-  height: 20px;
   width: 100%;
-  background: url("../img/cec-building.svg") top center;
+  background: url("../img/cec-building.svg");
 }
