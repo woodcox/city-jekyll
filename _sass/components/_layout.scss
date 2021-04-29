@@ -2,6 +2,12 @@
  * Layout
  */
 
+// Backgrounds
+.alternate-background {
+  background: $alternate-background;
+  color: $alternate-color;
+}
+
 // Footer
 footer {
   color: $footer-font-color; 
