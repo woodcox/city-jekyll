@@ -1171,11 +1171,6 @@ dd {
   margin-bottom: 2rem;
 }
 
-.alternate-background {
-  background: #fafafa;
-  color: #404040;
-}
-
 .space-between {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
