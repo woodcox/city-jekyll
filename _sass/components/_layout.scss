@@ -1,3 +1,19 @@
 /**
  * Layout
  */
+
+// Footer
+footer {
+  color: $footer-font-color; 
+  background: $footer-background;
+  a, h1, h2, h3, h4, h5, h6 {
+    color: $footer-font-color;
+  }
+  svg {
+    ::before {
+      content: "";
+      width: 100%;
+      background: url($footer-bg-url);
+    }
+  }
+}
