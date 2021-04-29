@@ -41,9 +41,15 @@
 @import 'components/scaffolding';
 @import 'components/grid';
 @import 'components/helpers';
+@import 'components/media';
 @import 'components/buttons';
 @import 'components/forms';
 @import 'components/tables';
 @import 'components/accordion';
-@import 'components/navigation';
-@import 'components/layout';
+
+//==============================
+// Layouts
+//==============================
+
+@import 'layouts/navigation';
+@import 'layouts/footer';
