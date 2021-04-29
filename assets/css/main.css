@@ -1915,6 +1915,10 @@ footer a, footer h1, footer h2, footer h3, footer h4, footer h5, footer h6 {
 
 footer svg ::before {
   content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  height: 20px;
   width: 100%;
-  background: url("../img/cec-building.svg");
+  background: url("../img/cec-building.svg") top center;
 }
