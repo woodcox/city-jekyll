@@ -1913,7 +1913,7 @@ footer a, footer h1, footer h2, footer h3, footer h4, footer h5, footer h6 {
   color: white;
 }
 
-footer svg ::before {
+footer ::before {
   content: "";
   position: absolute;
   top: 100%;
