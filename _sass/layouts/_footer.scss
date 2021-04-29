@@ -15,7 +15,7 @@ footer {
   a, h1, h2, h3, h4, h5, h6 {
     color: $footer-font-color;
   }
-  ::before {
+  &::before {
     content: "";
     position: absolute;
     top: 100%;
