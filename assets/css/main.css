@@ -1882,14 +1882,7 @@ caption {
   transition: width 0.4s ease;
 }
 
-/**
- * Footer
- */
-.alternate-background {
-  background: #fafafa;
-  color: #404040;
-}
-
+/* Footer */
 footer {
   color: white;
   background: #259cd3;
