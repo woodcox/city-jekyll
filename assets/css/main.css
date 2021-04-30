@@ -1197,6 +1197,26 @@ dd {
   overflow: hidden;
 }
 
+/* Colors */
+.alternate-background {
+  background: #fafafa;
+  color: #404040;
+}
+
+.gradient-text {
+  /* Fallback: Set a background color. */
+  background-color: #259cd3;
+  /* Create the gradient. */
+  background-image: -o-linear-gradient(45deg, #259cd3, #f19426);
+  background-image: linear-gradient(45deg, #259cd3, #f19426);
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
 /* Media */
 .responsive-image {
   max-width: 100%;
