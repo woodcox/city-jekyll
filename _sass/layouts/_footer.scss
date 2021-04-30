@@ -15,9 +15,10 @@ footer {
   a, h1, h2, h3, h4, h5, h6 {
     color: $footer-font-color;
   }
-  .footer-bg-image::before {
-    content: '';
-    width: 100%;
-    background: url($footer-bg-url);
+  .footer-bg-image {
+    svg {
+      width: 100%;
+      height: auto;
+    }
   }
 }
