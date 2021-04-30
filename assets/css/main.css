@@ -1913,8 +1913,7 @@ footer a, footer h1, footer h2, footer h3, footer h4, footer h5, footer h6 {
   color: white;
 }
 
-footer .footer-bg-image::before {
-  content: '';
+footer .footer-bg-image svg {
   width: 100%;
-  background: url("../img/cec-building.svg");
+  height: auto;
 }
