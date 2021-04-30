@@ -1,5 +1,11 @@
 /* Colors */
 
+// Backgrounds
+.alternate-background {
+  background: $alternate-background;
+  color: $alternate-color;
+}
+
 // Gradient text
 .gradient-text {
   /* Fallback: Set a background color. */
