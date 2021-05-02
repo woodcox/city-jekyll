@@ -1,5 +1,6 @@
 /*
 Stimulus 2.0.0
+https://stimulus.hotwire.dev
 Copyright © 2020 Basecamp, LLC
  */
 (function(global, factory) {
