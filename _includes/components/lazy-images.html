@@ -2,6 +2,6 @@
   <source 
     data-srcset="{% capture imgurl %}/assets/img/{{ size }}/{{ page.image-title }}.jpg{% endcapture %}{{ imgurl | relative_url }} {{ size }}w"
     {% if forloop.last == false %}media="(max-width: {{ size }}px)"{% else %}media="(min-width: {{ size | minus: 159 }}px)"{% endif %} />{% endfor %}
-  <img class="responsive-image lozad" data-src="{%- capture url -%}/assets/img/600/{{ page.image-title }}.jpg{%- endcapture -%}{{ url | relative_url }}"
-       alt="{{ page.image-alt-text }}" />
+  <noscript><img class="responsive-image" src="{%- capture url -%}/assets/img/600/{{ page.image-title }}.jpg{%- endcapture -%}{{ url | relative_url }}"
+       alt="{{ page.image-alt-text }}" /></noscript>
 </picture>
