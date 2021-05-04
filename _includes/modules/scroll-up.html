@@ -1,19 +1,20 @@
 <style>
 
 .scrollToTopBtn {
-  background-color: black;
+  background-color: {[ site.color.darkgrey }};
   border: none;
-  border-radius: 50%;
+  border-radius: 24px;
   color: white;
   cursor: pointer;
   font-size: 16px;
-  line-height: 48px;
+  line-height: 28px;
   width: 48px;
-  
+  text-align: center;
+  padding: 0.5px;
   /* place it at the bottom right corner */
   position: fixed;
   bottom: 30px;
-  right: 30px;
+  right: 25px;
   /* keep it at the top of everything else */
   z-index: 100;
   /* hide with opacity */
@@ -22,6 +23,11 @@
   transform: translateY(100px);
   /* and a transition */
   transition: all .5s ease
+}
+  
+.scrollToTopBtn:hover, .scrollToTopBtn:focus, .scrollToTopBtn:active {
+  color: black;
+  background: orange;
 }
 
 .showBtn {
