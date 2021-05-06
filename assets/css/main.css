@@ -67,7 +67,7 @@
   line-height: 16px;
   width: 16px;
   height: 16px;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' x='0px' y='0px' style='enable-background:new 596 -596 1792 1792;' xml:space='preserve' fill='%23404040' fa-chevron-up");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' x='0px' y='0px' style='enable-background:new 596 -596 1792 1792;' xml:space='preserve' fill='white' fa-chevron-up");
 }
 
 /* Use pygments syntax highlighter - https://jwarby.github.io/jekyll-pygments-themes/languages/python.html */
