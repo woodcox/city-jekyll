@@ -840,5 +840,5 @@ $encoding-reference: (
 }
 
 .chevron-icon {
-    @include fa(fa-chevron-up);
+    @include fa(fa-chevron-up, $footer-font-color);
 }
