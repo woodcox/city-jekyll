@@ -838,3 +838,7 @@ $encoding-reference: (
 .facebook-icon {
     @include fa($fa-facebook);
 }
+
+.chevron-icon {
+    @include fa(fa-chevron-up);
+}
