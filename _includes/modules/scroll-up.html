@@ -1,7 +1,7 @@
 <style>
 
 .scrollToTopBtn {
-  background-color: {{ rgba(site.color.cityblue, 0.75) | scssify }};
+  background-color: {% capture rgba-color %}rgba({{ site.color.cityblue }}, 0.75){% endcapture %}{{ rgba-color | scssify }};
   border: none;
   border-radius: 24px;
   color: white;
@@ -27,7 +27,7 @@
   
 .scrollToTopBtn:hover, .scrollToTopBtn:focus, .scrollToTopBtn:active {
   color: white;
-  background: {{ darken(site.color.cityblue, 10%) | scssify }};
+  background: {% capture dark-colour %}darken({{ site.color.cityblue }}, 10%){% endcapture %}{{ dark-color | scssify }};
 }
 
 .showBtn {
