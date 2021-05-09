@@ -1,7 +1,7 @@
 <style>
-
+{% capture up-button %}
 .scrollToTopBtn {
-  background-color: {% capture rgba-color %}rgba({{ site.color.cityblue }}, 0.75){% endcapture %}{{ rgba-color | scssify }};
+  background-color: rgba({{ site.color.cityblue }}, 0.75);
   border: none;
   border-radius: 24px;
   color: white;
@@ -27,14 +27,14 @@
   
 .scrollToTopBtn:hover, .scrollToTopBtn:focus, .scrollToTopBtn:active {
   color: white;
-  background: {% capture dark-colour %}darken({{ site.color.cityblue }}, 10%){% endcapture %}{{ dark-color | scssify }};
+  background: darken({{ site.color.cityblue }}, 10%);
 }
 
 .showBtn {
   opacity: 1;
   transform: translateY(0)
 }
-
+{% endcapture %}{{ up-button | scssify }}
 </style>
 
 <!-- Button on fixed on bottom right corner of the page -->
