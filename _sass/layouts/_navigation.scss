@@ -5,13 +5,13 @@
   position: fixed;
   top: 0;
   right: 0;
-  z-index: 1;
+  z-index: 201;
 
   .checkbox-toggle {
     position: absolute;
     top: 0;
     right: 0;
-    z-index: 2;
+    z-index: 202;
     cursor: pointer;
     width: $hamburger-menu-size;
     height: $hamburger-menu-size;
@@ -62,7 +62,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    z-index: 1;
+    z-index: 201;
     width: $hamburger-menu-size;
     height: $hamburger-menu-size;
     padding: 0.5em 0.75em;
@@ -91,7 +91,7 @@
       &:after {
         content: "";
         position: absolute;
-        z-index: 1;
+        z-index: 201;
         top: -$hamburger-menu-size / 6;
         left: 0;
         width: 100%;
@@ -182,7 +182,7 @@
               &:after {
                 content: "";
                 position: absolute;
-                z-index: 1;
+                z-index: 201;
                 bottom: -0.15em;
                 left: 0;
                 width: 0;
