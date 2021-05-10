@@ -1677,14 +1677,14 @@ caption {
   position: fixed;
   top: 0;
   right: 0;
-  z-index: 1;
+  z-index: 201;
 }
 
 .outer-menu .checkbox-toggle {
   position: absolute;
   top: 0;
   right: 0;
-  z-index: 2;
+  z-index: 202;
   cursor: pointer;
   width: 45px;
   height: 45px;
@@ -1748,7 +1748,7 @@ caption {
   position: absolute;
   top: 0;
   right: 0;
-  z-index: 1;
+  z-index: 201;
   width: 45px;
   height: 45px;
   padding: 0.5em 0.75em;
@@ -1798,7 +1798,7 @@ caption {
 .outer-menu .hamburger > div:before, .outer-menu .hamburger > div:after {
   content: "";
   position: absolute;
-  z-index: 1;
+  z-index: 201;
   top: -7.5px;
   left: 0;
   width: 100%;
@@ -1925,7 +1925,7 @@ caption {
 .outer-menu .menu > div > div > ul > li > a:after {
   content: "";
   position: absolute;
-  z-index: 1;
+  z-index: 201;
   bottom: -0.15em;
   left: 0;
   width: 0;
