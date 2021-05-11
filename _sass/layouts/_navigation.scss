@@ -1,6 +1,18 @@
 /*
  * Navigation
  */
+.logo .brand-logo {
+  svg {
+    viewBox: 0 0 40 40;
+    width: 64px;
+    height: auto;
+    padding: 10px;
+  }
+  svg path {
+    fill: #000;
+  }
+}
+
 .outer-menu {
   position: fixed;
   top: 0;
