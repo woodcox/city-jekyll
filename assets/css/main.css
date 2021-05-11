@@ -1678,6 +1678,7 @@ caption {
   width: 64px;
   height: auto;
   padding: 10px;
+  position: fixed;
 }
 
 .logo .brand-logo svg path {
