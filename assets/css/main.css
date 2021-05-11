@@ -1681,7 +1681,7 @@ caption {
 }
 
 .logo .brand-logo svg path {
-  fill: #000;
+  fill: rgba(64, 64, 64, 0.97);
 }
 
 .outer-menu {
