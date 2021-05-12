@@ -13,10 +13,9 @@
   svg path {
     fill: $content-bg-color;
   }
-}
-
-.logo-color * {
-  fill: white;
+  svg path.toggled {
+    fill: white;
+  }
 }
 
 .outer-menu {
