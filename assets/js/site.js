@@ -10,8 +10,13 @@ lozad('.lozad', {
 
 // Logo svg color toggle
 
-function svgcolorToggle() {
+function gg() {
  document.getElementById('city-logo').classList.toggle("logo-color");
+}
+
+function svgcolorToggle() {
+    var property = document.getElementById('city-logo');
+    property.className = 'toggled' == property.className ? '' : 'toggled';
 }
 
 // Scroll up button
