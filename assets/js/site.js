@@ -10,9 +10,9 @@ lozad('.lozad', {
 
 // Logo svg color toggle
 
-$('#logo-color-toggle').on("click", function() {
-    $('path').toggle(".logo-color");
-});
+function logo-color-toggle() {
+ document.getElementsByTagName('path').classList.toggle("logo-color");
+}
 
 // Scroll up button
 
