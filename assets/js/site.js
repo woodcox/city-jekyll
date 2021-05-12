@@ -11,7 +11,7 @@ lozad('.lozad', {
 // Logo svg color toggle
 
 function svgcolorToggle() {
- document.getElementsByTagName('path').classList.toggle("logo-color");
+ document.getElementById('city-logo').classList.toggle("logo-color");
 }
 
 // Scroll up button
