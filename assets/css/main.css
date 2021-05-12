@@ -1673,6 +1673,10 @@ caption {
 /*
  * Navigation
  */
+.logo .brand-logo {
+  z-index: 202;
+}
+
 .logo .brand-logo svg {
   viewBox: 0 0 40 40;
   width: 64px;
