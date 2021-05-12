@@ -10,6 +10,10 @@ lozad('.lozad', {
 
 // Logo svg color toggle
 
+document.querySelector('btn-test').addEventListener("click", function(){
+  document.querySelector('path').toggle("logo-color");
+});
+
 function gg() {
  document.getElementById('city-logo').classList.toggle("logo-color");
 }
