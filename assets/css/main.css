@@ -1674,7 +1674,7 @@ caption {
  * Navigation
  */
 .logo .brand-logo {
-  z-index: 202;
+  z-index: 205;
 }
 
 .logo .brand-logo svg {
@@ -1683,7 +1683,7 @@ caption {
   height: auto;
   padding: 10px;
   position: fixed;
-  z-index: 202;
+  z-index: 205;
 }
 
 .logo .brand-logo svg path {
