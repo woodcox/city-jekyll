@@ -1687,7 +1687,7 @@ caption {
 }
 
 .logo .brand-logo svg path {
-  fill: rgba(64, 64, 64, 0.97);
+  fill: #404040;
 }
 
 .logo .brand-logo svg path.toggled {
