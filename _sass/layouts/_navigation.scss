@@ -9,8 +9,11 @@
     padding: 10px;
     position: fixed;
   }
-  svg path {
+  svg #path {
     fill: $content-bg-color;
+    .logo-color {
+      fill: white;
+    }
   }
 }
 
