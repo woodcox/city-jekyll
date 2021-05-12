@@ -12,10 +12,11 @@
   }
   svg path {
     fill: $content-bg-color;
-    .logo-color {
-      fill: white;
-    }
   }
+}
+
+.logo-color * {
+  fill: white;
 }
 
 .outer-menu {
