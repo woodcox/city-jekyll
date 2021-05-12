@@ -11,7 +11,7 @@ lozad('.lozad', {
 // Logo svg color toggle
 
 $('#logo-color-toggle').on("click", function() {
-    $('path').toggle("logo-color");
+    $('path').toggle(".logo-color");
 });
 
 // Scroll up button
