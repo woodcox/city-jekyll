@@ -14,8 +14,9 @@
   svg path {
     fill: $alternate-color;
   }
-  svg path.toggled {
-    fill: white;
+  .toggle-svg svg path {
+    transition: fill $anim-duration ease;
+    fill: blue;
   }
 }
 
