@@ -1691,7 +1691,10 @@ caption {
 }
 
 .logo .brand-logo .toggle-svg svg path {
-  fill: blue;
+  -webkit-transition: fill 0.4s ease;
+  -o-transition: fill 0.4s ease;
+  transition: fill 0.4s ease;
+  fill: #ffffff !important;
 }
 
 .outer-menu {
