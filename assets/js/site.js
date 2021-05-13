@@ -9,18 +9,9 @@ lozad('.lozad', {
 }).observe()
 
 // Logo svg color toggle
-
-document.querySelector('btn-test').addEventListener("click", function(){
-  document.querySelector('path').toggle("logo-color");
-});
-
-function gg() {
- document.getElementById('city-logo').classList.toggle("logo-color");
-}
-
-function svgcolorToggle() {
-    var property = document.getElementById('city-logo');
-    property.className = 'toggled' == property.className ? '' : 'toggled';
+function logoToggle() {
+   var element = document.getElementById("svgColor");
+   element.classList.toggle("toggle-svg");
 }
 
 // Scroll up button
