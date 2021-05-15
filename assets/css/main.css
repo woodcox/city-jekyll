@@ -1677,7 +1677,7 @@ caption {
   z-index: 205;
 }
 
-.logo .brand-logo svg {
+.logo .brand-logo .city-svg-logo {
   viewBox: 0 0 40 40;
   width: 64px;
   height: auto;
@@ -1686,11 +1686,11 @@ caption {
   z-index: 205;
 }
 
-.logo .brand-logo svg path {
+.logo .brand-logo .city-svg-logo path {
   fill: #404040;
 }
 
-.logo .brand-logo .toggle-svg svg path {
+.logo .brand-logo .toggle-svg .city-svg-logo path {
   -webkit-transition: fill 0.4s ease;
   -o-transition: fill 0.4s ease;
   transition: fill 0.4s ease;
