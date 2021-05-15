@@ -3,7 +3,7 @@
  */
 .logo .brand-logo {
   z-index: 205;
-  svg {
+  .city-svg-logo {
     viewBox: 0 0 40 40;
     width: 64px;
     height: auto;
@@ -11,10 +11,10 @@
     position: fixed;
     z-index: 205;
   }
-  svg path {
+  .city-svg-logo path {
     fill: $alternate-color;
   }
-  .toggle-svg svg path {
+  .toggle-svg .city-svg-logo path {
     transition: fill $anim-duration ease;
     fill: $menu-text-color;
   }
