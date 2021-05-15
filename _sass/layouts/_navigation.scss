@@ -2,16 +2,16 @@
  * Navigation
  */
 .logo .brand-logo {
-  z-index: 205;
   .city-svg-logo {
     viewBox: 0 0 40 40;
-    width: 64px;
+    width: $hamburger-menu-size;
     height: auto;
-    padding: 10px;
+    top: 10px;
+    left: 10px;
     position: fixed;
     z-index: 205;
     path {
-      fill: $primary-color;
+      fill: $hamburger-menu-bg-color;
     }
   }
   .toggle-svg .city-svg-logo path {
