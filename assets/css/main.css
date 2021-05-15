@@ -1673,21 +1673,18 @@ caption {
 /*
  * Navigation
  */
-.logo .brand-logo {
-  z-index: 205;
-}
-
 .logo .brand-logo .city-svg-logo {
   viewBox: 0 0 40 40;
-  width: 64px;
+  width: 45px;
   height: auto;
-  padding: 10px;
+  top: 10px;
+  left: 10px;
   position: fixed;
   z-index: 205;
 }
 
 .logo .brand-logo .city-svg-logo path {
-  fill: #259cd3;
+  fill: rgba(37, 156, 211, 0.75);
 }
 
 .logo .brand-logo .toggle-svg .city-svg-logo path {
