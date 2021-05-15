@@ -11,7 +11,7 @@
     position: fixed;
     z-index: 205;
     path {
-      fill: $hamburger-menu-bg-color;
+      fill: $primary-color;
     }
   }
   .toggle-svg .city-svg-logo path {
@@ -34,7 +34,6 @@
     cursor: pointer;
     width: $hamburger-menu-size;
     height: $hamburger-menu-size;
-    border-radius: $hamburger-menu-size/4;
     opacity: 0;
 
     &:checked {
@@ -87,7 +86,7 @@
     height: $hamburger-menu-size;
     padding: 0.5em 0.75em;
     background: $hamburger-menu-bg-color;
-    border-radius: 0 $hamburger-menu-border-radius $hamburger-menu-border-radius 0;
+    border-radius: $hamburger-menu-border-radius;
     cursor: pointer;
     transition: box-shadow $anim-duration ease;
     -webkit-backface-visibility: hidden;
