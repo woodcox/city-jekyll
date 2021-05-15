@@ -1774,7 +1774,7 @@ caption {
   height: 45px;
   padding: 0.5em 0.75em;
   background: rgba(37, 156, 211, 0.75);
-  border-radius: 0.96em;
+  border-radius: 2em;
   cursor: pointer;
   -webkit-transition: -webkit-box-shadow 0.4s ease;
   transition: -webkit-box-shadow 0.4s ease;
