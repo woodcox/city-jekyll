@@ -34,6 +34,7 @@
     cursor: pointer;
     width: $hamburger-menu-size;
     height: $hamburger-menu-size;
+    border-radius: $hamburger-menu-border-radius;
     opacity: 0;
 
     &:checked {
