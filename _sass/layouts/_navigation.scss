@@ -13,7 +13,7 @@
     path {
     }
   }
-  .toggle-svg .city-svg-logo path {
+  .toggle-svg .city-svg-logo .city-logo-black-fill {
     transition: fill $anim-duration ease;
     fill: $menu-text-color;
   }
