@@ -1684,7 +1684,7 @@ caption {
 }
 
 .logo .brand-logo .city-svg-logo path {
-  fill: rgba(37, 156, 211, 0.75);
+  fill: #259cd3;
 }
 
 .logo .brand-logo .toggle-svg .city-svg-logo path {
@@ -1709,7 +1709,6 @@ caption {
   cursor: pointer;
   width: 45px;
   height: 45px;
-  border-radius: 11.25px;
   opacity: 0;
 }
 
@@ -1775,7 +1774,7 @@ caption {
   height: 45px;
   padding: 0.5em 0.75em;
   background: rgba(37, 156, 211, 0.75);
-  border-radius: 0 0.12em 0.12em 0;
+  border-radius: 0.12em;
   cursor: pointer;
   -webkit-transition: -webkit-box-shadow 0.4s ease;
   transition: -webkit-box-shadow 0.4s ease;
