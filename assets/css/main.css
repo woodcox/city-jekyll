@@ -1683,10 +1683,6 @@ caption {
   z-index: 205;
 }
 
-.logo .brand-logo .city-svg-logo path {
-  fill: #259cd3;
-}
-
 .logo .brand-logo .toggle-svg .city-svg-logo path {
   -webkit-transition: fill 0.4s ease;
   -o-transition: fill 0.4s ease;
