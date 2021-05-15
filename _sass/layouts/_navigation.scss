@@ -22,8 +22,8 @@
 
 .outer-menu {
   position: fixed;
-  top: 0;
-  right: 0;
+  top: 10px;
+  right: 10px;
   z-index: 201;
 
   .checkbox-toggle {
@@ -34,6 +34,7 @@
     cursor: pointer;
     width: $hamburger-menu-size;
     height: $hamburger-menu-size;
+    border-radius: $hamburger-menu-size/4;
     opacity: 0;
 
     &:checked {
