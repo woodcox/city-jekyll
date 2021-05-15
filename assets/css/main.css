@@ -1709,6 +1709,7 @@ caption {
   cursor: pointer;
   width: 45px;
   height: 45px;
+  border-radius: 2em;
   opacity: 0;
 }
 
