@@ -10,9 +10,9 @@
     padding: 10px;
     position: fixed;
     z-index: 205;
-  }
-  .city-svg-logo path {
-    fill: $alternate-color;
+    path {
+      fill: $primary-color;
+    }
   }
   .toggle-svg .city-svg-logo path {
     transition: fill $anim-duration ease;
