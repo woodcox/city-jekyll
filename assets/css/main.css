@@ -1696,8 +1696,8 @@ caption {
 
 .outer-menu {
   position: fixed;
-  top: 0;
-  right: 0;
+  top: 10px;
+  right: 10px;
   z-index: 201;
 }
 
@@ -1709,6 +1709,7 @@ caption {
   cursor: pointer;
   width: 45px;
   height: 45px;
+  border-radius: 11.25px;
   opacity: 0;
 }
 
