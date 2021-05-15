@@ -1,4 +1,6 @@
+//===================================
 // Initialize lozad library
+//===================================
 lozad('.lozad', {
     load: function(el) {
         el.src = el.dataset.src;
@@ -8,14 +10,17 @@ lozad('.lozad', {
     }
 }).observe()
 
+//======================================
 // Logo svg color toggle
+//======================================
 function logoToggle() {
    var element = document.getElementById("svgColor");
    element.classList.toggle("toggle-svg");
 }
 
+//========================================
 // Scroll up button
-
+//========================================
 // We select the element we want to target
 var target = document.querySelector("footer");
 
