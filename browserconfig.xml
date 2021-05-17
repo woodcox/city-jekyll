@@ -1,9 +1,12 @@
+---
+---
+
 <?xml version="1.0" encoding="utf-8"?>
 <browserconfig>
     <msapplication>
         <tile>
             <square150x150logo src="/img/mstile-150x150.png"/>
-            <TileColor>#259cd3</TileColor>
+            <TileColor>{{ site.colors.cityblue }}</TileColor>
         </tile>
     </msapplication>
 </browserconfig>
