@@ -18,34 +18,18 @@ primary:
   - text: Media
     href: /media/
 
-    secondary:
-      - text: Demo link A
-        href: /two/a/
-      - text: Demo link B
-        href: /two/b/
-      - text: Demo link C
-        href: /two/c/
-      - text: Demo link D
-        href: /two/a/
-      - text: Demo link E
-        href: /two/b/
-      - text: Demo link F
-        href: /two/c/
-  - text: Referenced section
-    links: footer
-  - text: External link
-    href: https://18f.gsa.gov
-    external: true
-
 secondary:
-  - text: Documentation
-    href: /docs/
-  - text: Theme
-    href: /theme/
+  whatson:
+    - text: Documentation
+      href: /docs/
+    - text: Theme
+      href: /theme/
 
 footer:
-  - text: Sidenav Documentation
-    href: /docs/
-  - text: Sidenav External link
-    href: https://18f.gsa.gov
-    external: true
+  policy:
+    - text: Sidenav Documentation
+      href: /docs/
+    - text: Sidenav External link
+      href: https://18f.gsa.gov
+      external: true
+  credits:
