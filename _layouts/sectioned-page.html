@@ -11,6 +11,7 @@ layout: default
     <article>
       <div class="{{ page.container-size }}-container {{ page.style }}">
         {% if page.title %}
+        {% include modules/breadcrumbs.html %}
         <h{{ page.heading }}>{{ page.title | upcase }}</h{{ page.heading }}>
         {% endif %}
         {{ page.content }}
