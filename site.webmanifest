@@ -1,3 +1,5 @@
+---
+---
 {
     "name": "City Evangelical Church",
     "short_name": "City Church",
@@ -13,7 +15,7 @@
             "type": "image/png"
         }
     ],
-    "theme_color": "#259cd3",
-    "background_color": "#259cd3",
+    "theme_color": "{{ site.colors.cityblue }}",
+    "background_color": "{{ site.colors.cityblue }}",
     "display": "standalone"
 }
