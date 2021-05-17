@@ -16,11 +16,11 @@
 	{% if site.favicon_32 %}<link rel="icon" type="image/png" sizes="32x32" href="{{ site.favicon_32 | relative_url }}" />{% endif %}
 	{% if site.favicon_16 %}<link rel="icon" type="image/png" sizes="16x16" href="{{ site.favicon_16 | relative_url }}" />{% endif %}
 	<link rel="manifest" href="/site.webmanifest" />
-	{% if site.safari_pinned_tab %}<link rel="mask-icon" href="{{ site.safari_pinned_tab | relative_url }}" color="#f29526" />{% endif %}
+	{% if site.safari_pinned_tab %}<link rel="mask-icon" href="{{ site.safari_pinned_tab | relative_url }}" color="{{ site.colors.cityorange }}" />{% endif %}
 	{% if site.favicon %}<link rel="shortcut icon" href="{{ site.favicon | relative_url }}" />{% endif %}
-	<meta name="msapplication-TileColor" content="#259cd3">
+	<meta name="msapplication-TileColor" content="{{ site.colors.cityblue }}">
 	<meta name="msapplication-config" content="{{ site.baseurl }}/browserconfig.xml">
-	<meta name="theme-color" content="#259cd3">
+	<meta name="theme-color" content="{{ site.colors.cityblue }}">
   <script src="//ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
   <script src="{{ '/assets/js/contacts.js' | relative_url }}"></script>
