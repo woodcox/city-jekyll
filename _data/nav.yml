@@ -1,6 +1,6 @@
 # This is the configuration for the site navigation.
 #
-# For instance, if you have a "primary" navigation list here, you
+# If you have a "primary" navigation list here, you
 # can use that as your header's primary navigation by setting
 # `primary.links` to "primary'
 #
@@ -13,8 +13,8 @@ primary:
     href: /about/
   - text: I'm new
     href: /new/
-  - text: Get involved
-    href: /involved/
+  - text: Ministries
+    href: /ministries/
   - text: Media
     href: /media/
 
@@ -26,8 +26,7 @@ secondary:
       href: /theme/
   about:
   new:
-  involved:
-  media:
+  ministries:
 
 footer:
   policy:
@@ -37,3 +36,4 @@ footer:
       href: https://18f.gsa.gov
       external: true
   credits:
+  pages:
