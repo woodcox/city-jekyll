@@ -1836,8 +1836,7 @@ caption {
   top: 0;
   right: 0;
   width: 100%;
-  min-height: 100%;
-  height: 1px;
+  height: 100%;
   pointer-events: none;
   visibility: hidden;
   overflow: hidden;
