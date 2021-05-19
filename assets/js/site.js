@@ -25,9 +25,9 @@ var logo-target = document.querySelector("footer");
     
 // Next we instantiate the observer with the function we created above. This takes an optional configuration
 // object that we will use in the other examples.
-let observer = new IntersectionObserver(logoToggle());
+let observer-logo = new IntersectionObserver(logoToggle());
 // Finally start observing the target element
-observer.observe(logo-target);
+observer-logo.observe(logo-target);
 
 //========================================
 // Scroll up button
