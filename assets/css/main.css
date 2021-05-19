@@ -1683,6 +1683,10 @@ caption {
   z-index: 202;
 }
 
+.logo .brand-logo .city-svg-logo .city-logo-black-fill {
+  fill: black;
+}
+
 .logo .brand-logo .toggle-svg .city-svg-logo .city-logo-black-fill {
   -webkit-transition: fill 0.4s ease;
   -o-transition: fill 0.4s ease;
