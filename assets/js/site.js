@@ -16,8 +16,6 @@ lozad('.lozad', {
 var svgElement = document.getElementById("svgColor");
 
 function logoToggle() { 
-  if (svgElement.classList.contains("toggle-svg");
-
   if svgElement.classList.contains("toggle-svg")) {
     svgElement.classList.remove("toggle-svg");
   } else {
@@ -28,7 +26,6 @@ function logoToggle() {
   } else {
     svgElement.classist.add("svg-color-fill-black");
   }
-
 }
 
 //========================================
