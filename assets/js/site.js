@@ -22,10 +22,21 @@ function logoToggle() {
 // Logo color when dark background
 //========================================
 var logoTarget = document.querySelector("footer");
-    
+
+function logoColorChange (entries, observerLogo) {
+  // The callback will return an array of entries, even if you are only observing a single item
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      // Toggle color
+      var element = document.getElementById("svgColor");
+      element.classList.toggle("toggle-svg");
+    }
+  });
+}
+
 // Next we instantiate the observer with the function we created above. This takes an optional configuration
 // object that we will use in the other examples.
-let observerLogo = new IntersectionObserver(logoToggle());
+let observerLogo = new IntersectionObserver(logoColorChange);
 // Finally start observing the target element
 observerLogo.observe(logoTarget);
 
