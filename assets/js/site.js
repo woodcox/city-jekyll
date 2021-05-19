@@ -24,6 +24,12 @@ function logoToggle() {
 //========================================
 var logoTarget = document.querySelector("footer");
 
+const config = {
+  root: null, // avoiding 'root' or setting it to 'null' sets it to default value: viewport
+  rootMargin: '0px',
+  threshold: 0.5
+};
+
 function logoColorChange (entries, observerLogo) {
   // The callback will return an array of entries, even if you are only observing a single item
   entries.forEach(entry => {
@@ -39,7 +45,7 @@ function logoColorChange (entries, observerLogo) {
 
 // Next we instantiate the observer with the function we created above. This takes an optional configuration
 // object of root, root margin and threshold
-let observerLogo = new IntersectionObserver(logoColorChange);
+let observerLogo = new IntersectionObserver(logoColorChange, config);
 // Finally start observing the target element
 observerLogo.observe(logoTarget);
 
