@@ -1992,26 +1992,6 @@ caption {
   margin-bottom: 0.5em;
 }
 
-.hero-image .btn {
-  /* Positioning and sizing */
-  display: block;
-  width: 200px;
-  /* Padding and margins */
-  padding: 1em;
-  margin-top: 50px;
-  margin-left: auto;
-  margin-right: auto;
-  /* Text styles */
-  color: white;
-  text-decoration: none;
-  font-size: 1.5em;
-  /* Border styles */
-  border: 3px solid white;
-  border-radius: 20px;
-  /* Background styles */
-  background-color: rgba(147, 112, 219, 0.8);
-}
-
 /* Footer */
 footer {
   color: white;
