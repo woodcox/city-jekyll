@@ -15,11 +15,11 @@ lozad('.lozad', {
 //======================================
 var svgElement = document.getElementById("svgColor");
 
-function logoToggle() { 
-  if (svgElement.classList.contains("toggle-svg")) {
-    svgElement.classList.remove("toggle-svg");
-  } else {
+function logoToggle() {
+  if (document.getElementById("checkbox-toggle").checked == true) {
     svgElement.classList.add("toggle-svg");
+  } else {
+    svgElement.classList.remove("toggle-svg");
   }
 }
 
