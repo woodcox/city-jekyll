@@ -21,26 +21,11 @@ function logoToggle() {
 //========================================
 // Logo color when dark background
 //========================================
-var logo-target  = document.querySelector("footer");
-var svgColor = document.querySelector(".svgColor")
-
-// Next we want to create a function that will be called when that element is intersected
-function logo-callback(entries, observer) {
-  // The callback will return an array of entries, even if you are only observing a single item
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      // Change logo color
-      svgColor.classList.add("toggle-svg")
-    } else {
-      // Return to original color
-      svgColor.classList.remove("toggle-svg")
-    }
-  });
-}
+var logo-target = document.querySelector("footer");
     
 // Next we instantiate the observer with the function we created above. This takes an optional configuration
 // object that we will use in the other examples.
-let observer = new IntersectionObserver(logo-callback);
+let observer = new IntersectionObserver(logoToggle());
 // Finally start observing the target element
 observer.observe(logo-target);
 
