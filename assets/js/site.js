@@ -13,9 +13,10 @@ lozad('.lozad', {
 //======================================
 // Logo svg color toggle
 //======================================
-function logoToggle() {
-   var element = document.getElementById("svgColor");
-   element.classList.toggle("toggle-svg");
+var svgElement = document.getElementById("svgColor");
+
+function logoToggle() { 
+   svgElement.classList.toggle("toggle-svg");
 }
 
 //========================================
@@ -28,11 +29,10 @@ function logoColorChange (entries, observerLogo) {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       // Change svg logo color
-      var element = document.getElementById("svgColor");
-      element.classList.add("toggle-svg")
+      svgElement.classList.add("toggle-svg")
     } else {
       // Hide button
-      element.classList.remove("toggle-svg")
+      svgElement.classList.remove("toggle-svg")
     }
   });
 }
