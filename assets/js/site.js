@@ -21,13 +21,13 @@ function logoToggle() {
 //========================================
 // Logo color when dark background
 //========================================
-var logo-target = document.querySelector("footer");
+var logoTarget = document.querySelector("footer");
     
 // Next we instantiate the observer with the function we created above. This takes an optional configuration
 // object that we will use in the other examples.
-let observer-logo = new IntersectionObserver(logoToggle());
+let observerLogo = new IntersectionObserver(logoToggle());
 // Finally start observing the target element
-observer-logo.observe(logo-target);
+observerLogo.observe(logoTarget);
 
 //========================================
 // Scroll up button
