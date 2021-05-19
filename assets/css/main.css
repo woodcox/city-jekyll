@@ -1958,6 +1958,61 @@ caption {
   transition: width 0.4s ease;
 }
 
+.hero-image {
+  /* Sizing */
+  width: 100vw;
+  height: 100vh;
+  /* Flexbox stuff */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* Text styles */
+  text-align: center;
+  color: white;
+  /* Background styles */
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("https://codetheweb.blog/assets/img/posts/full-image-hero/image.jpg");
+  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://codetheweb.blog/assets/img/posts/full-image-hero/image.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://codetheweb.blog/assets/img/posts/full-image-hero/image.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.hero-image h1 {
+  /* Text styles */
+  font-size: 5em;
+  /* Margins */
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+.hero-image .btn {
+  /* Positioning and sizing */
+  display: block;
+  width: 200px;
+  /* Padding and margins */
+  padding: 1em;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  /* Text styles */
+  color: white;
+  text-decoration: none;
+  font-size: 1.5em;
+  /* Border styles */
+  border: 3px solid white;
+  border-radius: 20px;
+  /* Background styles */
+  background-color: rgba(147, 112, 219, 0.8);
+}
+
 /* Footer */
 footer {
   color: white;
