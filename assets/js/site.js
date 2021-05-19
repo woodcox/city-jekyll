@@ -38,10 +38,10 @@ function logoColorChange (entries, observerLogo) {
 }
 
 // Next we instantiate the observer with the function we created above. This takes an optional configuration
-// object that we will use in the other examples.
-let observerLogo = new IntersectionObserver(logoColorChange, threshold: 0.95);
+// object of root, root margin and threshold
+let observerLogo = new IntersectionObserver(logoColorChange);
 // Finally start observing the target element
-observerLogo.observe(logoTarget);
+observerLogo.observe(logoTarget, threshold: 0.95);
 
 //========================================
 // Scroll up button
