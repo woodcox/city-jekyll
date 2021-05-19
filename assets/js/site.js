@@ -38,10 +38,10 @@ function logoColorChange (entries, observerLogo) {
   // The callback will return an array of entries, even if you are only observing a single item
   entries.forEach(entry => {
     if (entry.isIntersecting) {
-      // Change svg logo color
+      // Change logo color
       svgElement.classList.add("toggle-svg")
     } else {
-      // Hide button
+      // Remove logo color
       svgElement.classList.remove("toggle-svg")
     }
   });
