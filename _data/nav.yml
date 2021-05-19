@@ -8,13 +8,11 @@ primary:
   - text: Sunday
     href: /sunday/
   - text: What's on
-    href: /whatson/
+    href: /whats-on/
   - text: About us
     href: /about/
-  - text: I'm new
-    href: /new/
-  - text: Ministries
-    href: /ministries/
+  - text: Connect
+    href: /connect/
   - text: Media
     href: /media/
 
@@ -22,7 +20,7 @@ secondary:
   sunday:
     - text: Booking
       href: /#booking/
-  whatson:
+  whats-on:
     - text: Featured Events
       href: /#featured
     - text: Kids
@@ -44,7 +42,7 @@ secondary:
       href: /beliefs/
     - text: Values
       href: /values/
-  new:
+  connect:
     - text: Get to know us
       href: /leaders/
     - text: Here our stories
@@ -53,7 +51,6 @@ secondary:
       href: /values/
     - text: Join a bible course 
       href: /bible-course/
-  involved:
     - text: Join a team
       href: /teams/
     - text: Giving
@@ -68,8 +65,8 @@ secondary:
 
 footer:
   policy:
-    - text: Sidenav Documentation
-      href: /docs/
+    - text: Privacy
+      href: /privacy/
     - text: Sidenav External link
       href: https://18f.gsa.gov
       external: true
