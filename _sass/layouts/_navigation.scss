@@ -12,11 +12,10 @@
     z-index: 202;
     path {
     }
-
-    .toggle-svg .city-logo-black-fill {
+  }
+  .toggle-svg .city-svg-logo .city-logo-black-fill {
       transition: fill $anim-duration ease;
       fill: $menu-text-color;
-    }
   }
 }
 
