@@ -27,7 +27,7 @@ var logoTarget = document.querySelector("footer");
 const config = {
   root: null, // avoiding 'root' or setting it to 'null' sets it to default value: viewport
   rootMargin: '0px',
-  threshold: 0.55
+  threshold: 0.60
 };
 
 function logoColorChange (entries, observerLogo) {
