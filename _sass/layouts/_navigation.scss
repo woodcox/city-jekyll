@@ -10,7 +10,8 @@
     left: 10px;
     position: fixed;
     z-index: 202;
-    path {
+    .city-logo-black-fill { 
+      fill: black;
     }
   }
   .toggle-svg .city-svg-logo .city-logo-black-fill {
