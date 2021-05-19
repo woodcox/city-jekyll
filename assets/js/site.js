@@ -16,7 +16,19 @@ lozad('.lozad', {
 var svgElement = document.getElementById("svgColor");
 
 function logoToggle() { 
-   svgElement.classList.toggle("toggle-svg");
+  if (svgElement.classList.contains("toggle-svg");
+
+  if svgElement.classList.contains("toggle-svg")) {
+    svgElement.classList.remove("toggle-svg");
+  } else {
+    svgElement.classList.add("toggle-svg");
+  }
+  if (svgElement.classist.contains("svg-color-fill-black")) {
+    svgElement.classist.remove("svg-color-fill-black");
+  } else {
+    svgElement.classist.add("svg-color-fill-black");
+  }
+
 }
 
 //========================================
