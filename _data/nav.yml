@@ -20,13 +20,25 @@ primary:
 
 secondary:
   whatson:
-    - text: Documentation
-      href: /docs/
-    - text: Theme
-      href: /theme/
+    - text: Kids
+      href: /kids/
+    - text: Youth
+      href: /youth/
+    - text: Students
+      href: /students/
+    - text: Growth groups
+      href: /growth/
+    - text: Prayer meeting
+      href: /prayer/
   about:
   new:
   ministries:
+    - text: Kids
+      href: /kids/
+    - text: Youth
+      href: /youth/
+    - text: Students
+      href: /students/
 
 footer:
   policy:
