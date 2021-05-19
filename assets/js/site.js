@@ -33,13 +33,13 @@ function logoColorChange (entries, observerLogo) {
     } else {
       // Hide button
       svgElement.classList.remove("toggle-svg")
-    }
+    },{threshold: 1} 
   });
 }
 
 // Next we instantiate the observer with the function we created above. This takes an optional configuration
 // object that we will use in the other examples.
-let observerLogo = new IntersectionObserver(logoColorChange, {threshold: 1});
+let observerLogo = new IntersectionObserver(logoColorChange);
 // Finally start observing the target element
 observerLogo.observe(logoTarget);
 
