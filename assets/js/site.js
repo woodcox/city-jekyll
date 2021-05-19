@@ -22,9 +22,7 @@ function logoToggle() {
 // Logo color when dark background
 //========================================
 var logo-target  = document.querySelector("footer");
-
 var svgColor = document.querySelector(".svgColor")
-var rootElement = document.documentElement
 
 // Next we want to create a function that will be called when that element is intersected
 function logo-callback(entries, observer) {
