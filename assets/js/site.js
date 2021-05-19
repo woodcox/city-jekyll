@@ -19,7 +19,7 @@ function logoToggle() {
 }
 
 //========================================
-// Logo color when dark background
+// Change logo color when in footer
 //========================================
 var logoTarget = document.querySelector("footer");
 
@@ -27,9 +27,12 @@ function logoColorChange (entries, observerLogo) {
   // The callback will return an array of entries, even if you are only observing a single item
   entries.forEach(entry => {
     if (entry.isIntersecting) {
-      // Toggle color
+      // Change svg logo color
       var element = document.getElementById("svgColor");
-      element.classList.toggle("toggle-svg");
+      element.classList.add("toggle-svg")
+    } else {
+      // Hide button
+      element.classList.remove("toggle-svg")
     }
   });
 }
