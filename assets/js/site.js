@@ -27,7 +27,7 @@ var logoTarget = document.querySelector("footer");
 const config = {
   root: null, // avoiding 'root' or setting it to 'null' sets it to default value: viewport
   rootMargin: '0px',
-  threshold: 0.60
+  threshold: 0.58
 };
 
 function logoColorChange (entries, observerLogo) {
@@ -44,7 +44,7 @@ function logoColorChange (entries, observerLogo) {
 }
 
 // Next we instantiate the observer with the function we created above. This takes an optional configuration
-// object of root, root margin and threshold
+// object via config
 let observerLogo = new IntersectionObserver(logoColorChange, config);
 // Finally start observing the target element
 observerLogo.observe(logoTarget);
@@ -80,8 +80,7 @@ function scrollToTop() {
 }
 scrollToTopBtn.addEventListener("click", scrollToTop);
     
-// Next we instantiate the observer with the function we created above. This takes an optional configuration
-// object that we will use in the other examples.
+// Next we instantiate the observer with the function we created above. This takes an optional configuration object
 let observer = new IntersectionObserver(callback);
 // Finally start observing the target element
 observer.observe(target);
