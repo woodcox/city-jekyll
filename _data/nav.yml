@@ -19,7 +19,12 @@ primary:
     href: /media/
 
 secondary:
+  sunday:
+    - text: Booking
+      href: /#booking/
   whatson:
+    - text: Featured Events
+      href: /#featured
     - text: Kids
       href: /kids/
     - text: Youth
@@ -30,15 +35,36 @@ secondary:
       href: /growth/
     - text: Prayer meeting
       href: /prayer/
+    - text: Calendar
+      href: /calendar/
   about:
+    - text: Leaders
+      href: /leaders/
+    - text: Beliefs
+      href: /beliefs/
+    - text: Values
+      href: /values/
   new:
-  ministries:
-    - text: Kids
-      href: /kids/
-    - text: Youth
-      href: /youth/
-    - text: Students
-      href: /students/
+    - text: Get to know us
+      href: /leaders/
+    - text: Here our stories
+      href: /stories/
+    - text: Values
+      href: /values/
+    - text: Join a bible course 
+      href: /bible-course/
+  involved:
+    - text: Join a team
+      href: /teams/
+    - text: Giving
+      href: /giving/
+    - text: Baptism
+      href: /baptism/
+  media:
+    - text: Talks
+      href: /#talks
+    - text: Videos
+      href: /#videos
 
 footer:
   policy:
