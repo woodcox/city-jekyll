@@ -9,14 +9,8 @@
   <div class="menu">
     <div>
       <div>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Sunday</a></li>
-          <li><a href="#">What's on</a></li>
-          <li><a href="#">About us</a></li>
-          <li><a href="#">I'm new</a></li>
-          <li><a href="#">Get involved</a></li>
-          <li><a href="#">Media</a></li>
+        <ul> {% for link in site.data.nav.primary %}
+          <li><a href="{{ link.href }}" {% if link.href == page.url %}class="active"{% endif %}>{{ link.text }}</a></li>{% endfor %}
         </ul>
       </div>
     </div>
