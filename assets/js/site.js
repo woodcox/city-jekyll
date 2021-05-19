@@ -39,7 +39,7 @@ function logoColorChange (entries, observerLogo) {
 
 // Next we instantiate the observer with the function we created above. This takes an optional configuration
 // object that we will use in the other examples.
-let observerLogo = new IntersectionObserver(logoColorChange);
+let observerLogo = new IntersectionObserver(logoColorChange, threshold: 0.95);
 // Finally start observing the target element
 observerLogo.observe(logoTarget);
 
