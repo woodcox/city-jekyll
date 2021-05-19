@@ -35,7 +35,7 @@ function logoColorChange (entries, observerLogo) {
       svgElement.classList.remove("toggle-svg")
     }
   });
-},
+}
 
 // Next we instantiate the observer with the function we created above. This takes an optional configuration
 // object that we will use in the other examples.
