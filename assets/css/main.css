@@ -1958,7 +1958,7 @@ caption {
   transition: width 0.4s ease;
 }
 
-#content .hero-image {
+.hero-image {
   /* Sizing */
   width: 100vw;
   height: 100vh;
@@ -1986,18 +1986,18 @@ caption {
   background-attachment: fixed;
 }
 
-#content .hero-image hero-text h1, #content .hero-image hero-text h2 {
+.hero-image hero-text h1, .hero-image hero-text h2 {
   /* Text styles */
   color: #ffffff;
 }
 
-#content .hero-image hero-text h1 {
+.hero-image hero-text h1 {
   /* Margins */
   margin-top: 0;
   margin-bottom: 0.5em;
 }
 
-#content .hero-image hero-text .muted-button {
+.hero-image hero-text .muted-button {
   color: white !important;
 }
 
