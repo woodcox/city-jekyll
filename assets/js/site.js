@@ -37,6 +37,7 @@ const config = {
 function logoColorChange (entries, observerLogo) {
   // The callback will return an array of entries, even if you are only observing a single item
   entries.forEach(entry => {
+    // Check hamburger not open
     if (document.getElementById("prim-menu-checkbox").checked == false) { 
       if (entry.isIntersecting) {
         // Change logo color
