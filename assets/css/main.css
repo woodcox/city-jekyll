@@ -1337,16 +1337,16 @@ a.accent-button:active {
 .muted-button,
 a.muted-button {
   background: transparent;
-  border: 1px solid #cdcdcd;
-  color: #4e4e4e;
+  border: 1px solid #fafafa;
+  color: #fafafa;
 }
 
 .muted-button:hover, .muted-button:focus, .muted-button:active,
 a.muted-button:hover,
 a.muted-button:focus,
 a.muted-button:active {
-  color: #4e4e4e;
-  border: 1px solid #818181;
+  color: #7b7b7b;
+  border: 1px solid #aeaeae;
   background: transparent;
 }
 
@@ -1628,31 +1628,31 @@ caption {
 
 .muted-accordion li label {
   background: transparent;
-  border: 1px solid #cdcdcd;
-  color: #4e4e4e;
+  border: 1px solid #fafafa;
+  color: #fafafa;
 }
 
 .muted-accordion li label:hover {
-  color: #4e4e4e;
-  border: 1px solid #818181;
+  color: #7b7b7b;
+  border: 1px solid #aeaeae;
   background: transparent;
 }
 
 .muted-accordion li input:checked + label {
-  color: #4e4e4e;
-  border-top: 1px solid #818181;
-  border-left: 1px solid #818181;
-  border-right: 1px solid #818181;
+  color: #7b7b7b;
+  border-top: 1px solid #aeaeae;
+  border-left: 1px solid #aeaeae;
+  border-right: 1px solid #aeaeae;
   border-bottom: 0;
   background: transparent;
 }
 
 .muted-accordion li input:checked + label + .accord-content {
-  border: 1px solid #818181;
+  border: 1px solid #aeaeae;
   border-top: 0;
-  border-left: 1px solid #818181;
-  border-right: 1px solid #818181;
-  border-bottom: 1px solid #818181;
+  border-left: 1px solid #aeaeae;
+  border-right: 1px solid #aeaeae;
+  border-bottom: 1px solid #aeaeae;
   background: transparent;
 }
 
