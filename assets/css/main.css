@@ -1979,9 +1979,12 @@ caption {
   background-image: -o-linear-gradient(rgba(37, 156, 211, 0.75), rgba(37, 156, 211, 0.5)), url("https://codetheweb.blog/assets/img/posts/full-image-hero/image.jpg");
   background-image: linear-gradient(rgba(37, 156, 211, 0.75), rgba(37, 156, 211, 0.5)), url("https://codetheweb.blog/assets/img/posts/full-image-hero/image.jpg");
   background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: scroll;
 }
 
 /* Footer */
