@@ -37,12 +37,15 @@ const config = {
 function logoColorChange (entries, observerLogo) {
   // The callback will return an array of entries, even if you are only observing a single item
   entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      // Change logo color
-      svgElement.classList.add("toggle-svg")
-    } else {
-      // Remove logo color
-      svgElement.classList.remove("toggle-svg")
+    // Check hamburger not open
+    if (document.getElementById("prim-menu-checkbox").checked == false) { 
+      if (entry.isIntersecting) {
+        // Change logo color
+        svgElement.classList.add("toggle-svg")
+      } else {
+        // Remove logo color
+        svgElement.classList.remove("toggle-svg")
+      }
     }
   });
 }
