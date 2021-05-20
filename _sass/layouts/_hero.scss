@@ -7,19 +7,23 @@
   display: flex;
   justify-content: center;
   align-items: center;
-    
+
+  /* Text styles */
+  text-align: center;
+  color: white;
+  
   /* Background styles */
   background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('/assets/images/1000/bridgewater-place.jpg');
+  background-color: #259cd3;
+  background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23113a5c' fill-opacity='0.73' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
 
   hero-text {
-    /* Text styles */
-    text-align: center;
-    color: white;
     z-index: 10;
+    color: white;
     h1 {
       /* Text styles */
     
