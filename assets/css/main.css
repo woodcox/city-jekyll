@@ -1984,7 +1984,7 @@ caption {
   -webkit-background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  background-attachment: scroll;
+  background-attachment: fixed;
 }
 
 /* Footer */
