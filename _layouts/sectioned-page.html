@@ -6,13 +6,13 @@ layout: default
 {% assign webpage = site.documents | where: "collection_type", type %}
 <main class="content" id="main-content">
 {% include components/hero.html %}
+{% include modules/breadcrumbs.html %}
   {% for page in webpage %}
   {% capture id %}{{ page.id | remove:'/' | downcase }}{% endcapture %}
   <section id="{{id}}" class="section p-{{id}}">
     <article>
       <div class="{{ page.container-size }}-container {{ page.style }}">
         {% if page.title %}
-        {% include modules/breadcrumbs.html %}
         <h{{ page.heading }}>{{ page.title | upcase }}</h{{ page.heading }}>
         {% endif %}
         {{ page.content }}
