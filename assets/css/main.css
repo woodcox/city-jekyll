@@ -1975,9 +1975,9 @@ caption {
   /* Text styles */
   text-align: center;
   /* Background styles */
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(37, 156, 211, 0.85)), to(rgba(37, 156, 211, 0.5))), url("https://codetheweb.blog/assets/img/posts/full-image-hero/image.jpg");
-  background-image: -o-linear-gradient(rgba(37, 156, 211, 0.85), rgba(37, 156, 211, 0.5)), url("https://codetheweb.blog/assets/img/posts/full-image-hero/image.jpg");
-  background-image: linear-gradient(rgba(37, 156, 211, 0.85), rgba(37, 156, 211, 0.5)), url("https://codetheweb.blog/assets/img/posts/full-image-hero/image.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(37, 156, 211, 0.95)), to(rgba(37, 156, 211, 0.4))), url("/assets/img/800/bridgewater-place.jpg");
+  background-image: -o-linear-gradient(rgba(37, 156, 211, 0.95), rgba(37, 156, 211, 0.4)), url("/assets/img/800/bridgewater-place.jpg");
+  background-image: linear-gradient(rgba(37, 156, 211, 0.95), rgba(37, 156, 211, 0.4)), url("/assets/img/800/bridgewater-place.jpg");
   background-size: cover;
   -o-background-size: cover;
   -moz-background-size: cover;
