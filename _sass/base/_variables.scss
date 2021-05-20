@@ -29,7 +29,8 @@ $background: white !default;
 $primary-color: #259cd3 !default; //blue
 $secondary-color: #f19426 !default; //orange
 $third-color: #06892f !default; //green
-$accent-color: #cdcdcd !default;
+$accent-color: #cdcdcd !default; // grey
+$almost-white: #fafafa !default;
 $alternate-background: #fafafa !default;
 $alternate-color: #404040 !default;
 $link-color: black !default;
@@ -126,12 +127,12 @@ $accent-button-color: #ffffff !default;
 $accent-button-color-hover: #ffffff !default;
 
 // Muted Buttons
-$muted-border: 1px solid $accent-color !default;
-$muted-border-hover: 1px solid darken($accent-color, 30%) !default;
+$muted-border: 1px solid $almost-white !default;
+$muted-border-hover: 1px solid darken($almost-white, 30%) !default;
 $muted-background: transparent !default;
 $muted-background-hover: transparent !default;
-$muted-color: darken($accent-color, 50%) !default;
-$muted-color-hover: darken($accent-color, 50%) !default;
+$muted-color: $almost-white;
+$muted-color-hover: darken($almost-white, 50%) !default;
 
 // Round Buttons
 $round-buttons: 40px !default;
