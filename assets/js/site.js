@@ -19,7 +19,8 @@ function logoToggle() {
   if (document.getElementById("prim-menu-checkbox").checked == true) {
     svgElement.classList.add("toggle-svg");
   } else {
-    logoColorChange()  
+    svgElement.classList.remove("toggle-svg");
+    }
   }
 }
 
