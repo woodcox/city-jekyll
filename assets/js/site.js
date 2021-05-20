@@ -20,7 +20,7 @@ function logoToggle() {
     svgElement.classList.add("toggle-svg");
   } else {
     if(logoColorChange()){
-      svgElement.classList.remove("toggle-svg");
+      svgElement.classList.add("toggle-svg");
     }
   }
 }
