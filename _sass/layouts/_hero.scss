@@ -21,14 +21,16 @@
   background-attachment: fixed;
 
   hero-text {
-    z-index: 10;
-    color: $button-color;
-    h1 {
+    h1, h2 {
       /* Text styles */
-    
-      /* Margins */
+      color: $button-color;
+    }
+    h1 {  /* Margins */
       margin-top: 0;
       margin-bottom: 0.5em;
+    }
+    .muted-button {
+      color: white !important;
     }
   }
 }
