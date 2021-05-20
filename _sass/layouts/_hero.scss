@@ -14,7 +14,10 @@
   /* Background styles */
   background-image: linear-gradient(rgba($primary-color, 0.75),rgba($primary-color, 0.50)), url('https://codetheweb.blog/assets/img/posts/full-image-hero/image.jpg');
   background-size: cover;
+  -o-background-size:cover; 
+  -moz-background-size:cover; 
+  -webkit-background-size:cover;
   background-position: center center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: scroll;
 }
