@@ -1972,9 +1972,6 @@ caption {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  /* Text styles */
-  text-align: center;
-  color: white;
   /* Background styles */
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("/assets/images/1000/bridgewater-place.jpg");
   background-image: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/images/1000/bridgewater-place.jpg");
@@ -1985,7 +1982,14 @@ caption {
   background-attachment: fixed;
 }
 
-.hero-image h1 {
+.hero-image hero-text {
+  /* Text styles */
+  text-align: center;
+  color: white;
+  z-index: 10;
+}
+
+.hero-image hero-text h1 {
   /* Text styles */
   /* Margins */
   margin-top: 0;
