@@ -985,13 +985,13 @@ dd {
  */
 .flex-small,
 .flex-large {
-  padding-left: 1%;
-  padding-right: 1%;
+  padding-left: 2%;
+  padding-right: 2%;
 }
 
 .flex-row {
-  margin-left: -1%;
-  margin-right: -1%;
+  margin-left: -2%;
+  margin-right: -2%;
 }
 
 .flex-row {
@@ -1008,8 +1008,8 @@ dd {
 
 .flex-small,
 .flex-large {
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
+  -ms-flex-preferred-size: 98%;
+      flex-basis: 98%;
   margin-bottom: 1rem;
 }
 
