@@ -985,13 +985,13 @@ dd {
  */
 .flex-small,
 .flex-large {
-  padding-left: 0;
-  padding-right: 0;
+  padding-left: 1%;
+  padding-right: 1%;
 }
 
 .flex-row {
-  margin-left: 0;
-  margin-right: 0;
+  margin-left: -1%;
+  margin-right: -1%;
 }
 
 .flex-row {
