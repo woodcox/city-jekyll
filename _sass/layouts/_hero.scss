@@ -10,7 +10,6 @@
     
   /* Text styles */
   text-align: center;
-  color: white;
 
   /* Background styles */
   background-image: linear-gradient(rgba($primary-color, 0.95),rgba($primary-color, 0.40)), url('../img/master/skyline.jpg');
@@ -32,6 +31,10 @@
       font-size: 2em;
       color: white;
     }
+  }
+  .hero-buttons {
+    width: 60px;
+    margin: auto;
   }   
 }
 
