@@ -1987,6 +1987,12 @@ caption {
   background-attachment: scroll;
 }
 
+@media (max-width: 480px) {
+  hero.image {
+    background-image: url(images/background-mobile.jpg);
+  }
+}
+
 /* Footer */
 footer {
   color: white;
