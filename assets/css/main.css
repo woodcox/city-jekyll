@@ -2024,7 +2024,7 @@ caption {
   transition: width 0.4s ease;
 }
 
-.hero-image-text {
+.hero {
   /* Sizing */
   width: 100vw;
   height: 100vh;
