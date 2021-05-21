@@ -21,6 +21,18 @@
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: scroll;
+  
+  .hero-text {
+    .hero-text-h1 {
+      font-size: 5em;
+      margin-bottom: 0.5em;
+      color: white;
+    }
+    .hero-text-h2 {
+      font-size: 2em;
+      color: white;
+    }
+  }   
 }
 
 @media (max-width: 480px) {
