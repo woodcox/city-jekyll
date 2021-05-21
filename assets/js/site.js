@@ -152,17 +152,3 @@ document.addEventListener('DOMContentLoaded', function() {
   }); //end foreach
     
 }); //end onload
-
-//=======================================
-// Animate hero-text
-//=======================================
-$(function() {
-$(".hero-text").typed({
-    strings: ["Welcome to", "City Evangelical Church", "A city church with a community presence"],
-    typeSpeed: 50,
-    backSpeed: 20,
-    backDelay: 2000,
-    showCursor: true,
-    loop: true
-  });
-});
