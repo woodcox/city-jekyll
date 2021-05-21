@@ -2,7 +2,7 @@
  * Grid
  */
 
-$column-padding: 2%;
+$column-padding: 0;
 $margin-bottom: 1rem;
 
 // The rows have a negative margin  which are offset by the padding on the columns.
@@ -27,7 +27,7 @@ $margin-bottom: 1rem;
 .flex-small,
 .flex-large {
   @extend %column-padding;
-  flex-basis: 100%-$column-padding;
+  flex-basis: 100%;
   margin-bottom: $margin-bottom;
 }
 
