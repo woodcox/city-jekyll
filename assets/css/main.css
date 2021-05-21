@@ -2065,9 +2065,8 @@ caption {
   color: white;
 }
 
-.hero .hero-button {
-  width: 100px;
-  margin: auto;
+.hero .hero-text a {
+  text-decoration: none;
 }
 
 @media (max-width: 480px) {
