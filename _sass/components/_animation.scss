@@ -1,4 +1,6 @@
 /* Waves animation */
+/* see https://codepen.io/KrzysiekF/pen/oNNLwZq */
+/* to use add <div class="waves"></div> */
 
 $wave-color: $secondary-color;
 
@@ -7,7 +9,7 @@ $wave-color: $secondary-color;
   bottom: 0;
   left: 0;
   right: 0;
-  height: 70px;
+  height: 100px;
   background-color: $wave-color;
   box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
   transition: 500ms;
