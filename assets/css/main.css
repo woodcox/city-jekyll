@@ -2055,6 +2055,17 @@ caption {
   background-attachment: scroll;
 }
 
+.hero .hero-text .hero-text-h1 {
+  font-size: 5em;
+  margin-bottom: 0.5em;
+  color: white;
+}
+
+.hero .hero-text .hero-text-h2 {
+  font-size: 2em;
+  color: white;
+}
+
 @media (max-width: 480px) {
   hero.image {
     background-image: url(images/background-mobile.jpg);
