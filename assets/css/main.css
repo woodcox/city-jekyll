@@ -1700,6 +1700,7 @@ caption {
 
 .waves::before {
   border-radius: 44%;
+  background: #333333;
   -webkit-animation: waves 8s linear infinite;
           animation: waves 8s linear infinite;
 }
