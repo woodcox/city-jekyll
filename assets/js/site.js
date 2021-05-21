@@ -95,7 +95,6 @@ observer.observe(target);
 //=====================================================
 // Carousel
 //=====================================================
-
 document.addEventListener('DOMContentLoaded', function() {
 
   const carousels = document.querySelectorAll('.carousel');
@@ -155,9 +154,8 @@ document.addEventListener('DOMContentLoaded', function() {
 }); //end onload
 
 //=======================================
-// Animate
+// Animate hero-text
 //=======================================
-
 $(function() {
 $(".hero-text").typed({
     strings: ["Welcome to", "City Evangelical Church", "A city church with a community presence"],
