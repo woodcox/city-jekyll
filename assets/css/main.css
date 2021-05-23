@@ -1689,9 +1689,9 @@ caption {
 }
 
 #splash a {
-  -webkit-text-decoration-color: #dde;
-          text-decoration-color: #dde;
-  color: #dde;
+  -webkit-text-decoration-color: white;
+          text-decoration-color: white;
+  color: white;
 }
 
 #splash {
@@ -1708,14 +1708,14 @@ caption {
 }
 
 #splash {
-  background: #0000ee;
+  background: #259cd3;
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 20;
+  z-index: 300;
   width: 100%;
   pointer-events: none;
-  color: #dde;
+  color: white;
   -webkit-animation-name: loading-fadeout;
           animation-name: loading-fadeout;
   -webkit-animation-delay: 1.3s;
