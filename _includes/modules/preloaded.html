@@ -1,0 +1,78 @@
+<style>
+#myCanvas {
+    position: fixed;
+    z-index: 1;
+    background: #0000ee;
+    height: 100vh;
+    width: 100vw;
+    animation-name: fadeout;
+    animation-delay: 1.5s; 
+    animation-duration: 0.3s; 
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+</style>
+<canvas id="myCanvas"></canvas>
+<script>
+    var mainCanvas = document.getElementById("myCanvas");
+    mainCanvas.width = window.innerWidth;
+    mainCanvas.height = window.innerHeight;
+    var mainContext = mainCanvas.getContext('2d');
+    var canvasWidth = mainCanvas.width;
+    var canvasHeight = mainCanvas.height;
+    var canvasGridsize = 25;
+    var canvasRows = Math.floor(canvasHeight/canvasGridsize);
+    var canvasCols = Math.floor(canvasWidth/canvasGridsize);
+    var grow = false;
+    var startsize = (4*canvasGridsize);
+    var triangles = [];
+    var t0 = 0;
+    var t1 = 0;
+    console.log(canvasRows);
+    console.log(canvasCols);
+
+    
+    function drawtriangle(width,xPos,yPos) {
+        if(width<0) width = 0;
+        xPos = xPos - 0.5*width;
+        yPos = yPos - 0.5*width
+
+        mainContext.beginPath();
+    
+        mainContext.beginPath();
+        mainContext.moveTo(xPos, yPos);
+        mainContext.lineTo(xPos + width, yPos);
+        mainContext.lineTo(xPos + 0.5*width, yPos + width);
+        mainContext.closePath();
+    
+        mainContext.fillStyle = 'rgb(255, 255, 255)';
+        mainContext.fill();
+    };
+    
+    function drawtriangles(startsize) {
+        for (var i = 0; i < (canvasCols+2)*(canvasRows+2); i++) {
+        
+        var xPos = (i%(canvasCols+2))*canvasGridsize;
+        var yPos = Math.floor(i/(canvasCols+2))*canvasGridsize;
+        var width = startsize + Math.floor(i/canvasCols);
+        drawtriangle(width,xPos,yPos)
+        }
+    }
+    draw();
+    
+    function draw() {
+        mainContext.clearRect(0, 0, mainCanvas.width, mainCanvas.height);
+        t0 = t1;
+        t1 = performance.now();
+        milisecondspassed = (t1 - t0)/12;
+        
+        if(startsize>(2*canvasGridsize)) grow = false;
+        if(startsize<-(1.3*canvasRows)) grow = true;
+        if(grow==true) startsize = startsize + milisecondspassed;
+        if(grow==false) startsize = startsize - milisecondspassed;
+        drawtriangles(startsize);
+
+        if(grow == false) requestAnimationFrame(draw);
+    }
+</script>
