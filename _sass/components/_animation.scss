@@ -9,29 +9,11 @@
   color: #dde;
 }
 
-body.black a {
-  color: black;
-}
-
-#innerbody {
-  position: relative;
-}
-#innerbody, #content .fullscreen, #splash {
+#splash {
   align-items: center; 
   display: flex; 
   justify-content: center; 
   min-height: 100%;
-}
-#darkmodeoverlay {
-  background: #fff2; 
-  position: fixed; 
-  top: 0; 
-  left: 0; 
-  z-index: 8; 
-  width: 100%; 
-  pointer-events: none; 
-  opacity: 0; 
-  height: 100vh;
 }
 
 #splash {
