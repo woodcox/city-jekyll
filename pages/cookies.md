@@ -12,6 +12,8 @@ Cookies make the interaction between you and the website faster and easier. With
 
 A cookie is stored on your computer or mobile device by a website's server. Only that server can retrieve or read the contents of that cookie. Each cookie is unique to your web browser. So if we put a cookie on your computer, it can't be read by any other website.
 
+Below is a list of the cookies we use and what 
+
 ### Google Analytics
 
 This website uses Google Analytics. This happens only if you approve third party analytics cookies. If you approve Google Analytics will stores several cookies on your computer or mobile. However, we have taken all actions we can to limit the power of Google. We have configured Google Analytics to anonymize IP addresses and use SSL at all times. We use Google Analytics to collect information about how our website performs and how our users, in general, navigate through and use {{ site.url | remove_first: "https://" }}. This helps us evaluate how you use our website, compile statistical reports on activity, and improve our content and website performance.
