@@ -41,7 +41,7 @@
 <button class="scrollToTopBtn" id="scrollToTop()"><svg class="chevron-icon"></svg> TOP</button>
 
 //========================================
-// Scroll up button js (move to site js to impliment)
+// Scroll up button js (move to site js to impliment) & {% include modules/scroll-up.html %} at top of footer include
 //========================================
 // We select the element we want to target
 var target  = document.querySelector("footer");
@@ -75,3 +75,5 @@ scrollToTopBtn.addEventListener("click", scrollToTop);
 let observer = new IntersectionObserver(callback);
 // Finally start observing the target element
 observer.observe(target);
+
+
