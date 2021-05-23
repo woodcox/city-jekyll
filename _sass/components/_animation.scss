@@ -4,42 +4,63 @@
     100% {opacity: 0;}
 }
 
-* {margin: 0; padding: 0; font-weight: normal;}
-body {background-attachment: fixed; color: #dde; font-family: 'times_new_romanregular', 'Times New Roman','Times',serif;}
-#bananaleft, #bananaright {max-width: 650px; pointer-events: none; transition: transform 0.7s ease-in-out; transform: translateX(-100%); position: fixed; width: 24%; left: 0; top: calc(100px + 8%); height: calc(92% - 100px); opacity: 0.35; z-index: 9; object-fit: cover; object-position: 100% 0%;}
-#bananaright {left: auto; right: 0; object-position: 0% 0%; transform: translateX(100%);}
-.loaded #bananaleft, .loaded #bananaright {transform: translateX(0%);}
-.lightmode:not(.bgcolor) #bananaleft, .lightmode:not(.bgcolor) #bananaright {filter: contrast(0%) brightness(50%) sepia(100%) hue-rotate(188deg) saturate(700%);}
-html.lightmode:not(.bgcolor) {background-color: #dde;}
-html.lightmode:not(.bgcolor) body {color: #0000ee;}
-html.bgcolor body {color: #fffd;}
-body, html {height: 100%;}
-img {max-width: 100%;}
-html {overflow-y: scroll; scroll-behavior: smooth; background: #0000ee;}
-a {color: #dde; text-decoration-style: solid; /*solid dotted, dashed, and wavy*/ text-decoration-color: rgba(221,221,221,0.5);}
-.lightmode:not(.bgcolor) a {color: #0000ee; text-decoration-color: rgba(0,0,238,0.5);}
-.bgcolor a {color: #fffd;}
-#splash a {text-decoration-color: #dde; color: #dde;}
-body.black a {color: black;}
-#innerbody {position: relative;}
-#innerbody, #content .fullscreen, #splash {align-items: center; display: flex; justify-content: center; min-height: 100%;}
-#darkmodeoverlay {background: #fff2; position: fixed; top: 0; left: 0; z-index: 8; width: 100%; pointer-events: none; opacity: 0; height: 100vh;}
-#splash {background: #0000ee; position: fixed; top: 0; left: 0; z-index: 20; width: 100%; pointer-events: none; color: #dde;
-    animation-name: loading-fadeout; 
-    animation-delay: 1.3s; 
-    animation-duration: 0.3s; 
-    animation-iteration-count: 1;
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: forwards;
+#splash a {
+  text-decoration-color: #dde; 
+  color: #dde;
 }
-#splash > div:not(.line) {padding: 0 30px 2em;
-    animation-name: loading-fadeout; 
-    animation-delay: 1s; 
-    animation-duration: 0.3s; 
-    animation-iteration-count: 1;
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: forwards;
+
+body.black a {
+  color: black;
 }
+
+#innerbody {
+  position: relative;
+}
+#innerbody, #content .fullscreen, #splash {
+  align-items: center; 
+  display: flex; 
+  justify-content: center; 
+  min-height: 100%;
+}
+#darkmodeoverlay {
+  background: #fff2; 
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  z-index: 8; 
+  width: 100%; 
+  pointer-events: none; 
+  opacity: 0; 
+  height: 100vh;
+}
+
+#splash {
+  background: #0000ee; 
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  z-index: 20; 
+  width: 100%; 
+  pointer-events: none; 
+  color: #dde;
+  animation-name: loading-fadeout; 
+  animation-delay: 1.3s; 
+  animation-duration: 0.3s; 
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+#splash > div:not(.line) {
+  padding: 0 30px 2em;
+  animation-name: loading-fadeout; 
+  animation-delay: 1s; 
+  animation-duration: 0.3s; 
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
 #splash .medium {display: inline-block; margin: 0 0.15em;}
 #splash .medium span {display: inline-block; margin: 0 0.07em 0 0;}
 #splash .medium span:first-child {margin-right: 0.1em;}
