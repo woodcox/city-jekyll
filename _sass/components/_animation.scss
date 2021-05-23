@@ -5,8 +5,8 @@
 }
 
 #splash a {
-  text-decoration-color: #dde; 
-  color: #dde;
+  text-decoration-color: $splash-font-color; 
+  color: $splash-font-color;
 }
 
 #splash {
@@ -17,14 +17,14 @@
 }
 
 #splash {
-  background: #0000ee; 
+  background: $splash-background; 
   position: fixed; 
   top: 0; 
   left: 0; 
-  z-index: 20; 
+  z-index: 300; 
   width: 100%; 
   pointer-events: none; 
-  color: #dde;
+  color: $splash-font-color;
   animation-name: loading-fadeout; 
   animation-delay: 1.3s; 
   animation-duration: 0.3s; 
