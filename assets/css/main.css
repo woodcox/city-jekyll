@@ -1670,6 +1670,24 @@ caption {
   border-bottom-left-radius: 25px;
 }
 
+/* Preloader screen */
+@-webkit-keyframes loading-fadeout {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes loading-fadeout {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 /* Waves animation */
 /* see https://codepen.io/KrzysiekF/pen/oNNLwZq */
 /* to use add <div class="waves"></div> */
