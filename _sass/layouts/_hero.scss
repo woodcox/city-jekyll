@@ -23,12 +23,9 @@
   
   .hero-text {
     .hero-text-h1 {
-      font-size: 4em;
-      margin-bottom: 0.5em;
       color: white;
     }
     .hero-text-h2 {
-      font-size: 2em;
       color: white;
     }
     a {
@@ -38,11 +35,37 @@
 }
 
 @include small-breakpoint {
-  .hero-text-h1 {
+  .hero-text {
+    .hero-text-h1 {
       font-size: 2em;
       margin-bottom: 0.5em;
+    }
+    .hero-text-h2 {
+      font-size: 1em;
+    }
   }
-  .hero-text-h2 {
-    font-size: 1em;
+}
+
+@include medium-breakpoint {
+  .hero-text {
+    .hero-text-h1 {
+      font-size: 3em;
+      margin-bottom: 0.5em;
+    }
+    .hero-text-h2 {
+      font-size: 1.5em;
+    }
+  }
+}
+
+@include large-breakpoint {
+  .hero-text {
+    .hero-text-h1 {
+      font-size: 4em;
+      margin-bottom: 0.5em;
+    }
+    .hero-text-h2 {
+      font-size: 2em;
+    }
   }
 }
