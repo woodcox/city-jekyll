@@ -1721,14 +1721,18 @@ caption {
           animation-fill-mode: forwards;
 }
 
-#splash .city-svg-logo {
+#splash > div {
+  text-align: center;
+}
+
+#splash > div .city-svg-logo {
   viewBox: 0 0 40 40;
   width: 20%;
   height: auto;
   margin: auto;
 }
 
-#splash .city-svg-logo .city-logo-black-fill {
+#splash > div .city-svg-logo .city-logo-black-fill {
   fill: white;
 }
 
