@@ -27,13 +27,14 @@
   a {
     text-decoration-color: $splash-font-color; 
     color: $splash-font-color;
+    
     .city-svg-logo {
       viewBox: 0 0 40 40;
       width: $hamburger-menu-size;
       height: auto;
-        .city-logo-black-fill { 
-          fill: black;
-        }
+        
+      .city-logo-black-fill { 
+        fill: black;
       }
     }
   }
