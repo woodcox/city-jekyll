@@ -24,14 +24,18 @@
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
 
-  .city-svg-logo {
-    viewBox: 0 0 40 40;
-    width: 20%;
-    height: auto;
-    margin: auto;
+  > div {
+    text-align: center;
+
+    .city-svg-logo {
+      viewBox: 0 0 40 40;
+      width: 20%;
+      height: auto;
+      margin: auto;
         
-    .city-logo-black-fill { 
-      fill: white;
+      .city-logo-black-fill { 
+        fill: white;
+      }
     }
   }
 }
