@@ -1734,7 +1734,7 @@ caption {
 }
 
 #splash a .city-svg-logo .city-logo-black-fill {
-  fill: black;
+  fill: white;
 }
 
 #splash > div:not(.line) {
