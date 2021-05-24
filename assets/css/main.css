@@ -1727,6 +1727,16 @@ caption {
   color: white;
 }
 
+#splash a .city-svg-logo {
+  viewBox: 0 0 40 40;
+  width: 45px;
+  height: auto;
+}
+
+#splash a .city-svg-logo .city-logo-black-fill {
+  fill: black;
+}
+
 #splash > div:not(.line) {
   padding: 0 30px 2em;
   -webkit-animation-name: loading-fadeout;
