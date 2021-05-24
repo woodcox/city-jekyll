@@ -1699,13 +1699,13 @@ caption {
       -ms-flex-pack: center;
           justify-content: center;
   min-height: 100%;
-  background: #259cd3;
+  width: 100%;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 300;
-  width: 100%;
   pointer-events: none;
+  background: #259cd3;
   color: white;
   -webkit-animation-name: loading-fadeout;
           animation-name: loading-fadeout;
@@ -1729,22 +1729,6 @@ caption {
 
 #splash .city-svg-logo .city-logo-black-fill {
   fill: white;
-}
-
-#splash > div:not(.line) {
-  padding: 0 30px 2em;
-  -webkit-animation-name: loading-fadeout;
-          animation-name: loading-fadeout;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-  -webkit-animation-duration: 0.3s;
-          animation-duration: 0.3s;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-  -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
 }
 
 /* Waves animation */
