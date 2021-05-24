@@ -37,7 +37,7 @@
 @include small-breakpoint {
   .hero-text {
     .hero-text-h1 {
-      font-size: 2em;
+      font-size: 2.25em;
       margin-bottom: 0.5em;
     }
     .hero-text-h2 {
@@ -49,7 +49,7 @@
 @include medium-breakpoint {
   .hero-text {
     .hero-text-h1 {
-      font-size: 3em;
+      font-size: 3.25em;
       margin-bottom: 0.5em;
     }
     .hero-text-h2 {
