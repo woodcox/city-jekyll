@@ -4,19 +4,11 @@
     100% {opacity: 0;}
 }
 
-#splash a {
-  text-decoration-color: $splash-font-color; 
-  color: $splash-font-color;
-}
-
 #splash {
   align-items: center; 
   display: flex; 
   justify-content: center; 
   min-height: 100%;
-}
-
-#splash {
   background: $splash-background; 
   position: fixed; 
   top: 0; 
@@ -31,21 +23,37 @@
   animation-iteration-count: 1;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
+
+  a {
+    text-decoration-color: $splash-font-color; 
+    color: $splash-font-color;
+  }
+
+  > div:not(.line) {
+    padding: 0 30px 2em;
+    animation-name: loading-fadeout; 
+    animation-delay: 1s; 
+    animation-duration: 0.3s; 
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+  }
+
+  .medium {
+    display: inline-block; 
+    margin: 0 0.15em;
+  
+    span {
+      display: inline-block; 
+      margin: 0 0.07em 0 0;
+    
+      &:first-child {
+        margin-right: 0.1em;
+      }
+    }
+  }
 }
 
-#splash > div:not(.line) {
-  padding: 0 30px 2em;
-  animation-name: loading-fadeout; 
-  animation-delay: 1s; 
-  animation-duration: 0.3s; 
-  animation-iteration-count: 1;
-  animation-timing-function: ease-in-out;
-  animation-fill-mode: forwards;
-}
-
-#splash .medium {display: inline-block; margin: 0 0.15em;}
-#splash .medium span {display: inline-block; margin: 0 0.07em 0 0;}
-#splash .medium span:first-child {margin-right: 0.1em;}
 @media screen and (max-width: 600px) {
     #splash .medium {display: block; margin: 0.15em 0 0.15em 0.15em;}
     #splash > div {text-align: center;}
