@@ -1688,12 +1688,6 @@ caption {
   }
 }
 
-#splash a {
-  -webkit-text-decoration-color: white;
-          text-decoration-color: white;
-  color: white;
-}
-
 #splash {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -1705,9 +1699,6 @@ caption {
       -ms-flex-pack: center;
           justify-content: center;
   min-height: 100%;
-}
-
-#splash {
   background: #259cd3;
   position: fixed;
   top: 0;
@@ -1728,6 +1719,12 @@ caption {
           animation-timing-function: ease-in-out;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
+}
+
+#splash a {
+  -webkit-text-decoration-color: white;
+          text-decoration-color: white;
+  color: white;
 }
 
 #splash > div:not(.line) {
