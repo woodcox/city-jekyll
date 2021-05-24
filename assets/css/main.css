@@ -1721,19 +1721,13 @@ caption {
           animation-fill-mode: forwards;
 }
 
-#splash a {
-  -webkit-text-decoration-color: white;
-          text-decoration-color: white;
-  color: white;
-}
-
-#splash a .city-svg-logo {
+#splash .city-svg-logo {
   viewBox: 0 0 40 40;
   width: 20%;
   height: auto;
 }
 
-#splash a .city-svg-logo .city-logo-black-fill {
+#splash .city-svg-logo .city-logo-black-fill {
   fill: white;
 }
 
@@ -1751,20 +1745,6 @@ caption {
           animation-timing-function: ease-in-out;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-}
-
-#splash .medium {
-  display: inline-block;
-  margin: 0 0.15em;
-}
-
-#splash .medium span {
-  display: inline-block;
-  margin: 0 0.07em 0 0;
-}
-
-#splash .medium span:first-child {
-  margin-right: 0.1em;
 }
 
 @media screen and (max-width: 600px) {
