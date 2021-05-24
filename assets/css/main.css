@@ -2132,7 +2132,7 @@ caption {
 
 @media (min-width: 600px) {
   .hero-text .hero-text-h1 {
-    font-size: 2em;
+    font-size: 2.25em;
     margin-bottom: 0.5em;
   }
   .hero-text .hero-text-h2 {
@@ -2142,7 +2142,7 @@ caption {
 
 @media (min-width: 800px) {
   .hero-text .hero-text-h1 {
-    font-size: 3em;
+    font-size: 3.25em;
     margin-bottom: 0.5em;
   }
   .hero-text .hero-text-h2 {
