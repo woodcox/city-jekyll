@@ -37,8 +37,12 @@
   }
 }
 
-@media (max-width: 480px) {
-  hero.image {
-    background-image: url(images/background-mobile.jpg);
+@include small-breakpoint {
+  .hero-text-h1 {
+      font-size: 2em;
+      margin-bottom: 0.5em;
+  }
+  .hero-text-h2 {
+    font-size: 1em;
   }
 }
