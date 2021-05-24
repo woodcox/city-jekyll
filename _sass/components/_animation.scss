@@ -24,18 +24,13 @@
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
 
-  a {
-    text-decoration-color: $splash-font-color; 
-    color: $splash-font-color;
-    
-    .city-svg-logo {
-      viewBox: 0 0 40 40;
-      width: 20%;
-      height: auto;
+  .city-svg-logo {
+    viewBox: 0 0 40 40;
+    width: 20%;
+    height: auto;
         
-      .city-logo-black-fill { 
-        fill: white;
-      }
+    .city-logo-black-fill { 
+      fill: white;
     }
   }
 
@@ -47,20 +42,6 @@
     animation-iteration-count: 1;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
-  }
-
-  .medium {
-    display: inline-block; 
-    margin: 0 0.15em;
-  
-    span {
-      display: inline-block; 
-      margin: 0 0.07em 0 0;
-    
-      &:first-child {
-        margin-right: 0.1em;
-      }
-    }
   }
 }
 
