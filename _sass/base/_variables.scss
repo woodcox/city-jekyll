@@ -79,7 +79,7 @@ $h5: 1.25rem !default;
 $footer-background: #113a5c; // navy
 $footer-font-color: white !default;
 $splash-font-color: white !default;
-$splash-background: $primary-color;
+$splash-background: linear-gradient($primary-color,$secondary-color);
 
 //==============================================================================
 // Font Awesome Icons
