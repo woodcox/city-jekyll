@@ -26,7 +26,7 @@ function logoToggle() {
 //========================================
 // Change logo color when in footer
 //========================================
-var logoTarget = document.querySelector("changeLogo");
+var logoTarget = document.querySelector("footer");
 
 const config = {
   root: null, // avoiding 'root' or setting it to 'null' sets it to default value: viewport
