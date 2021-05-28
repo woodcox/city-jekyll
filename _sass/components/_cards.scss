@@ -14,7 +14,7 @@ h1 {
 }
 
 .wrapper {
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   max-width: 80rem;
 }
@@ -151,6 +151,7 @@ h1 {
   font-size: 2rem;
   margin-bottom: 2rem;
   position: relative;
+  font-family: 'Sanchez';
 
   &:after {
     content: '';
@@ -168,7 +169,6 @@ h1 {
 
 .front .inner span {
   color: rgba( $card-font-color, 0.9);
-  font-family: 'Sanchez';
 }
 
 @media screen and (max-width: 64rem){
