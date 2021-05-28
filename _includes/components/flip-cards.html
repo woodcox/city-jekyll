@@ -3,15 +3,15 @@
   <div class="flex-row">{% for item in page.flip-card %}
     <div class="col" ontouchstart="this.classList.toggle('hover');">
       <div class="card-container">
-        <div class="front" style="background-image: url(https://unsplash.it/500/500/)">
+        <div class="front" style="background-image: url({{ item.url }})">
           <div class="inner">
-            <p>Diligord</p>
-              <span>Lorem ipsum</span>
+            <p>{{ item.title }}</p>
+            <span>{{ item.subtitle }}</span>
           </div>
         </div>
         <div class="back">
           <div class="inner">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+            <p>{{ item.content }}</p>
           </div>
         </div>
       </div>
