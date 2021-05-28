@@ -1690,7 +1690,7 @@ h1 {
   max-width: 80rem;
 }
 
-.cols {
+.wrapper .cols {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1701,13 +1701,13 @@ h1 {
   justify-content: center;
 }
 
-.col {
+.wrapper .cols .col {
   width: calc(25% - 2rem);
   margin: 1rem;
   cursor: pointer;
 }
 
-.card-container {
+.wrapper .cols .col .card-container {
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
   -webkit-perspective: 1000px;
