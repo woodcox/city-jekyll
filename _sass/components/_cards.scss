@@ -58,15 +58,15 @@ h1 {
   min-height: 280px;
   height: auto;
   border-radius: 10px;
-  color: #fff;
+  color: $secondary-color;
   font-size: 1.5rem;
 }
 
 .back {
-  background: #cedce7;
-  background: -webkit-linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
-  background: -o-linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
-  background: linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
+  background: $secondary-color;
+  background: -webkit-linear-gradient(45deg, $secondary-color 0%,#596a72 100%);
+  background: -o-linear-gradient(45deg, $secondary-color 0%,#596a72 100%);
+  background: linear-gradient(45deg, $secondary-color 0%,#596a72 100%);
 }
 
 .front:after {
@@ -79,7 +79,7 @@ h1 {
   content: '';
   display: block;
   opacity: .6;
-  background-color: #000;
+  background-color: $accent-color;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   border-radius: 10px;
