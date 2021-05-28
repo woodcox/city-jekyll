@@ -1731,14 +1731,14 @@ h1 {
   min-height: 280px;
   height: auto;
   border-radius: 10px;
-  color: #f19426;
+  color: white;
   font-size: 1.5rem;
 }
 
 .back {
-  background: #f19426;
-  background: -o-linear-gradient(45deg, #f19426 0%, #596a72 100%);
-  background: linear-gradient(45deg, #f19426 0%, #596a72 100%);
+  background: #cdcdcd;
+  background: -o-linear-gradient(45deg, #cdcdcd 0%, black 100%);
+  background: linear-gradient(45deg, #cdcdcd 0%, black 100%);
 }
 
 .front:after {
@@ -1751,7 +1751,7 @@ h1 {
   content: '';
   display: block;
   opacity: .6;
-  background-color: #cdcdcd;
+  background-color: #259cd3;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   border-radius: 10px;
@@ -1828,7 +1828,7 @@ h1 {
   width: 4rem;
   height: 2px;
   position: absolute;
-  background: #C6D4DF;
+  background: #f19426;
   display: block;
   left: 0;
   right: 0;
@@ -1837,7 +1837,7 @@ h1 {
 }
 
 .front .inner span {
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.9);
   font-family: 'Sanchez';
 }
 
