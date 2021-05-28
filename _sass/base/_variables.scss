@@ -159,6 +159,13 @@ $accent-accordion-border-color: 1px solid darken($accordion-accent-color, 10%) !
 $round-accordion: $round-buttons;
 
 //==============================================================================
+// Cards
+//==============================================================================
+
+$card-background: rgba($primary-color, 0.75) !default;
+$card-underlind: darken($secondary-color, 15%) !default;
+
+//==============================================================================
 // Forms
 //==============================================================================
 
