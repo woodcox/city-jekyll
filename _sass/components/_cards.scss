@@ -10,13 +10,13 @@ h1 {
   width: 100%;
   margin: 0 auto;
   max-width: 80rem;
-  z-index: 1;
 }
 
 .col {
   width: calc(25% - 2rem);
   margin: 1rem;
   cursor: pointer;
+  z-index: 1;
 }
 
 .card-container{
@@ -49,9 +49,9 @@ h1 {
 
 .back {
   background: $accent-color;
-  background: -webkit-linear-gradient(45deg, $accent-color 50%, black 100%);
-  background: -o-linear-gradient(45deg, $accent-color 50%, black 100%);
-  background: linear-gradient(45deg, $accent-color 50%, black 100%);
+  background: -webkit-linear-gradient(45deg, $alternate-background 0%, black 100%);
+  background: -o-linear-gradient(45deg, $alternate-blackground 0%, black 100%);
+  background: linear-gradient(45deg, $alternate-background 0%, black 100%);
 }
 
 .front:after {
