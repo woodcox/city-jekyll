@@ -50,7 +50,7 @@ h1 {
 .back {
   background: $accent-color;
   background: -webkit-linear-gradient(45deg, $alternate-background 0%, black 100%);
-  background: -o-linear-gradient(45deg, $alternate-blackground 0%, black 100%);
+  background: -o-linear-gradient(45deg, $alternate-background 0%, black 100%);
   background: linear-gradient(45deg, $alternate-background 0%, black 100%);
 }
 
