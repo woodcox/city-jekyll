@@ -1689,7 +1689,6 @@ h1 {
   width: calc(25% - 2rem);
   margin: 1rem;
   cursor: pointer;
-  z-index: 1;
 }
 
 .card-container {
@@ -1697,6 +1696,7 @@ h1 {
   transform-style: preserve-3d;
   -webkit-perspective: 1000px;
   perspective: 1000px;
+  z-index: 1;
 }
 
 .front,
@@ -1722,9 +1722,9 @@ h1 {
 }
 
 .back {
-  background: #cdcdcd;
-  background: -o-linear-gradient(45deg, #a7a7a7 0%, black 100%);
-  background: linear-gradient(45deg, #a7a7a7 0%, black 100%);
+  background: #9a9a9a;
+  background: -o-linear-gradient(45deg, #9a9a9a 0%, black 100%);
+  background: linear-gradient(45deg, #9a9a9a 0%, black 100%);
 }
 
 .front:after {
@@ -1736,7 +1736,7 @@ h1 {
   height: 100%;
   content: '';
   display: block;
-  opacity: .6;
+  opacity: .75;
   background-color: #259cd3;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
