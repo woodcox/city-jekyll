@@ -1722,8 +1722,8 @@ h1 {
 
 .back {
   background: #cdcdcd;
-  background: -o-linear-gradient(45deg, #cdcdcd 10%, black 100%);
-  background: linear-gradient(45deg, #cdcdcd 10%, black 100%);
+  background: -o-linear-gradient(45deg, #cdcdcd 50%, black 100%);
+  background: linear-gradient(45deg, #cdcdcd 50%, black 100%);
 }
 
 .front:after {
