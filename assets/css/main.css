@@ -1785,8 +1785,6 @@ h1 {
 .card-container .front {
   -webkit-transform: rotateY(0deg);
   transform: rotateY(0deg);
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
 }
 
 .card-container:hover .back {
