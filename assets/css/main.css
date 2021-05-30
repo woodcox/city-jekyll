@@ -1808,6 +1808,7 @@ h1 {
   margin-bottom: 2rem;
   position: relative;
   font-family: 'Sanchez';
+  z-index: 3;
 }
 
 .front .inner p:after {
@@ -1825,6 +1826,7 @@ h1 {
 
 .front .inner span {
   color: rgba(255, 255, 255, 0.9);
+  z-index: 3;
 }
 
 @media screen and (max-width: 64rem) {
