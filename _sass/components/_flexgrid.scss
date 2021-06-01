@@ -16,6 +16,14 @@ $flex-margins: 1rem;
   justify-content: center;
 }
 
+//======
+.col {
+  width: calc(33.333333% - 2rem);
+  margin: 1rem;
+  cursor: pointer;
+}
+/======
+
 .flex-small,
 .flex-large {
   @extend %column-padding;
