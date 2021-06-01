@@ -1,19 +1,11 @@
 /**
- * Grid
+ * Flexgrid
  */
 
-$column-padding: 0;
-$margin-bottom: 1rem;
-
-// The rows have a negative margin  which are offset by the padding on the columns.
-%column-padding {
-  padding-left: $column-padding;
-  padding-right: $column-padding;
-}
+$flex-margins: 1rem;
 
 %row-margin {
-  margin-left: -$column-padding;
-  margin-right: -$column-padding;
+  margin: $flex-margins;
 }
 
 // Flex row
