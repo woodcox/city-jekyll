@@ -11,15 +11,21 @@
     position: fixed;
     z-index: 202;
     .city-logo-white-fill {
-      fill: rgba(#fff, 0.5)
+      fill: rgba(#fff, 0.65);
      }
     .city-logo-black-fill { 
       fill: black;
     }
   }
-  .toggle-svg .city-svg-logo .city-logo-black-fill {
+  .toggle-svg .city-svg-logo {
+    .city-logo-black-fill {
       transition: fill $anim-duration ease;
       fill: $menu-text-color;
+    }
+    .city-logo-white-fill {
+      transition: fill $anim-duration ease;
+      fill: rgba(#fff, 1);
+
   }
 }
 
