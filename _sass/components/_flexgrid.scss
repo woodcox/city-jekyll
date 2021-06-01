@@ -4,16 +4,15 @@
 
 $flex-margins: 1rem;
 
-%row-margin {
-  margin: $flex-margins;
+%flex-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 // Flex row
 .flex-row {
-  @extend %row-margin;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  @extend %flex-grid;
   justify-content: center;
 }
 
