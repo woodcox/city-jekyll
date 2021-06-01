@@ -4,7 +4,7 @@
 <svg class="city-svg-logo" version="1.0" xmlns="http://www.w3.org/2000/svg"
  width="500pt" height="500pt" viewBox="0 0 500 500"
  preserveAspectRatio="xMidYMid meet">
-<g transform="translate(0.000000,500.000000) scale(0.100000,-0.100000)">
+<g transform="translate(0,500) scale(0.1,-0.1)">
 <path class="city-logo-orange-fill" fill="#F19426" d="M2186 4984 c-1137 -146 -2030 -1045 -2171 -2184 -19 -160 -19 -440 0
 -600 96 -773 538 -1450 1213 -1855 287 -172 626 -286 982 -331 163 -20 507
 -15 665 11 433 69 795 225 1160 498 103 78 364 339 442 442 273 365 429 727
