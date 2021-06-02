@@ -5,7 +5,7 @@ layout: default
 {% assign type = page.collection_type %}
 {% assign webpage = site.documents | where: "collection_type", type %}
 <main class="content" id="main-content">
-{% include components/hero.html %}
+{% include templates/hero.html %}
 {% include modules/breadcrumbs.html %}
   {% for page in webpage %}
   {% capture id %}{{ page.id | remove:'/' | downcase }}{% endcapture %}
