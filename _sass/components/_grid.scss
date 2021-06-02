@@ -25,6 +25,15 @@ $margin-bottom: 1rem;
   justify-content: center;
 }
 
+// Flex column
+.flex-col {
+  @extend %row-margin;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .flex-small,
 .flex-large {
   @extend %column-padding;
