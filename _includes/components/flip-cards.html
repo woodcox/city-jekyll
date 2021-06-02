@@ -2,7 +2,7 @@
   <h1>Parallax Flipping Cards</h1>
   <div class="flex-row">{% for item in page.flip-card %}
     <div class="col" ontouchstart="this.classList.toggle('hover');">
-      <div class="card-container lozad">
+      <div class="card-container">
         <div class="front" style="background-image: url({{ item.url }})">
           <div class="inner">
             <p>{{ item.title }}</p>
