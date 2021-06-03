@@ -38,7 +38,7 @@ $margin-bottom: 1rem;
 .flex-large {
   @extend %column-padding;
   flex-basis: 100%;
-  margin-bottom: $margin-bottom;
+  margin: $margin-bottom;
 }
 
 /* Small screen breakpoint */
