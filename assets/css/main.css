@@ -1028,7 +1028,7 @@ dd {
 .flex-large {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
-  margin-bottom: 1rem;
+  margin: 1rem;
 }
 
 /* Small screen breakpoint */
