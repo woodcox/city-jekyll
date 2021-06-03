@@ -23,6 +23,7 @@ $margin-bottom: 1rem;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
 }
 
 // Flex column
@@ -32,6 +33,7 @@ $margin-bottom: 1rem;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
 }
 
 .flex-small,
