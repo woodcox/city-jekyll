@@ -2,9 +2,6 @@
   /* Sizing */
   width: 100vw;
   height: 100vh;
-    
-  /* Text styles */
-  text-align: center;
 
   /* Background styles */
   background-image: linear-gradient(rgba($primary-color, 0.95),rgba($primary-color, 0.40)), url('../img/master/skyline.jpg');
@@ -16,6 +13,9 @@
   background-repeat: no-repeat;
   background-attachment: scroll;
   
+/* Text styles */
+  text-align: center;
+
   .hero-text {
     .hero-text-h1 {
       color: white;
@@ -27,37 +27,43 @@
 }
 
 @include small-breakpoint {
-  .hero-text {
-    .hero-text-h1 {
-      font-size: 2.25em;
-      margin-bottom: 0.5em;
-    }
-    .hero-text-h2 {
-      font-size: 1em;
+  .hero {
+    .hero-text {
+      .hero-text-h1 {
+        font-size: 2.25rem;
+        margin-bottom: 0.5rem;
+      }
+      .hero-text-h2 {
+        font-size: 1rem;
+      }
     }
   }
 }
 
 @include medium-breakpoint {
-  .hero-text {
-    .hero-text-h1 {
-      font-size: 3.25em;
-      margin-bottom: 0.5em;
-    }
-    .hero-text-h2 {
-      font-size: 1.5em;
+  .hero {
+    .hero-text {
+      .hero-text-h1 {
+        font-size: 3.25rem;
+        margin-bottom: 0.5rem;
+      }
+      .hero-text-h2 {
+        font-size: 1.5rem;
+      }
     }
   }
 }
 
 @include large-breakpoint {
-  .hero-text {
-    .hero-text-h1 {
-      font-size: 4em;
-      margin-bottom: 0.5em;
-    }
-    .hero-text-h2 {
-      font-size: 2em;
+  .hero {
+    .hero-text {
+      .hero-text-h1 {
+        font-size: 4rem;
+        margin-bottom: 0.5rem;
+      }
+      .hero-text-h2 {
+        font-size: 2rem;
+      }
     }
   }
 }
