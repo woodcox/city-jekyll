@@ -37,6 +37,7 @@ $margin-bottom: 1rem;
 }
 
 .flex-small,
+•flex-medium,
 .flex-large {
   @extend %column-padding;
   flex-basis: 100%;
@@ -47,6 +48,30 @@ $margin-bottom: 1rem;
 
 @include small-breakpoint {
   .flex-small {
+    flex: 1;
+    margin-bottom: 0;
+    &.half {
+      flex: 0 0 calc(1 / 2 * 100%);
+    }
+    &.one-fourth {
+      flex: 0 0 calc(1 / 4 * 100%);
+    }
+    &.three-fourths {
+      flex: 0 0 calc(3 / 4 * 100%);
+    }
+    &.one-third {
+      flex: 0 0 calc(1 / 3 * 100%);
+    }
+    &.two-thirds {
+      flex: 0 0 calc(2 / 3 * 100%);
+    }
+  }
+}
+
+/* Medium screen breakpoint */
+
+@include medium-breakpoint {
+  .flex-medium {
     flex: 1;
     margin-bottom: 0;
     &.half {
