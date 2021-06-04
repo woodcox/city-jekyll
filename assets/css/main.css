@@ -2321,10 +2321,6 @@ h1 {
   /* Sizing */
   width: 100vw;
   height: 100vh;
-  /* Flexbox stuff */
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   /* Text styles */
   text-align: center;
   /* Background styles */
