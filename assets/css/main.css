@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! 
  * Primitive UI | MIT License
  *
@@ -984,6 +985,7 @@ dd {
  * Grid
  */
 .flex-small,
+•flex-medium,
 .flex-large {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -1031,6 +1033,7 @@ dd {
 }
 
 .flex-small,
+•flex-medium,
 .flex-large {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
@@ -1066,6 +1069,41 @@ dd {
             flex: 0 0 calc(1 / 3 * 100%);
   }
   .flex-small.two-thirds {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 calc(2 / 3 * 100%);
+            flex: 0 0 calc(2 / 3 * 100%);
+  }
+}
+
+/* Medium screen breakpoint */
+@media (min-width: 800px) {
+  .flex-medium {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    margin-bottom: 0;
+  }
+  .flex-medium.half {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 calc(1 / 2 * 100%);
+            flex: 0 0 calc(1 / 2 * 100%);
+  }
+  .flex-medium.one-fourth {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 calc(1 / 4 * 100%);
+            flex: 0 0 calc(1 / 4 * 100%);
+  }
+  .flex-medium.three-fourths {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 calc(3 / 4 * 100%);
+            flex: 0 0 calc(3 / 4 * 100%);
+  }
+  .flex-medium.one-third {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 calc(1 / 3 * 100%);
+            flex: 0 0 calc(1 / 3 * 100%);
+  }
+  .flex-medium.two-thirds {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 calc(2 / 3 * 100%);
             flex: 0 0 calc(2 / 3 * 100%);
