@@ -16,24 +16,25 @@ $margin-bottom: 1rem;
   margin-right: -$column-padding;
 }
 
-// Flex row
-.flex-row {
+// Flex grid
+%flex-grid {
   @extend %row-margin;
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
 
+// Flex row
+.flex-row {
+  @extend %flex-grid;
+  flex-direction: row;
+}
+
 // Flex column
 .flex-col {
-  @extend %row-margin;
-  display: flex;
+  @extend %flex-grid;
   flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
 }
 
 .flex-small,
