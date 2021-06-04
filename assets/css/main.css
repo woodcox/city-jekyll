@@ -2321,8 +2321,6 @@ h1 {
   /* Sizing */
   width: 100vw;
   height: 100vh;
-  /* Text styles */
-  text-align: center;
   /* Background styles */
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(37, 156, 211, 0.95)), to(rgba(37, 156, 211, 0.4))), url("../img/master/skyline.jpg");
   background-image: -o-linear-gradient(rgba(37, 156, 211, 0.95), rgba(37, 156, 211, 0.4)), url("../img/master/skyline.jpg");
@@ -2334,6 +2332,8 @@ h1 {
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: scroll;
+  /* Text styles */
+  text-align: center;
 }
 
 .hero .hero-text .hero-text-h1 {
@@ -2345,32 +2345,32 @@ h1 {
 }
 
 @media (min-width: 600px) {
-  .hero-text .hero-text-h1 {
-    font-size: 2.25em;
-    margin-bottom: 0.5em;
+  .hero .hero-text .hero-text-h1 {
+    font-size: 2.25rem;
+    margin-bottom: 0.5rem;
   }
-  .hero-text .hero-text-h2 {
-    font-size: 1em;
+  .hero .hero-text .hero-text-h2 {
+    font-size: 1rem;
   }
 }
 
 @media (min-width: 800px) {
-  .hero-text .hero-text-h1 {
-    font-size: 3.25em;
-    margin-bottom: 0.5em;
+  .hero .hero-text .hero-text-h1 {
+    font-size: 3.25rem;
+    margin-bottom: 0.5rem;
   }
-  .hero-text .hero-text-h2 {
-    font-size: 1.5em;
+  .hero .hero-text .hero-text-h2 {
+    font-size: 1.5rem;
   }
 }
 
 @media (min-width: 1000px) {
-  .hero-text .hero-text-h1 {
-    font-size: 4em;
-    margin-bottom: 0.5em;
+  .hero .hero-text .hero-text-h1 {
+    font-size: 4rem;
+    margin-bottom: 0.5rem;
   }
-  .hero-text .hero-text-h2 {
-    font-size: 2em;
+  .hero .hero-text .hero-text-h2 {
+    font-size: 2rem;
   }
 }
 
