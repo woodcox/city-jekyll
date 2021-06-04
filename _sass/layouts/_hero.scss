@@ -3,6 +3,10 @@
   width: 100vw;
   height: 100vh;
 
+  /* flex style */
+  justify-content: center;
+  align-items: center;
+
   /* Background styles */
   background-image: linear-gradient(rgba($primary-color, 0.95),rgba($primary-color, 0.40)), url('../img/master/skyline.jpg');
   background-size: cover;
@@ -13,7 +17,7 @@
   background-repeat: no-repeat;
   background-attachment: scroll;
   
-/* Text styles */
+  /* Text styles */
   text-align: center;
 
   .hero-text {
