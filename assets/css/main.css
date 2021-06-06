@@ -990,7 +990,7 @@ dd {
   padding-right: 1rem;
 }
 
-.flex-col, .flex-row {
+.flex-row {
   margin-left: -1rem;
   margin-right: -1rem;
 }
