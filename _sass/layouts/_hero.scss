@@ -1,4 +1,4 @@
-.hero.full-container {
+.hero {
   /* flexbox */
   display: flex;
   flex-direction: column;
@@ -29,6 +29,17 @@
     a {
       text-decoration: none;
       font-size: calc(0.7em + 0.5vmin);
+    }
+  }
+}
+
+@include small-breakpoint {
+  .hero {
+    height: 85vh;
+
+    .hero-buttons {
+      margin-left: 0.5rem;
+      margin-right: 0.5rem;
     }
   }
 }
