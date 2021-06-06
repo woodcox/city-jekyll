@@ -2336,40 +2336,12 @@ caption {
 
 .hero .hero-text .hero-text-h1 {
   color: white;
+  font-size: 8vh;
 }
 
 .hero .hero-text a {
   text-decoration: none;
-}
-
-@media (min-width: 600px) {
-  .hero .hero-text .hero-text-h1 {
-    font-size: 2.25rem;
-    margin-bottom: 0.5rem;
-  }
-  .hero .hero-text .hero-text-h2 {
-    font-size: 1rem;
-  }
-}
-
-@media (min-width: 800px) {
-  .hero .hero-text .hero-text-h1 {
-    font-size: 3.25rem;
-    margin-bottom: 0.5rem;
-  }
-  .hero .hero-text .hero-text-h2 {
-    font-size: 1.5rem;
-  }
-}
-
-@media (min-width: 1000px) {
-  .hero .hero-text .hero-text-h1 {
-    font-size: 4rem;
-    margin-bottom: 0.5rem;
-  }
-  .hero .hero-text .hero-text-h2 {
-    font-size: 2rem;
-  }
+  font-size: 2vh;
 }
 
 /* Footer */
