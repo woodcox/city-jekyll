@@ -2305,7 +2305,7 @@ caption {
   transition: width 0.4s ease;
 }
 
-.hero.full-container {
+.hero {
   /* flexbox */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2334,20 +2334,30 @@ caption {
   text-align: center;
 }
 
-.hero.full-container .hero-text {
+.hero .hero-text {
   -webkit-box-flex: 0;
       -ms-flex: 0 2 auto;
           flex: 0 2 auto;
 }
 
-.hero.full-container .hero-text .hero-text-h1 {
+.hero .hero-text .hero-text-h1 {
   color: white;
   font-size: calc(2em + 3vmin);
 }
 
-.hero.full-container .hero-text a {
+.hero .hero-text a {
   text-decoration: none;
   font-size: calc(0.7em + 0.5vmin);
+}
+
+@media (min-width: 600px) {
+  .hero {
+    height: 85vh;
+  }
+  .hero .hero-buttons {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
 }
 
 /* Footer */
