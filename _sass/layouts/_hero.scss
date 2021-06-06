@@ -23,51 +23,11 @@
   .hero-text {
     .hero-text-h1 {
       color: white;
+      font-size: 8vh;
     }
     a {
       text-decoration: none;
-    }
-  }
-}
-
-@include small-breakpoint {
-  .hero {
-    .hero-text {
-      .hero-text-h1 {
-        font-size: 2.25rem;
-        margin-bottom: 0.5rem;
-      }
-      .hero-text-h2 {
-        font-size: 1rem;
-      }
-    }
-  }
-}
-
-@include medium-breakpoint {
-  .hero {
-    .hero-text {
-      .hero-text-h1 {
-        font-size: 3.25rem;
-        margin-bottom: 0.5rem;
-      }
-      .hero-text-h2 {
-        font-size: 1.5rem;
-      }
-    }
-  }
-}
-
-@include large-breakpoint {
-  .hero {
-    .hero-text {
-      .hero-text-h1 {
-        font-size: 4rem;
-        margin-bottom: 0.5rem;
-      }
-      .hero-text-h2 {
-        font-size: 2rem;
-      }
+      font-size: 2vh;
     }
   }
 }
