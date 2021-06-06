@@ -2336,8 +2336,8 @@ caption {
 
 .hero.full-container .hero-text {
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 auto;
-          flex: 0 1 auto;
+      -ms-flex: 0 2 auto;
+          flex: 0 2 auto;
 }
 
 .hero.full-container .hero-text .hero-text-h1 {
