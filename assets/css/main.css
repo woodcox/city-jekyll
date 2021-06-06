@@ -2347,7 +2347,7 @@ caption {
 
 .hero.full-container .hero-text a {
   text-decoration: none;
-  font-size: calc(1em + 1vmin);
+  font-size: calc(1em + 0.5vmin);
 }
 
 /* Footer */
