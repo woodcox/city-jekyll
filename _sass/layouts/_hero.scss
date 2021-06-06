@@ -1,13 +1,11 @@
 .hero {
-  /* Sizing */
-  width: 100vw;
-  height: 100vh;
-
   /* flexbox */
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  
+  /* Sizing */
+  height: 100vh;
 
   /* Background styles */
   background-image: linear-gradient(rgba($primary-color, 0.95),rgba($primary-color, 0.40)), url('../img/master/skyline.jpg');
