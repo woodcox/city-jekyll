@@ -18,13 +18,13 @@ $margin-bottom: 1rem;
 
 // Flex grid
 %flex-grid {
-  @extend %row-margin;
   display: flex;
   flex-wrap: wrap;
 }
 
 // Flex row
 .flex-row {
+  @extend %row-margin;
   @extend %flex-grid;
   flex-direction: row;
 }
