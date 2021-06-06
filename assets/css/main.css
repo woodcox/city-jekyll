@@ -2317,6 +2317,9 @@ caption {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
   /* Sizing */
   height: 100vh;
   /* Background styles */
