@@ -24,11 +24,11 @@
     flex:  0 2 auto;
     .hero-text-h1 {
       color: white;
-      font-size: calc($h1 + 9vw);
+      font-size: calc(2.25em + 9vmin);
     }
     a {
       text-decoration: none;
-      font-size: calc($h2 + 3vw);
+      font-size: calc(2em + 3vmin);
     }
   }
 }
