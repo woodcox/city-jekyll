@@ -2305,7 +2305,7 @@ caption {
   transition: width 0.4s ease;
 }
 
-.hero {
+.hero .full-container {
   /* flexbox */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2334,12 +2334,12 @@ caption {
   text-align: center;
 }
 
-.hero .hero-text .hero-text-h1 {
+.hero .full-container .hero-text .hero-text-h1 {
   color: white;
   font-size: 8vh;
 }
 
-.hero .hero-text a {
+.hero .full-container .hero-text a {
   text-decoration: none;
   font-size: 2vh;
 }
