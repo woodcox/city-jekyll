@@ -2342,12 +2342,12 @@ caption {
 
 .hero.full-container .hero-text .hero-text-h1 {
   color: white;
-  font-size: 6vh;
+  font-size: 20vmin;
 }
 
 .hero.full-container .hero-text a {
   text-decoration: none;
-  font-size: 3vh;
+  font-size: 10vmin;
 }
 
 /* Footer */
