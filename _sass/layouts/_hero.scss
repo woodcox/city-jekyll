@@ -36,10 +36,5 @@
 @include small-breakpoint {
   .hero {
     height: 85vh;
-
-    .hero-buttons {
-      margin-left: 0.5rem;
-      margin-right: 0.5rem;
-    }
   }
 }
