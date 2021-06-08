@@ -2354,10 +2354,6 @@ caption {
   .hero {
     height: 85vh;
   }
-  .hero .hero-buttons {
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
-  }
 }
 
 /* Footer */
