@@ -184,3 +184,14 @@ $flex-margins: 1rem;
   }
 }
 
+.halves {
+  @include flex-grid(2);
+}
+
+.thirds {
+  @include flex-grid(3);
+}
+
+. {
+  @include flex-grid(3);
+}
