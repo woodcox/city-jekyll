@@ -49,19 +49,19 @@ $margin-bottom: 1rem;
   .flex-small {
     flex: 1;
     margin-bottom: $margin-bottom;
-    &.half {
-      flex: 0 0 calc(1 / 2 * 100% - $column-padding * 2);
+    &.sm-half {
+      flex: 0 0 calc(1 / 2 * 100%);
     }
-    &.one-fourth {
-      flex: 0 0 calc(1 / 4 * 100% - $column-padding * 2);
+    &.sm-one-fourth {
+      flex: 0 0 calc(1 / 4 * 100%);
     }
-    &.three-fourths {
-      flex: 0 0 calc(3 / 4 * 100% - $column-padding * 2);
+    &.sm-three-fourths {
+      flex: 0 0 calc(3 / 4 * 100%);
     }
-    &.one-third {
-      flex: 0 0 calc(1 / 3 * 100% - $column-padding * 2);
+    &.sm-one-third {
+      flex: 0 0 calc(1 / 3 * 100%);
     }
-    &.two-thirds {
+    &.sm-two-thirds {
       flex: 0 0 calc(2 / 3 * 100% - $column-padding * 2);
     }
   }
@@ -73,19 +73,19 @@ $margin-bottom: 1rem;
   .flex-medium {
     flex: 1;
     margin-bottom: $margin-bottom;
-    &.half {
+    &.med-half {
       flex: 0 0 calc(1 / 2 * 100%);
     }
-    &.one-fourth {
+    &.med-one-fourth {
       flex: 0 0 calc(1 / 4 * 100%);
     }
-    &.three-fourths {
+    &.med-three-fourths {
       flex: 0 0 calc(3 / 4 * 100%);
     }
-    &.one-third {
+    &.med-one-third {
       flex: 0 0 calc(1 / 3 * 100%);
     }
-    &.two-thirds {
+    &.med-two-thirds {
       flex: 0 0 calc(2 / 3 * 100%);
     }
   }
@@ -97,19 +97,19 @@ $margin-bottom: 1rem;
   .flex-large {
     flex: 1;
     margin-bottom: $margin-bottom;
-    &.half {
+    &.lg-half {
       flex: 0 0 calc(1 / 2 * 100%);
     }
-    &.one-fourth {
+    &.lg-one-fourth {
       flex: 0 0 calc(1 / 4 * 100%);
     }
-    &.three-fourths {
+    &.lg-three-fourths {
       flex: 0 0 calc(3 / 4 * 100%);
     }
-    &.one-third {
+    &.lg-one-third {
       flex: 0 0 calc(1 / 3 * 100%);
     }
-    &.two-thirds {
+    &.lg-two-thirds {
       flex: 0 0 calc(2 / 3 * 100%);
     }
   }
