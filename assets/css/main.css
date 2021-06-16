@@ -1717,18 +1717,6 @@ caption {
   border-bottom-left-radius: 25px;
 }
 
-.wrapper {
-  width: 100%;
-  margin: 0 auto;
-  max-width: 80rem;
-}
-
-.col {
-  width: calc(33.333333% - 2rem);
-  margin: 1rem;
-  cursor: pointer;
-}
-
 .card-container {
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
