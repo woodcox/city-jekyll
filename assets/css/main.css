@@ -1695,7 +1695,7 @@ caption {
 .muted-accordion li label:hover {
   color: black;
   border: 1px solid #fafafa;
-  background: #fafafa;
+  background: rgba(37, 156, 211, 0.85);
 }
 
 .muted-accordion li input:checked + label {
@@ -1704,7 +1704,7 @@ caption {
   border-left: 1px solid #fafafa;
   border-right: 1px solid #fafafa;
   border-bottom: 0;
-  background: #fafafa;
+  background: rgba(37, 156, 211, 0.85);
 }
 
 .muted-accordion li input:checked + label + .accord-content {
