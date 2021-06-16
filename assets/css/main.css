@@ -1889,8 +1889,8 @@ caption {
   background: white;
   -webkit-animation-name: loading-fadeout;
           animation-name: loading-fadeout;
-  -webkit-animation-delay: 1.3s;
-          animation-delay: 1.3s;
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
   -webkit-animation-duration: 0.3s;
           animation-duration: 0.3s;
   -webkit-animation-iteration-count: 1;
