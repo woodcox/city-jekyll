@@ -1389,6 +1389,7 @@ a.accent-button:active {
 
 .muted-button,
 a.muted-button {
+  background: transparent;
   background-image: -o-linear-gradient(45deg, #259cd3 50%, transparent 50%);
   background-image: linear-gradient(45deg, #259cd3 50%, transparent 50%);
   background-position: 100%;
