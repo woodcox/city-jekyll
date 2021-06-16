@@ -1398,7 +1398,7 @@ a.muted-button {
 a.muted-button:hover,
 a.muted-button:focus,
 a.muted-button:active {
-  color: transparent;
+  color: black;
   border: 1px solid #fafafa;
   background: #fafafa;
 }
@@ -1686,13 +1686,13 @@ caption {
 }
 
 .muted-accordion li label:hover {
-  color: transparent;
+  color: black;
   border: 1px solid #fafafa;
   background: #fafafa;
 }
 
 .muted-accordion li input:checked + label {
-  color: transparent;
+  color: black;
   border-top: 1px solid #fafafa;
   border-left: 1px solid #fafafa;
   border-right: 1px solid #fafafa;
