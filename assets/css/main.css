@@ -1394,9 +1394,9 @@ a.muted-button {
   background-image: linear-gradient(45deg, #259cd3 50%, transparent 50%);
   background-position: 100%;
   background-size: 400%;
-  -webkit-transition: background 300ms ease-in-out;
-  -o-transition: background 300ms ease-in-out;
-  transition: background 300ms ease-in-out;
+  -webkit-transition: background-image 300ms ease-in-out;
+  -o-transition: background-image 300ms ease-in-out;
+  transition: background-image 300ms ease-in-out;
   border: 1px solid #fafafa;
   color: #fafafa;
 }
