@@ -1407,7 +1407,6 @@ a.muted-button:focus,
 a.muted-button:active {
   color: black;
   border: 1px solid #fafafa;
-  background: #fafafa;
   background-postion: 0;
 }
 
