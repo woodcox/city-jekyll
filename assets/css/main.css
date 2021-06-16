@@ -1390,8 +1390,8 @@ a.accent-button:active {
 .muted-button,
 a.muted-button {
   background: transparent;
-  background-image: -o-linear-gradient(45deg, rgba(37, 156, 211, 0.85) 50%, transparent 50%);
-  background-image: linear-gradient(45deg, rgba(37, 156, 211, 0.85) 50%, transparent 50%);
+  background-image: -o-linear-gradient(45deg, rgba(37, 156, 211, 0.65) 50%, transparent 50%);
+  background-image: linear-gradient(45deg, rgba(37, 156, 211, 0.65) 50%, transparent 50%);
   background-position: 100%;
   background-size: 400%;
   -webkit-transition: background-image 300ms ease-in-out;
@@ -1695,7 +1695,7 @@ caption {
 .muted-accordion li label:hover {
   color: #fafafa;
   border: 2px solid #fafafa;
-  background: rgba(37, 156, 211, 0.85);
+  background: rgba(37, 156, 211, 0.65);
 }
 
 .muted-accordion li input:checked + label {
@@ -1704,7 +1704,7 @@ caption {
   border-left: 2px solid #fafafa;
   border-right: 2px solid #fafafa;
   border-bottom: 0;
-  background: rgba(37, 156, 211, 0.85);
+  background: rgba(37, 156, 211, 0.65);
 }
 
 .muted-accordion li input:checked + label + .accord-content {
