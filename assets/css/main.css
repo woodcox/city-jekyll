@@ -2283,9 +2283,12 @@ caption {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center safe;
-      -ms-flex-pack: center safe;
-          justify-content: center safe;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   /* Sizing */
   height: 100vh;
   /* Background styles */
