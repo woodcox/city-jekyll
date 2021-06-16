@@ -2303,12 +2303,6 @@ caption {
   text-align: center;
 }
 
-.hero .hero-text {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 2 auto;
-          flex: 0 2 auto;
-}
-
 .hero .hero-text .hero-text-h1 {
   color: white;
   font-size: calc(2em + 3vmin);
