@@ -1239,6 +1239,12 @@ dd {
           justify-content: center;
 }
 
+.space-evenly {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
 .align-center {
   -webkit-box-align: center;
       -ms-flex-align: center;
