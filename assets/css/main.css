@@ -1397,14 +1397,15 @@ a.muted-button {
   transition: 0.25s;
 }
 
-.muted-button.fill:hover, .muted-button.fill:focus, .muted-button.fill:active,
-a.muted-button.fill:hover,
-a.muted-button.fill:focus,
-a.muted-button.fill:active {
+.muted-button:hover, .muted-button:focus, .muted-button:fill:active,
+a.muted-button:hover,
+a.muted-button:focus,
+a.muted-button:fill:active {
   color: black;
   border: 1px solid #fafafa;
   background: #fafafa;
-  border-color: var(--hover);
+  -webkit-box-shadow: inset 0 0 0 2em #3125d3;
+          box-shadow: inset 0 0 0 2em #3125d3;
 }
 
 .round-button,
@@ -1421,34 +1422,6 @@ a.square-button {
 a.full-button {
   display: block;
   width: 100%;
-}
-
-/*
-  https://developer.mozilla.org/en/docs/Web/CSS/box-shadow
-  box-shadow: [inset?] [top] [left] [blur] [size] [color];
-
-  Tips:
-    - We're setting all the blurs to 0 since we want a solid fill.
-    - Add the inset keyword so the box-shadow is on the inside of the element
-    - Animating the inset shadow on hover looks like the element is filling in from whatever side you specify ([top] and [left] accept negative values to become [bottom] and [right])
-    - Multiple shadows can be stacked
-    - If you're animating multiple shadows, be sure to keep the same number of shadows so the animation is smooth. Otherwise, you'll get something choppy.
-*/
-.fill {
-  --color: #a972cb;
-  --hover: #cb72aa;
-}
-
-button {
-  color: var(--color);
-  -webkit-transition: 0.25s;
-  -o-transition: 0.25s;
-  transition: 0.25s;
-}
-
-button:hover, button:focus {
-  border-color: var(--hover);
-  color: #fff;
 }
 
 /**
