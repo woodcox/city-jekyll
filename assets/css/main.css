@@ -1398,9 +1398,9 @@ a.muted-button {
 a.muted-button:hover,
 a.muted-button:focus,
 a.muted-button:active {
-  color: #7b7b7b;
-  border: 1px solid #aeaeae;
-  background: transparent;
+  color: transparent;
+  border: 1px solid #fafafa;
+  background: #fafafa;
 }
 
 .round-button,
@@ -1686,26 +1686,26 @@ caption {
 }
 
 .muted-accordion li label:hover {
-  color: #7b7b7b;
-  border: 1px solid #aeaeae;
-  background: transparent;
+  color: transparent;
+  border: 1px solid #fafafa;
+  background: #fafafa;
 }
 
 .muted-accordion li input:checked + label {
-  color: #7b7b7b;
-  border-top: 1px solid #aeaeae;
-  border-left: 1px solid #aeaeae;
-  border-right: 1px solid #aeaeae;
+  color: transparent;
+  border-top: 1px solid #fafafa;
+  border-left: 1px solid #fafafa;
+  border-right: 1px solid #fafafa;
   border-bottom: 0;
-  background: transparent;
+  background: #fafafa;
 }
 
 .muted-accordion li input:checked + label + .accord-content {
-  border: 1px solid #aeaeae;
+  border: 1px solid #fafafa;
   border-top: 0;
-  border-left: 1px solid #aeaeae;
-  border-right: 1px solid #aeaeae;
-  border-bottom: 1px solid #aeaeae;
+  border-left: 1px solid #fafafa;
+  border-right: 1px solid #fafafa;
+  border-bottom: 1px solid #fafafa;
   background: transparent;
 }
 
