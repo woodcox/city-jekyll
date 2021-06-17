@@ -1,6 +1,26 @@
 /**
  * Flexgrid
  */
+// https://www.dailysmarty.com/posts/streamlining-flexbox-calls-with-scss-mixins
+@mixin flex-config($justify-content: false, $flex: false, $flex-direction: false, $align-items: false) {
+  display: flex;
+  
+  @if $justify-content != false {
+    justify-content: $justify-content;
+  }
+  
+  @if $flex != false {
+    flex: $flex;
+  }
+  
+  @if $flex-direction != false {
+    flex-direction: $flex-direction;
+  }
+  
+  @if $align-items != false {
+    align-items: $align-items;
+  }
+}
 
 $column-padding: 1rem;
 $margin-bottom: 1rem;
