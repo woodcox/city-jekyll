@@ -78,10 +78,6 @@ a.accent-button {
 .muted-button,
 a.muted-button {
   background: $muted-background;
-  background-image: linear-gradient(45deg, $muted-background-hover 50%, transparent 50%);
-  background-position: 100%;
-  background-size: 400%;
-  transition: background 300ms ease-in-out;
   border: $muted-border;
   color: $muted-color;
 
@@ -90,7 +86,7 @@ a.muted-button {
   &:active {
     color: $muted-color-hover;
     border: $muted-border-hover;
-    background-postion: 0;
+    background: $muted-background-hover;
   }
 }
 
