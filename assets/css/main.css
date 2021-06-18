@@ -1011,6 +1011,7 @@ dd {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  gap: 1em;
 }
 
 .flex-row {
