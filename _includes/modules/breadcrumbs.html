@@ -1,9 +1,9 @@
 <nav>
   <div class="nav-crumbs medium-container">
-    <div class="flex-row">
+    <div class="flex-row justify-center">
       <div class="flex-medium med-one-fourth">
         {% assign crumbs = page.url | remove:'/index.html' | split: '/' %}
-        <a class="arrow-left-icon" href="/">HOME</a>
+        <a class="arrow-left-icon" href="/"> HOME</a>
         {% for crumb in crumbs offset: 1 %}
           {% if forloop.last %}
             <i class="chevron-icon" aria-hidden="true"></i> {{ page.title | upcase }}
