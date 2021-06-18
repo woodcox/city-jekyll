@@ -27,8 +27,8 @@ $margin-bottom: 1rem;
 
 // The rows have a negative margin  which are offset by the padding on the columns.
 %column-padding {
-  column-left: $column-padding;
-  column-right: $column-padding;
+  padding-left: $column-padding;
+  padding-right: $column-padding;
 }
 
 %row-margin {
