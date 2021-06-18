@@ -1041,7 +1041,6 @@ dd {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
-    margin-bottom: 1rem;
   }
   .flex-small.sm-half {
     -webkit-box-flex: 0;
@@ -1076,7 +1075,6 @@ dd {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
-    margin-bottom: 1rem;
   }
   .flex-medium.med-half {
     -webkit-box-flex: 0;
@@ -1111,7 +1109,6 @@ dd {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
-    margin-bottom: 1rem;
   }
   .flex-large.lg-half {
     -webkit-box-flex: 0;
