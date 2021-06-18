@@ -1,0 +1,17 @@
+<nav>
+  <div class="nav-back medium-container">
+    <div class="flex-row justify-center">
+      <div class="flex-medium med-one-fourth">
+        {% assign crumbs = page.url | remove:'/index.html' | split: '/' %}
+        <a class="arrow-left-icon" href="/"> BACK</a>
+        {% for crumb in crumbs offset: 1 %}
+          {% if forloop.last %}
+            <i class="chevron-icon" aria-hidden="true"></i> {{ page.title | upcase }}
+          {% else %}
+            <i class="chevron-icon" aria-hidden="true"></i> <a href="{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' }}{% endfor %}">{{ crumb | replace:'-',' ' | remove:'.html' | capitalize }} class="breadcrumb"</a>
+          {% endif %}
+        {% endfor  %}
+      </div>
+    </div>
+  </div>
+</nav>
