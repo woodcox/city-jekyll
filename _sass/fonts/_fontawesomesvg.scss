@@ -824,21 +824,27 @@ $encoding-reference: (
 
 // Call the the fa-encoded mixin and pass in your svg viewbox:
 .github-icon {
-  &:after{
+  &:after {
     content: '';
     @include fa($fa-github, $footer-font-color);
   }
 }
 .copyright-icon {
-  &:before{
+  &:before {
     content: '';
     @include fa($fa-copyright, $footer-font-color);
   }
 }
 .facebook-icon {
-    @include fa($fa-facebook);
+  @include fa($fa-facebook);
 }
 
 .chevron-icon {
-    @include fa($fa-chevron-up, $footer-font-color, 24px);
+  @include fa($fa-chevron-up, $footer-font-color, 24px);
 }
+
+.arrow-left {
+  &:before {
+    content: '';
+    @include fa($fa-arrow-circle-left, $footer-font-color);
+  }
