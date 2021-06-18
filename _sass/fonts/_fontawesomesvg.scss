@@ -843,7 +843,7 @@ $encoding-reference: (
   @include fa($fa-chevron-up, $footer-font-color, 24px);
 }
 
-.arrow-left {
+.arrow-left-icon {
   &:before {
     content: '';
     @include fa($fa-arrow-circle-left);
