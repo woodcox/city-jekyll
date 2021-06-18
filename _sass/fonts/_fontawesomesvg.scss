@@ -846,5 +846,6 @@ $encoding-reference: (
 .arrow-left {
   &:before {
     content: '';
-    @include fa($fa-arrow-circle-left, $footer-font-color);
+    @include fa($fa-arrow-circle-left);
   }
+}
