@@ -68,7 +68,6 @@ $margin-bottom: 1rem;
 @include small-breakpoint {
   .flex-small {
     flex: 1;
-    margin-bottom: $margin-bottom;
     &.sm-half {
       flex: 0 0 calc(1 / 2 * 100%);
     }
@@ -92,7 +91,6 @@ $margin-bottom: 1rem;
 @include medium-breakpoint {
   .flex-medium {
     flex: 1;
-    margin-bottom: $margin-bottom;
     &.med-half {
       flex: 0 0 calc(1 / 2 * 100%);
     }
@@ -116,7 +114,6 @@ $margin-bottom: 1rem;
 @include large-breakpoint {
   .flex-large {
     flex: 1;
-    margin-bottom: $margin-bottom;
     &.lg-half {
       flex: 0 0 calc(1 / 2 * 100%);
     }
