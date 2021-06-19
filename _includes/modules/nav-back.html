@@ -13,7 +13,8 @@
       <div class="flex-medium med-one-fourth">
         {% assign crumbs = page.url | remove:'/index.html' | split: '/' %}
         {% assign current_page = crumbs.last | append: '/' %}
-        {{ site.baseurl }}{{ page.url | remove: current_page }}
+        {% assign previous = page.url | remove: current_page %}
+        <a class="arrow-left-icon" href="{{ site.baseurl }}{{ previous }}">{{ previous }}</a>
       </div>
     </div>
   </div>
