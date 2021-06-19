@@ -12,8 +12,8 @@
     <div class="flex-row justify-center">
       <div class="flex-medium med-one-fourth">
         {% assign crumbs = page.url | remove:'/index.html' | split: '/' %}
-        {% assign current_page = crumbs.last %}
-        {{ page.url }}
+        {% assign current_page = crumbs.last | append: '/' %}
+        {{ page.url | remove: current_ page }}
       </div>
     </div>
   </div>
