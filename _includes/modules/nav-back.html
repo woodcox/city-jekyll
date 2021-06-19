@@ -14,7 +14,7 @@
         {% assign crumbs = page.url | remove:'/index.html' | split: '/' %}
         {% assign current_page = crumbs.last | append: '/' %}
         {% assign previous = page.url | remove: current_page %}
-        <a class="arrow-left-icon" href="{{ site.baseurl }}{{ previous }}"> {% if previous == '/' %}HOME{% else %}{{ previous }}{% endif %}</a>
+        <a class="arrow-left-icon" href="{{ site.baseurl }}{{ previous }}"> {% if previous == '/' %}HOME{% else %}{{ previous | upcase | remove: '/' }}{% endif %}</a>
       </div>
     </div>
   </div>
