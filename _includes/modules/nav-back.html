@@ -13,7 +13,7 @@
       <div class="flex-medium med-one-fourth">
         {% assign crumbs = page.url | remove:'/index.html' | split: '/' %}
         {% assign current_page = crumbs.last %}
-        {{ page.url | remove: current_page }}
+        {{ page.url }}
       </div>
     </div>
   </div>
