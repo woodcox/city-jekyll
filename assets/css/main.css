@@ -1399,6 +1399,8 @@ a.muted-button {
   background: transparent;
   border: 1px solid #fafafa;
   color: #fafafa;
+  margin: 0;
+  padding: 0;
 }
 
 .muted-button:hover, .muted-button:focus, .muted-button:active,
