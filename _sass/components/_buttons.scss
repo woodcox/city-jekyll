@@ -80,6 +80,8 @@ a.muted-button {
   background: $muted-background;
   border: $muted-border;
   color: $muted-color;
+  margin: 0;
+  padding: 0;
 
   &:hover,
   &:focus,
