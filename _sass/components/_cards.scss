@@ -86,6 +86,8 @@ $card-font-color: white;
 .card-container .back {
   -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
 }
 
 .card-container .front {
