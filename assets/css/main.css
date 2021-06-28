@@ -1730,6 +1730,14 @@ caption {
   border-bottom-left-radius: 25px;
 }
 
+.card-container {
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  z-index: 1;
+}
+
 .front,
 .back {
   background-size: cover;
