@@ -1030,8 +1030,8 @@ dd {
 .flex-small,
 .flex-medium,
 .flex-large {
-  -ms-flex-preferred-size: calc(100% + $column-padding);
-      flex-basis: calc(100% + $column-padding);
+  -ms-flex-preferred-size: calc(100% - $column-padding);
+      flex-basis: calc(100% - $column-padding);
   margin-bottom: 1rem;
 }
 
