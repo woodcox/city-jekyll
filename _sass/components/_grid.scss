@@ -67,19 +67,19 @@ $margin-bottom: 1rem;
   .flex-#{$break-size} {
     flex: 1;
     &.#{$break-abb}-half {
-      flex: 0 0 calc(1 / 2 * 100% - #{$gutters});
+      flex: 0 0 calc(1 / 2 * 100% - #{$gutters} * 2);
     }
     &.#{$break-abb}-one-fourth {
-      flex: 0 0 calc(1 / 4 * 100% - #{$gutters});
+      flex: 0 0 calc(1 / 4 * 100% - #{$gutters} * 2);
     }
     &.#{$break-abb}-three-fourths {
-      flex: 0 0 calc(3 / 4 * 100% - #{$gutters});
+      flex: 0 0 calc(3 / 4 * 100% - #{$gutters} * 2);
     }
     &.#{$break-abb}-one-third {
-      flex: 0 0 calc(1 / 3 * 100% - #{$gutters});
+      flex: 0 0 calc(1 / 3 * 100% - #{$gutters} * 2);
     }
     &.#{$break-abb}-two-thirds {
-      flex: 0 0 calc(2 / 3 * 100% - #{$gutters});
+      flex: 0 0 calc(2 / 3 * 100% - #{$gutters} * 2);
     }
   }
 }
