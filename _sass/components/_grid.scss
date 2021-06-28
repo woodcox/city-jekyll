@@ -59,7 +59,7 @@ $margin-bottom: 1rem;
 .flex-medium,
 .flex-large {
   @extend %column-padding;
-  flex-basis: calc(100% + $column-padding);
+  flex-basis: calc(100% - $column-padding);
   margin-bottom: $margin-bottom;
 }
 
