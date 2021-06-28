@@ -96,11 +96,15 @@ $card-font-color: white;
 .card-container:hover .back {
   -webkit-transform: rotateY(0deg);
   transform: rotateY(0deg);
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
 }
 
 .card-container:hover .front {
   -webkit-transform: rotateY(-180deg);
   transform: rotateY(-180deg);
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
 }
 
 .front .inner p {
