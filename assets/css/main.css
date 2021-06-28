@@ -1044,28 +1044,28 @@ dd {
   }
   .flex-small.sm-half {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 calc(1 / 2 * 100% - $gutters * 2);
-            flex: 0 0 calc(1 / 2 * 100% - $gutters * 2);
+        -ms-flex: 0 0 calc(1 / 2 * 100% - $gutters);
+            flex: 0 0 calc(1 / 2 * 100% - $gutters);
   }
   .flex-small.sm-one-fourth {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 calc(1 / 4 * 100% - $gutters * 2);
-            flex: 0 0 calc(1 / 4 * 100% - $gutters * 2);
+        -ms-flex: 0 0 calc(1 / 4 * 100% - $gutters);
+            flex: 0 0 calc(1 / 4 * 100% - $gutters);
   }
   .flex-small.sm-three-fourths {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 calc(3 / 4 * 100% - $gutters * 2);
-            flex: 0 0 calc(3 / 4 * 100% - $gutters * 2);
+        -ms-flex: 0 0 calc(3 / 4 * 100% - $gutters);
+            flex: 0 0 calc(3 / 4 * 100% - $gutters);
   }
   .flex-small.sm-one-third {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 calc(1 / 3 * 100% - $gutters * 2);
-            flex: 0 0 calc(1 / 3 * 100% - $gutters * 2);
+        -ms-flex: 0 0 calc(1 / 3 * 100% - $gutters);
+            flex: 0 0 calc(1 / 3 * 100% - $gutters);
   }
   .flex-small.sm-two-thirds {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 calc(2 / 3 * 100% - $gutters * 2);
-            flex: 0 0 calc(2 / 3 * 100% - $gutters * 2);
+        -ms-flex: 0 0 calc(2 / 3 * 100% - $gutters);
+            flex: 0 0 calc(2 / 3 * 100% - $gutters);
   }
 }
 
@@ -1078,28 +1078,28 @@ dd {
   }
   .flex-medium.med-half {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 calc(1 / 2 * 100% - $gutters * 2);
-            flex: 0 0 calc(1 / 2 * 100% - $gutters * 2);
+        -ms-flex: 0 0 calc(1 / 2 * 100% - $gutters);
+            flex: 0 0 calc(1 / 2 * 100% - $gutters);
   }
   .flex-medium.med-one-fourth {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 calc(1 / 4 * 100% - $gutters * 2);
-            flex: 0 0 calc(1 / 4 * 100% - $gutters * 2);
+        -ms-flex: 0 0 calc(1 / 4 * 100% - $gutters);
+            flex: 0 0 calc(1 / 4 * 100% - $gutters);
   }
   .flex-medium.med-three-fourths {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 calc(3 / 4 * 100% - $gutters * 2);
-            flex: 0 0 calc(3 / 4 * 100% - $gutters * 2);
+        -ms-flex: 0 0 calc(3 / 4 * 100% - $gutters);
+            flex: 0 0 calc(3 / 4 * 100% - $gutters);
   }
   .flex-medium.med-one-third {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 calc(1 / 3 * 100% - $gutters * 2);
-            flex: 0 0 calc(1 / 3 * 100% - $gutters * 2);
+        -ms-flex: 0 0 calc(1 / 3 * 100% - $gutters);
+            flex: 0 0 calc(1 / 3 * 100% - $gutters);
   }
   .flex-medium.med-two-thirds {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 calc(2 / 3 * 100% - $gutters * 2);
-            flex: 0 0 calc(2 / 3 * 100% - $gutters * 2);
+        -ms-flex: 0 0 calc(2 / 3 * 100% - $gutters);
+            flex: 0 0 calc(2 / 3 * 100% - $gutters);
   }
 }
 
@@ -1112,28 +1112,28 @@ dd {
   }
   .flex-large.lg-half {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 calc(1 / 2 * 100% - $gutters * 2);
-            flex: 0 0 calc(1 / 2 * 100% - $gutters * 2);
+        -ms-flex: 0 0 calc(1 / 2 * 100% - $gutters);
+            flex: 0 0 calc(1 / 2 * 100% - $gutters);
   }
   .flex-large.lg-one-fourth {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 calc(1 / 4 * 100% - $gutters * 2);
-            flex: 0 0 calc(1 / 4 * 100% - $gutters * 2);
+        -ms-flex: 0 0 calc(1 / 4 * 100% - $gutters);
+            flex: 0 0 calc(1 / 4 * 100% - $gutters);
   }
   .flex-large.lg-three-fourths {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 calc(3 / 4 * 100% - $gutters * 2);
-            flex: 0 0 calc(3 / 4 * 100% - $gutters * 2);
+        -ms-flex: 0 0 calc(3 / 4 * 100% - $gutters);
+            flex: 0 0 calc(3 / 4 * 100% - $gutters);
   }
   .flex-large.lg-one-third {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 calc(1 / 3 * 100% - $gutters * 2);
-            flex: 0 0 calc(1 / 3 * 100% - $gutters * 2);
+        -ms-flex: 0 0 calc(1 / 3 * 100% - $gutters);
+            flex: 0 0 calc(1 / 3 * 100% - $gutters);
   }
   .flex-large.lg-two-thirds {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 calc(2 / 3 * 100% - $gutters * 2);
-            flex: 0 0 calc(2 / 3 * 100% - $gutters * 2);
+        -ms-flex: 0 0 calc(2 / 3 * 100% - $gutters);
+            flex: 0 0 calc(2 / 3 * 100% - $gutters);
   }
 }
 
