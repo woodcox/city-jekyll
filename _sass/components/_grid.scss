@@ -26,7 +26,7 @@ $gutters: 0.5rem;
 $margin-bottom: 1rem;
 
 // The rows have a negative margin  which are offset by the positive margins on the columns to create gutters.
-%column-padding {
+%column-margin {
   margin-left: $gutters;
   margin-right: $gutters;
 }
@@ -58,7 +58,7 @@ $margin-bottom: 1rem;
 .flex-small,
 .flex-medium,
 .flex-large {
-  @extend %column-padding;
+  @extend %column-margin;
   flex-basis: 100%;
   margin-bottom: $margin-bottom;
 }
