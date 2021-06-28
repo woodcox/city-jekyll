@@ -55,6 +55,7 @@ $margin-bottom: 1rem;
   flex-direction: column;
 }
 
+// Mobile first grid
 .flex-small,
 .flex-medium,
 .flex-large {
@@ -63,6 +64,8 @@ $margin-bottom: 1rem;
   margin-bottom: $margin-bottom;
 }
 
+// The gridbreak mixin generates the small, medium & large grid breakpoints
+// e.g flex-small sm-one-third, flex-medium med-half
 @mixin gridbreak($break-size, $break-size-abbr){
   .flex-#{$break-size} {
     flex: 1;
