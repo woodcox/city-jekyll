@@ -27,8 +27,8 @@ $margin-bottom: 1rem;
 
 // The rows have a negative margin which are offset by the positive margins on the columns to create gutters.
 %column-margin {
-  margin-left: $gutters;
-  margin-right: $gutters;
+  padding-left: $gutters;
+  padding-right: $gutters;
 }
 
 %row-margin {
