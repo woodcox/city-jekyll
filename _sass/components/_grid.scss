@@ -32,7 +32,7 @@ $margin-bottom: 1rem;
 // Flex row
 .flex-row {
   @extend %row-margin;
-  @extend flex-config(row wrap);
+  @include flex-config(row wrap);
 }
 
 // Flex column
