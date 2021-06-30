@@ -1005,14 +1005,6 @@ dd {
   margin-right: -0.5rem;
 }
 
-.flex-col {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
 .flex-row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1024,10 +1016,13 @@ dd {
 }
 
 .flex-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
 }
 
 .flex-small,
