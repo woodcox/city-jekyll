@@ -2,7 +2,7 @@
  * Flexgrid
  */
 // https://www.dailysmarty.com/posts/streamlining-flexbox-calls-with-scss-mixins
-@mixin flex-config($flex-flow, $justify: null, $align-items: null) {
+@mixin flex-config($flex-flow, $justify: null, $align: null) {
   display: flex;
   flex-flow: $flex-flow;
   justify-content: $justify;
