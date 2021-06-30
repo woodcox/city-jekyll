@@ -23,12 +23,6 @@ $margin-bottom: 1rem;
   margin-right: -$gutters;
 }
 
-// Flex grid
-%flex-grid {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 // Flex row
 .flex-row {
   @extend %row-margin;
