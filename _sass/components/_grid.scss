@@ -37,7 +37,7 @@ $margin-bottom: 1rem;
 
 // Flex column
 .flex-col {
-  include flex-config(column nowrap);
+  @include flex-config(column nowrap);
 }
 
 // Mobile first grid
