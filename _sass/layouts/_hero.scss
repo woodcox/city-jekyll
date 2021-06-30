@@ -1,9 +1,9 @@
 .hero {
   /* flexbox */
-  @include flex-config(flex:1, column)
+  @include flex-config(column nowrap, center)
   // display: flex;
   // flex-direction: column;
-  // flex: 1;
+  flex: 1;
   // justify-content: center;
   
   /* Sizing */
