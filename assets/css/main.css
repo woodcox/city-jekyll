@@ -1005,7 +1005,7 @@ dd {
   margin-right: -0.5rem;
 }
 
-.flex-col, .flex-row {
+.flex-col {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1014,10 +1014,13 @@ dd {
 }
 
 .flex-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
 }
 
 .flex-col {
