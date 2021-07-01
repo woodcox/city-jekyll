@@ -7,6 +7,7 @@ layout: default
 <main class="content" id="main-content">
 {% include templates/hero.html %}
 {% include modules/nav-back.html %}
+{% include templates/secondary-nav.html %}
   {% for page in webpage %}
   {% capture id %}{{ page.id | remove:'/' | downcase }}{% endcapture %}
   <section id="{{id}}" class="section p-{{id}}">
