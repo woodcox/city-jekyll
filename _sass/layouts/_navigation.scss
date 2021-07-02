@@ -230,6 +230,15 @@
 
 // Secondary nav 
 
+.second-nav {
+  font-type: sanchez;
+  font-size: 1.2rem;
+
+  ul { 
+    list-style: none;
+  }
+}
+
 .animate-link {
   position: relative;
   display: inline;
