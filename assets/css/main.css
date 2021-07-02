@@ -2224,6 +2224,39 @@ caption {
   transition: width 0.4s ease;
 }
 
+animate-link {
+  position: relative;
+  display: inline;
+  cursor: pointer;
+  -webkit-transition: color 0.4s ease;
+  -o-transition: color 0.4s ease;
+  transition: color 0.4s ease;
+  color: #ffffff !important;
+  text-decoration: none;
+}
+
+animate-link:active, animate-link:hover {
+  color: #be6d0c;
+}
+
+animate-link:active:after, animate-link:hover:after {
+  width: 100%;
+}
+
+animate-link:after {
+  content: "";
+  position: absolute;
+  z-index: 201;
+  bottom: -0.15em;
+  left: 0;
+  width: 0;
+  height: 4px;
+  background: #be6d0c;
+  -webkit-transition: width 0.4s ease;
+  -o-transition: width 0.4s ease;
+  transition: width 0.4s ease;
+}
+
 .hero {
   /* flexbox */
   display: -webkit-box;
