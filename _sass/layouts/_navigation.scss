@@ -230,4 +230,32 @@
 
 // Secondary nav 
 
+animate-link {
+  position: relative;
+  display: inline;
+  cursor: pointer;
+  transition: color $anim-duration ease;
+  color: $menu-text-color;
+  text-decoration: none;
 
+  &:active,
+  &:hover {
+    color: $menu-hover-color;
+
+    &:after {
+      width: 100%;
+    }
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    z-index: 201;
+    bottom: -0.15em;
+    left: 0;
+    width: 0;
+    height: $hover-line-height;
+    background: $menu-hover-color;
+    transition: width $anim-duration ease;
+  }
+}
