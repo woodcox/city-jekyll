@@ -2224,7 +2224,7 @@ caption {
   transition: width 0.4s ease;
 }
 
-animate-link {
+.animate-link {
   position: relative;
   display: inline;
   cursor: pointer;
@@ -2235,15 +2235,15 @@ animate-link {
   text-decoration: none;
 }
 
-animate-link:active, animate-link:hover {
+.animate-link:active, .animate-link:hover {
   color: #be6d0c;
 }
 
-animate-link:active:after, animate-link:hover:after {
+.animate-link:active:after, .animate-link:hover:after {
   width: 100%;
 }
 
-animate-link:after {
+.animate-link:after {
   content: "";
   position: absolute;
   z-index: 201;
