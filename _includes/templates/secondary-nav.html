@@ -3,7 +3,7 @@
     <ul class="hide-on-med-and-down flex-row">
       {% for node in webpage %}
       {% capture id %}{{ node.id | remove:'/' | downcase }}{% endcapture %}
-        <li class="p-{{id}} flex-small"><a href="#{{id}}">{{node.title}}</a></li>
+        <li class="p-{{id}} flex-small"><a class="animate-link" href="#{{id}}">{{node.title}}</a></li>
       {% endfor %}
     </ul>
   </div>
