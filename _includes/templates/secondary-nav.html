@@ -1,6 +1,6 @@
 <nav>
   <div class="second-nav medium-container">
-    <ul class="hide-on-med-and-down flex-row">
+    <ul class="flex-row justify-center">
       {% for node in webpage %}
       {% capture id %}{{ node.id | remove:'/' | downcase }}{% endcapture %}
         <li class="p-{{id}} flex-small"><a class="animate-link" href="#{{id}}">{{node.title}}</a></li>
