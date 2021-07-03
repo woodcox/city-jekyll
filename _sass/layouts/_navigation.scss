@@ -245,7 +245,7 @@
   cursor: pointer;
   transition: color $anim-duration ease;
   color: black;
-  text-decoration: none;
+  text-decoration-line: none;
 
   &:active,
   &:hover {
@@ -259,7 +259,6 @@
   &:after {
     content: "";
     position: absolute;
-    z-index: 201;
     bottom: -0.15em;
     left: 0;
     width: 0;
