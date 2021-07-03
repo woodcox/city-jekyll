@@ -2240,7 +2240,7 @@ caption {
   -webkit-transition: color 0.4s ease;
   -o-transition: color 0.4s ease;
   transition: color 0.4s ease;
-  color: #ffffff !important;
+  color: black;
   text-decoration: none;
 }
 
