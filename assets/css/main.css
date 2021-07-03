@@ -2241,7 +2241,8 @@ caption {
   -o-transition: color 0.4s ease;
   transition: color 0.4s ease;
   color: black;
-  text-decoration: none;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
 }
 
 .animate-link:active, .animate-link:hover {
@@ -2255,7 +2256,6 @@ caption {
 .animate-link:after {
   content: "";
   position: absolute;
-  z-index: 201;
   bottom: -0.15em;
   left: 0;
   width: 0;
