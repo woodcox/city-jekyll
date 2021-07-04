@@ -15,6 +15,12 @@ primary:
     href: /about/
   - text: Connect
     href: /connect/
+  - text: Kids
+    href: /kids/
+  - text: Youth
+    href: /youth/
+  - text: Students
+    href: /students/
   - text: Media
     href: /media/
 
@@ -25,12 +31,6 @@ secondary:
   whats-on:
     - text: Featured Events
       href: /#featured
-    - text: Kids
-      href: /kids/
-    - text: Youth
-      href: /youth/
-    - text: Students
-      href: /students/
     - text: Growth groups
       href: /growth/
     - text: Prayer meeting
