@@ -2188,7 +2188,7 @@ caption {
 .outer-menu .menu > div > div > ul > li {
   padding: 0;
   margin: 1em;
-  font-size: 24px;
+  font-size: calc(1em + 1vmin);
   display: block;
 }
 
