@@ -266,6 +266,7 @@
   &:active,
   &:hover {
     color: $menu-hover-color;
+    text-decoration-line: none;
 
     &:after {
       width: 100%;
