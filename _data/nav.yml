@@ -4,7 +4,9 @@
 # can use that as your header's primary navigation by setting
 # `primary.links` to "primary'
 #
-primary: 
+primary:
+  - text: Home
+    href: /
   - text: Sunday
     href: /sunday/
   - text: What's on
