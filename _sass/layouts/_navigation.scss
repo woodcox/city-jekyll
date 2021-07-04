@@ -235,7 +235,7 @@
   font-size: 1.2rem;
 
   a {
-    color: $accent-color;
+    color: darken($accent-color, 10%);
     text-decoration-line: none;
 
     &:hover {
@@ -260,7 +260,7 @@
   display: inline;
   cursor: pointer;
   transition: color $anim-duration ease;
-  color: black;
+  color: darken($accent-color, 10%);
   text-decoration-line: none;
 
   &:active,
