@@ -2263,6 +2263,8 @@ caption {
 
 .animate-link:active, .animate-link:hover {
   color: #be6d0c;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
 }
 
 .animate-link:active:after, .animate-link:hover:after {
