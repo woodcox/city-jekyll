@@ -228,6 +228,22 @@
   }
 }
 
+// Nav back button 
+
+.nav-back {
+  font-family: Sanchez-regular;
+  font-size: 1.2rem;
+
+  a {
+    color: $accent-color;
+    text-decoration-line: none;
+
+    &:hover {
+      color: $menu-hover-color;
+    }
+  }
+}
+
 // Secondary nav 
 
 .second-nav {
