@@ -1406,7 +1406,7 @@ a.muted-button:focus,
 a.muted-button:active {
   color: #fafafa;
   border: 1px solid #fafafa;
-  background: rgba(37, 156, 211, 0.75);
+  background: rgba(241, 148, 38, 0.75);
 }
 
 .round-button,
@@ -1694,7 +1694,7 @@ caption {
 .muted-accordion li label:hover {
   color: #fafafa;
   border: 1px solid #fafafa;
-  background: rgba(37, 156, 211, 0.75);
+  background: rgba(241, 148, 38, 0.75);
 }
 
 .muted-accordion li input:checked + label {
@@ -1703,7 +1703,7 @@ caption {
   border-left: 1px solid #fafafa;
   border-right: 1px solid #fafafa;
   border-bottom: 0;
-  background: rgba(37, 156, 211, 0.75);
+  background: rgba(241, 148, 38, 0.75);
 }
 
 .muted-accordion li input:checked + label + .accord-content {
