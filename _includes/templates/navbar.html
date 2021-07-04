@@ -12,7 +12,7 @@
     <div>
       <div>
         <ul> {% for link in site.data.nav.primary %}
-          <li><a href="{{ link.href }}" {% if link.href == page.url %}class="active"{% endif %}>{{ link.text }}</a></li>{% endfor %}
+          <li><a href="{{ link.href | relative_url }}" {% if link.href == page.url %}class="active"{% endif %}>{{ link.text }}</a></li>{% endfor %}
         </ul>
       </div>
     </div>
