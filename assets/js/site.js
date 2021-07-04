@@ -57,65 +57,25 @@ let observerLogo = new IntersectionObserver(logoColorChange, config);
 observerLogo.observe(logoTarget);
 
 //=====================================================
-// Carousel
+// Smooth scroll (plus polyfill)
 //=====================================================
-document.addEventListener('DOMContentLoaded', function() {
 
-  const carousels = document.querySelectorAll('.carousel');
-  carousels.forEach(function( carousel ) {
+const links = document.querySelectorAll("nav ul a");
 
-    const ele = carousel.querySelector('ul');
-    const bullets = carousel.querySelectorAll('ol li');
-    const nextarrow = carousel.querySelector('.next');
-    const prevarrow = carousel.querySelector('.prev');
-    bullets[0].classList.add('selected');
+for (const link of links) {
+  link.addEventListener("click", clickHandler);
+}
 
-    const setSelected = function() {
-        bullets.forEach(function(bullet) {
-           bullet.classList.remove('selected');
-        });
-        let nthchild = (Math.round(ele.scrollLeft/carousel.scrollWidth)+1);
-        carousel.querySelector('ol li:nth-child('+nthchild+')').classList.add('selected');
-    }
+function clickHandler(e) {
+  e.preventDefault();
+  const href = this.getAttribute("href");
+  const offsetTop = document.querySelector(href).offsetTop;
 
-    const nextSlide = function() {
-      if(!carousel.querySelector('ol li:last-child').classList.contains('selected')) {
-        carousel.querySelector('ol li.selected').nextElementSibling.querySelector('a').click();
-        ele.scrollLeft = ele.scrollLeft + carousel.scrollWidth;
-      } else {
-        carousel.querySelector('ol li:first-child a').click();
-        ele.scrollLeft = 0;
-      }
-    }
-
-    const prevSlide = function() {
-      if(!carousel.querySelector('ol li:first-child').classList.contains('selected')) {
-        carousel.querySelector('ol li.selected').previousElementSibling.querySelector('a').click();
-        ele.scrollLeft = ele.scrollLeft - carousel.scrollWidth;
-      } else {
-        carousel.querySelector('ol li:last-child a').click();
-        ele.scrollLeft = ele.scrollWidth - carousel.scrollWidth;
-      }
-    }
-
-    // Attach the handlers
-    ele.addEventListener("scroll", setSelected);
-    nextarrow.addEventListener("click", nextSlide);
-    prevarrow.addEventListener("click", prevSlide);
-
-    //setInterval for autoplay
-    if(carousel.getAttribute('duration')) {
-      setInterval(function(){ 
-        if (ele != document.querySelector(".carousel:hover ul")) {
-          if(ele.scrollWidth > ele.scrollLeft + carousel.scrollWidth) {
-            ele.scrollLeft = ele.scrollLeft + carousel.scrollWidth;
-          } else ele.scrollLeft = 0;
-        }
-      }, carousel.getAttribute('duration'));
-    }
-  }); //end foreach
-    
-}); //end onload
+  scroll({
+    top: offsetTop,
+    behavior: "smooth"
+  });
+}
 
 //=======================================
 // Typing text animation
