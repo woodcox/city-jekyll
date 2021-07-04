@@ -2231,7 +2231,7 @@ caption {
 }
 
 .nav-back a {
-  color: #cdcdcd;
+  color: #b4b4b4;
   -webkit-text-decoration-line: none;
           text-decoration-line: none;
 }
@@ -2256,7 +2256,7 @@ caption {
   -webkit-transition: color 0.4s ease;
   -o-transition: color 0.4s ease;
   transition: color 0.4s ease;
-  color: black;
+  color: #b4b4b4;
   -webkit-text-decoration-line: none;
           text-decoration-line: none;
 }
