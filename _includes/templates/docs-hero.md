@@ -8,7 +8,7 @@
   <div class="hero-buttons small-container">
     <div class="flex-row">    
       <a class="button muted-button flex-small sm-one-third" href="https://taniarascia.github.io/primitive">Primitive UI</a>
-      <a class="button muted-button flex-small sm-one-third" href="https://github.com/woodcock3/city-jekyll">Github</button>
+      <a class="button muted-button flex-small sm-one-third" href="https://github.com/woodcock3/city-jekyll">Github</a>
       <a class="button muted-button flex-small sm-one-third" href="https://jekyllrb.com/">Jekyll</a>
     </div>
   </div>
