@@ -1,5 +1,5 @@
 ---
-title: "HTML Starting point"
+title: "Get Started"
 collection_type: "docs"
 layout: docs-layout
 container-size: medium
