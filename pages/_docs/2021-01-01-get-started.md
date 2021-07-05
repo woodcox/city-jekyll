@@ -6,12 +6,12 @@ container-size: medium
 heading: 2
 ---
 
-Begin with a basic <a href="https://en.wikipedia.org/wiki/HTML5">HTML5</a> template that does the following:
+To begin, use the header template (_include/templates/header.html) to create a <a href="https://en.wikipedia.org/wiki/HTML5">HTML5</a> template that does the following:
 
 - Sets the <a href="http://www.w3schools.com/tags/ref_language_codes.asp" target="_blank">default language</a> and <a href="https://en.wikipedia.org/wiki/UTF-8">character set</a>.
 - Uses the latest <a href="https://msdn.microsoft.com/en-us/library/jj676915(v=vs.85).aspx">Internet Explorer rendering mode</a>.
 - Defines the <a href="https://developer.mozilla.org/en-US/docs/Mozilla/Mobile/Viewport_meta_tag">width of the viewport</a> to enable responsiveness.
-- Includes links to the <a href="https://taniarascia.github.io/primitive/css/main.css" target="_blank">Primitive CSS file</a>, an empty JavaScript file, and a Favicon.
+- Includes links to the main.css file and the city-jekyll Favicon. The footer template links to site.js file.
 
 ~~~ html
 <!doctype html>
