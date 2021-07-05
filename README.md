@@ -110,7 +110,7 @@ Your blog posts (`*.md` files) should be put in the `_posts` directory.
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/woodcock3/primitive-jekyll. This project is welcomes collaboration, but contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/woodcock3/city-jekyll. This project is welcomes collaboration, but contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## Development
 
