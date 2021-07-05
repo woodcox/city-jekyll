@@ -1,7 +1,7 @@
 ---
 title: "Tables"
 collection_type: "docs"
-layout: sectioned-page
+layout: docs-layout
 container-size: medium
 heading: 2
 ---
