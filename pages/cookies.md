@@ -1,6 +1,6 @@
 ---
 title: Cookie Policy
-layout: default
+layout: single-page
 permalink: /cookies/
 tag: policy
 ---
