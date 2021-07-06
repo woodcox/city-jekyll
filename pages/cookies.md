@@ -1,11 +1,10 @@
 ---
-title: Cookie Policy
+title: Cookies
 layout: single-page
 permalink: /cookies/
 tag: policy
 ---
 
-## Cookies
 We use cookies to help improve your experience of using our website. These are small text files that 'remember' bits of information from your visit to a website using your IP address.
 
 Cookies make the interaction between you and the website faster and easier. Without them the website thinks you are a new visitor every time you move to a new page.
@@ -14,7 +13,7 @@ A cookie is stored on your computer or mobile device by a website's server. Only
 
 Below is a list of the cookies we use and what they do:
 
-### Google Analytics
+## Google Analytics
 
 This website uses Google Analytics. This happens only if you approve third party analytics cookies. If you approve Google Analytics will stores several cookies on your computer or mobile. However, we have taken all actions we can to limit the power of Google. We have configured Google Analytics to anonymize IP addresses and use SSL at all times. We use Google Analytics to collect information about how our website performs and how our users, in general, navigate through and use {{ site.url | remove_first: "https://" }}. This helps us evaluate how you use our website, compile statistical reports on activity, and improve our content and website performance.
 
@@ -29,6 +28,6 @@ To opt out of being tracked by Google Analytics across all websites visit [http:
 For more information visit [Google's privacy and terms](https://policies.google.com/technologies/partner-sites).
 
 
-### Other third party cookies
+## Other third party cookies
 
 Certain pages on our website may set other third party cookies. For example, we may embed content, such as videos or forms, from another site that sets a cookie. While we try to minimize these third party cookies, we can’t always control what cookies this third party content sets.
