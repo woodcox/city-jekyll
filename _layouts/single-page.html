@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+<main class="content" id="main-content">
+{% include modules/nav-back.html %}
+  <section>
+    <article>
+      <div class="container {{ page.style }}">
+        {% if page.title %}
+        <h1>{{ page.title | upcase }}</h1>
+        {% endif %}
+        {{ page.content }}
+      </div>
+    </article>
+  </section>
