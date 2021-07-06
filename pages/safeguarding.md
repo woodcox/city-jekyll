@@ -54,12 +54,7 @@ A copy of the full policy and procedures is available from Lianna Smith.
 
 Signed by elders:
 
-Michael Luehrmann
-David Lovell
-John Keane
-Dave Stone
-Andrew Smith
-Paul Woodcock
+Michael Luehrmann, David Lovell, John Keane, Andrew Smith, Paul Woodcock
 
 Date: 19/01/2021
 
