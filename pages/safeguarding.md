@@ -1,5 +1,9 @@
-
-# Safeguarding Policy
+---
+title: Safeguarding Policy
+layout: single-page
+permalink: /safeguarding/
+tag: policy
+---
 
 ## 1. INTRODUCTION
 
