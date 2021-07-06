@@ -5,6 +5,7 @@ permalink: /cookies/
 tag: policy
 ---
 
+
 We use cookies to help improve your experience of using our website. These are small text files that 'remember' bits of information from your visit to a website using your IP address.
 
 Cookies make the interaction between you and the website faster and easier. Without them the website thinks you are a new visitor every time you move to a new page.
@@ -19,9 +20,9 @@ This website uses Google Analytics. This happens only if you approve third party
 
 The information we collect includes:
 
-* The name of your internet service provider and the internet protocol (IP) address you are using. This may or may not identify a specific computer.
-* The date and time you visit our website, and the pages you look at.
-* The internet address of any websites which have linked you directly to our site.
+- The name of your internet service provider and the internet protocol (IP) address you are using. This may or may not identify a specific computer.
+- The date and time you visit our website, and the pages you look at.
+- The internet address of any websites which have linked you directly to our site.
 
 To opt out of being tracked by Google Analytics across all websites visit [http://tools.google.com/dlpage/gaoptout](http://tools.google.com/dlpage/gaoptout).
 
