@@ -12,7 +12,7 @@ Cookies make the interaction between you and the website faster and easier. With
 
 A cookie is stored on your computer or mobile device by a website's server. Only that server can retrieve or read the contents of that cookie. Each cookie is unique to your web browser. So if we put a cookie on your computer, it can't be read by any other website.
 
-Below is a list of the cookies we use and what 
+Below is a list of the cookies we use and what they do:
 
 ### Google Analytics
 
