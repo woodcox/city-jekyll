@@ -6,6 +6,33 @@
   color: $alternate-color;
 }
 
+// Curved sections
+%curved-section {
+  position: relative;
+  background: #2c3e50;
+  height: 50vh;
+
+.curved-top {
+  @extend curved-section;
+
+  &::after {
+    content: '';
+    border-top-left-radius: 50% 100%;
+    border-top-right-radius: 50% 100%;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: #fff;
+    height: 20%;
+  }
+}
+
+.curved-bottom {
+  @extend curved-section;
+  border-bottom-left-radius: 50% 20%;
+  border-bottom-right-radius: 50% 20%;
+}
+
 // Gradient text
 .gradient-text {
   /* Fallback: Set a background color. */
