@@ -1,20 +1,24 @@
 /* Colors */
 
 // Backgrounds
-.alternate-background {
+%alternate-background {
   background: $alternate-background;
   color: $alternate-color;
 }
 
+.alternate-background {
+  @extend %alternate-background;
+}
+
 // Curved sections
 %curved-section {
+  @extend %alternate-background;
   position: relative;
-  background: #2c3e50;
   height: 50vh;
 }
 
 .curved-top {
-  @extend curved-section;
+  @extend %curved-section;
 
   &::after {
     content: '';
@@ -23,13 +27,13 @@
     position: absolute;
     bottom: 0;
     width: 100%;
-    background: #fff;
+    background: $background;
     height: 20%;
   }
 }
 
 .curved-bottom {
-  @extend curved-section;
+  @extend %curved-section;
   border-bottom-left-radius: 50% 20%;
   border-bottom-right-radius: 50% 20%;
 }
