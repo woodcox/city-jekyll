@@ -1266,9 +1266,30 @@ dd {
 }
 
 /* Colors */
-.alternate-background {
+.curved-bottom, .curved-top, .alternate-background {
   background: #404040;
   color: #fafafa;
+}
+
+.curved-bottom, .curved-top {
+  position: relative;
+  height: 50vh;
+}
+
+.curved-top::after {
+  content: '';
+  border-top-left-radius: 50% 100%;
+  border-top-right-radius: 50% 100%;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: white;
+  height: 20%;
+}
+
+.curved-bottom {
+  border-bottom-left-radius: 50% 20%;
+  border-bottom-right-radius: 50% 20%;
 }
 
 .gradient-text {
