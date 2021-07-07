@@ -59,9 +59,9 @@ collections:
   docs:
     output: true
     permalink: /docs/
-  example2:
+  home:
     output: true
-    permalink: /example2/
+    permalink: /
 
 
 ### sass
