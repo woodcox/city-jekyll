@@ -10,15 +10,15 @@
   @extend %alternate-background;
 }
 
-// Curved sections backgrounds
-%curved-section {
+// Curved backgrounds
+%curved-background {
   @extend %alternate-background;
   position: relative;
   height: 50vh;
 }
 
-.curved-top {
-  @extend %curved-section;
+.curved-background-top {
+  @extend %curved-background;
 
   &::after {
     content: '';
@@ -32,8 +32,8 @@
   }
 }
 
-.curved-bottom {
-  @extend %curved-section;
+.curved-background-bottom {
+  @extend %curved-background;
   border-bottom-left-radius: 50% 20%;
   border-bottom-right-radius: 50% 20%;
 }
