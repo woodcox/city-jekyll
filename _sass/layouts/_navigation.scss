@@ -200,8 +200,8 @@
               color: $menu-text-color;
               text-decoration: none;
 
-               &:active,
-               &:hover {
+              &:active,
+              &:hover {
                 color: $menu-hover-color;
 
                 &:after {
