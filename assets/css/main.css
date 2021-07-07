@@ -1266,17 +1266,17 @@ dd {
 }
 
 /* Colors */
-.curved-bottom, .curved-top, .alternate-background {
+.curved-background-bottom, .curved-background-top, .alternate-background {
   background: #404040;
   color: #fafafa;
 }
 
-.curved-bottom, .curved-top {
+.curved-background-bottom, .curved-background-top {
   position: relative;
   height: 50vh;
 }
 
-.curved-top::after {
+.curved-background-top::after {
   content: '';
   border-top-left-radius: 50% 100%;
   border-top-right-radius: 50% 100%;
@@ -1287,7 +1287,7 @@ dd {
   height: 20%;
 }
 
-.curved-bottom {
+.curved-background-bottom {
   border-bottom-left-radius: 50% 20%;
   border-bottom-right-radius: 50% 20%;
 }
