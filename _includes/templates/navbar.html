@@ -11,8 +11,9 @@
   <div class="menu">
     <div>
       <div>
-        <ul> {% for link in site.data.nav.primary %}{% capture nav-href %}{{ link.href | relative_url }}{% endcapture %}
-          <li><a href="{{ nav-href }}" {% if link.href == page.url %}class="active"{% endif %}>{{ link.text }}</a></li>{% endfor %}
+        <ul> {% for link in site.data.nav.primary %}{% capture navhref %}{{ link.href | relative_url }}{% endcapture %}
+          <li><a href="/city-jekyll/" class="active">HOME</a>
+          <li><a href="{{ navhref }}" {% if link.href == page.url %}class="active"{% endif %}>{{ link.text }}</a></li>{% endfor %}
         </ul>
       </div>
     </div>
