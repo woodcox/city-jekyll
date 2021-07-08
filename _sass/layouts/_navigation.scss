@@ -1,6 +1,37 @@
 /*
  * Navigation
  */
+// animate navigation links
+%animate-href {
+  position: relative;
+  display: inline;
+  cursor: pointer;
+  transition: color $anim-duration ease;
+  color: darken($accent-color, 10%);
+  text-decoration-line: none;
+
+  &:active,
+  &:hover {
+    color: $menu-hover-color;
+    text-decoration-line: none;
+
+    &:after {
+      width: 100%;
+    }
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: -0.15em;
+    left: 0;
+    width: 0;
+    height: $hover-line-height;
+    background: $menu-hover-color;
+    transition: width $anim-duration ease;
+  }
+}
+
 .logo .brand-logo {
   .city-svg-logo {
     viewBox: 0 0 40 40;
@@ -193,32 +224,10 @@
             display: block;
 
             > a {
-              position: relative;
-              display: inline;
-              cursor: pointer;
-              transition: color $anim-duration ease;
-              color: $menu-text-color;
-              text-decoration: none;
-
-              &:active,
-              &:hover {
-                color: $menu-hover-color;
-
-                &:after {
-                  width: 100%;
-                }
-              }
+              @extend %animate-href;
 
               &:after {
-                content: "";
-                position: absolute;
                 z-index: 201;
-                bottom: -0.15em;
-                left: 0;
-                width: 0;
-                height: $hover-line-height;
-                background: $menu-hover-color;
-                transition: width $anim-duration ease;
               }
             }
           }
@@ -255,32 +264,6 @@
   }
 }
 
-.animate-link {
-  position: relative;
-  display: inline;
-  cursor: pointer;
-  transition: color $anim-duration ease;
-  color: darken($accent-color, 10%);
-  text-decoration-line: none;
-
-  &:active,
-  &:hover {
-    color: $menu-hover-color;
-    text-decoration-line: none;
-
-    &:after {
-      width: 100%;
-    }
-  }
-
-  &:after {
-    content: "";
-    position: absolute;
-    bottom: -0.15em;
-    left: 0;
-    width: 0;
-    height: $hover-line-height;
-    background: $menu-hover-color;
-    transition: width $anim-duration ease;
-  }
+.animate-nav-link {
+  @extend %animate-href;
 }
