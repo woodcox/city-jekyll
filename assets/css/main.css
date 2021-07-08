@@ -1950,6 +1950,41 @@ caption {
 /*
  * Navigation
  */
+.animate-nav-link, .outer-menu .menu > div > div > ul > li > a {
+  position: relative;
+  display: inline;
+  cursor: pointer;
+  -webkit-transition: color 0.4s ease;
+  -o-transition: color 0.4s ease;
+  transition: color 0.4s ease;
+  color: #b4b4b4;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+}
+
+.animate-nav-link:active, .outer-menu .menu > div > div > ul > li > a:active, .animate-nav-link:hover, .outer-menu .menu > div > div > ul > li > a:hover {
+  color: #be6d0c;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+}
+
+.animate-nav-link:active:after, .outer-menu .menu > div > div > ul > li > a:active:after, .animate-nav-link:hover:after, .outer-menu .menu > div > div > ul > li > a:hover:after {
+  width: 100%;
+}
+
+.animate-nav-link:after, .outer-menu .menu > div > div > ul > li > a:after {
+  content: "";
+  position: absolute;
+  bottom: -0.15em;
+  left: 0;
+  width: 0;
+  height: 4px;
+  background: #be6d0c;
+  -webkit-transition: width 0.4s ease;
+  -o-transition: width 0.4s ease;
+  transition: width 0.4s ease;
+}
+
 .logo .brand-logo .city-svg-logo {
   viewBox: 0 0 40 40;
   width: 45px;
@@ -2213,37 +2248,8 @@ caption {
   display: block;
 }
 
-.outer-menu .menu > div > div > ul > li > a {
-  position: relative;
-  display: inline;
-  cursor: pointer;
-  -webkit-transition: color 0.4s ease;
-  -o-transition: color 0.4s ease;
-  transition: color 0.4s ease;
-  color: #ffffff !important;
-  text-decoration: none;
-}
-
-.outer-menu .menu > div > div > ul > li > a:active, .outer-menu .menu > div > div > ul > li > a:hover {
-  color: #be6d0c;
-}
-
-.outer-menu .menu > div > div > ul > li > a:active:after, .outer-menu .menu > div > div > ul > li > a:hover:after {
-  width: 100%;
-}
-
 .outer-menu .menu > div > div > ul > li > a:after {
-  content: "";
-  position: absolute;
   z-index: 201;
-  bottom: -0.15em;
-  left: 0;
-  width: 0;
-  height: 4px;
-  background: #be6d0c;
-  -webkit-transition: width 0.4s ease;
-  -o-transition: width 0.4s ease;
-  transition: width 0.4s ease;
 }
 
 .nav-back {
@@ -2268,41 +2274,6 @@ caption {
 
 .second-nav ul {
   list-style: none;
-}
-
-.animate-link {
-  position: relative;
-  display: inline;
-  cursor: pointer;
-  -webkit-transition: color 0.4s ease;
-  -o-transition: color 0.4s ease;
-  transition: color 0.4s ease;
-  color: #b4b4b4;
-  -webkit-text-decoration-line: none;
-          text-decoration-line: none;
-}
-
-.animate-link:active, .animate-link:hover {
-  color: #be6d0c;
-  -webkit-text-decoration-line: none;
-          text-decoration-line: none;
-}
-
-.animate-link:active:after, .animate-link:hover:after {
-  width: 100%;
-}
-
-.animate-link:after {
-  content: "";
-  position: absolute;
-  bottom: -0.15em;
-  left: 0;
-  width: 0;
-  height: 4px;
-  background: #be6d0c;
-  -webkit-transition: width 0.4s ease;
-  -o-transition: width 0.4s ease;
-  transition: width 0.4s ease;
 }
 
 .hero {
