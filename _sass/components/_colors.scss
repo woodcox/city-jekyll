@@ -3,7 +3,14 @@
 // Backgrounds
 %alternate-background {
   background: $alternate-background;
-  color: $alternate-color;
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5, {
+    color: $alternate-color;
+  }
 }
 
 .alternate-background {
