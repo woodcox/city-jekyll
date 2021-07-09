@@ -54,6 +54,8 @@ h5 {
 }
 
 h1 {
+  position: relative;
+  
   &:after {
     content: '';
     width: 4rem;
