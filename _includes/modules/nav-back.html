@@ -1,6 +1,6 @@
 
 <nav>
-  <div class="nav-back medium-container {% if page.title == "404" or page.url == "/" %}invisible{% endif %}">
+  <div class="nav-back medium-container {% if page.title == "404" %}invisible{% elsif page.url == "/" %}invisible{% endif %}">
     <div class="flex-row justify-center">
       <div class="flex-medium med-one-fourth">
         {% assign crumbs = page.url | remove:'/index.html' | split: '/' %}
