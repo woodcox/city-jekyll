@@ -813,6 +813,7 @@ h5 {
   font-family: Sanchez, -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, sans-serif;
   line-height: 1.2;
   color: #404040;
+  text-align: center;
 }
 
 h1:not(:first-child),
