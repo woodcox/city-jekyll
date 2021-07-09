@@ -46,6 +46,7 @@ h5 {
   font-family: $heading-font-family;
   line-height: $heading-line-height;
   color: $heading-font-color;
+  text-align: center;
 
   &:not(:first-child) {
     margin: 1.5rem 0;
