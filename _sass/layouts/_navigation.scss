@@ -225,6 +225,7 @@
 
             > a {
               @extend %animate-href;
+              color: $menu-text-color;
 
               &:after {
                 z-index: 201;
