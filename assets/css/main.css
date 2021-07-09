@@ -1268,6 +1268,24 @@ dd {
 /* Colors */
 .curved-background-bottom, .curved-background-top, .alternate-background {
   background: #404040;
+}
+
+.curved-background-bottom body, .curved-background-top body, .alternate-background body,
+.curved-background-bottom h1,
+.curved-background-top h1,
+.alternate-background h1,
+.curved-background-bottom h2,
+.curved-background-top h2,
+.alternate-background h2,
+.curved-background-bottom h3,
+.curved-background-top h3,
+.alternate-background h3,
+.curved-background-bottom h4,
+.curved-background-top h4,
+.alternate-background h4,
+.curved-background-bottom h5,
+.curved-background-top h5,
+.alternate-background h5 {
   color: #fafafa;
 }
 
