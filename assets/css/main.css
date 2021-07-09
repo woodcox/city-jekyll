@@ -1268,12 +1268,10 @@ dd {
 /* Colors */
 .curved-background-bottom, .curved-background-top, .alternate-background {
   background: #404040;
+  color: #fafafa;
 }
 
-.curved-background-bottom body, .curved-background-top body, .alternate-background body,
-.curved-background-bottom h1,
-.curved-background-top h1,
-.alternate-background h1,
+.curved-background-bottom h1, .curved-background-top h1, .alternate-background h1,
 .curved-background-bottom h2,
 .curved-background-top h2,
 .alternate-background h2,
