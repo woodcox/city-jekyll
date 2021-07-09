@@ -11,8 +11,8 @@
   <div class="menu">
     <div>
       <div>
-        <ul>
-          <li>{% for link in site.data.nav.primary %}{% capture navhref %}{{ link.href | relative_url }}{% endcapture %}<a href="{{ navhref }}" {% if link.href == page.url %}class="active"{% endif %}>{{ link.text }}</a></li>{% endfor %}
+        <ul>{% for link in site.data.nav.primary %}{% capture navhref %}{{ link.href | relative_url }}{% endcapture %}
+          <li><a href="{{ navhref }}" {% if link.href == page.url %}class="active"{% endif %}>{{ link.text }}</a></li>{% endfor %}
         </ul>
       </div>
     </div>
