@@ -824,6 +824,10 @@ h5:not(:first-child) {
   margin: 1.5rem 0;
 }
 
+h1 {
+  position: relative;
+}
+
 h1:after {
   content: '';
   width: 4rem;
