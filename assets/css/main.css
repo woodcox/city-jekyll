@@ -2264,6 +2264,10 @@ caption {
   display: block;
 }
 
+.outer-menu .menu > div > div > ul > li > a {
+  color: #ffffff !important;
+}
+
 .outer-menu .menu > div > div > ul > li > a:after {
   z-index: 201;
 }
