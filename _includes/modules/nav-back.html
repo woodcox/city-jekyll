@@ -1,12 +1,12 @@
 
 <nav>
-  <div class="nav-back medium-container {% if page.title == "404" %}invisible{% endif %}">
+  <div class="nav-back medium-container {% if page.title == "404" or page.title = "home" %}invisible{% endif %}">
     <div class="flex-row justify-center">
       <div class="flex-medium med-one-fourth">
         {% assign crumbs = page.url | remove:'/index.html' | split: '/' %}
         {% assign current_page = crumbs.last | append: '/' %}
         {% assign previous = page.url | remove: current_page %}
-        <a class="arrow-left-icon text-center animate-nav-link {% if page.url == site.basurl %}hide{% endif %}" href="{{ previous | relative_url }}"> {% if previous == '/' %}HOME{% else %}{{ previous | upcase | remove: '/' }}{% endif %}</a>
+        <a class="arrow-left-icon text-center animate-nav-link" href="{{ previous | relative_url }}"> {% if previous == '/' %}HOME{% else %}{{ previous | upcase | remove: '/' }}{% endif %}</a>
       </div>
     </div>
   </div>
