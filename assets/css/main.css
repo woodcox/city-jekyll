@@ -824,6 +824,19 @@ h5:not(:first-child) {
   margin: 1.5rem 0;
 }
 
+h1:after {
+  content: '';
+  width: 4rem;
+  height: 2px;
+  position: absolute;
+  background: #f19426;
+  display: block;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  bottom: -.75rem;
+}
+
 h1:not(:first-child),
 h2:not(:first-child),
 h3:not(:first-child) {
