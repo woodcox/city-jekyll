@@ -920,6 +920,8 @@ blockquote {
 blockquote cite {
   display: block;
   margin-top: 1.5rem;
+  font-style: normal;
+  font-weight: bold;
   text-align: right;
 }
 
