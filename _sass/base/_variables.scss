@@ -39,6 +39,7 @@ $highlight: lighten($secondary-color, 15%) !default;
 $error: #d33c40 !default;
 $success: #29de7d !default;
 $bq-border: 0.3em solid $primary-color !default;
+$bq-background: lighten($primary-color, 25%) !default;
 
 //==============================================================================
 // Typography
