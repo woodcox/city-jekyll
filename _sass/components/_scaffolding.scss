@@ -152,12 +152,11 @@ blockquote {
   margin: 0 0 $margins 0;
   border-left: $bq-border;
   padding: 0 1.5rem;
-  font-size: 1.5rem;
+  font-style: italic;
 
   cite {
     display: block;
     margin-top: $margins;
-    font-size: 1rem;
     text-align: right;
   }
 }
