@@ -5,7 +5,7 @@ permalink: /beliefs/
 tag: policy
 ---
 
-Below is the core beliefs of our church. This is in line with the FIEC statement of faith that all FIEC churches are united around.
+Below is the core beliefs of our church. This is in line with the [FIEC statement](https://fiec.org.uk/who-we-are/beliefs) of faith that all [FIEC churches](https://fiec.org.uk/) are united around.
 
 ## 1. God
 
