@@ -153,6 +153,7 @@ blockquote {
   border-left: $bq-border;
   padding: 0 1.5rem;
   font-style: italic;
+  background: $bq-background;
 
   cite {
     display: block;
