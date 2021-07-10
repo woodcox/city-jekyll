@@ -1,17 +1,13 @@
 ---
 layout: single-page
-title: Privacy Policy
+title: Privacy Notice
 permalink: /privacy/
 ---
 
-We are committed to protecting your privacy under the General Data Protection Regulations (GDPR) and we are registered with the Information Commissioner's Office under ref ZA383693.
+City Evangelical Church is committed to protecting your privacy under the General Data Protection Regulations (GDPR) and we are registered with the Information Commissioner's Office under ref ZA383693.
 
 
-City Evangelical Church Privacy Notice 
-
- 
-
-How City Evangelical Church (“we”) use your information
+## How City Evangelical Church (“we”) use your information
 
 Your privacy is important to us.  We are committed to safeguarding the privacy of your information.
 
