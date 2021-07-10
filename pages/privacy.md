@@ -29,7 +29,7 @@ We collect personal data to provide appropriate pastoral care, to monitor and as
 
  
 
-## The categories of information that we may collect, hold and share include:
+### The categories of information that we may collect, hold and share include:
 
 - Personal information (such as name, telephone number, address and email address)
 - Characteristics (such as gender, ethnicity, language, nationality, country of birth)
