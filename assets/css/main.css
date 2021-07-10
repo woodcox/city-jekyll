@@ -911,7 +911,7 @@ mark {
 
 blockquote {
   margin: 0 0 1.5rem 0;
-  border-left: 16px solid #f0f0f0;
+  border-left: 0.3em solid #259cd3;
   padding: 0 1.5rem;
   font-style: italic;
 }
