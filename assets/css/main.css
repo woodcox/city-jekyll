@@ -921,7 +921,7 @@ blockquote cite {
   display: block;
   margin-top: 1.5rem;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 500;
   text-align: right;
 }
 
