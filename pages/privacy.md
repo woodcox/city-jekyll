@@ -31,9 +31,9 @@ We collect personal data to provide appropriate pastoral care, to monitor and as
 
 ## The categories of information that we may collect, hold and share include:
 
-Personal information (such as name, telephone number, address and email address)
-Characteristics (such as gender, ethnicity, language, nationality, country of birth)
-Special categories of personal data (such as your religious beliefs)
+- Personal information (such as name, telephone number, address and email address)
+- Characteristics (such as gender, ethnicity, language, nationality, country of birth)
+- Special categories of personal data (such as your religious beliefs)
  
 
 ## Storing your data
@@ -68,11 +68,11 @@ Under Data Protection legislation, you have the right to request access to infor
 
 #### You also have the right to:
 
-object to processing of personal data that is likely to cause, or is causing, damage or distress
-prevent processing for the purpose of direct marketing
-object to decisions being taken by automated means
-in certain circumstances, have inaccurate personal data rectified, blocked, erased or destroyed; and
-claim compensation for damages caused by a breach of the Data Protection regulations. 
+- object to processing of personal data that is likely to cause, or is causing, damage or distress
+- prevent processing for the purpose of direct marketing
+- object to decisions being taken by automated means
+- in certain circumstances, have inaccurate personal data rectified, blocked, erased or destroyed; and
+- claim compensation for damages caused by a breach of the Data Protection regulations. 
  
 
 For further information on how your information is used, how we maintain the security of your information and your rights to access information we hold on you please contact Colin Bainbridge.
