@@ -54,19 +54,19 @@ We have put in place procedures to deal with any suspected personal data breach 
 
  
 
-## Who do we share your information with?
+### Who do we share your information with?
 
 We will not share your information with third parties without your consent unless the law requires us to do so.  
 
  
 
-## Requesting access to your personal data
+### Requesting access to your personal data
 
 Under Data Protection legislation, you have the right to request access to information about you that we hold. To make a request for your personal information contact Colin Bainbridge
 
  
 
-### You also have the right to:
+#### You also have the right to:
 
 object to processing of personal data that is likely to cause, or is causing, damage or distress
 prevent processing for the purpose of direct marketing
@@ -82,7 +82,7 @@ If you have a concern about the way we are collecting or using your personal dat
 
  
 
-### Contact:
+#### Contact:
 
 If you would like to discuss anything in this privacy notice, please contact:
 
