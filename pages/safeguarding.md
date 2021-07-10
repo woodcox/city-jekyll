@@ -133,7 +133,7 @@ If a worker or volunteer becomes aware of a safeguarding issue, under no circums
 -  Where the concern is about a child the Safeguarding Co-ordinator should contact Children’s Social Services.  Where the concern is regarding an adult in need of protection contact Adult Social Services or take advice from Thirtyone:eight (as above).
  
 
-## 5. WHAT TO DO IF A CHILD, YOUNG PERSON OR VULNERABLE ADULT MAKES A DISCLOSURE/ALLEGATION
+## 5. WHAT TO DO IF A CHILD, YOUNG PERSON OR VULNERABLE ADULT MAKES A DISCLOSURE / ALLEGATION
  
 It is important that you treat any allegations extremely seriously. Never think that someone else may be dealing with it. If you receive information that a child may be at risk of, or experiencing harm the following steps should be taken:  
 
@@ -187,7 +187,7 @@ Safer recruitment procedures (for those involved in children/youth work or work 
 The Safeguarding Co-Ordinator will maintain an up to date list of the volunteers and the training that they have received.  
  
 
-## 7. MANAGEMENT AND SUPERVISION OF STAFF/VOLUNTEERS
+## 7. MANAGEMENT AND SUPERVISION OF STAFF / VOLUNTEERS
 
 The purpose of supervision is to:
  
@@ -218,13 +218,13 @@ Regardless of whether a Police and/or a Children Social Work Service investigati
 - Consideration will always be given to whether sharing information is necessary, proportionate, relevant, accurate, timely and secure. You should ensure that any information shared is necessary for the purpose for which you are sharing it, is shared only with those people who need to have it, is accurate and up-to-date, is shared in a timely fashion, and is shared securely.
  
 
-## 10. DISTRIBUTING/REVIEWING POLICIES AND PROCEDURES
+## 10. DISTRIBUTING / REVIEWING POLICIES AND PROCEDURES
 
 - An electronic copy will be provided to all members and will be available on City Evangelical Church’s website.
 - A notice will be placed on the Children and Youth work noticeboard advising that a paper copy of the Safeguarding Policy will be provided to each ministry team and a copy will be available in the main auditorium.
  
  
-## 11. RESPONSIBILITIES OF THE ELDERS & MINISTRY LEADERS
+## 11. RESPONSIBILITIES OF THE ELDERS AND MINISTRY LEADERS
 
 ### Good Practice Guidelines
  
