@@ -151,7 +151,7 @@ mark {
 blockquote {
   margin: 0 0 $margins 0;
   border-left: $bq-border;
-  border-radius: 25px
+  border-radius: $border-radius;
   padding: 0.7rem 1.5rem;
   font-style: italic;
   background: $bq-background;
