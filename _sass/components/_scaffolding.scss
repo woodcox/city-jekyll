@@ -158,6 +158,8 @@ blockquote {
   cite {
     display: block;
     margin-top: $margins;
+    font-style: normal;
+    font-weight: bold;
     text-align: right;
   }
 }
