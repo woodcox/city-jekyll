@@ -914,6 +914,7 @@ blockquote {
   border-left: 0.3em solid #259cd3;
   padding: 0 1.5rem;
   font-style: italic;
+  background: #8dcdeb;
 }
 
 blockquote cite {
