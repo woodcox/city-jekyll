@@ -10,7 +10,7 @@
   height: 100vh;
 
   /* Background styles */
-  background-image: linear-gradient(rgba($primary-color, 0.95),rgba($primary-color, 0.40)), url('../img/600/skyline.jpg');
+  background-image: linear-gradient(rgba($primary-color, 0.95),rgba($primary-color, 0.40)), url('../img/600/city-building-corner.jpg');
   background-size: cover;
   -o-background-size:cover; 
   -moz-background-size:cover; 
@@ -38,20 +38,20 @@
 @include small-breakpoint {
   .hero {
     height: 85vh;
-    background-image: linear-gradient(rgba($primary-color, 0.95),rgba($primary-color, 0.40)), url('../img/800/skyline.jpg');
+    background-image: linear-gradient(rgba($primary-color, 0.95),rgba($primary-color, 0.40)), url('../img/800/city-building-corner.jpg');
   }
 }
 
 @include medium-breakpoint {
   .hero {
     height: 85vh;
-    background-image: linear-gradient(rgba($primary-color, 0.95),rgba($primary-color, 0.40)), url('../img/1000/skyline.jpg');
+    background-image: linear-gradient(rgba($primary-color, 0.95),rgba($primary-color, 0.40)), url('../img/1000/city-building-corner.jpg');
   }
 }
 
 @include large-breakpoint {
   .hero {
     height: 85vh;
-    background-image: linear-gradient(rgba($primary-color, 0.95),rgba($primary-color, 0.40)), url('../img/1160/skyline.jpg');
+    background-image: linear-gradient(rgba($primary-color, 0.95),rgba($primary-color, 0.40)), url('../img/1160/city-building-corner.jpg');
   }
 }
