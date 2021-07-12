@@ -11,8 +11,7 @@ The City Evangelical Church eldership recognises the importance of its ministry/
 The scope of this policy covers the adult, child and young people’s activities that are organised and staffed by appointed workers and volunteers of City Evangelical Church only. This policy shall not apply to any activities organised or otherwise facilitated by third parties who may elect to hire the church’s premises. However, it is hoped that all organisations/charities using the church’s premises will have their own Safeguarding Policy in place.  
 As an Eldership we recognise that we have a Biblical responsibility to value and teach children and young people entrusted to our care. Our example comes from Jesus Christ, who Himself valued people, spent time with them in teaching and demonstrated care and compassion for all, including children.
 
-> Then children were brought to him that he might lay his hands on them and pray. The disciples rebuked the people, but Jesus said, “Let the little children come to me and do not hinder them, for to such belongs the kingdom of heaven” 
-> <cite>Matthew 19 v 13-14</cite>
+> Then children were brought to him that he might lay his hands on them and pray. The disciples rebuked the people, but Jesus said, “Let the little children come to me and do not hinder them, for to such belongs the kingdom of heaven” <cite>Matthew 19 v 13-14</cite>
 
 The eldership of City Evangelical Church is committed to the safeguarding of children, young people and adults and to ensuring their wellbeing. They have much to give as well as to receive.  We will listen to them.  As we nurture them in the gospel and the teaching of Christ, we will respect their wishes and feelings.
  
