@@ -5,12 +5,11 @@
 Use this section to tell people about which versions of your project are
 currently being supported with security updates.
 
-| Version | Supported          |
-| ------- | ------------------ |
-| Jekyll 4.2 | :white_check_mark: |
-|            | :x:                |
-|            | :white_check_mark: |
-|            | :x:                |
+| Ruby Gem        | Version | Supported  |
+| --------------- | ------- | ---------  |
+| Jekyll          | 4.2     | :white_check_mark: |
+| Autoprefixer    | 10      | :white_check_mark: |
+| Jekyll-get-json |         | :white_check_mark: |
 
 ## Reporting a Vulnerability
 
