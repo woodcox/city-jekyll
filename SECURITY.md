@@ -16,7 +16,7 @@ currently being supported with security updates.
 
 If there are any vulnerability in the {{ site.name }} project, don't hesitate to _report them_.
 
-1. Use any of the [email addresses](https://github.com/woodcock3/{{ site.baseurl}}#contact-us).
+1. Use any of the [email addresses](https://github.com/woodcock3{{ site.baseurl }}#contact-us).
 2. Describe the vulnerability.
 
 - If you have a fix, explain or attach it.
