@@ -9,7 +9,7 @@ currently being supported with security updates.
 | --------------- | ------- | ---------  |
 | Jekyll          | 4.2     | :white_check_mark: |
 | Autoprefixer    | 10      | :white_check_mark: |
-| Jekyll-get-json |         | :white_check_mark: |
+| Jekyll-get-json | 1.0     | :white_check_mark: |
 
 ## Reporting a Vulnerability
 
