@@ -13,7 +13,7 @@ The city-jekyll theme uses the following versions of [ruby gems](https://rubygem
 
 ## Reporting a Vulnerability
 
-If there are any vulnerability in the city-jekyll theme, don't hesitate to _report them_.
+If there are any vulnerabilities in the city-jekyll theme, don't hesitate to _report them_.
 
 1. Please open an issue on [GitHub](https://github.com/woodcock3/city-jekyll). If you do not have a GitHub account please use any of the [email addresses](https://woodcock3.github.io/city-jekyll/) on the webpages to inform the webmaster. 
 2. In the issue or email you should:
