@@ -2,7 +2,7 @@
 
 ## Supported Versions
 
-The city-jekyll theme uses the following versions of ruby gems to generate the website. The current versions are the only ones that are supported with security updates.
+The city-jekyll theme uses the following versions of [ruby gems](https://rubygems.org/) to generate the website. The current versions are the only ones that are supported with security updates.
 
 | Ruby Gem            | Version | Supported  |
 | --------------------| ------- | ---------  |
