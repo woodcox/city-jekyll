@@ -2,8 +2,7 @@
 
 ## Supported Versions
 
-Use this section to tell people about which versions of your project are
-currently being supported with security updates.
+The city-jekyll theme uses the following versions of the ruby gems to generate the website. The current version is the only one that is supported with security updates.
 
 | Ruby Gem            | Version | Supported  |
 | --------------------| ------- | ---------  |
@@ -16,7 +15,7 @@ currently being supported with security updates.
 
 If there are any vulnerability in the city-jekyll theme, don't hesitate to _report them_.
 
-1. Please open an issue on GitHub. If you do not have a GitHub account please use any of the [email addresses](https://github.com/woodcock3/#contact-us) on the webpages to inform the webmaster. 
+1. Please open an issue on [GitHub](https://github.com/woodcock3/city-jekyll). If you do not have a GitHub account please use any of the [email addresses](https://woodcock3.github.io/city-jekyll/) on the webpages to inform the webmaster. 
 2. In the issue or email you should:
 
 - Describe the vulnerability
