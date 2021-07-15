@@ -8,6 +8,7 @@ on:
       - 'Gemfile'
       - 'README.md'
       - 'LICENSE.txt'
+      - 'SECURITY.md'
 
 # Build site using jekyll
 jobs:
