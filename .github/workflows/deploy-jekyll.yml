@@ -7,7 +7,7 @@ on:
     paths-ignore:
       - 'Gemfile'
       - 'README.md'
-      - 'LICENSE.txt'
+      - 'LICENSE.md'
       - 'SECURITY.md'
 
 # Build site using jekyll
