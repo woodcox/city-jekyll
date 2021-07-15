@@ -17,7 +17,7 @@ on:
     paths-ignore: 
       - 'Gemfile'
       - 'README.md'
-      - 'LICENSE.txt'
+      - 'LICENSE.md'
       - 'SECURITY.md'
   pull_request:
     # The branches below must be a subset of the branches above
