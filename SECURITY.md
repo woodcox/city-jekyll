@@ -14,9 +14,9 @@ currently being supported with security updates.
 
 ## Reporting a Vulnerability
 
-If there are any vulnerability in the {{ site.title  }} project, don't hesitate to _report them_.
+If there are any vulnerability in the city-jekyll theme, don't hesitate to _report them_.
 
-1. Use any of the [email addresses](https://github.com/woodcock3{{ site.baseurl }}#contact-us).
+1. Use any of the [email addresses](https://github.com/woodcock3/#contact-us) on the webpages to inform the webmaster. 
 2. Describe the vulnerability.
 
 - If you have a fix, explain or attach it.
