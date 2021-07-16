@@ -20,6 +20,8 @@ If there are any vulnerabilities in the city-jekyll theme, don't hesitate to _re
 2. In the issue or email you should:
 
   - Describe the vulnerability
+  - The steps you took to create the issue
+  - The affected versions
   - Open a [pull request](https://github.com/woodcock3/city-jekyll/pulls) if you have a fix explaining how the necessary code amendments fix the vulnerability (or enclose this in the email)
 
 Expect a reply within 3 weeks. We may request a pull request which include the fixes.
