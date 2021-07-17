@@ -12,7 +12,7 @@
 }
 
 @mixin fasvg($icon: $fa-user, $color: $icon-color, $size: $icon-size){
-	$svg: '<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" style="enable-background:new 596 -596 1792 1792;" fill="#{$color}" #{$icon}';
+	$svg: '<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" style="enable-background:new 596 -596 1792 1792;" xml:space="preserve" fill="#{$color}" #{$icon}';
 	content: "";
 	display: inline-block;
 	line-height: $size;
