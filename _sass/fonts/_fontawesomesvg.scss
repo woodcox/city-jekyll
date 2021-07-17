@@ -11,13 +11,13 @@
   @content;
 }
 
-@mixin fasvg($fa-icon: $fa-user, $fa-color: $icon-color, $fa-size: $icon-size){
-	$svg: '<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" style="enable-background:new 596 -596 1792 1792;" fill="#{$fa-color}" #{$fa-icon}';
+@mixin fasvg($icon: $fa-user, $color: $icon-color, $size: $icon-size){
+	$svg: '<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" style="enable-background:new 596 -596 1792 1792;" fill="#{$color}" #{$icon}';
 	content: "";
 	display: inline-block;
-	line-height: $fa-size;
-        width: $fa-size;
-        height: $fa-size;
+	line-height: $size;
+        width: $size;
+        height: $size;
 	background: url($svg);
 };
 // Add your SVG viewbox code here:
