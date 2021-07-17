@@ -848,9 +848,11 @@ $encoding-reference: (
   &:before {
     content: '';
     @include fa($fa-arrow-circle-left, $accent-color, 2rem);
-    &:active,
-    &:hover {
-      color: $menu-hover-color;
+    svg {
+      &:active,
+      &:hover {
+        fill: $menu-hover-color;
+      }
     }
   }
 }
