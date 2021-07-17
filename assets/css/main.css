@@ -84,6 +84,16 @@
   color: #be6d0c;
 }
 
+.arrow-right-icon:after {
+  content: '';
+  content: '\00A0';
+  display: inline-block;
+  line-height: 1rem;
+  width: 1rem;
+  height: 1rem;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' x='0px' y='0px' style='enable-background:new 596 -596 1792 1792;' xml:space='preserve' fill='%23ffffff' viewBox='596 -596 1792 1792'%3E%3Cpath d='M2195.5,145.5c-21.7-25-49.8-37.5-84.5-37.5h-704l293-293c25.3-25.3,38-55.7,38-91s-12.7-65.7-38-91l-75-74 c-25.3-25.3-55.3-38-90-38c-35.3,0-65.7,12.7-91,38L793,209c-24.7,26-37,56.3-37,91c0,35.3,12.3,65.3,37,90l651,652 c26,24.7,56.3,37,91,37c35.3,0,65.3-12.3,90-37l75-76c25.3-24,38-54,38-90s-12.7-66-38-90l-293-294h704c34.7,0,62.8-12.5,84.5-37.5 c21.7-25,32.5-55.2,32.5-90.5V236C2228,200.7,2217.2,170.5,2195.5,145.5z'/%3E%3C/svg%3E");
+}
+
 /* Use pygments syntax highlighter - https://jwarby.github.io/jekyll-pygments-themes/languages/python.html */
 /*github theme*/
 .highlight .hll {
