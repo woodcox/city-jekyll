@@ -91,7 +91,7 @@
   line-height: 1rem;
   width: 1rem;
   height: 1rem;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' x='0px' y='0px' style='enable-background:new 596 -596 1792 1792;' xml:space='preserve' fill='%23ffffff' viewBox='596 -596 1792 1792'%3E%3Cpath d='M2195.5,145.5c-21.7-25-49.8-37.5-84.5-37.5h-704l293-293c25.3-25.3,38-55.7,38-91s-12.7-65.7-38-91l-75-74 c-25.3-25.3-55.3-38-90-38c-35.3,0-65.7,12.7-91,38L793,209c-24.7,26-37,56.3-37,91c0,35.3,12.3,65.3,37,90l651,652 c26,24.7,56.3,37,91,37c35.3,0,65.3-12.3,90-37l75-76c25.3-24,38-54,38-90s-12.7-66-38-90l-293-294h704c34.7,0,62.8-12.5,84.5-37.5 c21.7-25,32.5-55.2,32.5-90.5V236C2228,200.7,2217.2,170.5,2195.5,145.5z'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' x='0px' y='0px' style='enable-background:new 596 -596 1792 1792;' xml:space='preserve' fill='%23ffffff' viewBox='596 -596 1792 1792'%3E%3Cpath d='M2191,210l-651-651c-25.3-25.3-55.7-38-91-38c-34.7,0-64.7,12.7-90,38l-75,75c-25.3,24-38,54-38,90s12.7,66,38,90l293,294 H873c-34.7,0-62.8,12.5-84.5,37.5S756,200.7,756,236v128c0,35.3,10.8,65.5,32.5,90.5S838.3,492,873,492h704l-293,293 c-25.3,25.3-38,55.7-38,91s12.7,65.7,38,91l75,75c26,24.7,56,37,90,37c34.7,0,65-12.3,91-37l651-651c24.7-24.7,37-55,37-91 C2228,263.3,2215.7,233.3,2191,210z'/%3E%3C/svg%3E");
 }
 
 /* Use pygments syntax highlighter - https://jwarby.github.io/jekyll-pygments-themes/languages/python.html */
