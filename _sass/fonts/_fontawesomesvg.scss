@@ -857,5 +857,5 @@ $encoding-reference: (
 .arrow-right-icon {
   &:after {
     content: '';
-    @include fa($fa-arrow-left, $footer-font-color);
+    @include fa($fa-arrow-left, $accent-button-color);
   }
