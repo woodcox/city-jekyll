@@ -857,6 +857,6 @@ $encoding-reference: (
 .arrow-right-icon {
   &:after {
     content: '';
-    @include fa($fa-arrow-left, $accent-button-color);
+    @include fa($fa-arrow-right, $accent-button-color);
   }
 }
