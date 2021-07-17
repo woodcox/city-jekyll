@@ -871,7 +871,7 @@ h5 {
   font-size: 1rem;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 37.5em) {
   h1:not(:first-child),
 h2:not(:first-child),
 h3:not(:first-child) {
@@ -992,25 +992,25 @@ dd {
 }
 
 .container, .medium-container, .small-container {
-  max-width: 1200px;
+  max-width: 75em;
   padding: 0 1rem;
   margin-left: auto;
   margin-right: auto;
 }
 
 .small-container {
-  max-width: 800px;
+  max-width: 50em;
 }
 
 .medium-container {
-  max-width: 1000px;
+  max-width: 62.5em;
 }
 
 .content-section {
   padding: 30px 0;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 37.5em) {
   .content-section {
     padding: 60px 0;
   }
@@ -1060,7 +1060,7 @@ dd {
 }
 
 /* Small screen breakpoint */
-@media (min-width: 600px) {
+@media (min-width: 37.5em) {
   .flex-small {
     -webkit-box-flex: 1;
         -ms-flex: 1;
@@ -1094,7 +1094,7 @@ dd {
 }
 
 /* Medium screen breakpoint */
-@media (min-width: 800px) {
+@media (min-width: 50em) {
   .flex-medium {
     -webkit-box-flex: 1;
         -ms-flex: 1;
@@ -1128,7 +1128,7 @@ dd {
 }
 
 /* Large screen breakpoint */
-@media (min-width: 1000px) {
+@media (min-width: 62.5em) {
   .flex-large {
     -webkit-box-flex: 1;
         -ms-flex: 1;
@@ -1555,7 +1555,7 @@ label {
   margin: 1rem 0 0.5rem;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 37.5em) {
   .split-form label {
     text-align: right;
     padding: 0 0.5rem;
@@ -1629,7 +1629,7 @@ caption {
   white-space: nowrap;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 37.5em) {
   .contain-table {
     width: 100%;
   }
@@ -2365,7 +2365,7 @@ caption {
   font-size: calc(0.7em + 0.5vmin);
 }
 
-@media (min-width: 600px) {
+@media (min-width: 37.5em) {
   .hero {
     height: 85vh;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(37, 156, 211, 0.95)), to(rgba(37, 156, 211, 0.4))), url("../img/800/city-building-corner.jpg");
@@ -2374,7 +2374,7 @@ caption {
   }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 50em) {
   .hero {
     height: 85vh;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(37, 156, 211, 0.95)), to(rgba(37, 156, 211, 0.4))), url("../img/1000/city-building-corner.jpg");
@@ -2383,7 +2383,7 @@ caption {
   }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 62.5em) {
   .hero {
     height: 85vh;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(37, 156, 211, 0.95)), to(rgba(37, 156, 211, 0.4))), url("../img/1160/city-building-corner.jpg");
