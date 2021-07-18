@@ -132,3 +132,79 @@ $card-font-color: white;
 .front .inner span {
   color: rgba($card-font-color, 0.9);
 }
+
+// Gradient Cards
+
+a,
+.card__exit,
+.card__icon {
+  position: relative;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+a::after {
+  position: absolute;
+  top: 25px;
+  left: 0;
+  content: "";
+  width: 0%;
+  height: 3px;
+  background-color: rgba(255, 255, 255, 0.6);
+  transition: all 0.5s;
+}
+
+a:hover::after {
+  width: 100%;
+}
+
+.card {
+  padding: 20px;
+  height: auto;
+  min-height: 200px;
+  @include flex-config(column nowrap, space-between);
+  border-radius: 20px;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+  transition: all 0.5s;
+}
+
+.card:hover {
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+  transform: scale(1.03);
+}
+
+.card__exit {
+}
+
+.card__icon {
+  font-size: 2em;
+}
+
+.card__title {
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.card__apply {
+  align-self: left;
+}
+
+.card-1 {
+  background: radial-gradient(#1fe4f5, #3fbafe);
+}
+
+.card-2 {
+  background: radial-gradient(#fbc1cc, #fa99b2);
+}
+
+.card-3 {
+  background: radial-gradient(#76b2fe, #b69efe);
+}
+
+.card-4 {
+  background: radial-gradient(#60efbc, #58d5c9);
+}
+
+.card-5 {
+  background: radial-gradient(#f588d8, #c0a3e5);
+}
