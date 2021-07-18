@@ -1935,6 +1935,100 @@ caption {
   color: rgba(255, 255, 255, 0.9);
 }
 
+a,
+.card__exit,
+.card__icon {
+  position: relative;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+a::after {
+  position: absolute;
+  top: 25px;
+  left: 0;
+  content: "";
+  width: 0%;
+  height: 3px;
+  background-color: rgba(255, 255, 255, 0.6);
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+a:hover::after {
+  width: 100%;
+}
+
+.card {
+  padding: 20px;
+  height: auto;
+  min-height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.card:hover {
+  -webkit-box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+  -webkit-transform: scale(1.03);
+      -ms-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+.card__icon {
+  font-size: 2em;
+}
+
+.card__title {
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.card__apply {
+  -ms-flex-item-align: left;
+      align-self: left;
+}
+
+.card-1 {
+  background: -o-radial-gradient(#1fe4f5, #3fbafe);
+  background: radial-gradient(#1fe4f5, #3fbafe);
+}
+
+.card-2 {
+  background: -o-radial-gradient(#fbc1cc, #fa99b2);
+  background: radial-gradient(#fbc1cc, #fa99b2);
+}
+
+.card-3 {
+  background: -o-radial-gradient(#76b2fe, #b69efe);
+  background: radial-gradient(#76b2fe, #b69efe);
+}
+
+.card-4 {
+  background: -o-radial-gradient(#60efbc, #58d5c9);
+  background: radial-gradient(#60efbc, #58d5c9);
+}
+
+.card-5 {
+  background: -o-radial-gradient(#f588d8, #c0a3e5);
+  background: radial-gradient(#f588d8, #c0a3e5);
+}
+
 /* Preloader screen */
 @-webkit-keyframes loading-fadeout {
   0% {
