@@ -1379,13 +1379,13 @@ dd {
 }
 
 .card-4 {
-  background: -o-radial-gradient(#60efbc, #58d5c9);
-  background: radial-gradient(#60efbc, #58d5c9);
+  background: -o-radial-gradient(#259cd3, #1a6c92);
+  background: radial-gradient(#259cd3, #1a6c92);
 }
 
 .card-5 {
-  background: -o-radial-gradient(#f588d8, #c0a3e5);
-  background: radial-gradient(#f588d8, #c0a3e5);
+  background: -o-radial-gradient(#9a9a9a, black);
+  background: radial-gradient(#9a9a9a, black);
 }
 
 /* Media */
