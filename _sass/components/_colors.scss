@@ -65,11 +65,11 @@
 }
 
 .card-2 {
-  background: radial-gradient($secondary-color, darken($seconday-color, 20%));
+  background: radial-gradient(lighten($secondary-color, 15%), darken($secondary-color, 20%));
 }
 
 .card-3 {
-  background: radial-gradient(#76b2fe, #b69efe);
+  background: radial-gradient($third-color, darken($third-color, 20%));
 }
 
 .card-4 {
