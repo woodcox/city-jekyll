@@ -71,17 +71,17 @@
 }
 
 .arrow-left-icon {
-  --arrow-left-color: @include fa($fa-arrow-circle-left, $accent-color, 2rem)
-  --arrow-left-hover: @include fa($fa-arrow-circle-left, $menu-hover-color, 2rem)
+  --arrow-left-color: fa($fa-arrow-circle-left, $accent-color, 2rem)
+  --arrow-left-hover: fa($fa-arrow-circle-left, $menu-hover-color, 2rem)
   &:before {
     content: '';
-    var(--arrow-left-color);
+    @include var(--arrow-left-color);
   }
 
   &:hover, &active {
     &:before {
       content: '';
-      var(--arrow-left-hover);
+      @include var(--arrow-left-hover);
     }
   }
 ;
