@@ -65,7 +65,7 @@
 }
 
 .card-2 {
-  background: radial-gradient(#fbc1cc, #fa99b2);
+  background: radial-gradient($secondary-color, darken($seconday-color, 20%));
 }
 
 .card-3 {
