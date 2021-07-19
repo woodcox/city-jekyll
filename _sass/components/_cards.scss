@@ -143,21 +143,6 @@ a,
   color: rgba(255, 255, 255, 0.9);
 }
 
-a::after {
-  position: absolute;
-  top: 25px;
-  left: 0;
-  content: "";
-  width: 0%;
-  height: 3px;
-  background-color: rgba(255, 255, 255, 0.6);
-  transition: all 0.5s;
-}
-
-a:hover::after {
-  width: 100%;
-}
-
 .card {
   padding: 20px;
   height: auto;
@@ -187,24 +172,4 @@ a:hover::after {
 
 .card__apply {
   align-self: left;
-}
-
-.card-1 {
-  background: radial-gradient(#1fe4f5, #3fbafe);
-}
-
-.card-2 {
-  background: radial-gradient(#fbc1cc, #fa99b2);
-}
-
-.card-3 {
-  background: radial-gradient(#76b2fe, #b69efe);
-}
-
-.card-4 {
-  background: radial-gradient(#60efbc, #58d5c9);
-}
-
-.card-5 {
-  background: radial-gradient(#f588d8, #c0a3e5);
 }
