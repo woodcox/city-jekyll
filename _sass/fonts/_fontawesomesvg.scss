@@ -1,7 +1,7 @@
 /* https://github.com/reskwer/fontAwesome-SCSS */
 // Call the svg-encode function and pass in your fa-svg:
 @mixin fa($fa-icon: $fa-user, $fa-color: $icon-color, $fa-size: $icon-size, $svg-hover: $fill-tag){
-  $fa-svg: '<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" style="enable-background:new 596 -596 1792 1792; :hover { fill: orange; }" xml:space="preserve" fill="#{$fa-color}" #{$fa-icon}';
+  $fa-svg: '<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" style="enable-background:new 596 -596 1792 1792;" xml:space="preserve" fill="#{$fa-color}" #{$fa-icon}';
   content: '\00A0';
   display: inline-block;
   line-height: $fa-size;
