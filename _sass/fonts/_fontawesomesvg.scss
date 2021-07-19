@@ -846,16 +846,18 @@ $encoding-reference: (
 }
 
 .arrow-left-icon {
+  --arrow-left-color(@include fa($fa-arrow-circle-left, $accent-color, 2rem))
+  --arrow-left-hover(@include fa($fa-arrow-circle-left, #{$menu-hover-color}, 2rem))
   &:before {
     content: '';
-    @include fa($fa-arrow-circle-left, #{$accent-color}, 2rem);
+    --arrow-left-color;
   }
-}
 
-.arrow-left-icon:hover, .arrow-left-icon:active {
-  &:before {
-    content: '';
-    @include fa($fa-arrow-circle-left, #{$menu-hover-color}, 2rem);
+  &:hover, &active {
+    &:before {
+      content: '';
+      --arrow-left-hover;
+    }
   }
 }
 
