@@ -848,13 +848,7 @@ $encoding-reference: (
 .arrow-left-icon {
   &:before {
     content: '';
-    @include fa($fa-arrow-circle-left, $accent-color, 2rem);
-    svg {
-      &:active,
-      &:hover {
-        fill: $menu-hover-color;
-      }
-    }
+    @include fa($fa-arrow-circle-left, $accent-color" <style> svg { &:active, &:hover { fill: $menu-hover-color; } </style>, 2rem);
   }
 }
 
