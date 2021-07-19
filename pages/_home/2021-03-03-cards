@@ -7,4 +7,4 @@ heading: 1
 style: padding-top
 ---
 
-{% include components/gradient-cards.html %)
+{% include components/gradient-cards.html %}
