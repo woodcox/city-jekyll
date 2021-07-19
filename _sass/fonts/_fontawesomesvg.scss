@@ -853,9 +853,9 @@ $encoding-reference: (
   }
 
   &:hover, &active {
+    --arrow-left-color: orange;
     &:before {
       content: '';
-      --arrow-left-color: orange;
       @include fa($fa-arrow-circle-left, var(arrow-left-color), 2rem);
     }
   }
