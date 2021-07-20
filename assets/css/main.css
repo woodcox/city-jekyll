@@ -2484,6 +2484,46 @@ caption {
   }
 }
 
+#contacts {
+  padding-bottom: 50px;
+}
+
+#contacts .fa-users {
+  font-size: 110px;
+}
+
+#contacts .contacts .SocialBox {
+  font-size: 30px;
+  margin-bottom: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+#contacts .contacts .SocialBox div {
+  margin: 5px;
+}
+
+#contacts .contacts .SocialBox a {
+  color: #FAFAFA;
+  margin: 10px;
+}
+
+#contacts .contacts .SocialBox a:hover, #contacts .contacts .SocialBox a:focus {
+  color: #EB7956;
+  margin: 10px;
+}
+
 /* Footer */
 footer {
   color: white;
