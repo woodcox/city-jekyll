@@ -15,10 +15,8 @@ primary:
     href: /about/
   - text: Connect
     href: /connect/
-  - text: Kids
-    href: /kids/
-  - text: Youth
-    href: /youth/
+  - text: Kids & youth
+    href: /under18/
   - text: Students
     href: /students/
   - text: Media
@@ -45,12 +43,8 @@ secondary:
     - text: Values
       href: /values/
   connect:
-    - text: Get to know us
-      href: /leaders/
     - text: Here our stories
       href: /stories/
-    - text: Values
-      href: /values/
     - text: Join a bible course 
       href: /bible-course/
     - text: Join a team
@@ -59,6 +53,11 @@ secondary:
       href: /giving/
     - text: Baptism
       href: /baptism/
+  kids & youth:
+    - text: Kids
+      href: /kids/
+    - text: Youth
+      href: /youth/
   media:
     - text: Talks
       href: /#talks
