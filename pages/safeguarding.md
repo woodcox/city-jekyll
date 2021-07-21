@@ -126,9 +126,9 @@ Possible signs of abuse include (but not limited to):
 ## 4. BECOMING AWARE OF A SAFEGUARDING ISSUE
 
 If a worker or volunteer becomes aware of a safeguarding issue, under no circumstances should they carry out their own investigation into an allegation or suspicion of abuse.  The following procedures should be applied:
- 
--  The person in receipt of allegations or suspicions of abuse should report concerns as soon as possible to Lianna Smith (hereafter the "Safeguarding Co-ordinator") telephone number 07828113957 and followed up in writing on a ‘Cause for concern form’ (annexed to this policy and available in each Ministry Room and the main auditorium).
--  In the absence of the Safeguarding Co-ordinator or, if the suspicions in any way involve the Safeguarding Co-ordinator, then the report should be made to Mark Molloy (hereafter the "Deputy Safeguarding Co-ordinator") telephone 07434626002.  If the suspicions implicate both the Safeguarding Co-ordinator and the Deputy, then the report should be made in the first instance to Michael Luehrmann (telephone number 07584437380) or Thirtyone:eight. Alternatively contact Leeds Children’s Social Work Service or the Police.
+{% for sl_details in site.data.contact.safeguard_lead %}
+-  The person in receipt of allegations or suspicions of abuse should report concerns as soon as possible to {{ sl_details.name }} (hereafter the "Safeguarding Co-ordinator") telephone number {{ sl_details.phone }} and followed up in writing on a ‘Cause for concern form’ (annexed to this policy and available in each Ministry Room and the main auditorium).{% endfor %}{% for dsl_info in site.data.contact.deputy_safeguard %}
+-  In the absence of the Safeguarding Co-ordinator or, if the suspicions in any way involve the Safeguarding Co-ordinator, then the report should be made to {{ dsl_info.name }} (hereafter the "Deputy Safeguarding Co-ordinator") telephone {{ dsl_info.phone }}.  If the suspicions implicate both the Safeguarding Co-ordinator and the Deputy, then the report should be made in the first instance to Michael Luehrmann (telephone number 07584437380) or Thirtyone:eight. Alternatively contact Leeds Children’s Social Work Service or the Police.
 -  Where the concern is about a child the Safeguarding Co-ordinator should contact Children’s Social Services.  Where the concern is regarding an adult in need of protection contact Adult Social Services or take advice from Thirtyone:eight (as above).
  
 
