@@ -1,6 +1,6 @@
 ## Contact us
 <div class="contact-us">
-  <p class="map-marker-icon"> **Address:** City Evangelical Church, Cemetery Road, Beeston, Leeds, LS11 8SX - <a class="external-link-icon" href="https://goo.gl/maps/EoD83hYx9Lob5TpK6">Find us on google maps]</a></p>
+  <p class="map-marker-icon"> **Address:** City Evangelical Church, Cemetery Road, Beeston, Leeds, LS11 8SX - <a class="external-link-icon" href="https://goo.gl/maps/EoD83hYx9Lob5TpK6">Find us on google maps</a></p>
   <p class="phone-icon"> **Phone:** 0113 270 8568</p>
   <p class="envelope-o-icon"> **Email:** {% include office_mail.html %}</p>
   <p class="address-book-o-icon"> **Pastor:** {% include pastor_mail.html %}</p>
