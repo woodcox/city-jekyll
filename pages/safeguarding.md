@@ -62,13 +62,13 @@ Date: 19/01/2021
 ## 2. NAMED PERSON(S) FOR SAFEGUARDING
 
 If you have any concerns for a child, young person or adult then speak to one of the following who have been approved as Safeguarding Co-ordinators for the church.
-{% for sl_details in site.data.contact.safeguard-lead %}
+{% for sl_details in site.data.contact.safeguard_lead %}
 **Safeguarding Co-ordinator:** {{ sl_details.name }}
 
 Mobile Number: {{ sl_details.phone }}
 
 E-mail: {{ sl_details.mailing }}
-{% endfor %}{% for dsl_details in site.data.contact.deputy-safeguard %}
+{% endfor %}{% for dsl_details in site.data.contact.deputy_safeguard %}
 **Deputy Safeguarding Co-ordinator:** {{ dsl_details.name }}
 
 Mobile Number: {{ dsl_details.phone }}
