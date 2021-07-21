@@ -74,7 +74,7 @@ E-mail: {{ sl_details.mailing }}
 Mobile Number: {{ dsl_details.phone }}
 
 E-mail: {{ dsl_details.mailing }}
-
+{% endfor %}
  
 **Leeds Children’s Social Work Service:**
 
