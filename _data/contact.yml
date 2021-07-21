@@ -20,3 +20,20 @@ deputy_safeguard:
     mailing: <script>contact1("mark.molloy","cecleeds",10,"")</script><noscript>You must enable JavaScript to view this text.</noscript>
  
 citykidsmaiil: <script>contact1("hello","cecleeds",10,"")</script><noscript>You must enable JavaScript to view this text.</noscript>
+
+elders:
+  - name: Michael Luehrmann
+    role: Senior Pastor
+    info: 
+  - name: David Lovell
+    role: Assosiate Pastor
+    info:
+  - name: John Keane
+    role: Elder
+    info:
+  - name: Andrew Smith
+    role: Elder
+    info:
+  - name: Paul Woodcock
+    role: Elder
+    info:
