@@ -68,12 +68,12 @@ If you have any concerns for a child, young person or adult then speak to one of
 Mobile Number: {{ sl_details.phone }}
 
 E-mail: {{ sl_details.mailing }}{% endfor %}
-{% for dsl_details in site.data.contact.deputy_safeguard %}
-**Deputy Safeguarding Co-ordinator:** {{ dsl_details.name }}
+{% for dsl_info in site.data.contact.deputy_safeguard %}
+**Deputy Safeguarding Co-ordinator:** {{ dsl_info.name }}
 
-Mobile Number: {{ dsl_details.phone }}
+Mobile Number: {{ dsl_info.phone | url_encode }}
 
-E-mail: {{ dsl_details.mailing }}{% endfor %}
+E-mail: {{ dsl_info.mailing }}{% endfor %}
  
 **Leeds Children’s Social Work Service:**
 
