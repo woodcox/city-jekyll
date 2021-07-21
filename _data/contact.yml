@@ -20,4 +20,4 @@ deputy-safeguard:
     mailing: <scripte>contact1("mark.malloy","cecleeds",10,"")</script><noscript>You must enable JavaScript to view this text.</noscript>
  
 citykids:
-  - mailing: hello: <script>contact1("hello","cecleeds",10,"")</script><noscript>You must enable JavaScript to view this text.</noscript>
+  - mailing: <script>contact1("hello","cecleeds",10,"")</script><noscript>You must enable JavaScript to view this text.</noscript>
