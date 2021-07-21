@@ -63,17 +63,17 @@ Date: 19/01/2021
 
 If you have any concerns for a child, young person or adult then speak to one of the following who have been approved as Safeguarding Co-ordinators for the church.
 
-**Safeguarding Co-ordinator:** Lianna Smith
+**Safeguarding Co-ordinator:** {{ data.contact.names.safeguard-lead }}
 
-Mobile Number: 07828 
+Mobile Number: {{ data.contact.phone.safeguard-lead }}
 
-E-mail: lianna
+E-mail: {{ data.contact.mailing.safeguard-lead }}
 
-**Deputy Safeguarding Co-ordinator:** Mark Molloy
+**Deputy Safeguarding Co-ordinator:** {{ data.contact.names.deputy-safeguard }}
 
-Mobile Number: 07
+Mobile Number: {{ data.contact.phone.deputy-safeguard }}
 
-E-mail: 
+E-mail: {{ data.contact.mailing.deputy-safeguard }}
 
  
 **Leeds Children’s Social Work Service:**
