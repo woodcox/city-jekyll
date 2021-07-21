@@ -9,10 +9,10 @@
 ### Follow us on:
 <div class="contacts">
   <div class="SocialBox">
-    <div><a href="https://www.twitter.com/cecleeds/" target="blank"><i class="fa fa-twitter"></i></a></div>
-    <div><a href="https://www.instagram.com/cecleeds/?hl=en" target="blank"><i class="fa fa-instagram"></i></a></div>
-    <div><a href="https://www.facebook.com/CECLeeds/" target="blank"><i class="fa fa-facebook"></i></a></div>
-    <div><a href="https://www.youtube.com/channel/UCALb0SwFaFdPY2gwOesvb_g" target="blank"><i class="fa fa-youtube-play"></i></a></div>
-    <div><a href="https://www.github.com/cecleeds" target="blank"><i class="fa fa-github"></i></a></div>
+    <div><a href="https://www.twitter.com/cecleeds/" target="blank"><i class="twitter-icon"></i></a></div>
+    <div><a href="https://www.instagram.com/cecleeds/?hl=en" target="blank"><i class="instagram-icon"></i></a></div>
+    <div><a href="https://www.facebook.com/CECLeeds/" target="blank"><i class="facebook-icon"></i></a></div>
+    <div><a href="https://www.youtube.com/channel/UCALb0SwFaFdPY2gwOesvb_g" target="blank"><i class="youtube-play-icon"></i></a></div>
+    <div><a href="https://www.github.com/cecleeds" target="blank"><i class="github-icon"></i></a></div>
   </div>
 </div>
