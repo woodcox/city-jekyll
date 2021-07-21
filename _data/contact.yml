@@ -1,8 +1,14 @@
 address: City Evangelical Church, Cemetery Road, Beeston, Leeds, LS11 8SX
-phone: 0113 270 8568
+phone: 
+  office: 0113 2708568
+  safeguard-lead: 07828113957
+  deputy-safeguard: 07434626002
+  pastor: 07584437380
 email:
   pastor: pastor
   office: office
   hello: hello
+  safeguard-lead:
+  deputy-safeguard:  
 maplocation: https://goo.gl/maps/EoD83hYx9Lob5TpK6
 
