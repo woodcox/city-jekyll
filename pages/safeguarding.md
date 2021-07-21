@@ -54,7 +54,7 @@ A copy of the full policy and procedures is available from {% for sl_details in 
 
 Signed by elders:
 
-{% for elder in site.data.contact.elders %}{{ elder.name }}{% unless forloop.last %},{% endunless %}{% endfor %} Michael Luehrmann, David Lovell, John Keane, Andrew Smith, Paul Woodcock
+{% for elder in site.data.contact.elders %}{{ elder.name }}{% unless forloop.last %}, {% endunless %}{% endfor %}.
 
 Date: 19/01/2021
 
