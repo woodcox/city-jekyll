@@ -63,7 +63,7 @@ Date: 19/01/2021
 
 If you have any concerns for a child, young person or adult then speak to one of the following who have been approved as Safeguarding Co-ordinators for the church.
 
-**Safeguarding Co-ordinator:** {{ data.contact.names.safeguard-lead }}
+**Safeguarding Co-ordinator:** {{ site.data.contact.safeguard-lead.name }}
 
 Mobile Number: {{ data.contact.phone.safeguard-lead }}
 
