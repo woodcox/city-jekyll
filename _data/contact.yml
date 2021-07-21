@@ -1,23 +1,22 @@
 office:
   - address: City Evangelical Church, Cemetery Road, Beeston, Leeds, LS11 8SX
-    phone: 0113 2708568
+    phone: <a href="tel:+44113 2708568">0113 2708568</a>
     mailing: <script>contact1("office","cecleeds",10,"")</script><noscript>You must enable JavaScript to view this text.</noscript>
     maplocation: https://goo.gl/maps/EoD83hYx9Lob5TpK6
 
 pastor:
   - name: Michael Luehrmann
-    phone: 07584437380
+    phone: <a href="tel:+447584437380">07584437380</a>
     mailing: <script>contact1("pastor","cecleeds",10,"")</script><noscript>You must enable JavaScript to view this text.</noscript>
 
 safeguard_lead:
   - name: Lianna Smith
-    phone: 07828113957
+    phone: <a href="tel:+447828113957">07828113957</a>
     mailing: <script>contact1("lianna.smith","cecleeds",10,"")</script><noscript>You must enable JavaScript to view this text.</noscript>
 
 deputy_safeguard: 
   - name: Mark Molloy
-    phone: 07434626002
+    phone: <a href="tel:+447434626002">07434626002</a>
     mailing: <script>contact1("mark.molloy","cecleeds",10,"")</script><noscript>You must enable JavaScript to view this text.</noscript>
  
-citykids:
-  - mailing: <script>contact1("hello","cecleeds",10,"")</script><noscript>You must enable JavaScript to view this text.</noscript>
+citykidsmaiil: <script>contact1("hello","cecleeds",10,"")</script><noscript>You must enable JavaScript to view this text.</noscript>
