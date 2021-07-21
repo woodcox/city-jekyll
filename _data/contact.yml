@@ -4,11 +4,11 @@ phone:
   safeguard-lead: 07828113957
   deputy-safeguard: 07434626002
   pastor: 07584437380
-email:
-  pastor: pastor
-  office: office
-  hello: hello
-  safeguard-lead:
+mailing:
+  pastor: <script>contact1("pastor","cecleeds",10,"")</script><noscript>You must enable JavaScript to view this text.</noscript>
+  office: <script>contact1("office","cecleeds",10,"")</script><noscript>You must enable JavaScript to view this text.</noscript>
+  hello: <script>contact1("hello","cecleeds",10,"")</script><noscript>You must enable JavaScript to view this text.</noscript>
+  safeguard-lead: 
   deputy-safeguard:  
 maplocation: https://goo.gl/maps/EoD83hYx9Lob5TpK6
 
