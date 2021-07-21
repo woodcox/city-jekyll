@@ -9,12 +9,12 @@ pastor:
     phone: 07584437380
     mailing: <script>contact1("pastor","cecleeds",10,"")</script><noscript>You must enable JavaScript to view this text.</noscript>
 
-safeguard-lead:
+safeguard_lead:
   - name: Lianna Smith
     phone: 07828113957
     mailing: <script>contact1("lianna.smith","cecleeds",10,"")</script><noscript>You must enable JavaScript to view this text.</noscript>
 
-deputy-safeguard: 
+deputy_safeguard: 
   - name: Mark Malloy
     phone: 07434626002
     mailing: <script>contact1("mark.malloy","cecleeds",10,"")</script><noscript>You must enable JavaScript to view this text.</noscript>
