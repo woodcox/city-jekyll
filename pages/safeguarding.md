@@ -71,7 +71,7 @@ E-mail: {{ sl_details.mailing }}{% endfor %}
 {% for dsl_info in site.data.contact.deputy_safeguard %}
 **Deputy Safeguarding Co-ordinator:** {{ dsl_info.name }}
 
-Mobile Number: {{ dsl_info.phone | url_encode }}
+Mobile Number: {{ dsl_info.phone }}
 
 E-mail: {{ dsl_info.mailing }}{% endfor %}
  
