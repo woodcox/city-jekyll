@@ -1,17 +1,23 @@
-address: City Evangelical Church, Cemetery Road, Beeston, Leeds, LS11 8SX
-names:
-  safeguard-lead: Lianna Smith
-  deputy-safeguard: Mark Malloy
-phone: 
-  office: 0113 2708568
-  safeguard-lead: 07828113957
-  deputy-safeguard: 07434626002
-  pastor: 07584437380
-mailing:
-  pastor: <script>contact1("pastor","cecleeds",10,"")</script><noscript>You must enable JavaScript to view this text.</noscript>
-  office: <script>contact1("office","cecleeds",10,"")</script><noscript>You must enable JavaScript to view this text.</noscript>
-  hello: <script>contact1("hello","cecleeds",10,"")</script><noscript>You must enable JavaScript to view this text.</noscript>
-  safeguard-lead: <script>contact1("lianna.smith","cecleeds",10,"")</script><noscript>You must enable JavaScript to view this text.</noscript>
-  deputy-safeguard: <script>contact1("mark.malloy","cecleeds",10,"")</script><noscript>You must enable JavaScript to view this text.</noscript>
-maplocation: https://goo.gl/maps/EoD83hYx9Lob5TpK6
+office:
+  - address: City Evangelical Church, Cemetery Road, Beeston, Leeds, LS11 8SX
+    phone: 0113 2708568
+    mailing: <script>contact1("office","cecleeds",10,"")</script><noscript>You must enable JavaScript to view this text.</noscript>
+    maplocation: https://goo.gl/maps/EoD83hYx9Lob5TpK6
 
+pastor:
+  - name: Michael Luehrmann
+    phone: 07584437380
+    mailing: <script>contact1("pastor","cecleeds",10,"")</script><noscript>You must enable JavaScript to view this text.</noscript>
+
+safeguard-lead:
+  - name: Lianna Smith
+    phone: 07828113957
+    mailing: <script>contact1("lianna.smith","cecleeds",10,"")</script><noscript>You must enable JavaScript to view this text.</noscript>
+
+deputy-safeguard: 
+  - name: Mark Malloy
+    phone: 07434626002
+    mailing: <scripte>contact1("mark.malloy","cecleeds",10,"")</script><noscript>You must enable JavaScript to view this text.</noscript>
+ 
+citykids:
+  - mailing: hello: <script>contact1("hello","cecleeds",10,"")</script><noscript>You must enable JavaScript to view this text.</noscript>
