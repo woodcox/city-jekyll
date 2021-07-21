@@ -4,7 +4,7 @@ layout: single-page
 permalink: /safeguarding/
 tag: policy
 ---
-
+{% for details in site.data.contact %}
 ## 1. INTRODUCTION
 
 The City Evangelical Church eldership recognises the importance of its ministry/work with children,  young people and adults in need of protection and its responsibility to protect everyone entrusted to our care. We are committed to creating and enabling a healthy culture in order to minimise any coercion and control within our church.
@@ -63,7 +63,7 @@ Date: 19/01/2021
 
 If you have any concerns for a child, young person or adult then speak to one of the following who have been approved as Safeguarding Co-ordinators for the church.
 
-**Safeguarding Co-ordinator:** {{ site.data.contact.safeguard-lead.name }}
+**Safeguarding Co-ordinator:** {{ details.safeguard-lead.name }}
 
 Mobile Number: {{ site.data.contact.safeguard-lead.phone }}
 
@@ -275,3 +275,4 @@ The level of support offered will be determined by the pastoral team based on sp
 When someone attending the church is known to have abused children/young people, or is known to be a risk to vulnerable adults the Eldership will supervise the individual concerned and offer pastoral care, but in its safeguarding commitment to the protection of children/young people and vulnerable adults, set boundaries for that person, which they will be expected to keep.
  
 On a case by case basis, a formal contract may be drafted that gives details of both the boundaries that the individual is expected to keep and the support that will be offered.  This contract would be tailored specifically to individual circumstances and informed ideally by risk assessments from statutory agencies.
+{% endfor %}
