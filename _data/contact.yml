@@ -1,1 +1,6 @@
-
+address:
+primary:
+  - text: Home
+    href: /
+  - text: Sunday
+    href: /sunday/
