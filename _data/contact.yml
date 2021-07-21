@@ -8,7 +8,7 @@ mailing:
   pastor: <script>contact1("pastor","cecleeds",10,"")</script><noscript>You must enable JavaScript to view this text.</noscript>
   office: <script>contact1("office","cecleeds",10,"")</script><noscript>You must enable JavaScript to view this text.</noscript>
   hello: <script>contact1("hello","cecleeds",10,"")</script><noscript>You must enable JavaScript to view this text.</noscript>
-  safeguard-lead: 
-  deputy-safeguard:  
+  safeguard-lead: <script>contact1("lianna.smith","cecleeds",10,"")</script><noscript>You must enable JavaScript to view this text.</noscript>
+  deputy-safeguard: <script>contact1("mark.malloy","cecleeds",10,"")</script><noscript>You must enable JavaScript to view this text.</noscript>
 maplocation: https://goo.gl/maps/EoD83hYx9Lob5TpK6
 
