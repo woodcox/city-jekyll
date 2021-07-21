@@ -65,15 +65,15 @@ If you have any concerns for a child, young person or adult then speak to one of
 
 **Safeguarding Co-ordinator:** {{ site.data.contact.safeguard-lead.name }}
 
-Mobile Number: {{ data.contact.phone.safeguard-lead }}
+Mobile Number: {{ site.data.contact.safeguard-lead.phone }}
 
-E-mail: {{ data.contact.mailing.safeguard-lead }}
+E-mail: {{ site.data.contact.safeguard-lead.mailing }}
 
-**Deputy Safeguarding Co-ordinator:** {{ data.contact.names.deputy-safeguard }}
+**Deputy Safeguarding Co-ordinator:** {{ site.data.contact.deputy-safeguard.name }}
 
-Mobile Number: {{ data.contact.phone.deputy-safeguard }}
+Mobile Number: {{ site.data.contact.deputy-safeguard.phone }}
 
-E-mail: {{ data.contact.mailing.deputy-safeguard }}
+E-mail: {{ site.data.contact.deputy-safeguard.mailing }}
 
  
 **Leeds Children’s Social Work Service:**
