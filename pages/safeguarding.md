@@ -50,7 +50,7 @@ This policy defines the principle and practice by which the Church will work wit
 The implementation of our Safeguarding Policy will be carried out in accordance with defined procedures. These are contained in the ‘Safeguarding Procedures Handbook’ (SPH) a copy of which will be available upon request. The revision of the Safeguarding Policy and related procedures is the responsibility of the eldership and Safeguarding Co-ordinator. Any substantive changes to the Safeguarding Policy and related procedures shall be subject to approval by the eldership; before being reported in a church members’ meeting.
 We will review this statement and our policy and procedures every year with the assistance of the Safeguarding Co-ordinator.
 
-A copy of the full policy and procedures is available from Lianna Smith.
+A copy of the full policy and procedures is available from {% for sl_details in site.data.contact.safeguard_lead %}{{ sl_details.name }}{% endfor %}.
 
 Signed by elders:
 
@@ -128,7 +128,7 @@ Possible signs of abuse include (but not limited to):
 If a worker or volunteer becomes aware of a safeguarding issue, under no circumstances should they carry out their own investigation into an allegation or suspicion of abuse.  The following procedures should be applied:
 {% for sl_details in site.data.contact.safeguard_lead %}
 -  The person in receipt of allegations or suspicions of abuse should report concerns as soon as possible to {{ sl_details.name }} (hereafter the "Safeguarding Co-ordinator") telephone number {{ sl_details.phone }} and followed up in writing on a ‘Cause for concern form’ (annexed to this policy and available in each Ministry Room and the main auditorium).{% endfor %}{% for dsl_info in site.data.contact.deputy_safeguard %}
--  In the absence of the Safeguarding Co-ordinator or, if the suspicions in any way involve the Safeguarding Co-ordinator, then the report should be made to {{ dsl_info.name }} (hereafter the "Deputy Safeguarding Co-ordinator") telephone {{ dsl_info.phone }}.  If the suspicions implicate both the Safeguarding Co-ordinator and the Deputy, then the report should be made in the first instance to Michael Luehrmann (telephone number 07584437380) or Thirtyone:eight. Alternatively contact Leeds Children’s Social Work Service or the Police.
+-  In the absence of the Safeguarding Co-ordinator or, if the suspicions in any way involve the Safeguarding Co-ordinator, then the report should be made to {{ dsl_info.name }} (hereafter the "Deputy Safeguarding Co-ordinator") telephone {{ dsl_info.phone }}{% endfor %}.  If the suspicions implicate both the Safeguarding Co-ordinator and the Deputy, then the report should be made in the first instance to Michael Luehrmann (telephone number 07584437380) or Thirtyone:eight. Alternatively contact Leeds Children’s Social Work Service or the Police.
 -  Where the concern is about a child the Safeguarding Co-ordinator should contact Children’s Social Services.  Where the concern is regarding an adult in need of protection contact Adult Social Services or take advice from Thirtyone:eight (as above).
  
 
