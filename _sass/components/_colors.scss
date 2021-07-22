@@ -25,7 +25,7 @@
   height: 50vh;
 }
 
-.curved-background-top {
+.curved-bg-top {
   @extend %curved-background;
 
   &::after {
@@ -40,7 +40,7 @@
   }
 }
 
-.curved-background-bottom {
+.curved-bg-bottom {
   @extend %curved-background;
   border-bottom-left-radius: 50% 20%;
   border-bottom-right-radius: 50% 20%;
@@ -60,22 +60,22 @@
   -moz-text-fill-color: transparent;
 }
 
-.card-1 {
+.bg-navy {
   background: radial-gradient(lighten(#113a5c, 15%), darken(#113a5c, 20%));
 }
 
-.card-2 {
+.bg-secondary {
   background: radial-gradient(lighten($secondary-color, 15%), darken($secondary-color, 20%));
 }
 
-.card-3 {
+.bg-third {
   background: radial-gradient($third-color, darken($third-color, 20%));
 }
 
-.card-4 {
+.bg-primary {
   background: radial-gradient(lighten($primary-color, 15%), darken($primary-color, 15%));
 }
 
-.card-5 {
+.bg-dark {
   background: radial-gradient(darken($accent-color, 20%), black);
 }
