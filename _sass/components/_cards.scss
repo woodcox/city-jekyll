@@ -231,38 +231,38 @@ $card-font-color: white;
   }
 }
 .card2 {
-  background: url('https://i.pinimg.com/originals/ee/85/08/ee850842e68cfcf6e3943c048f45c6d1.jpg') center center no-repeat
-  background-size: 300px
+  background: url('https://i.pinimg.com/originals/ee/85/08/ee850842e68cfcf6e3943c048f45c6d1.jpg') center center no-repeat;
+  background-size: 300px;
 
   &:hover
     background: url('https://i.pinimg.com/originals/ee/85/08/ee850842e68cfcf6e3943c048f45c6d1.jpg') left center no-repeat
-    background-size: 600px
+    background-size: 600px;
 
     h2
-      opacity: 1
+      opacity: 1;
 
     .fa
-      opacity: 1
+      opacity: 1;
 
 h2
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif
-  color: white
-  margin: 20px
-  opacity: 0
-  transition: opacity 1s
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: white;
+  margin: 20px;
+  opacity: 0;
+  transition: opacity 1s;
 
 .fa
-  opacity: 0
-  transition: opacity 1s
+  opacity: 0;
+  transition: opacity 1s;
 
 .icons
-  position: absolute
-  fill: #fff
-  color: #fff
-  height: 130px
-  top: 226px
-  width: 50px
-  display: flex
-  flex-direction: column
-  align-items: center
-  justify-content: space-around
+  position: absolute;
+  fill: #fff;
+  color: #fff;
+  height: 130px;
+  top: 226px;
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
