@@ -215,20 +215,22 @@ $card-font-color: white;
 
 
 
-  background: url('https://i.pinimg.com/originals/28/d2/e6/28d2e684e7859a0dd17fbd0cea00f8a9.jpg') center center no-repeat
-  background-size: 300px
+  background: url('https://i.pinimg.com/originals/28/d2/e6/28d2e684e7859a0dd17fbd0cea00f8a9.jpg') center center no-repeat;
+  background-size: 300px;
 
-  &:hover
-    background: url('https://i.pinimg.com/originals/28/d2/e6/28d2e684e7859a0dd17fbd0cea00f8a9.jpg') left center no-repeat
-    background-size: 600px
+  &:hover {
+    background: url('https://i.pinimg.com/originals/28/d2/e6/28d2e684e7859a0dd17fbd0cea00f8a9.jpg') left center no-repeat;
+    background-size: 600px;
 
-    h2
-      opacity: 1
-
-    .fa
-      opacity: 1
-
-.card2
+    h2 {
+      opacity: 1;
+    }
+    .fa {
+      opacity: 1;
+    }
+  }
+}
+.card2 {
   background: url('https://i.pinimg.com/originals/ee/85/08/ee850842e68cfcf6e3943c048f45c6d1.jpg') center center no-repeat
   background-size: 300px
 
