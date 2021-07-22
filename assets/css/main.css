@@ -1307,33 +1307,33 @@ dd {
 }
 
 /* Colors */
-.curved-background-bottom, .curved-background-top, .alternate-background {
+.curved-bg-bottom, .curved-bg-top, .alternate-background {
   background: #404040;
   color: #fafafa;
 }
 
-.curved-background-bottom h1, .curved-background-top h1, .alternate-background h1,
-.curved-background-bottom h2,
-.curved-background-top h2,
+.curved-bg-bottom h1, .curved-bg-top h1, .alternate-background h1,
+.curved-bg-bottom h2,
+.curved-bg-top h2,
 .alternate-background h2,
-.curved-background-bottom h3,
-.curved-background-top h3,
+.curved-bg-bottom h3,
+.curved-bg-top h3,
 .alternate-background h3,
-.curved-background-bottom h4,
-.curved-background-top h4,
+.curved-bg-bottom h4,
+.curved-bg-top h4,
 .alternate-background h4,
-.curved-background-bottom h5,
-.curved-background-top h5,
+.curved-bg-bottom h5,
+.curved-bg-top h5,
 .alternate-background h5 {
   color: #fafafa;
 }
 
-.curved-background-bottom, .curved-background-top {
+.curved-bg-bottom, .curved-bg-top {
   position: relative;
   height: 50vh;
 }
 
-.curved-background-top::after {
+.curved-bg-top::after {
   content: '';
   border-top-left-radius: 50% 100%;
   border-top-right-radius: 50% 100%;
@@ -1344,7 +1344,7 @@ dd {
   height: 20%;
 }
 
-.curved-background-bottom {
+.curved-bg-bottom {
   border-bottom-left-radius: 50% 20%;
   border-bottom-right-radius: 50% 20%;
 }
@@ -1363,27 +1363,27 @@ dd {
   -moz-text-fill-color: transparent;
 }
 
-.card-1 {
+.bg-navy {
   background: -o-radial-gradient(#1d639d, #010406);
   background: radial-gradient(#1d639d, #010406);
 }
 
-.card-2 {
+.bg-secondary {
   background: -o-radial-gradient(#f6b76e, #a65f0b);
   background: radial-gradient(#f6b76e, #a65f0b);
 }
 
-.card-3 {
+.bg-third {
   background: -o-radial-gradient(#06892f, #02270d);
   background: radial-gradient(#06892f, #02270d);
 }
 
-.card-4 {
+.bg-primary {
   background: -o-radial-gradient(#61bae3, #1a6c92);
   background: radial-gradient(#61bae3, #1a6c92);
 }
 
-.card-5 {
+.bg-dark {
   background: -o-radial-gradient(#9a9a9a, black);
   background: radial-gradient(#9a9a9a, black);
 }
