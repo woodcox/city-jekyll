@@ -210,7 +210,15 @@ $card-font-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
-  
+  position: relative
+
+.card0
+  background: url('https://i.pinimg.com/736x/8f/a0/51/8fa051251f5ac2d0b756027089fbffde--terry-o-neill-al-pacino.jpg') center center no-repeat
+  background-size: 300px
+
+  &:hover
+    background: url('https://i.pinimg.com/736x/8f/a0/51/8fa051251f5ac2d0b756027089fbffde--terry-o-neill-al-pacino.jpg') left center no-repeat
+    background-size: 600px
 
 
 
