@@ -2064,7 +2064,7 @@ caption {
   font-weight: 300;
 }
 
-.social-icons {
+.card-social-icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2076,11 +2076,11 @@ caption {
   z-index: 3;
 }
 
-.social-icons li {
+.card-social-icons li {
   list-style: none;
 }
 
-.social-icons li .card-icons {
+.card-social-icons li .card-icons {
   position: relative;
   display: block;
   width: 50px;
@@ -2102,38 +2102,38 @@ caption {
   opacity: 0;
 }
 
-.card-profile:hover .card-profile:active .social-icons li .card-icons {
+.card-profile:hover .card-social-icons li .card-icons {
   -webkit-transform: translateY(0px);
       -ms-transform: translateY(0px);
           transform: translateY(0px);
   opacity: 1;
 }
 
-.card-profile:hover .card-profile:active .card-details {
+.card-profile:hover .card-details {
   -webkit-transform: translateY(0px);
       -ms-transform: translateY(0px);
           transform: translateY(0px);
   opacity: 1;
 }
 
-.social-icons li .card-icons:hover .card-icons:active {
+.card-social-icons li .card-icons:hover {
   background: #000;
   -webkit-transition: .2s;
   -o-transition: .2s;
   transition: .2s;
 }
 
-.social-icons li .card-icons:hover .card-icons:active .fab {
+.card-social-icons li .card-icons:hover .fab {
   color: #fff;
 }
 
-.social-icons li .card-icons .fab {
+.card-social-icons li .card-icons .fab {
   -webkit-transition: .8s;
   -o-transition: .8s;
   transition: .8s;
 }
 
-.social-icons li .card-icons .fab:hover {
+.card-social-icons li .card-icons .fab:hover {
   -webkit-transform: rotateY(360deg);
           transform: rotateY(360deg);
   color: #fff;
