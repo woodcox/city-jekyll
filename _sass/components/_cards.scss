@@ -173,6 +173,7 @@ $card-font-color: white;
 // Profile Card
 .card-profile {
   @extend .card;
+  @include flex-config(column nowrap, center, center);
   overflow: hidden;
   width: 100%;
   height: 100%;
@@ -221,11 +222,8 @@ $card-font-color: white;
 
 .social-icons {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  @include flex-config(row nowrap);
   z-index: 3;
-  display: flex;
   
   li {
     list-style: none;
