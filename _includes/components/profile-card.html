@@ -1,6 +1,6 @@
 <div class="flex-row">
   <div class="flex-small sm-one-third">{% for profile in site.data.contact.elders %}
-    <div class="card-profile" style="background-image: url('https://image.ibb.co/dUTfmJ/profile_img.jpg');">
+    <div class="card-profile" style="background-image: url({{ profile.photo }});">
       <ul class="card-social-icons">
         <li>
           <a class="card-icons" href="">
