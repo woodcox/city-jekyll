@@ -203,8 +203,8 @@ $card-font-color: white;
   }
 }
 
-// Social Icons
-.social-icons {
+// Card Social Icons
+.card-social-icons {
   @include flex-config(row nowrap);
   padding-top: 200px;
   z-index: 3;
@@ -232,17 +232,17 @@ $card-font-color: white;
   }
 }
 
-.card-profile:hover .card-profile:active .social-icons li .card-icons {
+.card-profile:hover .card-social-icons li .card-icons {
   transform: translateY(0px);
   opacity: 1;
 }
 
-.card-profile:hover .card-profile:active .card-details {
+.card-profile:hover .card-details {
   transform: translateY(0px);
   opacity: 1; 
 }
 
-.social-icons li .card-icons:hover .card-icons:active {
+.card-social-icons li .card-icons:hover {
   background: #000; 
   transition: .2s;
   .fab {
@@ -250,7 +250,7 @@ $card-font-color: white;
   } 
 }
 
-.social-icons li .card-icons .fab {
+.card-social-icons li .card-icons .fab {
   transition: .8s;
     
   &:hover {
