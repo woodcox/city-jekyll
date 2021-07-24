@@ -2034,7 +2034,7 @@ caption {
   overflow: hidden;
   background-size: cover;
   background-position: center;
-  min-height: 500px;
+  min-height: 300px;
 }
 
 .card-profile .card-details {
