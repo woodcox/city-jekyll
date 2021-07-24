@@ -873,3 +873,7 @@ $encoding-reference: (
 .email-icon {
   @include fa($fa-envelope-o);
 }
+
+.whatsapp-icon {
+  @include fa($fa-whatsapp);
+}
