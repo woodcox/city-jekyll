@@ -2060,8 +2060,7 @@ caption {
 .card-profile .card-details h3 .job-title, .card-profile .card-details p .job-title {
   font-size: 1rem;
   line-height: 2.5rem;
-  color: #333;
-  font-weight: 300;
+  font-family: 'Sanchez';
 }
 
 .card-social-icons {
