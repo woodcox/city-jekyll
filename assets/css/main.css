@@ -2083,6 +2083,8 @@ caption {
 
 .card-social-icons li {
   list-style: none;
+  -ms-flex-preferred-size: calc(33% - 12px);
+      flex-basis: calc(33% - 12px);
 }
 
 .card-social-icons li .card-icons {
