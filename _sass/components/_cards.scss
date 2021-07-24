@@ -190,7 +190,7 @@ $card-font-color: white;
     transform: translateY(200px);
     opacity: 0;
 
-    h2, p {
+    h3, p {
       text-align: center;
      
       .job-title {
@@ -205,7 +205,7 @@ $card-font-color: white;
 
 // Card Social Icons
 .card-social-icons {
-  @include flex-config(row nowrap);
+  @include flex-config(row nowrap, center, center);
   padding-top: 100px;
   z-index: 3;
   
