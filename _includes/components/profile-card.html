@@ -1,5 +1,5 @@
-<div class="flex-row">
-  <div class="flex-small sm-one-third">
+<div class="flex-row justify-center">
+  <div class="flex-small sm-one-third">{% for profile in site.data.contact.elders %}
     <div class="card-profile" style="background-image: url('https://image.ibb.co/dUTfmJ/profile_img.jpg');">
       <ul class="card-social-icons">
         <li>
@@ -19,11 +19,12 @@
         </li>
       </ul>
       <div class="card-details">
-        <h2>John Smith
+        <h2>{{ profile.name }}
           <br>
-          <span class="job-title">UI Developer</span>
+          <span class="job-title">{{ profile.role }}</span>
         </h2>
+        <p>{{ profile.info }}</p>
       </div>
     </div>
-  </div>
+  </div>{% endfor %}
 </div>
