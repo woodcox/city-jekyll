@@ -2053,11 +2053,11 @@ caption {
   opacity: 0;
 }
 
-.card-profile .card-details h2 {
+.card-profile .card-details h2, .card-profile .card-details p {
   text-align: center;
 }
 
-.card-profile .card-details h2 .job-title {
+.card-profile .card-details h2 .job-title, .card-profile .card-details p .job-title {
   font-size: 1rem;
   line-height: 2.5rem;
   color: #333;
