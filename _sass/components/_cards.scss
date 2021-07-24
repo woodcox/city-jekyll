@@ -188,6 +188,8 @@ $card-font-color: white;
     opacity: 0.4;
     transition: .5s;
   }
+  .card-image img {
+    object-fit: cover;
   
   .card-details {
     position: relative;
