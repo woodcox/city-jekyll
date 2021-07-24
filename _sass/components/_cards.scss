@@ -182,14 +182,18 @@ $card-font-color: white;
     z-index: 2;
     background-color: #000;
     transition: .5s;
+    
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
   }
   
   &:hover img {
     opacity: 0.4;
     transition: .5s;
   }
-  .card-image img {
-    object-fit: cover;
   
   .card-details {
     position: relative;
