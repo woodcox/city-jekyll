@@ -2060,7 +2060,7 @@ caption {
 .card-profile .card-details h3 .job-title, .card-profile .card-details p .job-title {
   font-size: 1rem;
   line-height: 2.5rem;
-  font-family: 'Sanchez';
+  font-family: 'Sanchez-regular';
 }
 
 .card-social-icons {
@@ -2071,9 +2071,9 @@ caption {
   -webkit-box-direction: normal;
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -2083,7 +2083,6 @@ caption {
 
 .card-social-icons li {
   list-style: none;
-  margin: 0 6px;
 }
 
 .card-social-icons li .card-icons {
@@ -2091,9 +2090,6 @@ caption {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: -6px;
-  -ms-flex-preferred-size: calc(33% - 12px);
-      flex-basis: calc(33% - 12px);
   width: 50px;
   height: 50px;
   line-height: 50px;
