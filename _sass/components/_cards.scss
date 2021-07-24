@@ -210,6 +210,7 @@ $card-font-color: white;
   
   li {
     list-style: none;
+    flex-basis: calc(33% - 12px);
     
     .card-icons {
       position: relative;
