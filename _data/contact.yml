@@ -24,16 +24,21 @@ citykidsmaiil: <script>contact1("hello","cecleeds",10,"")</script><noscript>You 
 elders:
   - name: Michael Luehrmann
     role: Senior Pastor
-    info: 
+    info:
+    photo:
   - name: David Lovell
     role: Assosiate Pastor
     info:
+    photo:
   - name: John Keane
     role: Elder
     info:
+    photo:
   - name: Andrew Smith
     role: Elder
     info:
+    photo:
   - name: Paul Woodcock
     role: Elder
     info:
+    photo:
