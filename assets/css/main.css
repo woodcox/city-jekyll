@@ -2083,13 +2083,16 @@ caption {
 
 .card-social-icons li {
   list-style: none;
-  -ms-flex-preferred-size: calc(33% - 12px);
-      flex-basis: calc(33% - 12px);
+  margin: 0 6px;
 }
 
 .card-social-icons li .card-icons {
   position: relative;
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: calc(33% - 12px);
+      flex-basis: calc(33% - 12px);
   width: 50px;
   height: 50px;
   line-height: 50px;
@@ -2099,7 +2102,6 @@ caption {
   font-size: 23px;
   color: #333;
   font-weight: bold;
-  margin: 0 6px;
   -webkit-transition: .4s;
   -o-transition: .4s;
   transition: .4s;
