@@ -173,37 +173,22 @@ $card-font-color: white;
 // Profile Card
 .card-profile {
   @extend .card;
-  @include flex-config(column nowrap, center, center);
+  @include flex-config(column nowrap, space-between, center);
   overflow: hidden;
-  width: 100%;
-  height: 100%;
-
-  .card-image {
-    z-index: 2;
-    background-color: #000;
-    transition: .5s;
-    
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-  }
-  
-  &:hover img {
-    opacity: 0.4;
-    transition: .5s;
-  }
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
   
   .card-details {
-    position: relative;
-    @include flex-config(column nowrap, space-between);
-    bottom: 12%;
     background: #fff;
     width: 100%;
-    height: 0;
+    height: 15%;
     z-index: 1;
     padding: 5px;
+    border-radius: 10px;
+    transition: .4s;
+    transform: translateY(200px);
+    opacity: 0;
 
     h2 {
       text-align: center;
@@ -218,17 +203,10 @@ $card-font-color: white;
   }
 }
 
-.card-profile:hover .card-image {
-  transform: translateY(-100px);
-  transition: all .9s;
-}
-
-
-/**** Social Icons *****/
-
+// Social Icons
 .social-icons {
-  position: absolute;
   @include flex-config(row nowrap);
+  padding-top: 200px;
   z-index: 3;
   
   li {
@@ -240,6 +218,7 @@ $card-font-color: white;
       width: 50px;
       height: 50px;
       line-height: 50px;
+      border-radius: 50%;
       text-align: center;
       background: #fff;
       font-size: 23px;
@@ -254,6 +233,11 @@ $card-font-color: white;
 }
 
 .card-profile:hover .social-icons li .card-icons {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+.card-profile:hover .card-details {
   transform: translateY(0px);
   opacity: 1; 
 }
