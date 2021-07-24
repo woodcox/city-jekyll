@@ -2157,12 +2157,6 @@ caption {
           transition-delay: 0.3s;
 }
 
-.card-profile:hover li:nth-child(4) .card-icons {
-  -webkit-transition-delay: 0.4s;
-       -o-transition-delay: 0.4s;
-          transition-delay: 0.4s;
-}
-
 /* Preloader screen */
 @-webkit-keyframes loading-fadeout {
   0% {
