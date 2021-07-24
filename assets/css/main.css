@@ -2102,28 +2102,28 @@ caption {
   opacity: 0;
 }
 
-.card-profile:hover .social-icons li .card-icons {
+.card-profile:hover .card-profile:active .social-icons li .card-icons {
   -webkit-transform: translateY(0px);
       -ms-transform: translateY(0px);
           transform: translateY(0px);
   opacity: 1;
 }
 
-.card-profile:hover .card-details {
+.card-profile:hover .card-profile:active .card-details {
   -webkit-transform: translateY(0px);
       -ms-transform: translateY(0px);
           transform: translateY(0px);
   opacity: 1;
 }
 
-.social-icons li .card-icons:hover {
+.social-icons li .card-icons:hover .card-icons:active {
   background: #000;
   -webkit-transition: .2s;
   -o-transition: .2s;
   transition: .2s;
 }
 
-.social-icons li .card-icons:hover .fab {
+.social-icons li .card-icons:hover .card-icons:active .fab {
   color: #fff;
 }
 
