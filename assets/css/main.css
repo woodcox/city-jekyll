@@ -2025,57 +2025,32 @@ caption {
   -webkit-box-direction: normal;
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   overflow: hidden;
-  width: 100%;
-  height: 100%;
-}
-
-.card-profile .card-image {
-  z-index: 2;
-  background-color: #000;
-  -webkit-transition: .5s;
-  -o-transition: .5s;
-  transition: .5s;
-}
-
-.card-profile .card-image img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.card-profile:hover img {
-  opacity: 0.4;
-  -webkit-transition: .5s;
-  -o-transition: .5s;
-  transition: .5s;
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
 }
 
 .card-profile .card-details {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column nowrap;
-          flex-flow: column nowrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  bottom: 12%;
   background: #fff;
   width: 100%;
-  height: 0;
+  height: 15%;
   z-index: 1;
   padding: 5px;
+  border-radius: 10px;
+  -webkit-transition: .4s;
+  -o-transition: .4s;
+  transition: .4s;
+  -webkit-transform: translateY(200px);
+      -ms-transform: translateY(200px);
+          transform: translateY(200px);
+  opacity: 0;
 }
 
 .card-profile .card-details h2 {
@@ -2089,18 +2064,7 @@ caption {
   font-weight: 300;
 }
 
-.card-profile:hover .card-image {
-  -webkit-transform: translateY(-100px);
-      -ms-transform: translateY(-100px);
-          transform: translateY(-100px);
-  -webkit-transition: all .9s;
-  -o-transition: all .9s;
-  transition: all .9s;
-}
-
-/**** Social Icons *****/
 .social-icons {
-  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2108,6 +2072,7 @@ caption {
   -webkit-box-direction: normal;
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
+  padding-top: 200px;
   z-index: 3;
 }
 
@@ -2121,6 +2086,7 @@ caption {
   width: 50px;
   height: 50px;
   line-height: 50px;
+  border-radius: 50%;
   text-align: center;
   background: #fff;
   font-size: 23px;
@@ -2137,6 +2103,13 @@ caption {
 }
 
 .card-profile:hover .social-icons li .card-icons {
+  -webkit-transform: translateY(0px);
+      -ms-transform: translateY(0px);
+          transform: translateY(0px);
+  opacity: 1;
+}
+
+.card-profile:hover .card-details {
   -webkit-transform: translateY(0px);
       -ms-transform: translateY(0px);
           transform: translateY(0px);
