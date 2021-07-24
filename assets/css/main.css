@@ -2091,6 +2091,7 @@ caption {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: -6px;
   -ms-flex-preferred-size: calc(33% - 12px);
       flex-basis: calc(33% - 12px);
   width: 50px;
