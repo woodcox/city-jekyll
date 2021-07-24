@@ -232,17 +232,17 @@ $card-font-color: white;
   }
 }
 
-.card-profile:hover .social-icons li .card-icons {
+.card-profile:hover .card-profile:active .social-icons li .card-icons {
   transform: translateY(0px);
   opacity: 1;
 }
 
-.card-profile:hover .card-details {
+.card-profile:hover .card-profile:active .card-details {
   transform: translateY(0px);
   opacity: 1; 
 }
 
-.social-icons li .card-icons:hover {
+.social-icons li .card-icons:hover .card-icons:active {
   background: #000; 
   transition: .2s;
   .fab {
