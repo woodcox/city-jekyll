@@ -204,7 +204,7 @@ $card-font-color: white;
 
 // Card Social Icons
 .card-social-icons {
-  @include flex-config(row nowrap, space-between, center);
+  @include flex-config(row nowrap, center, center);
   padding-top: 100px;
   z-index: 3;
   
