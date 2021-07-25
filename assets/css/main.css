@@ -2120,7 +2120,6 @@ caption {
   width: 50px;
   height: 50px;
   line-height: 50px;
-  margin: 0 6px;
   border-radius: 50%;
   text-align: center;
   background: #fff;
@@ -2133,6 +2132,11 @@ caption {
       -ms-transform: translateY(200px);
           transform: translateY(200px);
   opacity: 0;
+  margin-right: 6px;
+}
+
+.card-social-icons li .card-icons:last-child {
+  margin-right: 0px;
 }
 
 .card-profile:hover .card-social-icons li .card-icons {
