@@ -23,14 +23,14 @@ citykidsmaiil: <script>contact1("hello","cecleeds",10,"")</script><noscript>You 
 
 elders:
   - name: Michael Luehrmann
-    role: Senior Pastor
+    role: Senior Pastor and Elder
     info: bhahah ajaja
     phoneurl: tel:+447584437380
     emailurl:
     whatsappurl: https://wa.me/447584437380
     photo: 'https://source.unsplash.com/featured/?america/500x400'
   - name: David Lovell
-    role: Assosiate Pastor
+    role: Associate Pastor and Elder
     info: ahahah anahaha
     phoneurl: tel:+44
     emailurl:
