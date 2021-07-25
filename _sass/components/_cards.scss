@@ -227,7 +227,7 @@ $card-font-color: white;
       opacity: 0;
       margin-right: 6px;
 
-      &:last-child {
+      &li:last-child {
         margin-right: 0px;
       }
     } 
