@@ -4,8 +4,8 @@
   <div class="logo">
     <a href="/" class="brand-logo"><div id="svgColor">{% include svg/city-vector.svg %}</div></a>
   </div>
-  <ul class="menu-options">{% for link in site.data.nav.primary %}{% capture navhref %}{{ link.href | relative_url }}{% endcapture %}
-    <li><a href="{{ navhref }}" {% if link.href == page.url %}class="active"{% endif %}>{{ link.text }}</a></li>{% endfor %}
+  <ul class="menu-options">{% for menu in site.data.nav.primary %}{% capture menuhref %}{{ menu.href | relative_url }}{% endcapture %}
+    <li><a href="{{ menuhref }}" {% if menu.href == page.url %}class="active"{% endif %}>{{ menu.text }}</a></li>{% endfor %}
   </ul>
 </div>
 <div class="outer-menu">
