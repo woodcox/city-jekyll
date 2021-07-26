@@ -238,6 +238,16 @@
   }
 }
 
+@include medium-breakpoint {
+  .outer-menu {
+    @extend container;
+  }
+  
+  .menu {
+    @include flex-config(row wrap, space-between, flex-start);
+  }
+}
+
 // Nav back button 
 
 .nav-back {
