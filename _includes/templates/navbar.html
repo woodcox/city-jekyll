@@ -1,7 +1,12 @@
 {% include modules/preloader.html %}
 
-<div class="logo">
-  <a href="/" class="brand-logo"><div id="svgColor">{% include svg/city-vector.svg %}</div></a>
+<div class="navbar-wrapper">
+  <div class="logo">
+    <a href="/" class="brand-logo"><div id="svgColor">{% include svg/city-vector.svg %}</div></a>
+  </div>
+  <ul class="menu-options">{% for link in site.data.nav.primary %}{% capture navhref %}{{ link.href | relative_url }}{% endcapture %}
+    <li><a href="{{ navhref }}" {% if link.href == page.url %}class="active"{% endif %}>{{ link.text }}</a></li>{% endfor %}
+  </ul>
 </div>
 <div class="outer-menu">
   <input class="checkbox-toggle" type="checkbox" id="prim-menu-checkbox" onclick="logoToggle()"/>
