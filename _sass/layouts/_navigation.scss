@@ -238,13 +238,37 @@
   }
 }
 
+// hide hamburger on tablets & above
+.navbar-wrapper .menu-options li {
+  display: none;
+}
+
+// show two column list menu on tablets and above
 @include medium-breakpoint {
-  .outer-menu {
-    @extend .container;
+  .navbar-wrapper {
+      height: 7em;
+      background: $content-bg-color;
+      @include flex-config(row, space-between);
+      padding-right: 20em;
+   
+      .menu-options {
+        @include flex-config(column wrap);
+        list-style: none;
+    
+        li {
+          display: block;
+        }
+          
+        a {
+            @extend %animate-href;
+            color: black;
+            padding: 2em;
+        }
+      }
   }
   
-  .menu {
-    @include flex-config(row wrap, space-between, flex-start);
+  .outer-menu {
+    display: none;
   }
 }
 
