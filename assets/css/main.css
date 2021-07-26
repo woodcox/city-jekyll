@@ -2567,6 +2567,48 @@ caption {
   z-index: 201;
 }
 
+.navbar-wrapper .menu-options li {
+  display: none;
+}
+
+@media (min-width: 50em) {
+  .navbar-wrapper {
+    height: 7em;
+    background: rgba(64, 64, 64, 0.97);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-right: 20em;
+  }
+  .navbar-wrapper .menu-options {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    list-style: none;
+  }
+  .navbar-wrapper .menu-options li {
+    display: block;
+  }
+  .navbar-wrapper .menu-options a {
+    color: black;
+    padding: 2em;
+  }
+  .outer-menu {
+    display: none;
+  }
+}
+
 .nav-back {
   font-family: Sanchez-regular;
   font-size: 1.2rem;
