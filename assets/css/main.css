@@ -2567,7 +2567,7 @@ caption {
   z-index: 201;
 }
 
-.navbar-wrapper .menu-options li {
+.menu-options {
   display: none;
 }
 
