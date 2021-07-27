@@ -4,7 +4,7 @@
     <div class="flex-row">
       <div class="flex-small footer-feature">
         <h4> Policies </h4>
-        <p class="feature-description"><a href="{{ '/privacy/' | relative_url }}">Privacy</a> | <a href="{{ '/docs/' | relative_url }}">Documentation</a> | <a href="{{ '/cookies/' | relative_url }}">Cookies</a></p>
+        <p class="feature-description">{% for policy in site.data.nav.footer.policy %}<a href="{{ '/privacy/' | relative_url }}">Privacy</a> | <a href="{{ '/docs/' | relative_url }}">Documentation</a> | <a href="{{ '/cookies/' | relative_url }}">Cookies</a>{% endfor %}</p>
         <p class="feature-description"><a href="{{ '/beliefs/' | relative_url }}">Our beliefs</a> | <a href="{{ '/safeguarding/' | relative_url }}">Safeguarding</a></p>
       </div>
       <div class="flex-small footer-feature">
