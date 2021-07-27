@@ -1,9 +1,5 @@
-# This is the configuration for the site navigation.
-#
-# If you have a "primary" navigation list here, you
-# can use that as your header's primary navigation by setting
-# `primary.links` to "primary'
-#
+# This is the configuration for the sites primary and footer navigation. 
+# The Secondary navigation on a page is controlled by the files created in the relevant colection.
 primary:
   - text: Home
     href: /
