@@ -72,13 +72,6 @@ footer:
       href: /beliefs/
     - text: Safeguarding
       href: /safeguarding/
-  credits:
-    - text: A.Pullen Art
-      href: https://linktr.ee/AP.art
-      external: true
-    - text: GitHub
-      href: https://github.com/woodcock3/city-jekyll/
-      external: true
   sitemap:
     - text: ChurchSuite Login
       href: https://login.churchsuite.co.uk/
