@@ -28,14 +28,14 @@ elders:
     phoneurl: tel:+447584437380
     emailurl:
     whatsappurl: https://wa.me/447584437380
-    photo: '../img/master/elder-ml.jpeg'
+    photo: "'../img/master/elder-ml.jpeg'"
   - name: David Lovell
     role: Associate Pastor and Elder
     info: ahahah anahaha
     phoneurl: tel:+44
     emailurl:
     whatsappurl: https://wa.me/
-    photo: '../img/master/elder-dl.jpeg'
+    photo: "'../img/master/elder-dl.jpeg'"
   - name: John Keane
     role: Elder
     info: ahah hahahah
