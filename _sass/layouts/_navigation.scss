@@ -238,8 +238,8 @@
   }
 }
 
-// hide hamburger on tablets & above
-.menu-options {
+// hide menu list on tablets
+. navbarwrapper .menu-options {
   display: none; 
 }
 
@@ -252,10 +252,7 @@
    
       .menu-options {
         list-style: none;
-    
-        li {
-          display: block;
-        }
+        display: block;
           
         a {
             color: black;
