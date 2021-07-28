@@ -2567,21 +2567,16 @@ caption {
   z-index: 201;
 }
 
-.navbar-wrapper .menu-options {
+.menu-options {
   display: none;
 }
 
 @media (min-width: 50em) {
-  .navbar-wrapper {
-    width: 95%;
-    height: 8em;
-    background: rgba(64, 64, 64, 0.97);
-  }
-  .navbar-wrapper .menu-options {
+  .menu-options {
     list-style: none;
     display: block;
   }
-  .navbar-wrapper .menu-options a {
+  .menu-options a {
     color: black;
     padding: 2em;
   }
