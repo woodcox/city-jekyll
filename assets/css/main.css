@@ -2567,7 +2567,7 @@ caption {
   z-index: 201;
 }
 
-.menu-options {
+.navbar-wrapper .menu-options {
   display: none;
 }
 
@@ -2579,8 +2579,6 @@ caption {
   }
   .navbar-wrapper .menu-options {
     list-style: none;
-  }
-  .navbar-wrapper .menu-options li {
     display: block;
   }
   .navbar-wrapper .menu-options a {
