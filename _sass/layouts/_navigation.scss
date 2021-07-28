@@ -239,26 +239,20 @@
 }
 
 // hide menu list on tablets
-.navbar-wrapper .menu-options {
+.menu-options {
   display: none; 
 }
 
 // show two column list menu on tablets and above
 @include medium-breakpoint {
-  .navbar-wrapper {
-      width: 95%;
-      height: 8em;
-      background: $content-bg-color;
-   
-      .menu-options {
-        list-style: none;
-        display: block;
+  .menu-options {
+    list-style: none;
+    display: block;
           
-        a {
-            color: black;
-            padding: 2em;
-        }
-      }
+    a {
+      color: black;
+      padding: 2em;
+    }
   }
   
   .outer-menu {
