@@ -18,18 +18,18 @@
       </ul>
     </div>
   </div>
-  <div class="outer-menu">
-    <input class="checkbox-toggle" type="checkbox" id="prim-menu-checkbox" onclick="logoToggle()"/>
-    <div class="hamburger">
-      <div></div>
-    </div>
-    <div class="menu">
+</div>
+<div class="outer-menu">
+  <input class="checkbox-toggle" type="checkbox" id="prim-menu-checkbox" onclick="logoToggle()"/>
+  <div class="hamburger">
+    <div></div>
+  </div>
+  <div class="menu">
+    <div>
       <div>
-        <div>
-          <ul>{% for link in site.data.nav.primary %}{% capture navhref %}{{ link.href | relative_url }}{% endcapture %}
-            <li><a href="{{ navhref }}" {% if link.href == page.url %}class="active"{% endif %}>{{ link.text }}</a></li>{% endfor %}
-          </ul>
-        </div>
+        <ul>{% for link in site.data.nav.primary %}{% capture navhref %}{{ link.href | relative_url }}{% endcapture %}
+          <li><a href="{{ navhref }}" {% if link.href == page.url %}class="active"{% endif %}>{{ link.text }}</a></li>{% endfor %}
+        </ul>
       </div>
     </div>
   </div>
