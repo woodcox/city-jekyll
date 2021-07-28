@@ -2757,3 +2757,7 @@ footer .footer-bg-image svg {
   width: 100%;
   height: auto;
 }
+
+footer .footer-link-description {
+  margin-bottom: 1rem;
+}
