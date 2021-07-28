@@ -246,7 +246,7 @@
 // show two column list menu on tablets and above
 @include medium-breakpoint {
   .navbar-wrapper {
-      height: 7em;
+      height: 8em;
       background: $content-bg-color;
       @include flex-config(row, space-between);
       padding-right: 20em;
