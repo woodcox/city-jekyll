@@ -173,4 +173,4 @@ $(document).ready(function () {
     var expire = new Date();
     expire = new Date(expire.getTime() + 7776000000);
     document.cookie = "visited=here; expires=" + expire;
-
+});
