@@ -2702,17 +2702,7 @@ footer .footer-link-description {
   margin-bottom: 0.5rem;
 }
 
-footer #contacts {
-  padding-bottom: 50px;
-}
-
-footer #contacts .fa-users {
-  font-size: 110px;
-}
-
-footer .social-wrapper .social-box {
-  font-size: 30px;
-  margin-bottom: 100px;
+.social-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2723,22 +2713,31 @@ footer .social-wrapper .social-box {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 100px;
 }
 
-footer .social-wrapper .social-box li {
-  margin: 5px;
+.social-box li {
   list-style: none;
 }
 
-footer .social-wrapper .social-box a {
-  color: white;
-  margin: 10px;
+.social-box li .social-box-icon {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  background: white;
+  font-size: 30px;
+  margin-right: 6px;
 }
 
-footer .social-wrapper .social-box a:hover, footer .social-wrapper .social-box a:focus {
-  color: #f19426;
-  margin: 10px;
+.social-box li .social-box-iconli:last-child {
+  margin-right: 0px;
 }
