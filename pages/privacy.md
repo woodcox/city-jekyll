@@ -62,7 +62,7 @@ We will not share your information with third parties without your consent unles
 
 ### Requesting access to your personal data
 
-Under Data Protection legislation, you have the right to request access to information about you that we hold. To make a request for your personal information contact Colin Bainbridge
+Under Data Protection legislation, you have the right to request access to information about you that we hold. To make a request for your personal information contact Colin Bainbridge.
 
  
 
@@ -86,4 +86,4 @@ If you have a concern about the way we are collecting or using your personal dat
 
 If you would like to discuss anything in this privacy notice, please contact:
 
-Colin.Bainbridge@cecleeds.co.uk
+{{ site.data.contact.treasurer }}
