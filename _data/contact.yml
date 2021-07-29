@@ -42,7 +42,7 @@ elders:
     phoneurl: tel:+44
     emailurl:
     whatsappurl: https://wa.me/
-    photo: '../img/master/elder-jk.jpeg'
+    photo: './img/master/elder-jk.jpeg'
   - name: Andrew Smith
     role: Elder
     info: ahahah ahahaj
