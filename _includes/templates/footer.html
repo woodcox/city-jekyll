@@ -1,6 +1,25 @@
 <footer class="footer text-center">
+  <div class="contacts-wrapper">
+  <h4>Contact us</h4>
+    <div class="contact-us">{% for cec in site.data.contact.office %}
+      <p class="map-marker-icon">{{ cec.address }} - {{ cec.maplocation }} </p>
+      <p class="phone-icon">{{ cec.address }}</p>
+      <p class="envelope-o-icon">{{ cec.mailing }}{% endfor %}</p>
+      <p class="address-book-o-icon">{% for ml in site.data.contact.pastor %}{{ ml.mailing }}{% endfor %}</p>
+    </div>
+  </div>
+  <h4>Follow us</h4>
+  <div class="social-wrapper">
+    <div class="social-box">
+      <div><a href="https://www.twitter.com/cecleeds/" target="blank"><i class="twitter-icon"></i></a></div>
+      <div><a href="https://www.instagram.com/cecleeds/?hl=en" target="blank"><i class="instagram-icon"></i></a></div>
+      <div><a href="https://www.facebook.com/CECLeeds/" target="blank"><i class="facebook-icon"></i></a></div>
+      <div><a href="https://www.youtube.com/channel/UCALb0SwFaFdPY2gwOesvb_g" target="blank"><i class="youtube-play-icon"></i></a></div>
+      <div><a href="https://www.github.com/cecleeds" target="blank"><i class="github-icon"></i></a></div>
+    </div>
+  </div>
   <div class="footer-bg-image">{% include svg/cec-building-curved.svg %}</div>
-  <div class="medium-container">
+  <div class="container">
     <div class="flex-row">
       <div class="flex-small sm-one-third footer-links">
         <h4>Sitemap</h4>
