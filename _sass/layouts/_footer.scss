@@ -32,11 +32,11 @@ footer {
         list-style: none;
       }
       a {
-        color: #FAFAFA;
+        color: $footer-font-color;
         margin: 10px;
 
         &:hover, &:focus {
-          color: #EB7956;
+          color: $secondary-color;
           margin: 10px;
         }
       }
