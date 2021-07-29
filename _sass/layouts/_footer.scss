@@ -15,6 +15,7 @@ footer {
   .footer-link-description {
     margin-bottom: $footer-margin-bottom;
   }
+}
 
 .social-box {
   @include flex-config(row nowrap, center, center);
