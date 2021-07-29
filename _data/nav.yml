@@ -2,7 +2,7 @@
 # The secondary navigation on a page is controlled by the .md files created in the relevant collection.
 primary:
   - text: Home
-    href: /
+    href: /#
   - text: Sunday
     href: /sunday/
   - text: What's on
