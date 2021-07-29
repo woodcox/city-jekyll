@@ -2567,10 +2567,6 @@ caption {
   z-index: 201;
 }
 
-.navbar-wrapper {
-  display: none;
-}
-
 .navbar-wrapper .menu-options {
   display: none;
 }
