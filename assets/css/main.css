@@ -2567,6 +2567,10 @@ caption {
   z-index: 201;
 }
 
+.navbar-wrapper {
+  background: rgba(37, 156, 211, 0.95);
+}
+
 .navbar-wrapper .menu-options {
   display: none;
 }
