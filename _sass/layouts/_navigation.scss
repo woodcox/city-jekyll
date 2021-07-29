@@ -240,7 +240,7 @@
 
 // hide menu list on phones
 .navbar-wrapper {
-  background: rgba($primary-color, 0.95);
+  background: $primary-color;
 
   .menu-options {
     display: none;
