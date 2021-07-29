@@ -4,9 +4,9 @@
     <div class="flex-row">
       <div class="flex-small footer-links">
         <h4>Sitemap</h4>
-          <ul class="footer-link-description">{% for menu in site.data.nav.primary %}{% capture menuhref %}{{ menu.href | relative_url }}{% endcapture %}
-            <li><a href="{{ menuhref }}" {% if menu.href == page.url %}class="active"{% endif %}>{{ menu.text }}</a></li>{% endfor %}
-          </ul>
+        <ul class="footer-link-description">{% for menu in site.data.nav.primary %}{% capture menuhref %}{{ menu.href | relative_url }}{% endcapture %}
+          <li><a href="{{ menuhref }}" {% if menu.href == page.url %}class="active"{% endif %}>{{ menu.text }}</a></li>{% endfor %}
+        </ul>
       </div>
       <div class="flex-small footer-links">
         <h4> Policies </h4>
