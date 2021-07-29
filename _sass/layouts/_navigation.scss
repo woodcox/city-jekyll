@@ -239,8 +239,12 @@
 }
 
 // hide menu list on tablets
-.menu-options {
-  display: none; 
+.navbar-wrapper {
+  display: none;
+  
+  .menu-options {
+    display: none;
+  }
 }
 
 // show two column list menu on tablets and above
