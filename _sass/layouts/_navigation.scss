@@ -238,9 +238,13 @@
   }
 }
 
-// hide menu list on tablets
-.navbar-wrapper .menu-options {
+// hide menu list on phones
+.navbar-wrapper {
+  background: rgba($primary-color, 0.95);
+
+  .menu-options {
     display: none;
+  }
 }
 
 // show two column list menu on tablets and above
