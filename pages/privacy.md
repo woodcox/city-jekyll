@@ -40,7 +40,7 @@ We collect personal data to provide appropriate pastoral care, to monitor and as
 
 We will only retain your personal data for as long as necessary to fulfil the purposes we collected it for, including for the purposes of satisfying any legal, accounting or reporting requirements.  
 
-We hold your data for varying lengths of time depending on the type of information in question but in doing so we always comply with Data Protection legislation.  Details of retention periods are available in our retention policy which you can request by contacting us at Colin.Bainbridge@cecleeds.co.uk  
+We hold your data for varying lengths of time depending on the type of information in question but in doing so we always comply with Data Protection legislation.  Details of retention periods are available in our retention policy which you can request by contacting us {{ site.data.contact.treasurer }}.
 
 We will contact you annually to check that the information we are holding is accurate and that you agree to us holding it.
 
