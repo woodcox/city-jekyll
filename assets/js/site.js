@@ -137,7 +137,7 @@ var TxtType = function(el, toRotate, period) {
         document.body.appendChild(css);
     };
 
-$(document).ready(function () {
+// $(document).ready(function () {
     // ------------------------------------------------------
     // home page animation
     // ------------------------------------------------------
@@ -159,18 +159,18 @@ $(document).ready(function () {
     }
 
     // time-out
-    $(".home-animation-wrapper").delay(2000).fadeOut("slow");
+    $("#splash").delay(2000).fadeOut("slow");
 
     // check cookie
     var visited = GetCookie("visited")
     if (visited == null) {
-        $('.home-animation-wrapper').css("display", "block");
+        $('#splash').css("display", "block");
     }
     else {
-        $('.home-animation-wrapper').css("display", "none");
+        $('#splash').css("display", "none");
     }
     // set the cookie
     var expire = new Date();
     expire = new Date(expire.getTime() + 7776000000);
     document.cookie = "visited=here; expires=" + expire;
-});
+// });
