@@ -1,11 +1,11 @@
 <div class="contact-info">
 
   #### Contact us
-  <div class="contact-us"> {% for cec in site.data.contact.office %}
+  <div class="contact-us">{% for cec in site.data.contact.office %}
     <p class="map-marker-icon"> **Address:** {{ cec.address }} - {{ cec.maplocation }} </p>
     <p class="phone-icon"> **Phone:** {{ cec.address }}</p>
     <p class="envelope-o-icon"> **Email:** {{ cec.mailing }}{% endfor %}</p>
-    <p class="address-book-o-icon"> **Pastor:** {% include pastor_mail.html %}</p>
+    <p class="address-book-o-icon"> **Pastor:** {% for ml in site.data.contact.pastor %}{{ ml.mailing }}{% endfor %}</p>
   </div>
 
   #### Follow us on:
