@@ -2710,7 +2710,7 @@ footer #contacts .fa-users {
   font-size: 110px;
 }
 
-footer .contacts .SocialBox {
+footer .social-wrapper .social-box {
   font-size: 30px;
   margin-bottom: 100px;
   display: -webkit-box;
@@ -2728,16 +2728,17 @@ footer .contacts .SocialBox {
           align-items: flex-start;
 }
 
-footer .contacts .SocialBox div {
+footer .social-wrapper .social-box li {
   margin: 5px;
+  list-style: none;
 }
 
-footer .contacts .SocialBox a {
+footer .social-wrapper .social-box a {
   color: #FAFAFA;
   margin: 10px;
 }
 
-footer .contacts .SocialBox a:hover, footer .contacts .SocialBox a:focus {
+footer .social-wrapper .social-box a:hover, footer .social-wrapper .social-box a:focus {
   color: #EB7956;
   margin: 10px;
 }
