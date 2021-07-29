@@ -19,7 +19,8 @@ deputy_safeguard:
     phone: <a href="tel:+447434626002">07434626002</a>
     mailing: <script>contact1("mark.molloy","cecleeds",10,"")</script><noscript>You must enable JavaScript to view this text.</noscript>
  
-citykidsmaiil: <script>contact1("hello","cecleeds",10,"")</script><noscript>You must enable JavaScript to view this text.</noscript>
+citykidsmail: <script>contact1("hello","cecleeds",10,"")</script><noscript>You must enable JavaScript to view this text.</noscript>
+treasurer: <script>contact1("colin.bainbridge","cecleeds",10,"")</script><noscript>You must enable JavaScript to view this text.</noscript>
 
 elders:
   - name: Michael Luehrmann
