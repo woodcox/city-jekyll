@@ -15,31 +15,25 @@ footer {
   .footer-link-description {
     margin-bottom: $footer-margin-bottom;
   }
-  #contacts {
-    padding-bottom: 50px;
+.social-box {
+  @include flex-config(row nowrap, center, center);
+  padding-top: 100px;
+  
+  li {
+    list-style: none;
     
-    .fa-users {
-      font-size: 110px;
-    }
-  }
-  .social-wrapper {
-    .social-box {
+    .social-box-icon {
+      position: relative;
+      display: flex;
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+      border-radius: 50%;
+      text-align: center;
+      background: $footer-font-color;
       font-size: 30px;
-      margin-bottom: 100px;
-      @include flex-config(row nowrap, center, flex-start);
-      li {
-        margin: 5px;
-        list-style: none;
-      }
-      a {
-        color: $footer-font-color;
-        margin: 10px;
+      margin-right: 6px;
 
-        &:hover, &:focus {
-          color: $secondary-color;
-          margin: 10px;
-        }
+      &li:last-child {
+        margin-right: 0px;
       }
-    }
-  }
-}
