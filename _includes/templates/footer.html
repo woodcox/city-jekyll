@@ -2,18 +2,18 @@
   <div class="footer-bg-image">{% include svg/cec-building-curved.svg %}</div>
   <div class="medium-container">
     <div class="flex-row">
-      <div class="flex-small footer-links">
+      <div class="flex-small sm-one-third footer-links">
         <h4>Sitemap</h4>
-        <p class="footer-link-description">{% for menu in site.data.nav.primary limit:3 %}<a href="{{ menu.href | relative_url }}">{{ menu.text }}</a>{% unless forloop.last %} | {% endunless %}{% endfor %}</p>
-        <p class="footer-link-description">{% for menu in site.data.nav.primary offset:3 limit:3 %}<a href="{{ menu.href | relative_url }}">{{ menu.text }}</a>{% unless forloop.last %} | {% endunless %}{% endfor %}</p>
-        <p class="footer-link-description">{% for menu in site.data.nav.primary offset:6 limit:2 %}<a href="{{ menu.href | relative_url }}">{{ menu.text }}</a>{% unless forloop.last %} | {% endunless %}{% endfor %}</p>
+        <p class="footer-link-description">{% for menu in site.data.nav.primary limit:4 %}<a href="{{ menu.href | relative_url }}">{{ menu.text }}</a>{% unless forloop.last %} | {% endunless %}{% endfor %}</p>
+        <p class="footer-link-description">{% for menu in site.data.nav.primary offset:4 limit:3 %}<a href="{{ menu.href | relative_url }}">{{ menu.text }}</a>{% unless forloop.last %} | {% endunless %}{% endfor %}</p>
+        <p class="footer-link-description">{% for menu in site.data.nav.primary offset:7 limit:1 %}<a href="{{ menu.href | relative_url }}">{{ menu.text }}</a>{% unless forloop.last %} | {% endunless %}{% endfor %}</p>
       </div>
-      <div class="flex-small footer-links">
+      <div class="flex-small sm-one-third footer-links">
         <h4>Policies</h4>
         <p class="footer-link-description">{% for policy in site.data.nav.footer.policy  limit:3 %}<a href="{{ policy.href | relative_url }}">{{ policy.text }}</a>{% unless forloop.last %} | {% endunless %}{% endfor %}</p>
         <p class="footer-link-description">{% for policy in site.data.nav.footer.policy  offset:3 %}<a href="{{ policy.href | relative_url }}">{{ policy.text }}</a>{% unless forloop.last %} | {% endunless %}{% endfor %}</p>
       </div>
-      <div class="flex-small footer-links">
+      <div class="flex-small sm-one-third footer-links">
         <h4>Credits</h4>
         <p class="footer-link-description copyright-icon"> {{ site.title }} {{ "now" | date: "%Y" }}</p>
         <p class="footer-link-description">Artwork by <a href="https://linktr.ee/AP.art" target="_blank" rel="noopener">A.Pullen Art</a></p>
