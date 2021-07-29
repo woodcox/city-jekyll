@@ -139,3 +139,41 @@ var TxtType = function(el, toRotate, period) {
         css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid {{ site.colors.cityorange }}}";
         document.body.appendChild(css);
     };
+
+$(document).ready(function () {
+    // ------------------------------------------------------
+    // home page animation
+    // ------------------------------------------------------
+    function GetCookie(name) {
+        var arg = name + "=";
+        var alen = arg.length;
+        var clen = document.cookie.length;
+        var i = 0;
+
+        while (i < clen) {
+            var j = i + alen;
+            if (document.cookie.substring(i, j) == arg)
+                return "here";
+            i = document.cookie.indexOf(" ", i) + 1;
+            if (i == 0)
+                break;
+        }
+        return null;
+    }
+
+    // time-out
+    $(".home-animation-wrapper").delay(2000).fadeOut("slow");
+
+    // check cookie
+    var visited = GetCookie("visited")
+    if (visited == null) {
+        $('.home-animation-wrapper').css("display", "block");
+    }
+    else {
+        $('.home-animation-wrapper').css("display", "none");
+    }
+    // set the cookie
+    var expire = new Date();
+    expire = new Date(expire.getTime() + 7776000000);
+    document.cookie = "visited=here; expires=" + expire;
+
