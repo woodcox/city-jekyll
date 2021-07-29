@@ -22,13 +22,14 @@ footer {
       font-size: 110px;
     }
   }
-  .contacts {
-    .SocialBox {
+  .social-wrapper {
+    .social-box {
       font-size: 30px;
       margin-bottom: 100px;
       @include flex-config(row nowrap, center, flex-start);
-      div {
+      li {
         margin: 5px;
+        list-style: none;
       }
       a {
         color: #FAFAFA;
