@@ -32,11 +32,18 @@ footer {
       line-height: 50px;
       border-radius: 50%;
       text-align: center;
-      color: $secondary-color;
-      background: $footer-font-color;
       font-size: 30px;
       margin-right: 6px;
+      background: $muted-background;
+      border: $muted-border;
+      color: $muted-color;
 
+      &:hover,
+      &:focus {
+        color: $muted-color-hover;
+        border: $muted-border-hover;
+        background: $muted-background-hover;
+      }
       &li:last-child {
         margin-right: 0px;
       }
