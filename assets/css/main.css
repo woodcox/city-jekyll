@@ -2567,7 +2567,11 @@ caption {
   z-index: 201;
 }
 
-.menu-options {
+.navbar-wrapper {
+  display: none;
+}
+
+.navbar-wrapper .menu-options {
   display: none;
 }
 
