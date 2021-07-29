@@ -1,6 +1,6 @@
 <div class="contact-info">
 
-  ## Contact us
+  #### Contact us
   <div class="contact-us"> {% for cec in site.data.contact.office %}
     <p class="map-marker-icon"> **Address:** {{ cec.address }} - {{ cec.maplocation }} </p>
     <p class="phone-icon"> **Phone:** {{ cec.address }}</p>
@@ -8,7 +8,7 @@
     <p class="address-book-o-icon"> **Pastor:** {% include pastor_mail.html %}</p>
   </div>
 
-  ### Follow us on:
+  #### Follow us on:
   <div class="contacts">
     <div class="SocialBox">
       <div><a href="https://www.twitter.com/cecleeds/" target="blank"><i class="twitter-icon"></i></a></div>
