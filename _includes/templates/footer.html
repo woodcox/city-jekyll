@@ -3,7 +3,7 @@
     <div class="contacts-wrapper">
     <h4>Contact us</h4>
       <div class="contact-us">{% for cec in site.data.contact.office %}
-        <p class="map-marker-icon footer-link-description">{{ cec.address }} - {{ cec.maplocation }} </p>
+        <p class="map-marker-icon footer-link-description">{{ cec.address }} - {{ cec.maplocation }}</p>
         <p class="phone-icon footer-link-description">{{ cec.phone }}</p>
         <p class="envelope-o-icon footer-link-description">{{ cec.mailing }}{% endfor %}</p>
         <p class="address-book-o-icon footer-link-description">{% for ml in site.data.contact.pastor %}{{ ml.mailing }}{% endfor %}</p>
