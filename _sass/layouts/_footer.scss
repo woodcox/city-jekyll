@@ -19,7 +19,7 @@ footer {
 
 .social-box {
   @include flex-config(row nowrap, center, center);
-  padding-top: 100px;
+  padding-top: 0px;
   
   li {
     list-style: none;
