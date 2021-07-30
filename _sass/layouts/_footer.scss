@@ -19,8 +19,8 @@ footer {
 
 .social-box {
   @include flex-config(row nowrap, center, center);
-  padding-top: 0;
-  padding-left: 0;
+  margin: 0;
+  padding: 0;
   
   li {
     list-style: none;
