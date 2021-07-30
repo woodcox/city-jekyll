@@ -831,6 +831,13 @@ $encoding-reference: (
     @include fa($fa-github, $footer-font-color);
   }
 }
+
+.github-social-icon {
+  &:after {
+    content: '';
+    @include fa($fa-github, $footer-font-color, 1.5rem);
+  }
+}
 .copyright-icon {
   &:before {
     content: '';
@@ -855,6 +862,13 @@ $encoding-reference: (
   &:after {
     content: '';
     @include fa($fa-instagram, $footer-font-color, 1.5rem);
+  }
+}
+
+.youtube-icon {
+  &:after {
+    content: '';
+    @include fa($fa-youtube-play, $footer-font-color, 1.5rem);
   }
 }
 
