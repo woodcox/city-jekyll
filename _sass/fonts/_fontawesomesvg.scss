@@ -838,7 +838,10 @@ $encoding-reference: (
   }
 }
 .facebook-icon {
-  @include fa($fa-facebook);
+  &:after {
+    content: '';
+    @include fa($fa-facebook, $footer-font-color, 2rem);
+  }
 }
 
 .chevron-icon {
