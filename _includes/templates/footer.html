@@ -1,7 +1,7 @@
 <footer class="footer text-center padding-top">
   <div class="container">
     <div class="contacts-wrapper">
-      <h4>Contact us</h4>{% for cec in site.data.contact.office %}
+      <h3>Contact us</h3>{% for cec in site.data.contact.office %}
       <p class="footer-link-description">{{ cec.address }} - {{ cec.maplocation }}</p>
       <p class="footer-link-description">{{ cec.phone }}</p>
       <p class="footer-link-description">{{ cec.mailing }}{% endfor %}</p>
