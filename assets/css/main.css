@@ -2721,6 +2721,7 @@ footer .footer-link-description {
 
 .social-box li {
   list-style: none;
+  margin-left: 0;
 }
 
 .social-box li .social-box-icon {
