@@ -2716,7 +2716,7 @@ footer .footer-link-description {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 100px;
+  padding-top: 0px;
 }
 
 .social-box li {
