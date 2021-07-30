@@ -2722,6 +2722,11 @@ footer .footer-link-description {
 
 .social-box li {
   list-style: none;
+  margin-right: 6px;
+}
+
+.social-box li:last-child {
+  margin-right: 0px;
 }
 
 .social-box li .social-box-icon {
@@ -2738,7 +2743,6 @@ footer .footer-link-description {
   text-decoration: none;
   line-height: 1;
   font-size: 30px;
-  margin-right: 6px;
   background: transparent;
   border: 1px solid #fafafa;
   color: #fafafa;
@@ -2749,8 +2753,4 @@ footer .footer-link-description {
   border: 1px solid #fafafa;
   background: rgba(241, 148, 38, 0.75);
   text-decoration: none;
-}
-
-.social-box li .social-box-icon > :last-child {
-  margin-right: 0px;
 }
