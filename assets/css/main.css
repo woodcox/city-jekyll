@@ -2722,11 +2722,11 @@ footer .footer-link-description {
 
 .social-box li {
   list-style: none;
-  margin-right: 6px;
+  margin-right: 0.5rem;
 }
 
 .social-box li:last-child {
-  margin-right: 0px;
+  margin-right: 0;
 }
 
 .social-box li .social-box-icon {
@@ -2742,7 +2742,7 @@ footer .footer-link-description {
   cursor: pointer;
   text-decoration: none;
   line-height: 1;
-  font-size: 2em;
+  font-size: 2rem;
   background: transparent;
   border: 1px solid #fafafa;
   color: #fafafa;
