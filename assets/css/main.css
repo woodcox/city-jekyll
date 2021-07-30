@@ -2734,8 +2734,8 @@ footer .footer-link-description {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 3.1em;
-  height: 3.1em;
+  width: 3.1rem;
+  height: 3.1rem;
   border-radius: 50%;
   text-align: center;
   vertical-align: middle;
