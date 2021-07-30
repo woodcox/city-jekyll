@@ -840,21 +840,21 @@ $encoding-reference: (
 .facebook-icon {
   &:after {
     content: '';
-    @include fa($fa-facebook, $footer-font-color, 2rem);
+    @include fa($fa-facebook, $footer-font-color, 1.5rem);
   }
 }
 
 .twitter-icon {
   &:after {
     content: '';
-    @include fa($fa-twitter, $footer-font-color, 2rem);
+    @include fa($fa-twitter, $footer-font-color, 1.5rem);
   }
 }
 
 .instagram-icon {
   &:after {
     content: '';
-    @include fa($fa-instagram, $footer-font-color, 2rem);
+    @include fa($fa-instagram, $footer-font-color, 1.5rem);
   }
 }
 
