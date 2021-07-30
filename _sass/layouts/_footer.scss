@@ -49,7 +49,7 @@ footer {
         background: $muted-background-hover;
         text-decoration: none;
       }
-      &:last-child {
+      >:last-child {
         margin-right: 0px;
       }
     }
