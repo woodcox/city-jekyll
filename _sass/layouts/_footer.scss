@@ -24,10 +24,10 @@ footer {
   
   li {
     list-style: none;
-    margin-right: 6px;
+    margin-right: 0.5rem;
 
     &:last-child {
-      margin-right: 0px;
+      margin-right: 0;
     }
 
     .social-box-icon {
@@ -41,7 +41,7 @@ footer {
       cursor: pointer;
       text-decoration: none;
       line-height: 1;
-      font-size: 2em;
+      font-size: 2rem;
       background: $muted-background;
       border: $muted-border;
       color: $muted-color;
