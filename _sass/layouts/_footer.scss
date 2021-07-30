@@ -24,7 +24,12 @@ footer {
   
   li {
     list-style: none;
-    
+    margin-right: 6px;
+
+    &:last-child {
+      margin-right: 0px;
+    }
+
     .social-box-icon {
       position: relative;
       display: flex;
@@ -37,7 +42,6 @@ footer {
       text-decoration: none;
       line-height: 1;
       font-size: 30px;
-      margin-right: 6px;
       background: $muted-background;
       border: $muted-border;
       color: $muted-color;
@@ -48,9 +52,6 @@ footer {
         border: $muted-border-hover;
         background: $muted-background-hover;
         text-decoration: none;
-      }
-      & > :last-child {
-        margin-right: 0px;
       }
     }
   }
