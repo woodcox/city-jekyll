@@ -825,14 +825,14 @@ $encoding-reference: (
 }
 
 // Call the the fa-encoded mixin and pass in your svg viewbox:
-.github-icon {
+.external-link-icon {
   &:after {
     content: '';
-    @include fa($fa-github, $footer-font-color);
+    @include fa($fa-external-link, $footer-font-color);
   }
 }
 
-.github-social-icon {
+.github-icon {
   &:after {
     content: '';
     @include fa($fa-github, $footer-font-color, 1.5rem);
