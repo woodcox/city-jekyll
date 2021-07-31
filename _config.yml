@@ -53,15 +53,18 @@ kramdown:
 collections_dir: pages
 
 collections:
-  sunday:
-    output: true
-    permalink: /sunday/
-  docs:
-    output: true
-    permalink: /docs/
   home:
     output: true
     permalink: /
+  sunday:
+    output: true
+    permalink: /sunday/
+  media:
+    output: true
+    permalink: /media/
+  docs:
+    output: true
+    permalink: /docs/
 
 
 ### sass
