@@ -85,6 +85,8 @@ jekyll_get_json:
     json: 'https://cecleeds.churchsuite.co.uk/embed/smallgroups/json'
   - data: sermons
     json: 'https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fcecleeds.co.uk%2Fsermons.php'
+  - data: YouTube
+    json: 'https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fwww.youtube.com%2Ffeeds%2Fvideos.xml%3Fchannel_id%3DUCALb0SwFaFdPY2gwOesvb_g%26noapp%3D1'
 
 ### Compress html settings - http://jch.penibelst.de/
 compress_html:
