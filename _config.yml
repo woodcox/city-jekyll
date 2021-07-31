@@ -78,6 +78,8 @@ autoprefixer:
 jekyll_get_json:
   - data: cscalendar
     json: 'https://cecleeds.churchsuite.co.uk/embed/calendar/json'
+  - data: sermons
+    json: 'https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fcecleeds.co.uk%2Fsermons.php'
 
 ### Compress html settings - http://jch.penibelst.de/
 compress_html:
