@@ -79,9 +79,9 @@ autoprefixer:
 
 ### Import a json feed as data
 jekyll_get_json:
-  - data: cscalendar
+  - data: calendar
     json: 'https://cecleeds.churchsuite.co.uk/embed/calendar/json'
-  - data: small group
+  - data: growthgroup
     json: 'https://cecleeds.churchsuite.co.uk/embed/smallgroups/json'
   - data: sermons
     json: 'https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fcecleeds.co.uk%2Fsermons.php'
