@@ -15,7 +15,7 @@ lozad('.lozad', {
 //=======================================
 var swiper = new Swiper('.swiper-container', {
   // Optional parameters
-  direction: 'vertical',
+  direction: 'horizontal',
   loop: true,
   // Pagination
   slidesPerView: 6,
