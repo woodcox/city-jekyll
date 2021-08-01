@@ -16,14 +16,35 @@ lozad('.lozad', {
 //=======================================
 // Initialize Swiper
 //=======================================
-var swiper = new Swiper('.swiper-container', {
+const swiper = new Swiper('.swiper-container', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,
   // Pagination
   slidesPerView: 3,
   spaceBetween: 10,
-  slidesPerGroup: 2,
+  slidesPerGroup: 1,
+  // Responsive breakpoints
+  breakpoints: {
+    // when window width is >= 600px
+    600: {
+      slidesPerView: 4,
+      spaceBetween: 10,
+      slidesPerGroup: 1,
+    },
+    // when window width is >= 800px
+    800: {
+      slidesPerView: 4,
+      spaceBetween: 10,
+      slidesPerGroup: 2,
+    },
+    // when window width is >= 1000px
+    1000: {
+      slidesPerView: 5,
+      spaceBetween: 10,
+      slidesPerGroup: 2,
+    }
+  }
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
