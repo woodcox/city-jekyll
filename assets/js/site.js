@@ -17,6 +17,10 @@ lozad('.lozad', {
 // Initialize Swiper
 //=======================================
 var swiper = new Swiper('.swiper-container', {
+  // Optional parameters
+  direction: 'vertical',
+  loop: true,
+  // Pagination
   slidesPerView: 6,
   spaceBetween: 10,
   slidesPerGroup: 2,
@@ -24,6 +28,7 @@ var swiper = new Swiper('.swiper-container', {
     el: '.swiper-pagination',
     clickable: true,
   },
+  // Navigation arrows
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
