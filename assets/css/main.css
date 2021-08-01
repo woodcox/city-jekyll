@@ -2007,6 +2007,47 @@ dd {
   border: none;
 }
 
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  /* Update: Removed the Flex property - IE FIX */
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.netflix-slider .swiper-wrapper {
+  padding: 20px 0;
+}
+
+.netflix-slider .swiper-slide {
+  -webkit-transition: 250ms all;
+  -o-transition: 250ms all;
+  transition: 250ms all;
+}
+
+.netflix-slider .swiper-slide:hover {
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
+  z-index: 1;
+}
+
+.netflix-slider .swiper-slide:first-child:hover {
+  margin: 0 40px;
+}
+
+.netflix-slider .swiper-slide:last-child:hover {
+  margin: 0 -40px;
+}
+
 /**
  * Buttons
  */
