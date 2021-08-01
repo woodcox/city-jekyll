@@ -34,6 +34,14 @@
 @import 'base/normalize';
 @import 'base/reset';
 
+//==============================
+// SwiperJS.com
+//==============================
+
+@import 'components/swiper';
+@import 'components/swiper-pages';
+@import 'components/swiper-nav';
+
 //==============================================================================
 // Components
 //==============================================================================
@@ -49,14 +57,6 @@
 @import 'components/accordion';
 @import 'components/cards';
 @import 'components/animation';
-
-//==============================
-// SwiperJS.com
-//==============================
-
-@import 'components/swiper';
-@import 'components/swiper-pages';
-@import 'components/swiper-nav';
 
 //==============================
 // Layouts
