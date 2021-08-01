@@ -18,7 +18,7 @@ var swiper = new Swiper('.swiper-container', {
   direction: 'horizontal',
   loop: true,
   // Pagination
-  slidesPerView: 6,
+  slidesPerView: 3,
   spaceBetween: 10,
   slidesPerGroup: 2,
   pagination: {
