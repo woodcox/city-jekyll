@@ -2010,8 +2010,8 @@ dd {
 .video-border-top {
   border-radius: 10px;
   border-top: 10px solid #f19426;
-  -webkit-box-shadow: 16px 13px 42px -17px rgba(0, 0, 0, 0.69);
-          box-shadow: 16px 13px 42px -17px rgba(0, 0, 0, 0.69);
+  -webkit-box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
 }
 
 .swiper-container {
