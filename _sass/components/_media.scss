@@ -22,20 +22,28 @@
 }
 
 // keep embedded videos fluid
-.fluid-video {
+.icontain {
   position: relative;
   height: 0;
   overflow: hidden;
   padding-bottom: 56.25%; // keep 16x9 Aspect Ratio
+  
+  iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
 }
+
 .i4x3 { padding-bottom: 75.00%; } // keep 4x3 Aspect Ratio
-.fluid-video iframe {
-  position: absolute;
-  top:0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: none;
+
+.video-border-top {
+  border-radius: 10px;
+  border-top: 10px solid $secondary-color;
+  box-shadow: 16px 13px 42px -17px rgba(0,0,0,0.69);
 }
 
 // Netflix style slider
