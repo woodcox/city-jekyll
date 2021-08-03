@@ -1,4 +1,21 @@
 <section class="hero full-container ">
+  <div class="container navbar-wrapper">
+    <div class="flex-row">
+      <div class="flex-medium">
+        <div></div>
+      </div>
+      <div class="flex-medium med-one-fourth">
+        <ul class="navbar-menu">{% for menu in site.data.nav.primary limit:4 %}{% capture menuhref %}{{ menu.href | relative_url }}{% endcapture %}
+          <li><a href="{{ menuhref }}" {% if menu.href == page.url %}class="active"{% endif %}>{{ menu.text }}</a></li>{% endfor %}
+        </ul>
+      </div>
+      <div class="flex-medium med-one-fourth">
+        <ul class="navbar-menu">{% for menu in site.data.nav.primary offset:4 %}{% capture menuhref %}{{ menu.href | relative_url }}{% endcapture %}
+          <li><a href="{{ menuhref }}" {% if menu.href == page.url %}class="active"{% endif %}>{{ menu.text }}</a></li>{% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
   <div class="hero-text">
     <h1 class="hero-text-h1">City Evangelical Church</h1>
     <h2 class="hero-text-h2">
