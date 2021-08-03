@@ -3233,10 +3233,10 @@ caption {
   background-repeat: no-repeat;
   background-attachment: scroll;
   /* Text styles */
-  text-align: center;
 }
 
 .hero .hero-text {
+  text-align: center;
   -ms-flex-preferred-size: 20%;
       flex-basis: 20%;
 }
