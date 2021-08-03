@@ -3170,13 +3170,13 @@ caption {
 }
 
 @media (min-width: 50em) {
-  .navbar-menu {
+  .navbar-wrapper .navbar-menu {
     list-style: none;
     display: block;
     padding: 0;
     margin: 0;
   }
-  .navbar-menu a {
+  .navbar-wrapper .navbar-menu a {
     color: black;
     padding: 2em;
   }
