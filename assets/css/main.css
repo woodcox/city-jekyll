@@ -3161,6 +3161,8 @@ caption {
 
 .navbar-wrapper {
   background: #259cd3;
+  width: 100%;
+  height: 8em;
 }
 
 .navbar-wrapper .menu-options {
