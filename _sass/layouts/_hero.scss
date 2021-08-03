@@ -1,6 +1,6 @@
 .hero {
   /* flexbox */
-  @include flex-config(column nowrap, space-between)
+  @include flex-config(column nowrap, space-between);
   //flex:1
   
   /* Sizing */
@@ -19,6 +19,7 @@
   /* Text styles */
 
   .hero-text {
+    @include flex-config(column nowrap, flex-end);
     text-align: center;
     flex: 1;
     
