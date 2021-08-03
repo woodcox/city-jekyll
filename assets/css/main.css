@@ -3254,8 +3254,8 @@ caption {
 
 .hero .hero-buttons {
   -webkit-box-flex: 1;
-      -ms-flex: 1 0 30%;
-          flex: 1 0 30%;
+      -ms-flex: 1 0 20%;
+          flex: 1 0 20%;
 }
 
 @media (min-width: 37.5em) {
