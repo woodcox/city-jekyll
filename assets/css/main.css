@@ -3163,22 +3163,21 @@ caption {
   background: #259cd3;
   width: 100%;
   height: 8em;
-}
-
-.navbar-wrapper .navbar-menu {
   display: none;
 }
 
 @media (min-width: 50em) {
+  .navbar-wrapper {
+    display: block;
+  }
   .navbar-wrapper .navbar-menu {
     list-style: none;
-    display: block;
     padding: 0;
     margin: 0;
   }
   .navbar-wrapper .navbar-menu a {
     color: black;
-    padding: 2em;
+    padding-top: 2em;
   }
   .hamburger-wrapper {
     display: none;
