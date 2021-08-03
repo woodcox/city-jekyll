@@ -243,24 +243,22 @@
   background: $primary-color;
   width: 100%;
   height: 8em;
-
-  .navbar-menu {
-    display: none;
-  }
+  display: none;
 }
 
 // show two column list menu on tablets and above
 @include medium-breakpoint {
   .navbar-wrapper {
+    display: block;
+    
     .navbar-menu {
       list-style: none;
-      display: block;
       padding: 0;
       margin: 0;
           
       a {
         color: black;
-        padding: 2em;
+        padding-top: 2em;
       }
     }
   }
