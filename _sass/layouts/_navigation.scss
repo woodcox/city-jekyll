@@ -251,15 +251,17 @@
 
 // show two column list menu on tablets and above
 @include medium-breakpoint {
-  .navbar-menu {
-    list-style: none;
-    display: block;
-    padding: 0;
-    margin: 0;
+  .navbar-wrapper {
+    .navbar-menu {
+      list-style: none;
+      display: block;
+      padding: 0;
+      margin: 0;
           
-    a {
-      color: black;
-      padding: 2em;
+      a {
+        color: black;
+        padding: 2em;
+      }
     }
   }
   
