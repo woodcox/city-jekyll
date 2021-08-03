@@ -20,7 +20,7 @@
   text-align: center;
 
   .hero-text {
-    flex: 1 0 30%;
+    flex-basis: 20%;
     
     .hero-text-h1 {
       color: white;
@@ -31,6 +31,9 @@
       pointer-events: none;
       font-size: calc(0.7em + 0.5vmin);
     }
+  }
+  .hero-buttons {
+    flex: 1 0 30%;
   }
 }
 
