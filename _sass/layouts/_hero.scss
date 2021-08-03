@@ -20,7 +20,7 @@
 
   .hero-text {
     text-align: center;
-    flex-basis: 20%;
+    flex 1;
     
     .hero-text-h1 {
       color: white;
@@ -33,7 +33,7 @@
     }
   }
   .hero-buttons {
-    flex: 0 0 20%;
+    flex: 1;
   }
 }
 
