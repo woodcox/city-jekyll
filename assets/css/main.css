@@ -3171,6 +3171,8 @@ caption {
   .menu-options {
     list-style: none;
     display: block;
+    padding: 0;
+    margin: 0;
   }
   .menu-options a {
     color: black;
