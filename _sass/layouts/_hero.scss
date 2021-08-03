@@ -19,9 +19,8 @@
   /* Text styles */
 
   .hero-text {
-    @include flex-config(column nowrap, flex-end);
     text-align: center;
-    flex: 1;
+    flex: 1.5;
     
     .hero-text-h1 {
       color: white;
