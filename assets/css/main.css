@@ -2853,7 +2853,7 @@ caption {
 /*
  * Navigation
  */
-.animate-nav-link, .outer-menu .menu > div > div > ul > li > a {
+.animate-nav-link, .hamburger-wrapper .hamburger-menu > div > div > ul > li > a {
   position: relative;
   display: inline;
   cursor: pointer;
@@ -2865,17 +2865,17 @@ caption {
           text-decoration-line: none;
 }
 
-.animate-nav-link:active, .outer-menu .menu > div > div > ul > li > a:active, .animate-nav-link:hover, .outer-menu .menu > div > div > ul > li > a:hover {
+.animate-nav-link:active, .hamburger-wrapper .hamburger-menu > div > div > ul > li > a:active, .animate-nav-link:hover, .hamburger-wrapper .hamburger-menu > div > div > ul > li > a:hover {
   color: #be6d0c;
   -webkit-text-decoration-line: none;
           text-decoration-line: none;
 }
 
-.animate-nav-link:active:after, .outer-menu .menu > div > div > ul > li > a:active:after, .animate-nav-link:hover:after, .outer-menu .menu > div > div > ul > li > a:hover:after {
+.animate-nav-link:active:after, .hamburger-wrapper .hamburger-menu > div > div > ul > li > a:active:after, .animate-nav-link:hover:after, .hamburger-wrapper .hamburger-menu > div > div > ul > li > a:hover:after {
   width: 100%;
 }
 
-.animate-nav-link:after, .outer-menu .menu > div > div > ul > li > a:after {
+.animate-nav-link:after, .hamburger-wrapper .hamburger-menu > div > div > ul > li > a:after {
   content: "";
   position: absolute;
   bottom: -0.15em;
@@ -2920,14 +2920,14 @@ caption {
   fill: rgba(255, 255, 255, 0);
 }
 
-.outer-menu {
+.hamburger-wrapper {
   position: fixed;
   top: 10px;
   right: 10px;
   z-index: 201;
 }
 
-.outer-menu .checkbox-toggle {
+.hamburger-wrapper .checkbox-toggle {
   position: absolute;
   top: 0;
   right: 0;
@@ -2939,20 +2939,20 @@ caption {
   opacity: 0;
 }
 
-.outer-menu .checkbox-toggle:checked + .hamburger > div {
+.hamburger-wrapper .checkbox-toggle:checked + .hamburger > div {
   -webkit-transform: rotate(135deg);
       -ms-transform: rotate(135deg);
           transform: rotate(135deg);
 }
 
-.outer-menu .checkbox-toggle:checked + .hamburger > div:before {
+.hamburger-wrapper .checkbox-toggle:checked + .hamburger > div:before {
   top: 0;
   -webkit-transform: rotate(90deg);
       -ms-transform: rotate(90deg);
           transform: rotate(90deg);
 }
 
-.outer-menu .checkbox-toggle:checked + .hamburger > div:after {
+.hamburger-wrapper .checkbox-toggle:checked + .hamburger > div:after {
   top: 0;
   -webkit-transform: rotate(90deg);
       -ms-transform: rotate(90deg);
@@ -2960,12 +2960,12 @@ caption {
   opacity: 0;
 }
 
-.outer-menu .checkbox-toggle:checked ~ .menu {
+.hamburger-wrapper .checkbox-toggle:checked ~ .hamburger-menu {
   pointer-events: auto;
   visibility: visible;
 }
 
-.outer-menu .checkbox-toggle:checked ~ .menu > div {
+.hamburger-wrapper .checkbox-toggle:checked ~ .hamburger-menu > div {
   -webkit-transform: scale(1);
       -ms-transform: scale(1);
           transform: scale(1);
@@ -2974,25 +2974,25 @@ caption {
           transition-duration: 0.75s;
 }
 
-.outer-menu .checkbox-toggle:checked ~ .menu > div > div {
+.hamburger-wrapper .checkbox-toggle:checked ~ .hamburger-menu > div > div {
   opacity: 1;
   -webkit-transition: opacity 0.4s ease 0.4s;
   -o-transition: opacity 0.4s ease 0.4s;
   transition: opacity 0.4s ease 0.4s;
 }
 
-.outer-menu .checkbox-toggle:hover + .hamburger {
+.hamburger-wrapper .checkbox-toggle:hover + .hamburger {
   -webkit-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
           box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.outer-menu .checkbox-toggle:checked:hover + .hamburger > div {
+.hamburger-wrapper .checkbox-toggle:checked:hover + .hamburger > div {
   -webkit-transform: rotate(225deg);
       -ms-transform: rotate(225deg);
           transform: rotate(225deg);
 }
 
-.outer-menu .hamburger {
+.hamburger-wrapper .hamburger {
   position: absolute;
   top: 0;
   right: 0;
@@ -3021,7 +3021,7 @@ caption {
           justify-content: center;
 }
 
-.outer-menu .hamburger > div {
+.hamburger-wrapper .hamburger > div {
   position: relative;
   -webkit-box-flex: 0;
       -ms-flex: none;
@@ -3043,7 +3043,7 @@ caption {
           justify-content: center;
 }
 
-.outer-menu .hamburger > div:before, .outer-menu .hamburger > div:after {
+.hamburger-wrapper .hamburger > div:before, .hamburger-wrapper .hamburger > div:after {
   content: "";
   position: absolute;
   z-index: 201;
@@ -3057,11 +3057,11 @@ caption {
   transition: all 0.4s ease;
 }
 
-.outer-menu .hamburger > div:after {
+.hamburger-wrapper .hamburger > div:after {
   top: 7.5px;
 }
 
-.outer-menu .menu {
+.hamburger-wrapper .hamburger-menu {
   position: fixed;
   top: 0;
   right: 0;
@@ -3084,7 +3084,7 @@ caption {
           justify-content: center;
 }
 
-.outer-menu .menu > div {
+.hamburger-wrapper .hamburger-menu > div {
   width: 200vw;
   height: 200vw;
   color: #ffffff !important;
@@ -3113,7 +3113,7 @@ caption {
           justify-content: center;
 }
 
-.outer-menu .menu > div > div {
+.hamburger-wrapper .hamburger-menu > div > div {
   text-align: center;
   max-width: 90vw;
   max-height: 100vh;
@@ -3136,7 +3136,7 @@ caption {
           justify-content: center;
 }
 
-.outer-menu .menu > div > div > ul {
+.hamburger-wrapper .hamburger-menu > div > div > ul {
   list-style: none;
   padding: 0 1em;
   margin: 0;
@@ -3144,18 +3144,18 @@ caption {
   max-height: 100vh;
 }
 
-.outer-menu .menu > div > div > ul > li {
+.hamburger-wrapper .hamburger-menu > div > div > ul > li {
   padding: 0;
   margin: 0.5em;
   font-size: calc(1.1em + 1vmin);
   display: block;
 }
 
-.outer-menu .menu > div > div > ul > li > a {
+.hamburger-wrapper .hamburger-menu > div > div > ul > li > a {
   color: #ffffff !important;
 }
 
-.outer-menu .menu > div > div > ul > li > a:after {
+.hamburger-wrapper .hamburger-menu > div > div > ul > li > a:after {
   z-index: 201;
 }
 
