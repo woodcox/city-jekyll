@@ -1,10 +1,7 @@
 .hero {
   /* flexbox */
-  @include flex-config(column nowrap, center)
-  // display: flex;
-  // flex-direction: column;
+  @include flex-config(column nowrap, space-between)
   flex: 1;
-  // justify-content: center;
   
   /* Sizing */
   height: 100vh;
