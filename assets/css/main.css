@@ -3219,9 +3219,6 @@ caption {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
   /* Sizing */
   height: 100vh;
   /* Background styles */
@@ -3237,6 +3234,12 @@ caption {
   background-attachment: scroll;
   /* Text styles */
   text-align: center;
+}
+
+.hero .hero-text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 30%;
+          flex: 1 0 30%;
 }
 
 .hero .hero-text .hero-text-h1 {
