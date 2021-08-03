@@ -60,7 +60,7 @@
   }
 }
 
-.outer-menu {
+.hamburger-wrapper {
   position: fixed;
   top: 10px;
   right: 10px;
@@ -93,7 +93,7 @@
         }
       }
 
-      ~ .menu {
+      ~ .hamburger-menu {
         pointer-events: auto;
         visibility: visible;
 
@@ -165,7 +165,7 @@
     }
   }
 
-  .menu {
+  .hamburger-menu {
     position: fixed;
     top: 0;
     right: 0;
