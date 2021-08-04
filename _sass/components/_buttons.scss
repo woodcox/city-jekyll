@@ -40,8 +40,7 @@
 }
 
 // Apply styles to .button class, button element, and button-based inputs
-#{$buttons},
-a#{$buttons} {
+#{$buttons} {
   @extend %buttons;
 
   &::-moz-focus-inner {
