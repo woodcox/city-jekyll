@@ -44,7 +44,7 @@
 
 <script src={% capture build %}'/assets/js/swiper.min.js?v={{ site.time | date: '%s' }}'{% endcapture %}"{{ build | relative_url }}"></script>
 <script src={% capture build %}'/assets/js/site.js?v={{ site.time | date: '%s' }}'{% endcapture %}"{{ build | relative_url }}"></script>
-<script src= {% capture build %}'/assets/js/smoothscroll-polyfill.js?v={{ site.time | date: '%s' }}'{% endcapture %}"{{ build | relative_url }}"></script>
+<script src={% capture build %}'/assets/js/smoothscroll-polyfill.js?v={{ site.time | date: '%s' }}'{% endcapture %}"{{ build | relative_url }}"></script>
 
 {% include modules/cookie-consent.html %}
 
