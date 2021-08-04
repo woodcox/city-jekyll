@@ -1,5 +1,14 @@
 # city-jekyll
 
+https://stackoverflow.com/questions/30758658/github-page-blog-from-jekyll-needs-force-reload-to-show-changes-with-posts
+<% if page.published != true %>
+<meta http-equiv="cache-control" content="max-age=0" />
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="expires" content="0" />
+<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+<meta http-equiv="pragma" content="no-cache" />
+<% endif %>
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 Please note this is a work in progress. The theme has not been created yet. This is what I am working towards. 
