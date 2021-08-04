@@ -204,32 +204,18 @@ $card-font-color: white;
 
 // Card Social Icons
 .card-social-icons {
-  @include flex-config(row nowrap, center, center);
+  @extend .social-box;
   padding-top: 100px;
   z-index: 3;
   
   li {
-    list-style: none;
-    
-    .card-icons {
-      position: relative;
-      display: flex;
-      width: 50px;
-      height: 50px;
-      line-height: 50px;
-      border-radius: 50%;
-      text-align: center;
+    .social-button {
       background: #fff;
       font-size: 23px;
       color: #333;
       transition: .4s;
       transform: translateY(200px);
       opacity: 0;
-      margin-right: 6px;
-
-      &li:last-child {
-        margin-right: 0px;
-      }
     } 
   }
 }
