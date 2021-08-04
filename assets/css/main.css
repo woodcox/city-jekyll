@@ -2116,14 +2116,14 @@ a.accent-button:active {
   background: #d67a0e;
 }
 
-.muted-button, .social-box li .social-button,
+.muted-button, .social-box li .social-button, .card-social-icons li .social-button,
 a.muted-button {
   background: transparent;
   border: 1px solid #fafafa;
   color: #fafafa;
 }
 
-.muted-button:hover, .social-box li .social-button:hover, .muted-button:focus, .social-box li .social-button:focus, .muted-button:active, .social-box li .social-button:active,
+.muted-button:hover, .social-box li .social-button:hover, .card-social-icons li .social-button:hover, .muted-button:focus, .social-box li .social-button:focus, .card-social-icons li .social-button:focus, .muted-button:active, .social-box li .social-button:active, .card-social-icons li .social-button:active,
 a.muted-button:hover,
 a.muted-button:focus,
 a.muted-button:active {
@@ -2148,7 +2148,7 @@ a.full-button {
   width: 100%;
 }
 
-.social-box {
+.social-box, .card-social-icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2166,16 +2166,16 @@ a.full-button {
   padding: 0;
 }
 
-.social-box li {
+.social-box li, .card-social-icons li {
   list-style: none;
   margin-right: 0.5rem;
 }
 
-.social-box li:last-child {
+.social-box li:last-child, .card-social-icons li:last-child {
   margin-right: 0;
 }
 
-.social-box li .social-button {
+.social-box li .social-button, .card-social-icons li .social-button {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2192,7 +2192,7 @@ a.full-button {
   font-size: 2rem;
 }
 
-.social-box li .social-button:hover, .social-box li .social-button:focus, .social-box li .social-button:active {
+.social-box li .social-button:hover, .card-social-icons li .social-button:hover, .social-box li .social-button:focus, .card-social-icons li .social-button:focus, .social-box li .social-button:active, .card-social-icons li .social-button:active {
   text-decoration: none;
 }
 
@@ -2731,37 +2731,11 @@ caption {
 }
 
 .card-social-icons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   padding-top: 100px;
   z-index: 3;
 }
 
-.card-social-icons li {
-  list-style: none;
-}
-
-.card-social-icons li .card-icons {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
-  border-radius: 50%;
-  text-align: center;
+.card-social-icons li .social-button {
   background: #fff;
   font-size: 23px;
   color: #333;
@@ -2772,11 +2746,6 @@ caption {
       -ms-transform: translateY(200px);
           transform: translateY(200px);
   opacity: 0;
-  margin-right: 6px;
-}
-
-.card-social-icons li .card-iconsli:last-child {
-  margin-right: 0px;
 }
 
 .card-profile:hover .card-social-icons li .card-icons {
