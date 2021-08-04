@@ -11,7 +11,7 @@
 	<meta name="description" content="A Jekyll theme &amp; Sass Boilerplate">
         <meta name="author" content="woodcock3">
   <!-- CSS  -->
-  <link rel="stylesheet" href="/city-jekyll/assets/css/main.css?v=1628114813" />
+  <link rel="stylesheet" href="/city-jekyll/assets/css/main.css?v=1628115240" />
   <link rel="apple-touch-icon" sizes="180x180" href="/city-jekyll/assets/img/favicon/apple-touch-icon.png" />
 	<link rel="icon" type="image/png" sizes="32x32" href="/city-jekyll/assets/img/favicon/favicon-32x32.png" />
 	<link rel="icon" type="image/png" sizes="16x16" href="/city-jekyll/assets/img/favicon/favicon-16x16.png" />
@@ -22,7 +22,7 @@
 	<meta name="msapplication-config" content="/city-jekyll/browserconfig.xml">
 	<meta name="theme-color" content="#259cd3">
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
-  <script src="/city-jekyll/assets/js/contacts.js?v=1628114813"></script>
+  <script src="/city-jekyll/assets/js/contacts.js?v=1628115240"></script>
   
 </head>
 <body>
@@ -599,10 +599,63 @@ A <code>cite</code> will be right aligned and italicized.</p>
         
         <h2>Flip cards</h2>
 
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"flex-row justify-center"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"flex-small sm-half flex-medium med-one-third"</span> <span class="na">ontouchstart=</span><span class="s">"this.classList.toggle('hover');"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-container"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"front"</span> <span class="na">style=</span><span class="s">"background-image: url(../assets/img/600/kid-heart-small.jpg)"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"inner"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;p&gt;</span>City Kids<span class="nt">&lt;/p&gt;</span>
+            <span class="nt">&lt;span&gt;</span>Wednesdays, 6:15pm - 7pm<span class="nt">&lt;/span&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"back"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"inner"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;p&gt;</span>Every week during term-time. Advanced bookings only.<span class="nt">&lt;/p&gt;</span>
+            <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button accent-button arrow-right-icon"</span><span class="nt">&gt;</span>More about city kids <span class="nt">&lt;/a&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"flex-small sm-half flex-medium med-one-third"</span> <span class="na">ontouchstart=</span><span class="s">"this.classList.toggle('hover');"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-container"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"front"</span> <span class="na">style=</span><span class="s">"background-image: url(../img/600/furnace-small.jpg)"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"inner"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;p&gt;</span>Youth<span class="nt">&lt;/p&gt;</span>
+            <span class="nt">&lt;span&gt;</span>Furnace, Ignite<span class="nt">&lt;/span&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"back"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"inner"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;p&gt;</span>Connect with us.<span class="nt">&lt;/p&gt;</span>
+            <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button accent-button arrow-right-icon"</span><span class="nt">&gt;</span>More about youth <span class="nt">&lt;/a&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"flex-small sm-half flex-medium med-one-third"</span> <span class="na">ontouchstart=</span><span class="s">"this.classList.toggle('hover');"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-container"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"front"</span> <span class="na">style=</span><span class="s">"background-image: url(./assets/img/600/broadcasting-house.jpg)"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"inner"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;p&gt;</span>Students<span class="nt">&lt;/p&gt;</span>
+            <span class="nt">&lt;span&gt;</span>Join the family<span class="nt">&lt;/span&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"back"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"inner"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;p&gt;</span>Grow in Christ's likeness.<span class="nt">&lt;/p&gt;</span>
+            <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button accent-button arrow-right-icon"</span><span class="nt">&gt;</span>More about students <span class="nt">&lt;/a&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+
+</code></pre></div></div>
+
 <div class="flex-row justify-center">
     <div class="flex-small sm-half flex-medium med-one-third" ontouchstart="this.classList.toggle('hover');">
       <div class="card-container">
-        <div class="front" style="background-image: url(./assets/img/600/kid-heart-small.jpg)">
+        <div class="front" style="background-image: url(../assets/img/600/kid-heart-small.jpg)">
           <div class="inner">
             <p>City Kids</p>
             <span>Wednesdays, 6:15pm - 7pm</span>
@@ -618,7 +671,7 @@ A <code>cite</code> will be right aligned and italicized.</p>
     </div>
     <div class="flex-small sm-half flex-medium med-one-third" ontouchstart="this.classList.toggle('hover');">
       <div class="card-container">
-        <div class="front" style="background-image: url(./assets/img/600/furnace-small.jpg)">
+        <div class="front" style="background-image: url(../img/600/furnace-small.jpg)">
           <div class="inner">
             <p>Youth</p>
             <span>Furnace, Ignite</span>
@@ -1224,9 +1277,9 @@ public:
 </footer>
 
 
-<script src="/city-jekyll/assets/js/swiper.min.js?v=1628114813"></script>
-<script src="/city-jekyll/assets/js/site.js?v=1628114813"></script>
-<script src="/city-jekyll/assets/js/smoothscroll-polyfill.js?v=1628114813"></script>
+<script src="/city-jekyll/assets/js/swiper.min.js?v=1628115240"></script>
+<script src="/city-jekyll/assets/js/site.js?v=1628115240"></script>
+<script src="/city-jekyll/assets/js/smoothscroll-polyfill.js?v=1628115240"></script>
 
 <style>
   #cookie-notice {
