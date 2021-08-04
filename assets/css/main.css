@@ -2116,14 +2116,14 @@ a.accent-button:active {
   background: #d67a0e;
 }
 
-.muted-button,
+.muted-button, .social-box li .social-button,
 a.muted-button {
   background: transparent;
   border: 1px solid #fafafa;
   color: #fafafa;
 }
 
-.muted-button:hover, .muted-button:focus, .muted-button:active,
+.muted-button:hover, .social-box li .social-button:hover, .muted-button:focus, .social-box li .social-button:focus, .muted-button:active, .social-box li .social-button:active,
 a.muted-button:hover,
 a.muted-button:focus,
 a.muted-button:active {
@@ -2190,15 +2190,9 @@ a.full-button {
   text-decoration: none;
   line-height: 1;
   font-size: 2rem;
-  background: transparent;
-  border: 1px solid #fafafa;
-  color: #fafafa;
 }
 
-.social-box li .social-button:hover, .social-box li .social-button:focus {
-  color: #fafafa;
-  border: 1px solid #fafafa;
-  background: rgba(241, 148, 38, 0.75);
+.social-box li .social-button:hover, .social-box li .social-button:focus, .social-box li .social-button:active {
   text-decoration: none;
 }
 
