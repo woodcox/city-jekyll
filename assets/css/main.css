@@ -3237,9 +3237,10 @@ caption {
 
 .hero .hero-text {
   text-align: center;
-  -webkit-box-flex: 1.5;
-      -ms-flex: 1.5;
-          flex: 1.5;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  border: 1px solid #0366ee;
 }
 
 .hero .hero-text .hero-text-h1 {
@@ -3257,6 +3258,7 @@ caption {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  border: 1px solid #0366ee;
 }
 
 @media (min-width: 37.5em) {
