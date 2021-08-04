@@ -136,15 +136,11 @@ a.full-button {
       text-decoration: none;
       line-height: 1;
       font-size: 2rem;
-      background: $muted-background;
-      border: $muted-border;
-      color: $muted-color;
+      @extend .muted-button;
 
       &:hover,
-      &:focus {
-        color: $muted-color-hover;
-        border: $muted-border-hover;
-        background: $muted-background-hover;
+      &:focus,
+      &:active {
         text-decoration: none;
       }
     }
