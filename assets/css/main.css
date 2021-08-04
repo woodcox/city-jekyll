@@ -2347,6 +2347,8 @@ caption {
 .round-accordion, .muted-accordion, .square-accordion, .accent-accordion, .accordion {
   width: 100%;
   position: relative;
+  margin: 0;
+  padding: 0;
   padding-bottom: 0;
 }
 
