@@ -44,8 +44,8 @@
 
 {% assign buildversion = site.time | date:'?v=%s' %}
 <script src="{{ '/assets/js/swiper.min.js' | append: buildversion | relative_url }}"></script>
-<script src={% capture build %}'/assets/js/site.js?v={{ site.time | date: '%s' }}'{% endcapture %}"{{ build | relative_url }}"></script>
-<script src={% capture build %}'/assets/js/smoothscroll-polyfill.js?v={{ site.time | date: '%s' }}'{% endcapture %}"{{ build | relative_url }}"></script>
+<script src="{{ '/assets/js/site.js' | append: buildversion | relative_url }}"></script>
+<script src="{{ '/assets/js/smoothscroll-polyfill.js' | append: buildversion | relative_url }}"></script>
 
 {% include modules/cookie-consent.html %}
 
