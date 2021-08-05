@@ -1,5 +1,44 @@
 $card-font-color: white;
 
+// Gradient Cards
+
+.card__exit,
+.card__icon {
+  position: relative;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.card {
+  padding: 20px;
+  height: auto;
+  min-height: 200px;
+  @include flex-config(column nowrap, space-between);
+  border-radius: 20px;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+  transition: all 0.5s;
+
+  &:hover {
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+    transform: scale(1.03);
+  }
+}
+
+.card__icon {
+  font-size: 2em;
+}
+
+.card__title {
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.card__apply {
+  align-self: left;
+}
+
+// Flip Card
+
 .card-container{
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
@@ -10,8 +49,8 @@ $card-font-color: white;
 
 .front,
 .back {
+  @extend .card;
   background-size: cover;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.25);
   background-position: center;
   -webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
   transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
@@ -21,9 +60,8 @@ $card-font-color: white;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   text-align: center;
+  padding: 0px;
   min-height: 280px;
-  height: auto;
-  border-radius: 10px;
   color: $card-font-color;
   font-size: 1.5rem;
 }
@@ -48,7 +86,7 @@ $card-font-color: white;
   background-color: $primary-color;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
 .card-container:hover .front,
@@ -131,43 +169,6 @@ $card-font-color: white;
 
 .front .inner span {
   color: rgba($card-font-color, 0.9);
-}
-
-// Gradient Cards
-
-.card__exit,
-.card__icon {
-  position: relative;
-  text-decoration: none;
-  color: rgba(255, 255, 255, 0.9);
-}
-
-.card {
-  padding: 20px;
-  height: auto;
-  min-height: 200px;
-  @include flex-config(column nowrap, space-between);
-  border-radius: 20px;
-  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
-  transition: all 0.5s;
-
-  &:hover {
-    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
-    transform: scale(1.03);
-  }
-}
-
-.card__icon {
-  font-size: 2em;
-}
-
-.card__title {
-  font-weight: 400;
-  color: #ffffff;
-}
-
-.card__apply {
-  align-self: left;
 }
 
 // Profile Card
