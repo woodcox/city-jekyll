@@ -39,14 +39,14 @@ elders:
     photo: './assets/img/master/elder-dl.jpeg'
   - name: John Keane
     role: Elder
-    info: ahah hahahah
+    info: John works as a Doctor and has served teh church for 15 years as an elder. He is married to Emily and has 3 children.
     phoneurl: tel:+44
     emailurl:
     whatsappurl: https://wa.me/
     photo: './assets/img/master/elder-jk.jpeg'
   - name: Andrew Smith
     role: Elder
-    info: ahahah ahahaj
+    info: Andrew became an elder in June 2020. He is married to Lianna and they have 2 daughters.
     phoneurl: tel:+44
     emailurl:
     whatsappurl: https://wa.me/
