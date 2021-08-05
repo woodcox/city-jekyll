@@ -2503,6 +2503,59 @@ caption {
   border-bottom-left-radius: 25px;
 }
 
+.card__exit,
+.card__icon {
+  position: relative;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.card, .card-profile, .front,
+.back {
+  padding: 20px;
+  height: auto;
+  min-height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.card:hover, .card-profile:hover, .front:hover,
+.back:hover {
+  -webkit-box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+  -webkit-transform: scale(1.03);
+      -ms-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+.card__icon {
+  font-size: 2em;
+}
+
+.card__title {
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.card__apply {
+  -ms-flex-item-align: left;
+      align-self: left;
+}
+
 .card-container {
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
@@ -2514,8 +2567,6 @@ caption {
 .front,
 .back {
   background-size: cover;
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
   background-position: center;
   -webkit-transition: -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
   transition: -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
@@ -2525,9 +2576,8 @@ caption {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   text-align: center;
+  padding: 0px;
   min-height: 280px;
-  height: auto;
-  border-radius: 10px;
   color: white;
   font-size: 1.5rem;
 }
@@ -2551,7 +2601,7 @@ caption {
   background-color: #259cd3;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
 .card-container:hover .front,
@@ -2634,57 +2684,6 @@ caption {
 
 .front .inner span {
   color: rgba(255, 255, 255, 0.9);
-}
-
-.card__exit,
-.card__icon {
-  position: relative;
-  text-decoration: none;
-  color: rgba(255, 255, 255, 0.9);
-}
-
-.card, .card-profile {
-  padding: 20px;
-  height: auto;
-  min-height: 200px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column nowrap;
-          flex-flow: column nowrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  border-radius: 20px;
-  -webkit-box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
-  -webkit-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
-}
-
-.card:hover, .card-profile:hover {
-  -webkit-box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
-          box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
-  -webkit-transform: scale(1.03);
-      -ms-transform: scale(1.03);
-          transform: scale(1.03);
-}
-
-.card__icon {
-  font-size: 2em;
-}
-
-.card__title {
-  font-weight: 400;
-  color: #ffffff;
-}
-
-.card__apply {
-  -ms-flex-item-align: left;
-      align-self: left;
 }
 
 .card-profile {
