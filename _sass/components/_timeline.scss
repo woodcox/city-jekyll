@@ -14,7 +14,7 @@
       .date {
         @include flex-config (column, center, center);
         font-size: $calendar-date-font-size;
-        flex-basis: 15%;
+        flex-basis: 10%;
         color: $calendar-black;
             
         #month {
@@ -23,7 +23,7 @@
       }
       
       .calendar-title {
-        flex-basis: 75%;
+        flex-basis: 70%;
         font-size: $calendar-title-font-size;
         min-height: 3.5rem;
         padding-bottom: $calendar-margin-padding;
