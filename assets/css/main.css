@@ -2869,6 +2869,101 @@ caption {
   fill: black;
 }
 
+.box {
+  background-image: url(https://s-media-cache-ak0.pinimg.com/736x/80/91/f9/8091f9dceb2ea55fa7b57bb7295e1824.jpg);
+  background-size: cover;
+  width: 350px;
+  height: 600px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.box .middle {
+  position: absolute;
+  color: white;
+  top: 28%;
+  width: 100%;
+}
+
+.box .middle #hi {
+  font-size: 1.5em;
+  margin-left: 15px;
+}
+
+.box .middle .timeline {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.box .middle .timeline ul {
+  list-style: none;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0;
+}
+
+.box .middle .timeline ul li {
+  margin-top: 30px;
+  display: inline-block;
+  width: 100%;
+  height: 65px;
+}
+
+.box .middle .timeline ul li .hour {
+  float: left;
+  font-size: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 20%;
+}
+
+.box .middle .timeline ul li .hour #sub {
+  font-size: 0.5em;
+}
+
+.box .middle .timeline ul li .work {
+  float: right;
+  width: 80%;
+  height: 100%;
+  font-size: 1.2em;
+  font-family: "Raleway";
+  border-bottom: 1px solid white;
+}
+
+.box .middle .timeline ul li .work #sub {
+  font-size: 0.8em;
+}
+
 /*
  * Navigation
  */
