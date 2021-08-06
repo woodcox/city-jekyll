@@ -2,14 +2,14 @@
   <div class="middle">
     <span id="events">Hello Hưng !</span>
     <div class="timeline">
-      <ul> {% for event in site.data.calendar limit:5 %}
+      <ul>{% for event in site.data.calendar limit:5 %}
         <li>
-          <div class="date">
-            <span>8</span>
-            <span id="month">AM</span>
+          <div class="date"> datetime_start":"2021-08-15 10:45:00"
+            <span>{{ event.datetime_start | slice: 8, 2 }}</span>
+            <span id="month">{{ event.datetime_start | slice: 5, 2 | date: %b }}</span>
           </div>
           <div class="calendar-title">
-            <span>{{ event.name }} </span><br />
+            <span>{{ event.name }}</span><br />
             <span id="sub">delicious noodle</span>
           </div>
         </li>
@@ -32,8 +32,8 @@
             <span>Lunchtime!</span><br />
             <span id="sub">awesome meat stew</span>
           </div>
-        </li>
-      </ul>{% endfor %}
+        </li>{% endfor %}
+      </ul>
     </div>
   </div>
 </div>
