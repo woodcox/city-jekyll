@@ -3,9 +3,6 @@ $calendar-color: blue;
 .timeline {
   width: 100%;
   @include flex-config(column nowrap, center, center);
-  display: flex;
-  align-items: center;
-  justify-content: center;
   color: $calendar-color;
     
   ul {
