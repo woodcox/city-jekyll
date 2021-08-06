@@ -2891,8 +2891,8 @@ caption {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-flow: column;
+          flex-flow: column;
   padding: 0;
   padding-bottom: 30px;
 }
@@ -2903,11 +2903,14 @@ caption {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row nowrap;
-          flex-direction: row nowrap;
-  -webkit-box-align: bottom;
-      -ms-flex-align: bottom;
-          align-items: bottom;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 30px;
   height: 60px;
 }
@@ -2919,16 +2922,16 @@ caption {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+      -ms-flex-flow: column;
+          flex-flow: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-preferred-size: 10%;
-      flex-basis: 10%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-preferred-size: 15%;
+      flex-basis: 15%;
 }
 
 .timeline ul li .date #month {
@@ -2936,8 +2939,8 @@ caption {
 }
 
 .timeline ul li .calendar-title {
-  -ms-flex-preferred-size: 85%;
-      flex-basis: 85%;
+  -ms-flex-preferred-size: 80%;
+      flex-basis: 80%;
   font-size: 1.2em;
   padding-bottom: 5px;
   border-bottom: 1px solid blue;
