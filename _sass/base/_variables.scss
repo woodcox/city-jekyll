@@ -168,6 +168,17 @@ $card-background: rgba($primary-color, 0.75) !default;
 $card-underline: darken($secondary-color, 15%) !default;
 
 //==============================================================================
+// Calendar
+//==============================================================================
+
+$calendar-color: $font-color;
+$calendar-date-font-size: 2rem;
+$calendar-month-font-size: $font-size;
+$calendar-title-font-size: 1.25rem;
+$calendar-subtitle-font-size: $font-size;
+$calendar-margin-padding: 2em;
+
+//==============================================================================
 // Forms
 //==============================================================================
 
