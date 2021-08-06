@@ -2869,68 +2869,51 @@ caption {
   fill: black;
 }
 
-.calendar-box {
-  background-image: url(https://s-media-cache-ak0.pinimg.com/736x/80/91/f9/8091f9dceb2ea55fa7b57bb7295e1824.jpg);
-  background-size: cover;
-  width: 350px;
-  height: 600px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
-.calendar-box .middle {
-  position: absolute;
-  color: white;
-  top: 28%;
-  width: 100%;
-}
-
-.calendar-box .middle #events {
-  font-size: 1.5em;
-  margin-left: 15px;
-}
-
-.calendar-box .middle .timeline {
+.timeline {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  color: blue;
 }
 
-.calendar-box .middle .timeline ul {
+.timeline ul {
   list-style: none;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 100%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 0;
+  padding-bottom: 30px;
 }
 
-.calendar-box .middle .timeline ul li {
+.timeline ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row nowrap;
+          flex-direction: row nowrap;
+  -webkit-box-align: bottom;
+      -ms-flex-align: bottom;
+          align-items: bottom;
   margin-top: 30px;
-  display: inline-block;
-  width: 100%;
-  height: 65px;
+  height: 60px;
 }
 
-.calendar-box .middle .timeline ul li .date {
-  float: left;
-  font-size: 2em;
+.timeline ul li .date {
+  font-size: 2.2em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2944,22 +2927,23 @@ caption {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 20%;
+  -ms-flex-preferred-size: 10%;
+      flex-basis: 10%;
 }
 
-.calendar-box .middle .timeline ul li .date #month {
+.timeline ul li .date #month {
   font-size: 0.5em;
 }
 
-.calendar-box .middle .timeline ul li .calendar-title {
-  float: right;
-  width: 80%;
-  height: 100%;
+.timeline ul li .calendar-title {
+  -ms-flex-preferred-size: 85%;
+      flex-basis: 85%;
   font-size: 1.2em;
-  border-bottom: 1px solid white;
+  padding-bottom: 5px;
+  border-bottom: 1px solid blue;
 }
 
-.calendar-box .middle .timeline ul li .calendar-title #calendar-subtitle {
+.timeline ul li .calendar-title #calendar-subtitle {
   font-size: 0.8em;
 }
 
