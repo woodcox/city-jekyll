@@ -1,18 +1,16 @@
 $calendar-color: blue;
 
 .timeline {
-  @include flex-config (column, center, center);
   color: $calendar-color;
     
   ul {
     list-style: none;
-    @include flex-config (column);
     width: 100%;
     padding: 0;
     padding-bottom: 2rem;
     
     li {
-      @include flex-config (row nowrap, center, flex-start);
+      @include flex-config (row nowrap, space-evenly, flex-start);
       margin-top: 2rem;
           
       .date {
