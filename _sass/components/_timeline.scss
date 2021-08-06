@@ -1,39 +1,37 @@
 $calendar-color: blue;
 
 .timeline {
-  width: 100%;
-  @include flex-config(column nowrap, center, center);
+  @include flex-config (column, center, center);
   color: $calendar-color;
     
   ul {
     list-style: none;
+    @include flex-config (column);
     width: 100%;
-    @include flex-config(column);
     padding: 0;
-    padding-bottom: 30px;
+    padding-bottom: 2rem;
     
     li {
-      @include flex-config(row nowrap, center, center);
-      margin-top: 30px;
-      height: 60px;
+      @include flex-config (row nowrap, center, flex-start);
+      margin-top: 2rem;
           
       .date {
-        font-size: 2.2em;
-        @include flex-config(column, center, center);
+        @include flex-config (column);
+        font-size: 2rem;
         flex-basis: 15%;
             
         #month {
-          font-size: 0.5em;
+          font-size: 1rem;
         }
       }
       .calendar-title {
-        flex-basis: 80%;
-        font-size: 1.2em;
-        padding-bottom: 5px;
+        flex-basis: 75%;
+        font-size: 1.2rem;
+        padding-bottom: 2rem;
         border-bottom: 1px solid $calendar-color;
     
         #calendar-subtitle {
-          font-size: 0.8em;
+          font-size: 1rem;
         }
       }
     }
