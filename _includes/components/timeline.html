@@ -4,7 +4,7 @@
     <div class="timeline">
       <ul>{% for event in site.data.calendar limit:5 %}
         <li>
-          <div class="date"> datetime_start":"2021-08-15 10:45:00"
+          <div class="date">
             <span>{{ event.datetime_start | slice: 8, 2 }}</span>
             <span id="month">{{ event.datetime_start | slice: 5, 2 | date: %b }}</span>
           </div>
