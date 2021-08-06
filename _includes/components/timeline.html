@@ -1,36 +1,16 @@
 <div class="calendar-box">
   <div class="middle">
-    <span id="events">Hello Hưng !</span>
+    <span id="events"> datetime_start":"2021-08-15 10:45:00"</span>
     <div class="timeline">
-      <ul>{% for event in site.data.calendar limit:5 %}
+      <ul>{% for event in site.data.calendar limit:3 %}
         <li>
-          <div class="date"> datetime_start":"2021-08-15 10:45:00"
-            <span>{{ event.datetime_start | slice: 8 }}</span>
+          <div class="date">
+            <span>{{ event.datetime_start | slice: 1, 2 }}</span>
             <span id="month">{{ event.datetime_start | slice: 5, 2 }}</span>
           </div>
           <div class="calendar-title">
             <span>{{ event.name }}</span><br />
             <span id="calendar-subtitle">delicious noodle</span>
-          </div>
-        </li>
-        <li>
-          <div class="date">
-            <span>9</span>
-            <span id="month">AM</span>
-          </div>
-          <div class="calendar-title">
-            <span>Working on my new UI design!</span><br />
-            <span id="calendar-subtitle">nice design !</span>
-          </div>
-        </li>
-        <li>
-          <div class="date">
-            <span>12</span>
-            <span id="month">AM</span>
-          </div>
-          <div class="calendar-title">
-            <span>Lunchtime!</span><br />
-            <span id="calendar-subtitle">awesome meat stew</span>
           </div>
         </li>{% endfor %}
       </ul>
