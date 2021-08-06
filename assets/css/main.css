@@ -2877,7 +2877,7 @@ caption {
   list-style: none;
   width: 100%;
   padding: 0;
-  padding-bottom: 2rem;
+  padding-bottom: 2em;
 }
 
 .timeline ul li {
@@ -2894,7 +2894,7 @@ caption {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  margin-top: 2rem;
+  margin-top: 2em;
 }
 
 .timeline ul li .date {
@@ -2925,7 +2925,7 @@ caption {
       flex-basis: 75%;
   font-size: 1.25rem;
   height: 3.5rem;
-  padding-bottom: 1rem;
+  padding-bottom: 2em;
   border-bottom: 1px solid black;
 }
 
