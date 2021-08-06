@@ -5,12 +5,12 @@
       <ul>{% for event in site.data.calendar limit:3 %}
         <li>
           <div class="date">
-            <span>{{ event.datetime_start | slice: 10, 2 }}</span>
+            <span>{{ event.datetime_start | slice: 10, 3 }}</span>
             <span id="month">{{ event.datetime_start | slice: 5, 2 }}</span>
           </div>
           <div class="calendar-title">
             <span>{{ event.name }}</span><br>
-            <span id="calendar-subtitle">{{ event.datetime_start | split: " " | last }}</span>
+            <span id="calendar-subtitle">{{ event.datetime_start | split: " " | last | remove: ":00"}}</span>
           </div>
         </li>{% endfor %}
       </ul>
