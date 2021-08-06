@@ -15,6 +15,7 @@
         @include flex-config (column, center, center);
         font-size: $calendar-date-font-size;
         flex-basis: 15%;
+        color: $calendar-black;
             
         #month {
           font-size: $calendar-month-font-size;
@@ -30,6 +31,7 @@
     
         #calendar-subtitle {
           font-size: $calendar-subtitle-font-size;
+          color: $calendar-accent-color;
         }
       }
     }
