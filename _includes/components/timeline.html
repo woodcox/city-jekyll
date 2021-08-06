@@ -10,7 +10,7 @@
           </div>
           <div class="calendar-title">
             <span>{{ event.name }}</span><br>
-            <span id="calendar-subtitle">{{ event.datetime_start | split: " " | last | remove: ":00"}} {{ event.datetime_start | split: " " | first }}</span>
+            <span id="calendar-subtitle">{{ event.datetime_start | split: " " | last | remove: ":00"}} {{ event.datetime_start | split: " " | first | date: %b }}</span>
           </div>
         </li>{% endfor %}
       </ul>
