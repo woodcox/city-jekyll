@@ -2870,7 +2870,7 @@ caption {
 }
 
 .timeline {
-  color: black;
+  color: green;
 }
 
 .timeline ul {
@@ -2926,7 +2926,7 @@ caption {
   font-size: 1.25rem;
   min-height: 3.5rem;
   padding-bottom: 2em;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid green;
 }
 
 .timeline ul li .calendar-title #calendar-subtitle {
