@@ -3,6 +3,7 @@ $calendar-date-font-size: 2rem;
 $calendar-month-font-size: 1rem;
 $calendar-title-font-size: 1.25rem;
 $calendar-subtitle-font-size: 1rem;
+$calendar-margin-padding: 2em;
 
 .timeline {
   color: $calendar-color;
@@ -11,11 +12,11 @@ $calendar-subtitle-font-size: 1rem;
     list-style: none;
     width: 100%;
     padding: 0;
-    padding-bottom: 2rem;
+    padding-bottom: $calendar-margin-padding;
     
     li {
       @include flex-config (row nowrap, space-evenly, flex-start);
-      margin-top: 2rem;
+      margin-top: $calendar-margin-padding;
           
       .date {
         @include flex-config (column, center, center);
@@ -31,7 +32,7 @@ $calendar-subtitle-font-size: 1rem;
         flex-basis: 75%;
         font-size: $calendar-title-font-size;
         height: 3.5rem;
-        padding-bottom: 1rem;
+        padding-bottom: $calendar-margin-padding;
         border-bottom: 1px solid $calendar-color;
     
         #calendar-subtitle {
