@@ -1,4 +1,8 @@
-$calendar-color: blue;
+$calendar-color: black;
+$calendar-date-font-size: 2rem;
+$calendar-month-font-size: 1rem;
+$calendar-title-font-size: 1.25rem;
+$calendar-subtitle-font-size: 1rem;
 
 .timeline {
   color: $calendar-color;
@@ -15,23 +19,23 @@ $calendar-color: blue;
           
       .date {
         @include flex-config (column, center, center);
-        font-size: 2rem;
+        font-size: $calendar-date-font-size;
         flex-basis: 15%;
             
         #month {
-          font-size: 1rem;
+          font-size: $calendar-month-font-size;
         }
       }
       
       .calendar-title {
         flex-basis: 75%;
-        font-size: 1.25rem;
+        font-size: $calendar-title-font-size;
         height: 3.5rem;
         padding-bottom: 1rem;
         border-bottom: 1px solid $calendar-color;
     
         #calendar-subtitle {
-          font-size: 1rem;
+          font-size: $calendar-subtitle-font-size;
         }
       }
     }
