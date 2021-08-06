@@ -14,7 +14,7 @@ $calendar-color: blue;
       margin-top: 2rem;
           
       .date {
-        @include flex-config (column);
+        @include flex-config (column, center, center);
         font-size: 2rem;
         flex-basis: 15%;
             
