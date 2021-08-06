@@ -6,7 +6,7 @@
         <span id="month">{{ event.datetime_start | split: " " | first | date: "%b" }}</span>
       </div>
       <div class="calendar-title">
-        <span>{{ event.name }}</span><br>
+        <span><strong>{{ event.name }}<strong></span><br>
         <span id="calendar-subtitle">{{ event.datetime_start | split: " " | last | remove: ":00"}}</span>
       </div>
     </li>{% endfor %}
