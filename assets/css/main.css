@@ -2912,8 +2912,8 @@ caption {
       -ms-flex-align: center;
           align-items: center;
   font-size: 2rem;
-  -ms-flex-preferred-size: 15%;
-      flex-basis: 15%;
+  -ms-flex-preferred-size: 10%;
+      flex-basis: 10%;
   color: black;
 }
 
@@ -2922,8 +2922,8 @@ caption {
 }
 
 .timeline ul li .calendar-title {
-  -ms-flex-preferred-size: 75%;
-      flex-basis: 75%;
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
   font-size: 1.25rem;
   min-height: 3.5rem;
   padding-bottom: 1em;
