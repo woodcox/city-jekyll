@@ -2,14 +2,14 @@
   <div class="middle">
     <span id="events">Hello Hưng !</span>
     <div class="timeline">
-      <ul>
+      <ul> {% for event in site.data.calendar limit:5 %}
         <li>
           <div class="date">
             <span>8</span>
             <span id="month">AM</span>
           </div>
           <div class="calendar-title">
-            <span>have some breakfast!</span><br />
+            <span>{{ event.name }} </span><br />
             <span id="sub">delicious noodle</span>
           </div>
         </li>
@@ -33,7 +33,7 @@
             <span id="sub">awesome meat stew</span>
           </div>
         </li>
-      </ul>
+      </ul>{% endfor %}
     </div>
   </div>
 </div>
