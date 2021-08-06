@@ -2924,7 +2924,7 @@ caption {
   -ms-flex-preferred-size: 75%;
       flex-basis: 75%;
   font-size: 1.25rem;
-  height: 3.5rem;
+  min-height: 3.5rem;
   padding-bottom: 2em;
   border-bottom: 1px solid black;
 }
