@@ -2870,14 +2870,13 @@ caption {
 }
 
 .timeline {
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-flow: column nowrap;
-          flex-flow: column nowrap;
+      -ms-flex-flow: column;
+          flex-flow: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -2889,7 +2888,6 @@ caption {
 
 .timeline ul {
   list-style: none;
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2897,8 +2895,9 @@ caption {
   -webkit-box-direction: normal;
       -ms-flex-flow: column;
           flex-flow: column;
+  width: 100%;
   padding: 0;
-  padding-bottom: 30px;
+  padding-bottom: 2rem;
 }
 
 .timeline ul li {
@@ -2912,15 +2911,13 @@ caption {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-top: 30px;
-  height: 60px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-top: 2rem;
 }
 
 .timeline ul li .date {
-  font-size: 2.2em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2928,30 +2925,25 @@ caption {
   -webkit-box-direction: normal;
       -ms-flex-flow: column;
           flex-flow: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  font-size: 2rem;
   -ms-flex-preferred-size: 15%;
       flex-basis: 15%;
 }
 
 .timeline ul li .date #month {
-  font-size: 0.5em;
+  font-size: 1rem;
 }
 
 .timeline ul li .calendar-title {
-  -ms-flex-preferred-size: 80%;
-      flex-basis: 80%;
-  font-size: 1.2em;
-  padding-bottom: 5px;
+  -ms-flex-preferred-size: 75%;
+      flex-basis: 75%;
+  font-size: 1.2rem;
+  padding-bottom: 2rem;
   border-bottom: 1px solid blue;
 }
 
 .timeline ul li .calendar-title #calendar-subtitle {
-  font-size: 0.8em;
+  font-size: 1rem;
 }
 
 /*
