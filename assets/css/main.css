@@ -2914,6 +2914,7 @@ caption {
   font-size: 2rem;
   -ms-flex-preferred-size: 15%;
       flex-basis: 15%;
+  color: black;
 }
 
 .timeline ul li .date #month {
@@ -2931,6 +2932,7 @@ caption {
 
 .timeline ul li .calendar-title #calendar-subtitle {
   font-size: 1rem;
+  color: #b4b4b4;
 }
 
 /*
