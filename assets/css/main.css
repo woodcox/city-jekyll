@@ -2827,8 +2827,7 @@ caption {
   }
 }
 
-.card, .front,
-.back, .card-profile {
+.card-image {
   background: white;
   text-decoration: none;
   color: #444;
@@ -2849,40 +2848,34 @@ caption {
   transition: all .1s ease-in;
 }
 
-.card:hover, .front:hover,
-.back:hover, .card-profile:hover {
+.card-image:hover {
   top: -2px;
   -webkit-box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
           box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
 }
 
-.card article, .front article,
-.back article, .card-profile article {
+.card-image article {
   padding: 20px;
 }
 
-.card .thumb, .front .thumb,
-.back .thumb, .card-profile .thumb {
+.card-image .thumb {
   padding-bottom: 60%;
   background-size: cover;
   background-position: center center;
 }
 
 /* typography */
-.card h1, .front h1,
-.back h1, .card-profile h1 {
+.card-image h1 {
   font-size: 20px;
   margin: 0;
   color: #333;
 }
 
-.card p, .front p,
-.back p, .card-profile p {
+.card-image p {
   line-height: 1.4;
 }
 
-.card span, .front span,
-.back span, .card-profile span {
+.card-image span {
   font-size: 12px;
   font-weight: bold;
   color: #999;
