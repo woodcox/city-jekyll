@@ -2805,6 +2805,48 @@ caption {
           transition-delay: 0.3s;
 }
 
+.card:hover, .front:hover,
+.back:hover, .card-profile:hover {
+  top: -2px;
+  -webkit-box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+}
+
+.card article, .front article,
+.back article, .card-profile article {
+  padding: 20px;
+}
+
+.card .thumb, .front .thumb,
+.back .thumb, .card-profile .thumb {
+  padding-bottom: 60%;
+  background-size: cover;
+  background-position: center center;
+}
+
+/* typography */
+.card h1, .front h1,
+.back h1, .card-profile h1 {
+  font-size: 20px;
+  margin: 0;
+  color: #333;
+}
+
+.card p, .front p,
+.back p, .card-profile p {
+  line-height: 1.4;
+}
+
+.card span, .front span,
+.back span, .card-profile span {
+  font-size: 12px;
+  font-weight: bold;
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  margin: 2em 0 0 0;
+}
+
 /* Preloader screen */
 @-webkit-keyframes loading-fadeout {
   0% {
