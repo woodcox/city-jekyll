@@ -52,19 +52,26 @@ jobs:
 
 
 # deploy to host
-#on: push
+
 #name: Publish Website
+
+#on:
+#  workflow_run:
+#    workflows: ["Build"]
+#    types: [completed]
+
 #jobs:
-#  FTP-Deploy-Action:
-#    name: FTP-Deploy-Action
+#  on-success:
+#    ftp-deploy-action:
 #    runs-on: ubuntu-latest
+#    if: ${{ github.event.workflow_run.conclusion == 'success' }}
 #    steps:
-#    - uses: actions/checkout@v2.1.0
-#      with:
-#        fetch-depth: 2
-#    - name: FTP-Deploy-Action
-#      uses: woodcock3/FTP-Deploy-Action
-#      with:
-#        ftp-server: ftp://ftp.cecleeds.co.uk
-#        ftp-username: ${{ secrets.FTP_USER }}
-#        ftp-password: ${{ secrets.FTP_PASSWORD }}
+#      - uses: actions/checkout@v2.1.0
+#        with:
+#          fetch-depth: 2
+#      - name: FTP-Deploy-Action
+#        uses: woodcock3/FTP-Deploy-Action
+#        with:
+#          ftp-server: ftp://ftp.cecleeds.co.uk
+#          ftp-username: ${{ secrets.FTP_USER }}
+#          ftp-password: ${{ secrets.FTP_PASSWORD }}
