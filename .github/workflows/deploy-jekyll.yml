@@ -1,6 +1,9 @@
 name: Jekyll Deploy
 
 on:
+  schedule:
+    # run daily at 04:30
+    - cron:  '10 5 * * *'
   push:
     branches:
       - master
@@ -9,10 +12,7 @@ on:
       - 'README.md'
       - 'LICENSE.md'
       - 'SECURITY.md'
-  schedule:
-    # run daily at 04:30
-    - cron:  '30 4 * * *'
-
+ 
 # Build site using jekyll
 jobs:
   jekyll:
