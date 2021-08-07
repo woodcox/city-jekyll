@@ -57,7 +57,7 @@ jobs:
 
 #on:
 #  workflow_run:
-#    workflows: ["Build"]
+#    workflows: ["Jekyll Deploy"]
 #    types: [completed]
 
 #jobs:
