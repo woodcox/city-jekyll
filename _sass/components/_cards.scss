@@ -284,7 +284,7 @@ $card-font-color: white;
   }
 }
 
-.card {
+.card-image {
   background: white;
   text-decoration: none;
   color: #444;
@@ -298,33 +298,33 @@ $card-font-color: white;
   transition: all .1s ease-in;
 }
 
-.card:hover {
+.card-image:hover {
   top: -2px;
   box-shadow: 0 4px 5px rgba(0,0,0,0.2);
 }
 
-.card article {
+.card-image article {
   padding: 20px;
 }
 
-.card .thumb {
+.card-image .thumb {
   padding-bottom: 60%;
   background-size: cover;
   background-position: center center;
 }
 
 /* typography */
-.card h1 {
+.card-image h1 {
   font-size: 20px;
   margin: 0;
   color: #333;
 }
 
-.card p { 
+.card-image p { 
   line-height: 1.4;
 }
 
-.card span {
+.card-image span {
   font-size: 12px;
   font-weight: bold;
   color: #999;
