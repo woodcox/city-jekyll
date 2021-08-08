@@ -253,7 +253,6 @@ $card-font-color: white;
   display: flex;
   flex-direction: column;
   min-height: 100%;
-  
   position: relative;
   top: 0;
   transition: all .1s ease-in;
@@ -266,6 +265,10 @@ $card-font-color: white;
 
 .card-image article {
   padding: 20px;
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 .card-image .thumb {
@@ -274,16 +277,18 @@ $card-font-color: white;
   background-position: center center;
 }
 
+.card-image p { 
+  flex: 1; /* make p grow to fill available space*/
+  line-height: 1.4;
+}
+
+
 /* typography */
 .card-image h2 {
   font-size: 20px;
   margin: 0;
-  color: #333;
+  color: #333; 
   text-align: left;
-}
-
-.card-image p { 
-  line-height: 1.4;
 }
 
 .card-image span {
