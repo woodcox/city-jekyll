@@ -2805,28 +2805,6 @@ caption {
           transition-delay: 0.3s;
 }
 
-.band {
-  width: 90%;
-  max-width: 1240px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
-  grid-gap: 20px;
-}
-
-@media only screen and (min-width: 500px) {
-  .band {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media only screen and (min-width: 850px) {
-  .band {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
-}
-
 .card-image {
   background: white;
   text-decoration: none;
