@@ -2834,6 +2834,19 @@ caption {
 
 .card-image article {
   padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .card-image .thumb {
@@ -2842,16 +2855,20 @@ caption {
   background-position: center center;
 }
 
+.card-image p {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  /* make p grow to fill available space*/
+  line-height: 1.4;
+}
+
 /* typography */
 .card-image h2 {
   font-size: 20px;
   margin: 0;
   color: #333;
   text-align: left;
-}
-
-.card-image p {
-  line-height: 1.4;
 }
 
 .card-image span {
