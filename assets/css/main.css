@@ -2558,9 +2558,9 @@ caption {
 
 .card-container {
   -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
+          transform-style: preserve-3d;
   -webkit-perspective: 1000px;
-  perspective: 1000px;
+          perspective: 1000px;
   z-index: 1;
 }
 
@@ -2574,7 +2574,7 @@ caption {
   transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
   transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
   -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
+          backface-visibility: hidden;
   text-align: center;
   padding: 0px;
   min-height: 280px;
@@ -2600,7 +2600,7 @@ caption {
   opacity: .75;
   background-color: #259cd3;
   -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
+          backface-visibility: hidden;
   border-radius: 20px;
 }
 
@@ -2622,44 +2622,44 @@ caption {
 
 .inner {
   -webkit-transform: translateY(-50%) translateZ(60px) scale(0.94);
-  transform: translateY(-50%) translateZ(60px) scale(0.94);
+          transform: translateY(-50%) translateZ(60px) scale(0.94);
   top: 50%;
   position: absolute;
   left: 0;
   width: 100%;
   padding: 2rem;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   outline: 1px solid transparent;
   -webkit-perspective: inherit;
-  perspective: inherit;
+          perspective: inherit;
   z-index: 2;
 }
 
 .card-container .back {
   -webkit-transform: rotateY(180deg);
-  transform: rotateY(180deg);
+          transform: rotateY(180deg);
   -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
+          transform-style: preserve-3d;
 }
 
 .card-container .front {
   -webkit-transform: rotateY(0deg);
-  transform: rotateY(0deg);
+          transform: rotateY(0deg);
 }
 
 .card-container:hover .back {
   -webkit-transform: rotateY(0deg);
-  transform: rotateY(0deg);
+          transform: rotateY(0deg);
   -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
+          transform-style: preserve-3d;
 }
 
 .card-container:hover .front {
   -webkit-transform: rotateY(-180deg);
-  transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
   -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
+          transform-style: preserve-3d;
 }
 
 .front .inner p {
