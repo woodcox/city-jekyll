@@ -2869,6 +2869,7 @@ caption {
   font-size: 20px;
   margin: 0;
   color: #333;
+  text-align: left;
 }
 
 .card-image p {
