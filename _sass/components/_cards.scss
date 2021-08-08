@@ -127,28 +127,29 @@ $card-font-color: white;
   }
 }
 
-.front .inner p {
-  font-size: 2rem;
-  margin-bottom: 2rem;
-  position: relative;
-  font-family: 'Sanchez';
+.front .inner {
+  p {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    position: relative;
+    font-family: 'Sanchez';
 
-  &:after {
-    content: '';
-    width: 4rem;
-    height: 2px;
-    position: absolute;
-    background: $secondary-color;
-    display: block;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    bottom: -.75rem;
+    &:after {
+      content: '';
+      width: 4rem;
+      height: 2px;
+      position: absolute;
+      background: $secondary-color;
+      display: block;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      bottom: -.75rem;
+    }
   }
-}
-
-.front .inner span {
-  color: rgba($card-font-color, 0.9);
+  span {
+    color: rgba($card-font-color, 0.9);
+  }
 }
 
 // Profile Card
