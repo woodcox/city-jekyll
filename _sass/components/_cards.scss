@@ -11,7 +11,7 @@ $card-font-color: white;
 
 .card {
   padding: 20px;
-  height: auto;
+  height: 100%;
   min-height: 200px;
   @include flex-config(column nowrap, space-between);
   border-radius: 20px;
