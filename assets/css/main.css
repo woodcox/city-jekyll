@@ -2882,7 +2882,7 @@ caption {
   margin: 0;
   color: #cdcdcd;
   text-align: left;
-  text-stroke: 2px;
+  text-stroke: 2px #f19426;
 }
 
 .card-image span {
