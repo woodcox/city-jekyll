@@ -2880,14 +2880,14 @@ caption {
 .card-image h2 {
   font-size: 20px;
   margin: 0;
-  color: #fafafa;
+  color: #cdcdcd;
   text-align: left;
 }
 
 .card-image span {
   font-size: 12px;
   font-weight: bold;
-  color: #b4b4b4;
+  color: #fafafa;
   text-transform: uppercase;
   letter-spacing: .05em;
   margin: 2em 0 0 0;
