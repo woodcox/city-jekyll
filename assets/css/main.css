@@ -2858,6 +2858,8 @@ caption {
   padding-bottom: 60%;
   background-size: cover;
   background-position: center center;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
 }
 
 .card-image p {
