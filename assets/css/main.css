@@ -1867,9 +1867,8 @@ dd {
 }
 
 .align-stretch {
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
 }
 
 .screen-reader-text {
