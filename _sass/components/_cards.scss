@@ -294,13 +294,9 @@ $card-font-color: white;
   span {
     font-size: 12px;
     font-weight: bold;
-    color: blue;
+    color: darken($accent-color, 10%);
     text-transform: uppercase;
     letter-spacing: .05em;
     margin: 2em 0 0 0;
-    
-    &:hover {
-      text-decoration: none;
-    }
   }
 }
