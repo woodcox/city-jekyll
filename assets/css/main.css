@@ -2824,7 +2824,6 @@ caption {
   -webkit-box-direction: normal;
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
-  min-height: 100%;
   position: relative;
   top: 0;
   -webkit-transition: all .5s ease-in;
@@ -2873,7 +2872,6 @@ caption {
           flex: 1;
   /* make p grow to fill available space*/
   line-height: 1.4;
-  height: 100%;
 }
 
 .card-image h2 {
