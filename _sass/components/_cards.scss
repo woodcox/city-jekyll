@@ -251,6 +251,7 @@ $card-font-color: white;
   color: #444;
   box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
+  border: solid 1px $primary-color;
   @include flex-config(column nowrap);
   min-height: 100%;
   position: relative;
