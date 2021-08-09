@@ -1429,6 +1429,17 @@ h1:after {
   bottom: -.75rem;
 }
 
+h1.stroke {
+  text-shadow: 3px  3px 0 #000, -1px -1px 0 #000,   1px -1px 0 #000, -1px  1px 0 #000, 1px  1px 0 #000;
+}
+
+@supports (-webkit-text-stroke: 1px #404040) {
+  h1 {
+    -webkit-text-stroke: 1px #404040;
+    -webkit-text-fill-color: white;
+  }
+}
+
 h1:not(:first-child),
 h2:not(:first-child),
 h3:not(:first-child) {
