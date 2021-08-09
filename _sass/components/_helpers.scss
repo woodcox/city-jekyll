@@ -113,6 +113,10 @@
   align-items: center;
 }
 
+.align-stretch {
+  align-items: stretch;
+}
+
 // Screen reader text for accessibility
 .screen-reader-text {
   clip: rect(1px, 1px, 1px, 1px);
