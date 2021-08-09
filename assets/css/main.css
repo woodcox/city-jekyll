@@ -1867,8 +1867,9 @@ dd {
 }
 
 .align-stretch {
-  -ms-flex-line-pack: stretch;
-      align-content: stretch;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
 }
 
 .screen-reader-text {
@@ -2824,9 +2825,7 @@ caption {
   -webkit-box-direction: normal;
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
-  height: -moz-available;
-  height: stretch;
-  height: -webkit-fill-available;
+  height: 100%;
   position: relative;
   top: 0;
   -webkit-transition: all .5s ease-in;
