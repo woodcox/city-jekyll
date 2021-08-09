@@ -70,6 +70,22 @@ h1 {
   }
 }
 
+h1.stroke {
+  text-shadow:
+     3px  3px 0 #000,
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000;
+}
+
+@supports (-webkit-text-stroke: 1px $font-color) {
+  h1 {
+    -webkit-text-stroke: 1px $font-color;
+    -webkit-text-fill-color: white;
+  }
+}
+
 // Increased margin on additional headings
 h1:not(:first-child),
 h2:not(:first-child),
