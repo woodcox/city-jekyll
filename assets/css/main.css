@@ -2881,14 +2881,10 @@ caption {
 .card-image span {
   font-size: 12px;
   font-weight: bold;
-  color: blue;
+  color: #b4b4b4;
   text-transform: uppercase;
   letter-spacing: .05em;
   margin: 2em 0 0 0;
-}
-
-.card-image span:hover {
-  text-decoration: none;
 }
 
 /* Preloader screen */
