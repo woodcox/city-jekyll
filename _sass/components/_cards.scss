@@ -287,14 +287,14 @@ $card-font-color: white;
   h2 {
     font-size: 20px;
     margin: 0;
-    color: $almost-white;
+    color: $accent-color;
     text-align: left;
   }
 
   span {
     font-size: 12px;
     font-weight: bold;
-    color: darken($accent-color, 10%);
+    color: $almost-white;
     text-transform: uppercase;
     letter-spacing: .05em;
     margin: 2em 0 0 0;
