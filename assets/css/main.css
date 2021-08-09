@@ -2865,6 +2865,7 @@ caption {
           flex: 1;
   /* make p grow to fill available space*/
   line-height: 1.4;
+  height: 100%;
 }
 
 .card-image h2 {
