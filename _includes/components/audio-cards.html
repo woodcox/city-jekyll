@@ -7,6 +7,6 @@
         <p>{{ talk.pubDate | date: "%-d %b %Y - %I:%M %p" }}</p>
         <span>{{ talk.author | split: "(" | last | remove: ")" }}</span>
       </article>
-    </div>
-  </a>{% endfor %}
+    </a>
+  </div>{% endfor %}
 </div>
