@@ -1,68 +1,135 @@
 bible:
   - book: Genesis
+    color: '#3cb44b' #green
   - book: Exodus
+    color: '#f58231' #orange
   - book: Leviticus
+    color: '#e6194B' #red
   - book: Numbers
+    color: '#42d4f4' #cyan
   - book: Deuteronomy
+    color: '#bfef45' #lime
   - book: Joshua
+    color: '#4363d8' #blue
   - book: Judges
+    color: '#e6194B' #red
   - book: Ruth
+    color: '#f032e6' #magenta
   - book: 1 Samuel
+    color: '#911eb4' #purple
   - book: 2 Samuel
+    color: '#bfef45' #lime
   - book: 1 Kings
+    color: '#469990' #teal
   - book: 2 Kings
+    color: '#42d4f4' #cyan
   - book: 1 Chronicles
+    color: '#800000' #maroon
   - book: 2 Chronicles
+    color: '#808000' #olive
   - book: Ezra
+    color: '#4363d8' #blue
   - book: Nehemiah
+    color: '#911eb4' #purple
   - book: Esther
+    color: '#000075' #navy
   - book: Job
+    color: '#808000' #olive
   - book: Psalms
+    color: '#3cb44b' #green
   - book: Proverbs
+    color: '#f032e6' #magenta
   - book: Ecclesiastes
+    color: '#e6194B' #red
   - book: Song of Solomon
+    color: '#911eb4' #purple
   - book: Isaiah
+    color: '#f58231' #orange
   - book: Jeremiah
+    color: '#3cb44b' #green
   - book: Lamentations
+    color: '#4363d8' #blue
   - book: Ezekiel
+    color: '#000075' #navy
   - book: Daniel
+    color: '#4363d8' #blue
   - book: Hosea
+    color: '#911eb4' #purple
   - book: Joel
+    color: '#800000' #maroon
   - book: Amos
+    color: '#f032e6' #magenta
   - book: Obadiah
+    color: '#469990' #teal
   - book: Jonah
+    color: '#469990' #teal
   - book: Micah
+    color: '#42d4f4' #cyan
   - book: Nahum
+    color: '#800000' #maroon
   - book: Habakkuk
+    color: '#808000' #olive
   - book: Zephaniah
+    color: '#000075' #navy
   - book: Haggai
+    color: '#f032e6' #magenta
   - book: Zechariah
+    color: '#808000' #olive
   - book: Malachi
+    color: '#000075' #navy
   - book: Matthew
+    color: '#e6194B' #red
   - book: Mark
+    color: '#3cb44b' #green
   - book: Luke
+    color: '#4363d8' #blue
   - book: John
+    color: '#f58231' #orange
   - book: Acts
+    color: '#f032e6' #magenta
   - book: Romans
+    color: '#000075' #navy
   - book: 1 Corinthians
+    color: '#911eb4' #purple
   - book: 2 Corinthians
+    color: '#42d4f4' #cyan
   - book: Galatians
+    color: '#bfef45' #lime
   - book: Ephesians
+    color: '#f032e6' #magenta
   - book: Philippians
+    color: '#e6194B' #red
   - book: Colossians
+    color: '#f58231' #orange
   - book: 1 Thessalonians
+    color: '#808000' #olive
   - book: 2 Thessalonians
+    color: '#3cb44b' #green
   - book: 1 Timothy
+    color: '#469990' #teal
   - book: 2 Timothy
+    color: '#000075' #navy
   - book: Titus
+    color: '#4363d8' #blue
   - book: Philemon
+    color: '#4363d8' #blue
   - book: Hebrews
+    color: '#e6194B' #red
   - book: James
+    color: '#800000' #maroon
   - book: 1 Peter
+    color: '#911eb4' #purple
   - book: 2 Peter
+    color: '#469990' #teal
   - book: 1 John
+    color: '#f58231' #orange
   - book: 2 John
+    color: '#800000' #maroon
   - book: 3 John
+    color: '#e6194B' #red
   - book: Jude
+    color: '#808000' #olive
   - book: Revelation
+    color: '#3cb44b' #green
   - book: NULL
+    color: '#911eb4' #purple
