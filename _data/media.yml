@@ -1,67 +1,68 @@
-book:
- - Genesis
- - Exodus
- - Leviticus
-Numbers
-Deuteronomy
-Joshua
-Judges
-Ruth
-1 Samuel
-2 Samuel
-1 Kings
-2 Kings
-1 Chronicles
-2 Chronicles
-Ezra
-Nehemiah
-Esther
-Job
-Psalms
-Proverbs
-Ecclesiastes
-Song of Solomon
-Isaiah
-Jeremiah
-Lamentations
-Ezekiel
-Daniel
-Hosea
-Joel
-Amos
-Obadiah
-Jonah
-Micah
-Nahum
-Habakkuk
-Zephaniah
-Haggai
-Zechariah
-Malachi
-Matthew
-Mark
-Luke
-John
-Acts
-Romans
-1 Corinthians
-2 Corinthians
-Galatians
-Ephesians
-Philippians
-Colossians
-1 Thessalonians
-2 Thessalonians
-1 Timothy
-2 Timothy
-Titus
-Philemon
-Hebrews
-James
-1 Peter
-2 Peter
-1 John
-2 John
-3 John
-Jude
-Revelation
+bible:
+  - book: Genesis
+  - book: Exodus
+  - book: Leviticus
+  - book: Numbers
+  - book: Deuteronomy
+  - book: Joshua
+  - book: Judges
+  - book: Ruth
+  - book: 1 Samuel
+  - book: 2 Samuel
+  - book: 1 Kings
+  - book: 2 Kings
+  - book: 1 Chronicles
+  - book: 2 Chronicles
+  - book: Ezra
+  - book: Nehemiah
+  - book: Esther
+  - book: Job
+  - book: Psalms
+  - book: Proverbs
+  - book: Ecclesiastes
+  - book: Song of Solomon
+  - book: Isaiah
+  - book: Jeremiah
+  - book: Lamentations
+  - book: Ezekiel
+  - book: Daniel
+  - book: Hosea
+  - book: Joel
+  - book: Amos
+  - book: Obadiah
+  - book: Jonah
+  - book: Micah
+  - book: Nahum
+  - book: Habakkuk
+  - book: Zephaniah
+  - book: Haggai
+  - book: Zechariah
+  - book: Malachi
+  - book: Matthew
+  - book: Mark
+  - book: Luke
+  - book: John
+  - book: Acts
+  - book: Romans
+  - book: 1 Corinthians
+  - book: 2 Corinthians
+  - book: Galatians
+  - book: Ephesians
+  - book: Philippians
+  - book: Colossians
+  - book: 1 Thessalonians
+  - book: 2 Thessalonians
+  - book: 1 Timothy
+  - book: 2 Timothy
+  - book: Titus
+  - book: Philemon
+  - book: Hebrews
+  - book: James
+  - book: 1 Peter
+  - book: 2 Peter
+  - book: 1 John
+  - book: 2 John
+  - book: 3 John
+  - book: Jude
+  - book: Revelation
+  - book: NULL
