@@ -1,0 +1,12 @@
+<div class="flex-row justify-center align-stretch">{% for leader in site.data.contact.elders %}
+  <div class="flex-small sm-half flex-medium med-one-third">
+    <a class="card-image">
+      <div class="thumb" style="background-image: url({{ leader.photo }});"></div>
+      <article>
+        <h2>{{ leader.name }}</h2>
+        <p>{{ leader.info }}</p>
+        <span>{{ leader.role }}</span>
+      </article>
+    </div>
+  </a>{% endfor %}
+</div>
