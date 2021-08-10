@@ -1,11 +1,11 @@
-<div class="flex-row justify-center align-stretch">{% for profile in site.data.contact.elders %}
+<div class="flex-row justify-center align-stretch">{% for leader in site.data.contact.elders %}
   <div class="flex-small sm-half flex-medium med-one-third">
     <div class="card-image">
-      <div class="thumb" style="background-image: url({{ profiles.photo }});"></div>
+      <div class="thumb" style="background-image: url({{ leader.photo }});"></div>
       <article>
-        <h2>{{ profiles.name }}</h2>
-        <p>{{ profiles.info }}</p>
-        <span> {{ profiles.role }}</span>
+        <h2>{{ leader.name }}</h2>
+        <p>{{ leader.info }}</p>
+        <span> {{ leader.role }}</span>
       </article>
     </div>
   </div>{% endfor %}
