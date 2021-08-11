@@ -29,11 +29,6 @@ $margin-bottom: 1rem;
   @include flex-config(row wrap);
 }
 
-.flex-row-nowrap {
-  @extend .flex-row;
-  flex-flow: row nowrap;
-}
-
 // Flex column
 .flex-col {
   @include flex-config(column nowrap);
