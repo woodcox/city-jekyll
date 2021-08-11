@@ -54,14 +54,14 @@ const swiper = new Swiper('.swiper-container', {
 });
 
 function goPrevious() {
-  document.getElementById('carousel-snap').scrollBy({ 
+  document.getElementById('flex-row-carousel').scrollBy({ 
     right: -40,
     behavior: 'smooth' 
   });
 }
 
 function goNext() {
-  document.getElementById('carousel-snap').scrollBy({ 
+  document.getElementById('flex-row-carousel').scrollBy({ 
     right: 40,
     behavior: 'smooth' 
   });
