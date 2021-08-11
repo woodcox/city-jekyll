@@ -18,14 +18,14 @@ const swiper = new Swiper('.swiper-container', {
   direction: 'horizontal',
   loop: true,
   // Pagination
-  slidesPerView: 2,
+  slidesPerView: 1,
   spaceBetween: 10,
   slidesPerGroup: 1,
   // Responsive breakpoints
   breakpoints: {
     // when window width is >= 600px
     600: {
-      slidesPerView: 3,
+      slidesPerView: 2,
       spaceBetween: 10,
       slidesPerGroup: 1
     },
@@ -33,13 +33,13 @@ const swiper = new Swiper('.swiper-container', {
     800: {
       slidesPerView: 3,
       spaceBetween: 10,
-      slidesPerGroup: 2
+      slidesPerGroup: 3
     },
     // when window width is >= 1000px
     1000: {
       slidesPerView: 4,
       spaceBetween: 10,
-      slidesPerGroup: 2
+      slidesPerGroup: 4
     }
   },
   pagination: {
