@@ -2759,9 +2759,23 @@ caption {
 }
 
 .card-image .thumb {
-  padding-bottom: 60%;
+  padding-bottom: 15%;
+  padding-top: 15%;
   background-size: cover;
   background-position: center center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
 }
