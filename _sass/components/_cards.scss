@@ -194,9 +194,11 @@ $card-font-color: white;
   }
 
   .thumb {
-    padding-bottom: 60%;
+    padding-bottom: 15%;
+    padding-top: 15%;
     background-size: cover;
     background-position: center center;
+    @include flex-config(column nowrap, center, center);
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
   }
