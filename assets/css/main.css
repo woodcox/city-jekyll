@@ -1610,12 +1610,12 @@ dd {
   margin-right: 0.5rem;
 }
 
-.flex-row {
+.flex-row, .flex-row-nowrap {
   margin-left: -0.5rem;
   margin-right: -0.5rem;
 }
 
-.flex-row {
+.flex-row, .flex-row-nowrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1623,6 +1623,13 @@ dd {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
+}
+
+.flex-row-nowrap {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
 }
 
 .flex-col {
