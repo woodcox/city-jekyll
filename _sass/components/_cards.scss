@@ -6,8 +6,13 @@ $card-font-color: white;
   @extend .flex-row;
   flex-flow: row nowrap;
   scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
   overflow-x: scroll;
   scroll-behaviour: smooth;
+}
+
+.carousel-snap {
+  scroll-snap-align: start;  // scroll snap child element of carousel
 }
 
 // Gradient Cards
