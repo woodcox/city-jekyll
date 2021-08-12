@@ -63,7 +63,7 @@ button.onclick = function () {
   scrollAmount = 0;
   var slideTimer = setInterval(function(){
     container.scrollLeft += 10;
-    scrollAmount += 10;
+    scrollAmount += 30;
     if(scrollAmount >= 100){
       window.clearInterval(slideTimer);
     }
@@ -76,7 +76,7 @@ back.onclick = function () {
   scrollAmount = 0;
   var slideTimer = setInterval(function(){
     container.scrollLeft -= 10;
-    scrollAmount += 10;
+    scrollAmount += 30;
     if(scrollAmount >= 100){
       window.clearInterval(slideTimer);
     }
