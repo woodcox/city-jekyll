@@ -5,6 +5,7 @@ $card-font-color: white;
 .flex-row-carousel {
   @extend .flex-row;
   flex-flow: row nowrap;
+  position: relative;
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
   overflow-x: scroll;
