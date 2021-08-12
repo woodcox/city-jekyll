@@ -2557,6 +2557,7 @@ caption {
   -webkit-box-direction: normal;
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
+  position: relative;
   -webkit-scroll-snap-type: x mandatory;
       -ms-scroll-snap-type: x mandatory;
           scroll-snap-type: x mandatory;
