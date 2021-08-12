@@ -53,6 +53,10 @@ const swiper = new Swiper('.swiper-container', {
   },
 });
 
+//======================================
+// Scroll slider left or right
+//======================================
+
 function goPrevious() {
   document.getElementById('flex-row-carousel').scrollBy({ 
     right: -40,
@@ -66,6 +70,27 @@ function goNext() {
     behavior: 'smooth' 
   });
 }
+
+
+var left = 0;
+
+const handleScroll = ({
+  target
+}) => {
+  if (target.hasAttribute(selectors.scrollBack)) {
+    left = left - 100;
+    scrollContainer.scrollTo({
+      left: left - 100,
+      behavior: 'smooth',
+    });
+  } else {
+    left = left + 100;
+    scrollContainer.scrollTo({
+      left: left + 100,
+      behavior: 'smooth',
+    });
+  }
+};
 
 //======================================
 // Logo svg color toggle
