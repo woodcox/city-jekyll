@@ -2,7 +2,7 @@ $card-font-color: white;
 
 //Carousel
 
-.mediaSlider {
+.flex-row-slider {
   @extend .flex-row;
   flex-flow: row nowrap;
   position: relative;
