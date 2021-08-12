@@ -1,6 +1,6 @@
 <div class="flex-row-carousel align-stretch" id="carouselScrollContainer" data-snap-slider="slidercontainer">{% for talk in site.data.sermons.items %}
   <div class="flex-tiny ty-half flex-medium med-one-third flex-large lg-one-fourth">
-    <a class="card-image carousel-snap" href="{{ talk.enclosure.link }}">
+    <a class="card-image carousel-snap data-snap-slider-slides" href="{{ talk.enclosure.link }}">
       <div class="thumb" style="background: radial-gradient({{ site.colors.cityblue }}, {{ site.colors.citygreen }});">
         <h2 class="thumb-title">{% assign media = talk.title | split: " - " %}{{ media[1] | slice: 0, 5 }}</h2>
       </div>
