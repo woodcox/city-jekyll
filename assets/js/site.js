@@ -58,15 +58,15 @@ const swiper = new Swiper('.swiper-container', {
 //======================================
 
 function dataGoBack() {
-  document.getElementById('data-scroll-container').scrollBy({ 
-    right: -40,
+  document.getElementById('data-scroll-container').scrollLeft({ 
+    left: 40,
     behavior: 'smooth' 
   });
 }
 
 function dataGoNext() {
-  document.getElementById('data-scroll-container').scrollBy({ 
-    right: 40,
+  document.getElementById('data-scroll-container').scrollLeft({ 
+    left: -40,
     behavior: 'smooth' 
   });
 }
