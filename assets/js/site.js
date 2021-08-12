@@ -61,8 +61,8 @@ const swiper = new Swiper('.swiper-container', {
 //======================================
 
 // Create a new slider.
-const slider = new SnapSlider('.flex-row-carousel', {
-  id: 'mediaSlider',
+const slider = new SnapSlider('.flex-row-slider', {
+  id: '.media-slider-link',
   nav: '.slider-nav',
   start: 'first',
 });
