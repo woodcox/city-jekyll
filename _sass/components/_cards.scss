@@ -216,18 +216,18 @@ $card-font-color: white;
 
   /* typography */
   h2 {
-    font-size: 20px;
+    font-size: 1.25rem;
     margin: 0;
     color: $accent-color;
     text-align: left;
   }
 
   span {
-    font-size: 12px;
+    font-size: 0.75rem;
     font-weight: bold;
     color: $almost-white;
     text-transform: uppercase;
     letter-spacing: .05em;
-    margin: 2em 0 0 0;
+    margin: 1.5rem 0 0 0;
   }
 }
