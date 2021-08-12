@@ -1619,12 +1619,12 @@ dd {
   margin-right: 0.5rem;
 }
 
-.flex-row, .mediaSlider {
+.flex-row, .flex-row-slider {
   margin-left: -0.5rem;
   margin-right: -0.5rem;
 }
 
-.flex-row, .mediaSlider {
+.flex-row, .flex-row-slider {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2552,7 +2552,7 @@ caption {
   border-bottom-left-radius: 25px;
 }
 
-.mediaSlider {
+.flex-row-slider {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-flow: row nowrap;
