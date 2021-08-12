@@ -1,4 +1,4 @@
-<div class="flex-row-carousel align-stretch">{% for talk in site.data.sermons.items %}
+<div class="flex-row-carousel align-stretch" id="data-scroll-container">{% for talk in site.data.sermons.items %}
   <div class="flex-tiny ty-half flex-medium med-one-third flex-large lg-one-fourth">
     <a class="card-image carousel-snap" href="{{ talk.enclosure.link }}">
       <div class="thumb" style="background: radial-gradient({{ site.colors.cityblue }}, {{ site.colors.citygreen }});">
@@ -12,5 +12,5 @@
     </a>
   </div>{% endfor %}
 </div>
-<button onClick="goPrevious()">previous</button>
-<button onClick="goNext()">next</button>
+<button data-back data-scroll>previous</button>
+<button data-next data-scroll>next</button>
