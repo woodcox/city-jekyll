@@ -2791,6 +2791,8 @@ caption {
 
 .card-image .thumb-title {
   font-family: Excelsiorama;
+  color: white;
+  font-size: 2.5em;
 }
 
 .card-image p {
