@@ -1,6 +1,6 @@
 // Media query for mobile first layout
-@mixin xsmall-breakpoint {
-  @media (min-width: #{$mobile}) {
+@mixin tiny-breakpoint {
+  @media (min-width: #{$tiny}) {
     @content;
   }
 }
