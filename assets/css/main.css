@@ -2523,7 +2523,12 @@ caption {
   -webkit-box-direction: normal;
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
+  -webkit-scroll-snap-type: x mandatory;
+      -ms-scroll-snap-type: x mandatory;
+          scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
   overflow-x: scroll;
+  scroll-behaviour: smooth;
 }
 
 .carousel-snap {
