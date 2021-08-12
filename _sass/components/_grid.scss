@@ -68,6 +68,12 @@ $margin-bottom: 1rem;
 
 /* Small screen breakpoint */
 
+@include tiny-breakpoint {
+  @include gridbreak(tiny, ty);
+}
+
+/* Small screen breakpoint */
+
 @include small-breakpoint {
   @include gridbreak(small, sm);
 }
