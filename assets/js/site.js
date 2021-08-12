@@ -62,8 +62,8 @@ const swiper = new Swiper('.swiper-container', {
 
 // Create a new slider.
 const slider = new SnapSlider('.slidercontainer', {
-  id: 'example-slider',
-  nav: '.example-nav',
+  id: 'example',
+  nav: '.slider-nav',
   start: 'first',
 });
 
