@@ -2789,6 +2789,10 @@ caption {
   border-top-left-radius: 20px;
 }
 
+.card-image .thumb-title {
+  font-family: Excelsiorama;
+}
+
 .card-image p {
   -webkit-box-flex: 1;
       -ms-flex: 1;
