@@ -1,10 +1,6 @@
 ---
 ---
-  
-SnapSlider.debug('slider-id');
-SnapSlider.debug('.slider-class');
-SnapSlider.debug(element);
-SnapSlider.debug(elements);
+
 
 //=======================================
 // Initialize lozad library
