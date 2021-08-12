@@ -1,4 +1,4 @@
-<div class="flex-row-carousel align-stretch" id="carouselScrollContainer">{% for talk in site.data.sermons.items %}
+<div class="flex-row-carousel align-stretch" id="carouselScrollContainer" data-snap-slider="slidercontainer">{% for talk in site.data.sermons.items %}
   <div class="flex-tiny ty-half flex-medium med-one-third flex-large lg-one-fourth">
     <a class="card-image carousel-snap" href="{{ talk.enclosure.link }}">
       <div class="thumb" style="background: radial-gradient({{ site.colors.cityblue }}, {{ site.colors.citygreen }});">
@@ -12,5 +12,11 @@
     </a>
   </div>{% endfor %}
 </div>
+
+<ul class="slider-nav" data-snap-slider-nav="slidercontainer">
+  <li><button type="button">Previous</button></li>
+  <li><button type="button">Next</button></li>
+</ul>
+
 <button id="slideGoBack" type="button">previous</button>
 <button id="slideGoNext" type="button">next</button>
