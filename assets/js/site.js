@@ -57,14 +57,14 @@ const swiper = new Swiper('.swiper-container', {
 // Scroll slider left or right
 //======================================
 
-function data-goBack() {
+function dataGoBack() {
   document.getElementById('data-scroll-container').scrollBy({ 
     right: -40,
     behavior: 'smooth' 
   });
 }
 
-function data-goNext() {
+function dataGoNext() {
   document.getElementById('data-scroll-container').scrollBy({ 
     right: 40,
     behavior: 'smooth' 
