@@ -64,36 +64,6 @@ const slider = new SnapSlider('.flex-row-carousel', {
   start: 'first',
 });
 
-//======================================
-// Scroll slider left or right
-//======================================
-
-var button = document.getElementById('slideGoNext');
-button.onclick = function () {
-  var container = document.getElementById('carouselScrollContainer');
-  scrollAmount = 0;
-  var slideTimer = setInterval(function(){
-    container.scrollLeft += 10;
-    scrollAmount += 30;
-    if(scrollAmount >= 100){
-      window.clearInterval(slideTimer);
-    }
-  }, 25);
-};
-
-var back = document.getElementById('slideGoBack');
-back.onclick = function () {
-  var container = document.getElementById('carouselScrollContainer');
-  scrollAmount = 0;
-  var slideTimer = setInterval(function(){
-    container.scrollLeft -= 10;
-    scrollAmount += 30;
-    if(scrollAmount >= 100){
-      window.clearInterval(slideTimer);
-    }
-  }, 25);
-};
-
 
 //======================================
 // Logo svg color toggle
