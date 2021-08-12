@@ -57,6 +57,17 @@ const swiper = new Swiper('.swiper-container', {
 });
 
 //======================================
+// Snap slider
+//======================================
+
+// Create a new slider.
+const slider = new SnapSlider('.slidercontainer', {
+  id: 'example-slider',
+  nav: '.example-nav',
+  start: 'first',
+});
+
+//======================================
 // Scroll slider left or right
 //======================================
 
