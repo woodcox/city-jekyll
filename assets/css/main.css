@@ -2838,19 +2838,19 @@ caption {
 }
 
 .card-image h2 {
-  font-size: 20px;
+  font-size: 1.25rem;
   margin: 0;
   color: #cdcdcd;
   text-align: left;
 }
 
 .card-image span {
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: bold;
   color: #fafafa;
   text-transform: uppercase;
   letter-spacing: .05em;
-  margin: 2em 0 0 0;
+  margin: 1.5rem 0 0 0;
 }
 
 /* Preloader screen */
