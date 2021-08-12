@@ -1,4 +1,4 @@
-<div class="flex-row-carousel align-stretch" data-snap-slider="mediaSlider">{% for talk in site.data.sermons.items %}
+<div class="mediaSlider align-stretch" data-snap-slider="mediaSlider">{% for talk in site.data.sermons.items %}
   <div class="flex-tiny ty-half flex-medium med-one-third flex-large lg-one-fourth">
     <a class="card-image carousel-snap data-snap-slider-slides" href="{{ talk.enclosure.link }}">
       <div class="thumb" style="background: radial-gradient({{ site.colors.cityblue }}, {{ site.colors.citygreen }});">
