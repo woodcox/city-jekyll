@@ -75,11 +75,11 @@ function goNext() {
 const selectors = {
     scrollContainer: '[data-scroll-container]',
     scrollTrigger: '[data-scroll-trigger]',
-    scrollNext: 'data-next',
-    scrollBack: 'data-back',
+    scrollNext: '[data-next]',
+    scrollBack: '[data-back]',
 };
 
-const scrollTrigger = [...document.querySelectorAll(selectors.scrollTrigger)];
+const scrollTrigger = document.querySelectorAll(selectors.scrollTrigger);
 const scrollContainer = document.querySelector(selectors.scrollContainer);
 
 var left = 0;
