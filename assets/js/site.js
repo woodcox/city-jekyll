@@ -60,32 +60,31 @@ const swiper = new Swiper('.swiper-container', {
 // Scroll slider left or right
 //======================================
 
-
 var button = document.getElementById('slideGoNext');
 button.onclick = function () {
-    var container = document.getElementById('carouselScrollContainer');
-    scrollAmount = 0;
-    var slideTimer = setInterval(function(){
-      container.scrollLeft += 10;
-      scrollAmount += 10;
-      if(scrollAmount >= 100){
-        window.clearInterval(slideTimer);
-      }
-    }, 25);
+  var container = document.getElementById('carouselScrollContainer');
+  scrollAmount = 0;
+  var slideTimer = setInterval(function(){
+    container.scrollLeft += 10;
+    scrollAmount += 10;
+    if(scrollAmount >= 100){
+      window.clearInterval(slideTimer);
+    }
+  }, 25);
 };
 
-            var back = document.getElementById('slideGoBack');
-            back.onclick = function () {
-                var container = document.getElementById('carouselScrollContainer');
-                scrollAmount = 0;
-                var slideTimer = setInterval(function(){
-                    container.scrollLeft -= 10;
-                    scrollAmount += 10;
-                    if(scrollAmount >= 100){
-                        window.clearInterval(slideTimer);
-                    }
-                }, 25);
-            };
+var back = document.getElementById('slideGoBack');
+back.onclick = function () {
+  var container = document.getElementById('carouselScrollContainer');
+  scrollAmount = 0;
+  var slideTimer = setInterval(function(){
+    container.scrollLeft -= 10;
+    scrollAmount += 10;
+    if(scrollAmount >= 100){
+      window.clearInterval(slideTimer);
+    }
+  }, 25);
+};
 
 
 //======================================
