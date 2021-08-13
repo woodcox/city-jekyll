@@ -1653,7 +1653,7 @@ dd {
 }
 
 /* Small screen breakpoint */
-@media (min-width: 25em) {
+@media (min-width: 12.5em) {
   .flex-tiny {
     -webkit-box-flex: 1;
         -ms-flex: 1;
