@@ -8,7 +8,7 @@
 // Containers
 //==============================================================================
 
-$tiny: 12.5em !default; //200px
+$tiny: 12.5em !default; // 200px
 $x-small: 37.5em !default; // 600px
 $small: 50em !default; // 800px
 $medium: 62.5em !default; // 1000px
@@ -18,6 +18,7 @@ $large: 75em !default; // 1200px
 // Breakpoints
 //==============================================================================
 
+$watch: $tiny !default;
 $mobile: $x-small !default;
 $tablet: $small !default;
 $desktop: $medium !default;
