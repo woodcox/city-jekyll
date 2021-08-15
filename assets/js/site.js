@@ -62,6 +62,8 @@ const slider = new SnapSlider('.flex-row-slider', {
   id: 'media-slider-link',
   nav: '.slider-nav',
   start: 'first',
+  next: '&#10095;',
+  prev: '&#10094;',
 });
 
 
