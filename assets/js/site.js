@@ -14,51 +14,8 @@ lozad('.lozad', {
   }
 }).observe()
 
-//=======================================
-// Initialize Swiper
-//=======================================
-const swiper = new Swiper('.swiper-container', {
-  // Optional parameters
-  direction: 'horizontal',
-  loop: true,
-  // Pagination
-  slidesPerView: 1,
-  spaceBetween: 10,
-  slidesPerGroup: 1,
-  // Responsive breakpoints
-  breakpoints: {
-    // when window width is >= 600px
-    600: {
-      slidesPerView: 2,
-      spaceBetween: 10,
-      slidesPerGroup: 1
-    },
-    // when window width is >= 800px
-    800: {
-      slidesPerView: 3,
-      spaceBetween: 10,
-      slidesPerGroup: 3
-    },
-    // when window width is >= 1000px
-    1000: {
-      slidesPerView: 4,
-      spaceBetween: 10,
-      slidesPerGroup: 4
-    }
-  },
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-});
-
 //======================================
-// Snap slider
+// Initialize Snap slider
 //======================================
 
 // Create a new slider.
@@ -119,9 +76,7 @@ observerLogo.observe(logoTarget);
 // Smooth scroll (plus polyfill)
 //=====================================================
 
-document.querySelectorAll('.second-nav ul a').scrollIntoView({ behavior: 'smooth' });
-
-const links = document.querySelectorAll(".second-nav ul a");
+const links = document.querySelectorAll("nav ul a");
 
 for (const link of links) {
   link.addEventListener("click", clickHandler);
@@ -132,7 +87,7 @@ function clickHandler(e) {
   const href = this.getAttribute("href");
   const offsetTop = document.querySelector(href).offsetTop;
 
-  scroll({
+  scrollIntoView({
     top: offsetTop,
     behavior: "smooth"
   });
