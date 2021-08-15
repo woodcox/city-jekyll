@@ -195,19 +195,12 @@ $card-font-color: white;
   }
 
   .thumb {
-    padding-bottom: 15%;
-    padding-top: 15%;
+    padding-bottom: 60%;
     background-size: cover;
     background-position: center center;
     @include flex-config(column nowrap, center, center);
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
-  }
-  
-  .thumb-title {
-    font-family: Excelsiorama;
-    color: $almost-white;
-    font-size: 2.5em
   }
 
   p { 
@@ -230,5 +223,20 @@ $card-font-color: white;
     text-transform: uppercase;
     letter-spacing: .05em;
     margin: 1.5rem 0 0 0;
+  }
+}
+
+.audio-card {
+  @extend .image-card;
+  .card-image {
+    .thumb {
+      padding-bottom: 15%;
+      padding-top: 15%;
+    }
+    .thumb-title {
+      font-family: Excelsiorama;
+      color: $almost-white;
+      font-size: 2.5em
+    }
   }
 }
