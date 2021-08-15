@@ -2753,7 +2753,7 @@ caption {
   color: rgba(255, 255, 255, 0.9);
 }
 
-.card-image {
+.card-image, .audio-card {
   background: black;
   text-decoration: none;
   color: #cdcdcd;
@@ -2776,7 +2776,7 @@ caption {
   /* typography */
 }
 
-.card-image:hover {
+.card-image:hover, .audio-card:hover {
   top: -2px;
   -webkit-box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
           box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
@@ -2785,7 +2785,7 @@ caption {
           transform: scale(1.03);
 }
 
-.card-image article {
+.card-image article, .audio-card article {
   padding: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2802,9 +2802,8 @@ caption {
           flex: 1;
 }
 
-.card-image .thumb {
-  padding-bottom: 15%;
-  padding-top: 15%;
+.card-image .thumb, .audio-card .thumb {
+  padding-bottom: 60%;
   background-size: cover;
   background-position: center center;
   display: -webkit-box;
@@ -2824,13 +2823,7 @@ caption {
   border-top-left-radius: 20px;
 }
 
-.card-image .thumb-title {
-  font-family: Excelsiorama;
-  color: #fafafa;
-  font-size: 2.5em;
-}
-
-.card-image p {
+.card-image p, .audio-card p {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -2838,20 +2831,31 @@ caption {
   line-height: 1.4;
 }
 
-.card-image h2 {
+.card-image h2, .audio-card h2 {
   font-size: 1.25rem;
   margin: 0;
   color: #cdcdcd;
   text-align: left;
 }
 
-.card-image span {
+.card-image span, .audio-card span {
   font-size: 0.75rem;
   font-weight: bold;
   color: #fafafa;
   text-transform: uppercase;
   letter-spacing: .05em;
   margin: 1.5rem 0 0 0;
+}
+
+.audio-card .thumb {
+  padding-bottom: 15%;
+  padding-top: 15%;
+}
+
+.audio-card .thumb-title {
+  font-family: Excelsiorama;
+  color: #fafafa;
+  font-size: 2.5em;
 }
 
 /* Preloader screen */
