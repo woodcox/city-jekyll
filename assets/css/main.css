@@ -2753,7 +2753,7 @@ caption {
   color: rgba(255, 255, 255, 0.9);
 }
 
-.card-image, .audio-card {
+.card-image, .card-audio {
   background: black;
   text-decoration: none;
   color: #cdcdcd;
@@ -2776,7 +2776,7 @@ caption {
   /* typography */
 }
 
-.card-image:hover, .audio-card:hover {
+.card-image:hover, .card-audio:hover {
   top: -2px;
   -webkit-box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
           box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
@@ -2785,7 +2785,7 @@ caption {
           transform: scale(1.03);
 }
 
-.card-image article, .audio-card article {
+.card-image article, .card-audio article {
   padding: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2802,7 +2802,7 @@ caption {
           flex: 1;
 }
 
-.card-image .thumb, .audio-card .thumb {
+.card-image .thumb, .card-audio .thumb {
   padding-bottom: 60%;
   background-size: cover;
   background-position: center center;
@@ -2823,7 +2823,7 @@ caption {
   border-top-left-radius: 20px;
 }
 
-.card-image p, .audio-card p {
+.card-image p, .card-audio p {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -2831,14 +2831,14 @@ caption {
   line-height: 1.4;
 }
 
-.card-image h2, .audio-card h2 {
+.card-image h2, .card-audio h2 {
   font-size: 1.25rem;
   margin: 0;
   color: #cdcdcd;
   text-align: left;
 }
 
-.card-image span, .audio-card span {
+.card-image span, .card-audio span {
   font-size: 0.75rem;
   font-weight: bold;
   color: #fafafa;
@@ -2847,12 +2847,12 @@ caption {
   margin: 1.5rem 0 0 0;
 }
 
-.audio-card .thumb {
+.card-audio .thumb {
   padding-bottom: 15%;
   padding-top: 15%;
 }
 
-.audio-card .thumb-title {
+.card-audio .thumb-title {
   font-family: Excelsiorama;
   color: #fafafa;
   font-size: 2.5em;
