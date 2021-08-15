@@ -2855,7 +2855,15 @@ caption {
 .card-audio .thumb-title {
   font-family: Excelsiorama;
   color: #fafafa;
-  font-size: 2.5em;
+  font-size: 1em;
+}
+
+.card-audio h2 {
+  font-size: 0.75rem;
+}
+
+.card-audio span {
+  font-size: 0.5rem;
 }
 
 /* Preloader screen */
