@@ -2862,8 +2862,13 @@ caption {
   font-size: 0.75rem;
 }
 
+.card-audio p {
+  font-size: 0.6rem;
+}
+
 .card-audio span {
   font-size: 0.5rem;
+  margin: 1rem 0 0 0;
 }
 
 /* Preloader screen */
