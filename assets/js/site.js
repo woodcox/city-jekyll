@@ -114,7 +114,7 @@ observerLogo.observe(logoTarget);
 //=====================================================
 // Smooth scroll (plus polyfill)
 //=====================================================
-const links = document.querySelectorAll("nav ul a");
+const links = document.querySelectorAll(".second-nav ul a");
 
 for (const link of links) {
   link.addEventListener("click", clickHandler);
