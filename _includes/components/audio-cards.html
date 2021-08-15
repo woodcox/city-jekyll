@@ -1,3 +1,43 @@
+<form>
+  <div class="flex-row">
+    <div class="flex-small">
+      <select id="choose">
+        <option disabled selected>Year</option>
+        <option value="2021">2021</option>
+        <option value="2020">2021</option>
+      </select>
+      <select id="choose">
+        <option disabled selected>Month</option>
+        <option value="January">January</option>
+        <option value="February">February</option>
+      </select>
+      <select id="choose">
+        <option disabled selected>Day</option>
+        <option value="01">01</option>
+        <option value="02">02</option>
+      </select>
+    </div>
+    <div class="flex-small sm-one-third">
+      <select id="choose">
+        <option disabled selected>Preacher/Speaker</option>
+        <option value="Michael">Michael</option>
+        <option value="David">David</option>
+      </select>
+    </div>
+    <div class="flex-small sm-one-third">
+      <select id="choose">
+        <option disabled selected>Series</option>
+        <option value="option-1">Option 1</option>
+        <option value="option-2">Option 2</option>
+      </select>
+    </div>
+  </div>
+</form>
+
+<button>Clear filters</button>
+
+## Last 10 sermons
+
 <div class="flex-row-slider align-stretch" data-snap-slider="media-slider-link">{% for talk in site.data.sermons.items %}
   <div class="flex-tiny ty-half flex-medium med-one-third flex-large lg-one-fourth">
     <a class="card-audio carousel-snap" href="{{ talk.enclosure.link }}">
