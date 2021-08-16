@@ -1119,12 +1119,12 @@ dd {
   margin-right: 0.5rem;
 }
 
-.flex-row {
+.flex-row, .flex-row-slider {
   margin-left: -0.5rem;
   margin-right: -0.5rem;
 }
 
-.flex-row {
+.flex-row, .flex-row-slider {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2415,6 +2415,24 @@ caption {
 
 #splash > div .city-svg-logo .city-logo-black-fill {
   fill: black;
+}
+
+.flex-row-slider {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  position: relative;
+  -webkit-scroll-snap-type: x mandatory;
+      -ms-scroll-snap-type: x mandatory;
+          scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  overflow-x: scroll;
+  scroll-behaviour: smooth;
+}
+
+.carousel-snap {
+  scroll-snap-align: start;
 }
 
 .timeline {
