@@ -1,21 +1,5 @@
 $card-font-color: white;
 
-//Carousel
-
-.flex-row-slider {
-  @extend .flex-row;
-  flex-flow: row nowrap;
-  position: relative;
-  scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch;
-  overflow-x: scroll;
-  scroll-behaviour: smooth;
-}
-
-.carousel-snap {
-  scroll-snap-align: start;  // scroll snap child element of carousel
-}
-
 // Gradient Cards
 
 .card__exit,
