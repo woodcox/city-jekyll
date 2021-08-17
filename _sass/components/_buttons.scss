@@ -109,6 +109,15 @@ a.full-button {
   width: 100%;
 }
 
+// Disabled button
+
+.disabled-button,
+a.disabled-button,
+.disabled-button:disabled {
+  opacity: 40%;
+  curser: not-allowed;
+}
+
 // Social icon buttons
 .social-box {
   @include flex-config(row nowrap, center, center);
