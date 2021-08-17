@@ -1627,14 +1627,14 @@ a.accent-button:active {
   background: #d67a0e;
 }
 
-.muted-button, .social-box li .social-button, .social-box li .slider-button,
+.muted-button, .social-box li .social-button,
 a.muted-button {
   background: transparent;
   border: 1px solid #fafafa;
   color: #fafafa;
 }
 
-.muted-button:hover, .social-box li .social-button:hover, .social-box li .slider-button:hover, .muted-button:focus, .social-box li .social-button:focus, .social-box li .slider-button:focus, .muted-button:active, .social-box li .social-button:active, .social-box li .slider-button:active,
+.muted-button:hover, .social-box li .social-button:hover, .muted-button:focus, .social-box li .social-button:focus, .muted-button:active, .social-box li .social-button:active,
 a.muted-button:hover,
 a.muted-button:focus,
 a.muted-button:active {
@@ -1693,7 +1693,7 @@ a.disabled-button,
   margin-right: 0;
 }
 
-.social-box li .social-button, .social-box li .slider-button {
+.social-box li .social-button {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1710,7 +1710,7 @@ a.disabled-button,
   font-size: 2rem;
 }
 
-.social-box li .social-button:hover, .social-box li .slider-button:hover, .social-box li .social-button:focus, .social-box li .slider-button:focus, .social-box li .social-button:active, .social-box li .slider-button:active {
+.social-box li .social-button:hover, .social-box li .social-button:focus, .social-box li .social-button:active {
   text-decoration: none;
 }
 
