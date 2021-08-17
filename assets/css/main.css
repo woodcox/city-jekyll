@@ -1659,6 +1659,13 @@ a.full-button {
   width: 100%;
 }
 
+.disabled-button,
+a.disabled-button,
+.disabled-button:disabled {
+  opacity: 40%;
+  curser: not-allowed;
+}
+
 .social-box {
   display: -webkit-box;
   display: -ms-flexbox;
