@@ -110,7 +110,6 @@ a.full-button {
 }
 
 // Disabled button
-
 .disabled-button,
 a.disabled-button,
 .disabled-button:disabled {
@@ -154,8 +153,4 @@ a.disabled-button,
       }
     }
   }
-}
-
-.slider-button {
-  @extend .social-button;
 }
