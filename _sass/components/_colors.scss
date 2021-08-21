@@ -10,7 +10,10 @@
   h3,
   h4,
   h5,
-  select {
+  select
+  h1:not(:first-child),
+  h2:not(:first-child),
+  h3:not(:first-child) {
     color: $alternate-color;
   }
 }
