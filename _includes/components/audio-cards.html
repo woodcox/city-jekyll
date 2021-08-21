@@ -42,7 +42,7 @@
 
 ## Last 10 sermons
 
-<div class="flex-row-slider align-stretch scrollfix" data-snap-slider="media-slider-link">{% for talk in site.data.sermons.items %}
+<div class="flex-row-slider align-stretch" data-snap-slider="media-slider-link">{% for talk in site.data.sermons.items %}
   <div class="flex-tiny ty-half flex-medium med-one-third flex-large lg-one-fourth">
     <a class="card-audio carousel-snap" href="{{ talk.enclosure.link }}">
       <div class="thumb" style="background: radial-gradient({{ site.colors.cityblue }}, {{ site.colors.citygreen }});">
