@@ -1441,7 +1441,10 @@ dd {
 .alternate-background h4,
 .curved-bg-bottom h5,
 .curved-bg-top h5,
-.alternate-background h5 {
+.alternate-background h5,
+.curved-bg-bottom select,
+.curved-bg-top select,
+.alternate-background select {
   color: #fafafa;
 }
 
