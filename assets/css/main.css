@@ -1613,7 +1613,7 @@ dd {
 
 .button:disabled, .button[disabled], .buttonis.disabled, a.button:disabled, a.button[disabled], a.buttonis.disabled, button:disabled, button[disabled], buttonis.disabled, [type=submit]:disabled, [type=submit][disabled], .disabled[typeis=submit], [type=reset]:disabled, [type=reset][disabled], .disabled[typeis=reset], [type=button]:disabled, [type=button][disabled], .disabled[typeis=button] {
   cursor: not-allowed;
-  opacity: 0.5;
+  opacity: 0.6;
 }
 
 .button:disabled:active, .button[disabled]:active, .buttonis.disabled:active, a.button:disabled:active, a.button[disabled]:active, a.buttonis.disabled:active, button:disabled:active, button[disabled]:active, buttonis.disabled:active, [type=submit]:disabled:active, [type=submit][disabled]:active, .disabled[typeis=submit]:active, [type=reset]:disabled:active, [type=reset][disabled]:active, .disabled[typeis=reset]:active, [type=button]:disabled:active, [type=button][disabled]:active, .disabled[typeis=button]:active {
