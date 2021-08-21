@@ -2406,6 +2406,22 @@ caption {
   scroll-snap-align: start;
 }
 
+/**
+ * Fix overflow scroll ignoring margin/padding.
+ * https://chenhuijing.com/blog/flexbox-and-padding/
+ * https://itnext.io/horizontal-overflow-with-flexbox-css-64f530495303
+ */
+.scrollfix::before,
+.scrollfix::after {
+  content: '';
+  display: inline-block;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  width: 1px;
+  margin-left: -1px;
+}
+
 .timeline {
   color: #404040;
 }
