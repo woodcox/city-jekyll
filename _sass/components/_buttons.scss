@@ -60,7 +60,7 @@
   // Disabled button
   &:disabled,
   &[disabled],
-  &is.disabled {
+  &.is-disabled {
     cursor: not-allowed;
     opacity: 0.6;
 
