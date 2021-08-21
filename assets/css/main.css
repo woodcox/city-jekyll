@@ -1446,6 +1446,7 @@ dd {
 .curved-bg-top select,
 .alternate-background select {
   color: #fafafa;
+  background: #404040;
 }
 
 .curved-bg-bottom, .curved-bg-top {
