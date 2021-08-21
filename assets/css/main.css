@@ -1611,15 +1611,6 @@ dd {
   padding: 0;
 }
 
-.button:disabled, .button[disabled], .button.is-disabled, a.button:disabled, a.button[disabled], a.button.is-disabled, button:disabled, button[disabled], button.is-disabled, [type=submit]:disabled, [type=submit][disabled], .is-disabled[type=submit], [type=reset]:disabled, [type=reset][disabled], .is-disabled[type=reset], [type=button]:disabled, [type=button][disabled], .is-disabled[type=button] {
-  cursor: not-allowed;
-  opacity: 0.6;
-}
-
-.button:disabled:active, .button[disabled]:active, .button.is-disabled:active, a.button:disabled:active, a.button[disabled]:active, a.button.is-disabled:active, button:disabled:active, button[disabled]:active, button.is-disabled:active, [type=submit]:disabled:active, [type=submit][disabled]:active, .is-disabled[type=submit]:active, [type=reset]:disabled:active, [type=reset][disabled]:active, .is-disabled[type=reset]:active, [type=button]:disabled:active, [type=button][disabled]:active, .is-disabled[type=button]:active {
-  pointer-events: none;
-}
-
 .accent-button,
 a.accent-button {
   color: #ffffff;
@@ -1666,6 +1657,15 @@ a.square-button {
 a.full-button {
   display: block;
   width: 100%;
+}
+
+.is-disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.is-disabled:active {
+  pointer-events: none;
 }
 
 .social-box {
