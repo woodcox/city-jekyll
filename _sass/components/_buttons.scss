@@ -56,18 +56,6 @@
   &:active {
     @extend %buttons-focus;
   }
-
-  // Disabled button
-  &:disabled,
-  &[disabled],
-  &.is-disabled {
-    cursor: not-allowed;
-    opacity: 0.6;
-
-    &:active {
-      pointer-events: none;
-    }
-  }
 }
 
 // Secondary button color
@@ -119,6 +107,16 @@ a.square-button {
 a.full-button {
   display: block;
   width: 100%;
+}
+
+// Disabled button
+.is-disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+
+  &:active {
+    pointer-events: none;
+  }
 }
 
 // Social icon buttons
