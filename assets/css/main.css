@@ -2410,6 +2410,33 @@ caption {
   scroll-snap-align: start;
 }
 
+.slider-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.slider-nav li {
+  list-style: none;
+  margin-right: 0.5rem;
+}
+
+.slider-nav li:last-child {
+  margin-right: 0;
+}
+
 .timeline {
   color: #404040;
 }
