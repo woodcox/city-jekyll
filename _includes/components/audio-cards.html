@@ -42,22 +42,23 @@
 
 ## Last 10 sermons
 
-<ul class="flex-row-slider align-stretch" data-snap-slider="media-slider-link">{% for talk in site.data.sermons.items %}
-  <li class="flex-tiny ty-half flex-medium med-one-third flex-large lg-one-fourth">
-    <a class="card-audio carousel-snap" href="{{ talk.enclosure.link }}">
-      <div class="thumb" style="background: radial-gradient({{ site.colors.cityblue }}, {{ site.colors.citygreen }});">
-        <h2 class="thumb-title">{% assign media = talk.title | split: " - " %}{{ media[1] | slice: 0, 5 }}</h2>
-      </div>
-      <article>
-        <h2>{{ media[1] }}{% if media[0] contains media[1] %}{% else %} - {{ media[0] | slice: 13, 100 }}{% endif %}</h2>
-        <p>{{ talk.pubDate | date: "%-d %b %Y - %I:%M %p" }}</p>
-        <span>{{ talk.author | split: "(" | last | remove: ")" }}</span>
-      </article>
-    </a>
-  </li>{% endfor %}
-</ul>
-
-<ul class="slider-nav" data-snap-slider-nav="media-slider-link">
-  <li><button class="muted-button" type="button">&#10096;<span class="screen-reader-text">Previous</span></button></li>
-  <li><button class="muted-button" type="button">&#10097;<span class="screen-reader-text">Next</span></button></li>
-</ul>
+<div="slider-wrapper">
+  <ul class="flex-row-slider align-stretch" data-snap-slider="media-slider-link">{% for talk in site.data.sermons.items %}
+    <li class="flex-tiny ty-half flex-medium med-one-third flex-large lg-one-fourth">
+      <a class="card-audio carousel-snap" href="{{ talk.enclosure.link }}">
+        <div class="thumb" style="background: radial-gradient({{ site.colors.cityblue }}, {{ site.colors.citygreen }});">
+          <h2 class="thumb-title">{% assign media = talk.title | split: " - " %}{{ media[1] | slice: 0, 5 }}</h2>
+        </div>
+        <article>
+          <h2>{{ media[1] }}{% if media[0] contains media[1] %}{% else %} - {{ media[0] | slice: 13, 100 }}{% endif %}</h2>
+          <p>{{ talk.pubDate | date: "%-d %b %Y - %I:%M %p" }}</p>
+          <span>{{ talk.author | split: "(" | last | remove: ")" }}</span>
+        </article>
+      </a>
+    </li>{% endfor %}
+  </ul>
+  <ul class="slider-nav" data-snap-slider-nav="media-slider-link">
+    <li><button class="muted-button" type="button">&#10096;<span class="screen-reader-text">Previous</span></button></li>
+    <li><button class="muted-button" type="button">&#10097;<span class="screen-reader-text">Next</span></button></li>
+  </ul>
+</div>
