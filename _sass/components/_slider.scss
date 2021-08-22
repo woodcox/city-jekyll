@@ -17,3 +17,20 @@
 .carousel-snap {
   scroll-snap-align: start;  // scroll snap child element of carousel
 }
+
+// Slider buttons
+
+.slider-nav {
+  @include flex-config(row nowrap, center, center);
+  margin: 0;
+  padding: 0;
+  
+  li {
+    list-style: none;
+    margin-right: 0.5rem;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
