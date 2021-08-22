@@ -1,5 +1,4 @@
 // Snap Slider - https://github.com/tannerhodges/snap-slider
-
 .flex-row-slider {
   @extend .flex-row;
   flex-flow: row nowrap;
@@ -18,8 +17,7 @@
   scroll-snap-align: start;  // scroll snap child element of carousel
 }
 
-// Slider buttons
-
+// Slider nav positioning
 .slider-wrapper {
   position: relative;
 
