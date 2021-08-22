@@ -2410,7 +2410,11 @@ caption {
   scroll-snap-align: start;
 }
 
-.slider-nav {
+.slider-wrapper {
+  position: relative;
+}
+
+.slider-wrapper .slider-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2426,14 +2430,15 @@ caption {
           align-items: center;
   margin: 0;
   padding: 0;
+  position: absolute;
 }
 
-.slider-nav li {
+.slider-wrapper .slider-nav li {
   list-style: none;
   margin-right: 0.5rem;
 }
 
-.slider-nav li:last-child {
+.slider-wrapper .slider-nav li:last-child {
   margin-right: 0;
 }
 
