@@ -8,6 +8,10 @@
   -webkit-overflow-scrolling: touch;
   overflow-x: scroll;
   scroll-behaviour: smooth;
+
+  li {
+    list-style: none;
+  }
 }
 
 .carousel-snap {
