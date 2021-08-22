@@ -2431,6 +2431,8 @@ caption {
   margin: 0;
   padding: 0;
   position: absolute;
+  right: 0;
+  bottom: 5%;
 }
 
 .slider-wrapper .slider-nav li {
