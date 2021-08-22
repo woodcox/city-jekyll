@@ -1112,6 +1112,7 @@ dd {
 /**
  * Flexgrid
  */
+.flex-tiny,
 .flex-small,
 .flex-medium,
 .flex-large {
@@ -1144,6 +1145,7 @@ dd {
           flex-flow: column nowrap;
 }
 
+.flex-tiny,
 .flex-small,
 .flex-medium,
 .flex-large {
