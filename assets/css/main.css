@@ -2402,6 +2402,10 @@ caption {
   scroll-behaviour: smooth;
 }
 
+.flex-row-slider li {
+  list-style: none;
+}
+
 .carousel-snap {
   scroll-snap-align: start;
 }
