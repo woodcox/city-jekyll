@@ -20,17 +20,22 @@
 
 // Slider buttons
 
-.slider-nav {
-  @include flex-config(row nowrap, center, center);
-  margin: 0;
-  padding: 0;
-  
-  li {
-    list-style: none;
-    margin-right: 0.5rem;
+.slider-wrapper {
+  position: relative;
 
-    &:last-child {
-      margin-right: 0;
+  .slider-nav {
+    @include flex-config(row nowrap, center, center);
+    margin: 0;
+    padding: 0;
+    position: absolute;
+  
+    li {
+      list-style: none;
+      margin-right: 0.5rem;
+
+      &:last-child {
+        margin-right: 0;
+      }
     }
   }
 }
