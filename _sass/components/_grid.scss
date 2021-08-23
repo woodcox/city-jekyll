@@ -70,26 +70,22 @@ $margin-bottom: 1rem;
   }
 }
 
-/* Small screen breakpoint */
-
+/* Tiny screen breakpoint */
 @include tiny-breakpoint {
   @include gridbreak(tiny, ty);
 }
 
 /* Small screen breakpoint */
-
 @include small-breakpoint {
   @include gridbreak(small, sm);
 }
 
 /* Medium screen breakpoint */
-
 @include medium-breakpoint {
   @include gridbreak(medium, med);
 }
 
 /* Large screen breakpoint */
-
 @include large-breakpoint {
   @include gridbreak(large, lg);
 }
