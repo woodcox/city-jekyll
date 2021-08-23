@@ -1186,6 +1186,11 @@ dd {
         -ms-flex: 0 0 calc(2 / 3 * 100% - 0.5rem * 2);
             flex: 0 0 calc(2 / 3 * 100% - 0.5rem * 2);
   }
+  .flex-tiny.ty-one-sixth {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 calc(1 / 6 * 100% - 0.5rem * 2);
+            flex: 0 0 calc(1 / 6 * 100% - 0.5rem * 2);
+  }
   .flex-tiny.ty-one-eighth {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 calc(1 / 8 * 100% - 0.5rem * 2);
@@ -1224,6 +1229,11 @@ dd {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 calc(2 / 3 * 100% - 0.5rem * 2);
             flex: 0 0 calc(2 / 3 * 100% - 0.5rem * 2);
+  }
+  .flex-small.sm-one-sixth {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 calc(1 / 6 * 100% - 0.5rem * 2);
+            flex: 0 0 calc(1 / 6 * 100% - 0.5rem * 2);
   }
   .flex-small.sm-one-eighth {
     -webkit-box-flex: 0;
@@ -1264,6 +1274,11 @@ dd {
         -ms-flex: 0 0 calc(2 / 3 * 100% - 0.5rem * 2);
             flex: 0 0 calc(2 / 3 * 100% - 0.5rem * 2);
   }
+  .flex-medium.med-one-sixth {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 calc(1 / 6 * 100% - 0.5rem * 2);
+            flex: 0 0 calc(1 / 6 * 100% - 0.5rem * 2);
+  }
   .flex-medium.med-one-eighth {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 calc(1 / 8 * 100% - 0.5rem * 2);
@@ -1302,6 +1317,11 @@ dd {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 calc(2 / 3 * 100% - 0.5rem * 2);
             flex: 0 0 calc(2 / 3 * 100% - 0.5rem * 2);
+  }
+  .flex-large.lg-one-sixth {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 calc(1 / 6 * 100% - 0.5rem * 2);
+            flex: 0 0 calc(1 / 6 * 100% - 0.5rem * 2);
   }
   .flex-large.lg-one-eighth {
     -webkit-box-flex: 0;
