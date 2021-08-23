@@ -64,8 +64,8 @@ $margin-bottom: 1rem;
     &.#{$break-size-abbr}-two-thirds {
       flex: 0 0 calc(2 / 3 * 100% - #{$gutters} * 2);
     }
-    &.#{$break-size-abbr}-one-ninth {
-      flex: 0 0 calc(1 / 9 * 100% - #{$gutters} * 2);
+    &.#{$break-size-abbr}-one-eighth {
+      flex: 0 0 calc(1 / 8 * 100% - #{$gutters} * 2);
     }
   }
 }
