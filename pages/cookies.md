@@ -3,6 +3,7 @@ title: Cookies
 layout: single-page
 permalink: /cookies/
 tag: policy
+style: alternate-background
 ---
 
 
