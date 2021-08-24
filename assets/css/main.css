@@ -2281,7 +2281,7 @@ caption {
 }
 
 .card-image article, .card-audio article {
-  padding: 0px;
+  padding: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
