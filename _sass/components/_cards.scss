@@ -173,7 +173,7 @@ $card-font-color: white;
   }
 
   article {
-    padding: 20px;
+    padding: 0px;
     @include flex-config(column nowrap, space-between);
     flex: 1;
   }
