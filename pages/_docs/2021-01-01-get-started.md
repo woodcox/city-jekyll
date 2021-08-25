@@ -35,4 +35,4 @@ To begin, use the header template (_include/templates/header.html) to create a <
 
 View all HTML5 with Primitive CSS applied to them. 
 
-<a href="{{ '/html-test/' | relative_url }}" class="button">HTML5 Elements Test</a>
+<a href="{{ '/docs/html-test/' | relative_url }}" class="button">HTML5 Elements Test</a>
