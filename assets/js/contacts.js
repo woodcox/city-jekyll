@@ -13,35 +13,30 @@ var m_ = "mailto:";
 var a_ = "@";
 var d_ = ".";
 
-function contact1(name, dom, tl, params)
-{
-	var s = e(name,dom,tl);
-	document.write('<a href="'+m_+s+params+'">'+s+'</a>');
+function contact1(name, dom, tl, params){
+  var s = e(name,dom,tl);
+  document.write('<a href="'+m_+s+params+'">'+s+'</a>');
 }
-function contact2(name, dom, tl, params, display)
-{
-	document.write('<a href="'+m_+e(name,dom,tl)+params+'">'+display+'</a>');
+function contact2(name, dom, tl, params, display){
+  document.write('<a href="'+m_+e(name,dom,tl)+params+'">'+display+'</a>');
 }
-function e(name, dom, tl)
-{
-	var s = name+a_;
-	if (tl!=-2)
-	{
-		s+= dom;
-		if (tl>=0)
-			s+= d_+tld_[tl];
-	}
-	else
-		s+= swapper(dom);
-	return s;
+function e(name, dom, tl){
+  var s = name+a_;
+  if (tl!=-2){
+    s+= dom;
+    if (tl>=0)
+      s+= d_+tld_[tl];
+  }
+  else
+    s+= swapper(dom);
+  return s;
 }
-function swapper(d)
-{
-	var s = "";
-	for (var i=0; i<d.length; i+=2)
-		if (i+1==d.length)
-			s+= d.charAt(i)
-		else
-			s+= d.charAt(i+1)+d.charAt(i);
-	return s.replace(/\?/g,'.');
+function swapper(d){
+  var s = "";
+  for (var i=0; i<d.length; i+=2)
+    if (i+1==d.length)
+      s+= d.charAt(i)
+    else
+      s+= d.charAt(i+1)+d.charAt(i);
+  return s.replace(/\?/g,'.');
 }
