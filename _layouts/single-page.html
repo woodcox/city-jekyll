@@ -3,13 +3,13 @@ layout: default
 ---
 
 <main class="content" id="main-content">
-<div class="text-center vertical-center"
-{% include modules/nav-back.html %}
-</div>
   <section class="content-section {{ page.bg-color }}">
     <article>
       <div class="container {{ page.style }}">
         {% if page.title %}
+        <div class="text-center vertical-center"
+          {% include modules/nav-back.html %}
+        </div>
         <h1>{{ page.title | upcase }}</h1>
         {% endif %}
         {{ content }}
