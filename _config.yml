@@ -77,6 +77,11 @@ autoprefixer:
   browsers:
   - last 10 versions
 
+plugins:
+  - jekyll-purgecss
+
+css_dir: "<css_dir>" # defaults to "css"
+
 ### Import a json feed as data
 ### Uses https://rss2json.com
 jekyll_get_json:
