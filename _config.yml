@@ -80,7 +80,7 @@ autoprefixer:
 plugins:
   - jekyll-purgecss
 
-css_dir: "<css_dir>" # defaults to "css"
+css_dir: 'assets/css' # defaults to "css"
 
 ### Import a json feed as data
 ### Uses https://rss2json.com
