@@ -24,8 +24,10 @@ jobs:
       # https://github.com/ruby/setup-ruby
       - uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 3.0 # Not needed with a .ruby-version file
-          bundler-cache: true # runs 'bundle install' and caches installed gems automatically
+          bundler: "Gemfile.lock"
+          bundler-cache: true
+          # ruby-version: 3.0 # Not needed with a .ruby-version file
+          # bundler-cache: true # runs 'bundle install' and caches installed gems automatically
       # Install Node as this is needed for PurgeCSS
       - name: Setup Node
         uses: actions/setup-node@v1
