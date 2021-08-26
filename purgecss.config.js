@@ -5,5 +5,5 @@ module.exports = {
   content: ["./_site/**/*.html"],
 
   // These are the stylesheets that will be subjected to the purge
-  css: ["./_site/css/site.css"] 
+  css: ["./_site/assets/css/main.css"] 
 };
