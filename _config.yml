@@ -77,9 +77,7 @@ autoprefixer:
   browsers:
   - last 10 versions
 
-plugins:
-  - jekyll-purgecss
-
+### jekyll-purgecss
 css_dir: 'assets/css' # defaults to "css"
 
 ### Import a json feed as data
