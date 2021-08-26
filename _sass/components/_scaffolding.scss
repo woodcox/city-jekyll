@@ -141,6 +141,19 @@ a {
   }
 }
 
+// Scroll-bar
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: black;
+}
+
+::-webkit-scroll-track {
+  background-color: white;
+}
+
 // Highlight
 mark {
   background: $highlight;
