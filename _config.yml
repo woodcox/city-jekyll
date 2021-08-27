@@ -79,15 +79,15 @@ autoprefixer:
 
 ### Purify CSS
 purify:
-    compress: true
-    force_class:
-        - 'social-button-reddit'
-        - 'social-button-email'
-        - 'hoverEffect'
-        - 'col-sm-8'
-        - 'desc-container'
-        - 'col-sm-4'
-        - 'img-container'
+  compress: true
+  force_class:
+    - 'social-button-reddit'
+    - 'social-button-email'
+    - 'hoverEffect'
+    - 'col-sm-8'
+    - 'desc-container'
+    - 'col-sm-4'
+    - 'img-container'
 
 ### Import a json feed as data
 ### Uses https://rss2json.com
