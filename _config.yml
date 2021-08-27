@@ -78,6 +78,10 @@ autoprefixer:
   - last 10 versions
 
 ### Purify CSS
+
+gem:
+  - jekyll-purifycss
+
 purify:
   compress: true
   force_class:
