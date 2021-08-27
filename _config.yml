@@ -79,7 +79,7 @@ autoprefixer:
 
 ### Purify CSS
 
-gem:
+gems:
   - jekyll-purifycss
 
 purify:
