@@ -110,7 +110,8 @@ a.full-button {
 }
 
 // Disabled button
-.is-disabled {
+.is-disabled,
+a.is-disabled {
   cursor: not-allowed;
   opacity: 0.4;
 
