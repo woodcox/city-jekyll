@@ -1,18 +1,16 @@
 <div class="slider-wrapper">
   <ul class="flex-row-slider align-stretch" data-snap-slider="video-slider-link"> {% for mp4 in site.data.YouTube.items %}
     <li class="flex-small sm-half flex-medium med-one-third flex-large lg-one-fourth">
-      <div class="card-image carousel-snap">
+      <a class="audio-image carousel-snap" id="yt-play" href="#">
         <div class="icontain-border-radius-top">
-          <iframe class="lozad" title="City Evangelical Church morning service {{ mp4.title | remove: "City Evangelical Church" }}" data-src="https://www.youtube-nocookie.com/embed/{{ mp4.guid | remove: "yt:video:" }}" allowfullscreen>
+          <iframe class="lozad" id="yt-play" title="City Evangelical Church morning service {{ mp4.title | remove: "City Evangelical Church" }}" data-src="https://www.youtube-nocookie.com/embed/{{ mp4.guid | remove: "yt:video:" }}" allowfullscreen>
           </iframe>
         </div>
         <article>
-          <button class="muted-button">
-            <h2> Morning service on {{ mp4.title | remove: "City Evangelical Church" }}</h2>
-            <span>{{ talk.pubDate | date: "%-d %b %Y - %I:%M %p" }}{{ talk.author | split: "(" | last | remove: ")" }}</span>
-          </button>
+          <h2> Morning service on {{ mp4.title | remove: "City Evangelical Church" }}</h2>
+          <span>{{ talk.pubDate | date: "%-d %b %Y - %I:%M %p" }}{{ talk.author | split: "(" | last | remove: ")" }}</span>
         </article>
-      </div>
+      </a>
     </li>{% endfor %}
   </ul>
   <ul class="slider-nav" data-snap-slider-nav="video-slider-link">
