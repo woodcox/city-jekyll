@@ -10,7 +10,7 @@
           <h2> Morning service on {{ mp4.title | remove: "City Evangelical Church" }}</h2>
           <span>{{ talk.pubDate | date: "%-d %b %Y - %I:%M %p" }}{{ talk.author | split: "(" | last | remove: ")" }}</span>
         </article>
-      </a>
+      </div>
     </li>{% endfor %}
   </ul>
   <ul class="slider-nav" data-snap-slider-nav="video-slider-link">
