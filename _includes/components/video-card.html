@@ -1,33 +1,20 @@
-## Watch the last 10 morning services 
-
 <div class="slider-wrapper">
   <ul class="flex-row-slider align-stretch" data-snap-slider="video-slider-link"> {% for mp4 in site.data.YouTube.items %}
     <li class="flex-tiny ty-half flex-small sm-one-third flex-medium med-one-fourth flex-large lg-one-sixth">
-      <div class="card-image carousel-snap" href="{{ talk.enclosure.link }}">
-        <div class="thumb" style="background: radial-gradient({{ site.colors.cityblue }}, {{ site.colors.citygreen }});">
-          <h2 class="thumb-title">{% assign media = talk.title | split: " - " %}{{ media[1] | slice: 0, 5 }}</h2>
+      <div class="card-image carousel-snap">
+        <div class="thumb icontain">
+          <iframe title="City Evangelical Church morning service {{ mp4.title | remove: "City Evangelical Church" }}" src="https://www.youtube-nocookie.com/embed/{{ mp4.guid | remove: "yt:video:" }}" allowfullscreen>
+          </iframe>
         </div>
         <article>
           <h2> Morning service on {{ mp4.title | remove: "City Evangelical Church" }}</h2>
-          <p>{{ talk.pubDate | date: "%-d %b %Y - %I:%M %p" }}</p>
-          <span>{{ talk.author | split: "(" | last | remove: ")" }}</span>
+          <span>{{ talk.pubDate | date: "%-d %b %Y - %I:%M %p" }}{{ talk.author | split: "(" | last | remove: ")" }}</span>
         </article>
       </a>
     </li>{% endfor %}
   </ul>
   <ul class="slider-nav" data-snap-slider-nav="video-slider-link">
-    <li><button class="muted-button" type="button">&#10096;<span class="screen-reader-text">Previous sermon mp3</span></button></li>
-    <li><button class="muted-button" type="button">&#10097;<span class="screen-reader-text">Next sermon mp3</span></button></li>
+    <li><button class="muted-button" type="button">&#10096;<span class="screen-reader-text">Previous filmed service</span></button></li>
+    <li><button class="muted-button" type="button">&#10097;<span class="screen-reader-text">Next filmed service</span></button></li>
   </ul>
 </div>
-
-
-{% for mp4 in site.data.YouTube.items limit: 1 offset: 1 %}
-### Morning service on {{ mp4.title | remove: "City Evangelical Church" }}
-
-
-  <div class="icontain">
-    <iframe title="City Evangelical Church morning service {{ mp4.title | remove: "City Evangelical Church" }}" src="https://www.youtube-nocookie.com/embed/{{ mp4.guid | remove: "yt:video:" }}" allowfullscreen>
-    </iframe>
-  </div>
-{% endfor %}
