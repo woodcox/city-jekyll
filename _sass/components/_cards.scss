@@ -30,7 +30,7 @@ $card-font-color: white;
 
 .card__title {
   font-weight: 400;
-  color: #ffffff;
+  color: $card-font-color;
 }
 
 .card__apply {
@@ -38,7 +38,6 @@ $card-font-color: white;
 }
 
 // Flip Card
-
 .card-container{
   transform-style: preserve-3d;
   perspective: 1000px;
@@ -153,7 +152,6 @@ $card-font-color: white;
 }
 
 // Image Cards
-
 .card-image {
   background: black;
   text-decoration: none;
