@@ -35,12 +35,17 @@
 @import 'base/reset';
 
 //=================================
+// Core
+//=================================
+
+@import 'core/scaffolding';
+@import 'core/grid';
+@import 'core/helpers';
+
+//=================================
 // Components
 //=================================
 
-@import 'components/scaffolding';
-@import 'components/grid';
-@import 'components/helpers';
 @import 'components/colors';
 @import 'components/media';
 @import 'components/buttons';
