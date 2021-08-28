@@ -45,8 +45,8 @@
 
 .icontain-border-radius-top {
   @extend .icontain;
-  border-bottom-right-radius: 20px;
-  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
   iframe {
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
