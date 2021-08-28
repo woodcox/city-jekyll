@@ -1,5 +1,5 @@
 <div class="slider-wrapper">
-  <ul class="flex-row-slider align-stretch" data-snap-slider="video-slider-link"> {% for mp4 in site.data.YouTube.items %}
+  <ul class="flex-row-slider align-stretch" data-snap-slider="video-slider-link"> {% for mp4 in site.data.YouTube.items offset:1 %}
     <li class="flex-small sm-half flex-medium med-one-third flex-large lg-one-fourth">
       <a class="card-audio carousel-snap" id="yt-play" href="#">
         <div class="icontain-border-radius-top">
