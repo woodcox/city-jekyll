@@ -1,7 +1,6 @@
 $card-font-color: white;
 
 // Gradient Cards
-
 .card__exit,
 .card__icon {
   position: relative;
@@ -208,6 +207,7 @@ $card-font-color: white;
   }
 }
 
+// Audio card
 .card-audio {
   @extend .card-image;
   .thumb {
