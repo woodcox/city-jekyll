@@ -6,10 +6,12 @@
           <iframe class="lozad" id="yt-play" title="City Evangelical Church morning service {{ mp4.title | remove: "City Evangelical Church" }}" data-src="https://www.youtube-nocookie.com/embed/{{ mp4.guid | remove: "yt:video:" }}?enablejsapi=1" allowfullscreen>
           </iframe>
         </div>
-        <button>
-          <h2> Morning service on {{ mp4.title | remove: "City Evangelical Church" }}</h2>
-          <span>{{ talk.pubDate | date: "%-d %b %Y - %I:%M %p" }}{{ talk.author | split: "(" | last | remove: ")" }}</span>
-        </button>
+        <article>
+          <button>
+            <h2> Morning service on {{ mp4.title | remove: "City Evangelical Church" }}</h2>
+            <span>{{ talk.pubDate | date: "%-d %b %Y - %I:%M %p" }}{{ talk.author | split: "(" | last | remove: ")" }}</span>
+          </button>
+        </article>
       </div>
     </li>{% endfor %}
   </ul>
