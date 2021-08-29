@@ -150,7 +150,6 @@ window.onload = function() {
 //=======================================
 // YouTube player API
 //=======================================
-
 // https://developers.google.com/youtube/iframe_api_reference
 
 // global variable for the player
