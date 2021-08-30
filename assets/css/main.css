@@ -31,15 +31,6 @@
   font-display: swap;
 }
 
-/* Excelsiorama */
-@font-face {
-  font-family: 'Excelsiorama';
-  src: url("../webfonts/excelsiorama/Excelsiorama-Regular.woff2") format("woff2"), url("../webfonts/excelsiorama/Excelsiorama-Regular.woff") format("woff"), url("../webfonts/excelsiorama/Excelsiorama-Regular.ttf") format("truetype");
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-}
-
 /* https://github.com/reskwer/fontAwesome-SCSS */
 .external-link-icon:after {
   content: '';
