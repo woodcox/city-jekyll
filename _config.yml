@@ -70,28 +70,13 @@ collections:
 ### sass
 sass:
   sass_dir: '_sass'
-  style: compressed
+  style: expanded
 
 ### autoprefixer 
 autoprefixer:
   browsers:
   - last 10 versions
 
-### Purify CSS
-
-gems:
-  - jekyll-purifycss
-
-purify:
-  compress: true
-  force_class:
-    - 'social-button-reddit'
-    - 'social-button-email'
-    - 'hoverEffect'
-    - 'col-sm-8'
-    - 'desc-container'
-    - 'col-sm-4'
-    - 'img-container'
 
 ### Import a json feed as data
 ### Uses https://rss2json.com
