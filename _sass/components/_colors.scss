@@ -1,7 +1,7 @@
 /* Colors */
 
 // Font outlines
-@mixin text-outline($text-outline: $outline-color, $text-fill: $fill-color){
+@mixin shadow-outline($text-outline: $outline-color){
   text-shadow:
     3px  3px 0 $outline-color,
     -1px -1px 0 $outline-color,  
@@ -10,10 +10,12 @@
     1px  1px 0 $outline-color;
 }
 
-@supports (-webkit-text-stroke: 1px $outline-color){
-  .text-outline {
-    -webkit-text-stroke: 1px $outline-color;
-    -webkit-text-fill-color: $fill-color;
+@mixin text-outline($text-outline: $outline-color, $text-fill: $fill-color){
+  @supports (-webkit-text-stroke: 1px $outline-color){
+    .text-outline {
+      -webkit-text-stroke: 1px $outline-color;
+      -webkit-text-fill-color: $fill-color;
+    }
   }
 }
 
