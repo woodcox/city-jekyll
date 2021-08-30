@@ -4,16 +4,16 @@
 @mixin text-outline($alternate-bg, $text-outline-color, $text-fill-color){
   .outline-#{alternate-bg} {
     text-shadow:
-      3px  3px 0 $outline-color,
-      -1px -1px 0 $outline-color,  
-      1px -1px 0 $outline-color,
-      -1px  1px 0 $outline-color,
-      1px  1px 0 $outline-color;
+      3px  3px 0 $text-outline-color,
+      -1px -1px 0 $text-outline-color,  
+      1px -1px 0 $text-outline-color,
+      -1px  1px 0 $text-outline-color,
+      1px  1px 0 $text-outline-color;
   }
-  @supports (-webkit-text-stroke: 1px $outline-color){
+  @supports (-webkit-text-stroke: 1px $text-outline-color){
     .outline-#{alternate-bg} {
-      -webkit-text-stroke: 1px $outline-color;
-      -webkit-text-fill-color: $fill-color;
+      -webkit-text-stroke: 1px $text-outline-color;
+      -webkit-text-fill-color: $text-fill-color;
     }
   }
 }
