@@ -1,19 +1,19 @@
 /* Colors */
 
 // Font outlines
-.text-outline {
+@mixin text-outline($text-outline: $outline-color, $text-fill: $fill-color){
   text-shadow:
-    3px  3px 0 $font-color,
-    -1px -1px 0 $font-color,  
-    1px -1px 0 $font-color,
-    -1px  1px 0 $font-color,
-    1px  1px 0 $font-color;
+    3px  3px 0 $outline-color,
+    -1px -1px 0 $outline-color,  
+    1px -1px 0 $outline-color,
+    -1px  1px 0 $outline-color,
+    1px  1px 0 $outline-color;
 }
 
-@supports (-webkit-text-stroke: 1px $font-color) {
+@supports (-webkit-text-stroke: 1px $outline-color){
   .text-outline {
-    -webkit-text-stroke: 1px $font-color;
-    -webkit-text-fill-color: white;
+    -webkit-text-stroke: 1px $outline-color;
+    -webkit-text-fill-color: $fill-color;
   }
 }
 
