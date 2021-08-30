@@ -254,6 +254,6 @@ $card-font-color: white;
 @supports (-webkit-text-stroke: 1px $font-color) {
   .text-outline {
     -webkit-text-stroke: 1px $font-color;
-    -webkit-text-fill-color: none;
+    -webkit-text-fill-color: white;
   }
 }
