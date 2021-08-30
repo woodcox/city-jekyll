@@ -1,5 +1,22 @@
 /* Colors */
 
+// Font outlines
+.text-outline {
+  text-shadow:
+    3px  3px 0 $font-color,
+    -1px -1px 0 $font-color,  
+    1px -1px 0 $font-color,
+    -1px  1px 0 $font-color,
+    1px  1px 0 $font-color;
+}
+
+@supports (-webkit-text-stroke: 1px $font-color) {
+  .text-outline {
+    -webkit-text-stroke: 1px $font-color;
+    -webkit-text-fill-color: white;
+  }
+}
+
 // Backgrounds
 %alternate-background {
   background: $alternate-background;
