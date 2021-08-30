@@ -1,23 +1,26 @@
 /* Colors */
 
 // Font outlines
-@mixin shadow-outline($text-outline: $outline-color){
-  text-shadow:
-    3px  3px 0 $outline-color,
-    -1px -1px 0 $outline-color,  
-    1px -1px 0 $outline-color,
-    -1px  1px 0 $outline-color,
-    1px  1px 0 $outline-color;
-}
-
-@mixin text-outline($text-outline: $outline-color, $text-fill: $fill-color){
+@mixin text-outline($alternate-bg, $text-outline-color, $text-fill-color){
+  .outline-#{alternate-bg} {
+    text-shadow:
+      3px  3px 0 $outline-color,
+      -1px -1px 0 $outline-color,  
+      1px -1px 0 $outline-color,
+      -1px  1px 0 $outline-color,
+      1px  1px 0 $outline-color;
+  }
   @supports (-webkit-text-stroke: 1px $outline-color){
-    .text-outline {
+    .outline-#{alternate-bg} {
       -webkit-text-stroke: 1px $outline-color;
       -webkit-text-fill-color: $fill-color;
     }
   }
 }
+
+@include text-outline(text, $font-color, white);
+
+@include text-outline(text-primary, $font-color, $primary-color);
 
 // Gradient text
 .gradient-text {
