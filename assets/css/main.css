@@ -1490,12 +1490,12 @@ dd {
 }
 
 .outline-text-primary {
-  text-shadow: 3px 3px 0 #404040, -1px -1px 0 #404040, 1px -1px 0 #404040, -1px 1px 0 #404040, 1px 1px 0 #404040;
+  text-shadow: 3px 3px 0 #fafafa, -1px -1px 0 #fafafa, 1px -1px 0 #fafafa, -1px 1px 0 #fafafa, 1px 1px 0 #fafafa;
 }
 
-@supports (-webkit-text-stroke: 1px #404040) {
+@supports (-webkit-text-stroke: 1px #fafafa) {
   .outline-text-primary {
-    -webkit-text-stroke: 1px #404040;
+    -webkit-text-stroke: 1px #fafafa;
     -webkit-text-fill-color: #259cd3;
   }
 }
