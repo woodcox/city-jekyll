@@ -1478,23 +1478,23 @@ dd {
 }
 
 /* Colors */
-.outline-alternate-bg {
+.outline-text {
   text-shadow: 3px 3px 0 #404040, -1px -1px 0 #404040, 1px -1px 0 #404040, -1px 1px 0 #404040, 1px 1px 0 #404040;
 }
 
 @supports (-webkit-text-stroke: 1px #404040) {
-  .outline-alternate-bg {
+  .outline-text {
     -webkit-text-stroke: 1px #404040;
     -webkit-text-fill-color: white;
   }
 }
 
-.outline-alternate-bg {
+.outline-text-primary {
   text-shadow: 3px 3px 0 #404040, -1px -1px 0 #404040, 1px -1px 0 #404040, -1px 1px 0 #404040, 1px 1px 0 #404040;
 }
 
 @supports (-webkit-text-stroke: 1px #404040) {
-  .outline-alternate-bg {
+  .outline-text-primary {
     -webkit-text-stroke: 1px #404040;
     -webkit-text-fill-color: #259cd3;
   }
