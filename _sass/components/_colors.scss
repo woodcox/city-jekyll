@@ -20,7 +20,7 @@
 
 @include text-outline(text, $font-color, white);
 
-@include text-outline(text-primary, $font-color, $primary-color);
+@include text-outline(text-primary, $alternate-color, $primary-color);
 
 // Gradient text
 .gradient-text {
