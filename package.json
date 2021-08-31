@@ -2,9 +2,13 @@
   "name": "cityjekyll",
   "version": "1.0.0",
   "description": "City-Jekyll is design toolkit for developing fast sass-y, responsive websites with browser-consistent styling that uses modern front-end tooling.",
-  "author": "Woodcock3",
+  "author": "woodcock3",
   "license": "MIT",
   "homepage": "https://github.com/woodcock3/city-jekyll",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/woodcock3/city-jekyll.git"
+  },
   "scripts": {
    "test": "echo \"Error: no test specified\" && exit 1"
   },
