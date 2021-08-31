@@ -34,10 +34,11 @@ jobs:
       # Install PurgeCSS (needs to be in your package.json)
       - run: npm install
       # - run: npm test ( this fails with exit code 1 - see package.json
+      - name: Build site
       # Build site 
       # use jekyll-action-ts to build
       # https://github.com/limjh16/jekyll-action-ts
-      - uses: limjh16/jekyll-action-ts@v2
+        uses: limjh16/jekyll-action-ts@v2
         with:
           enable_cache: true
           # custom_opts: '--trace --verbose'  #'--drafts --future'
