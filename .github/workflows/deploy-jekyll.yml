@@ -28,11 +28,12 @@ jobs:
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
       # Install Node as this is needed for PurgeCSS
       - name: Setup Node
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v2
         with:
           node-version: '14'
       # Install PurgeCSS (needs to be in your package.json)
       - run: npm install
+      - run: npm test
       # Build site 
       # use jekyll-action-ts to build
       # https://github.com/limjh16/jekyll-action-ts
