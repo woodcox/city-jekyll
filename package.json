@@ -22,6 +22,7 @@
     "cssnano": "^5.0.8",
     "postcss": "^8.3.6",
     "postcss-cli": "^8.3.1",
+    "postcss-scss": "^4.0.0",
     "sharp": "^0.29.0"
   }
 }
