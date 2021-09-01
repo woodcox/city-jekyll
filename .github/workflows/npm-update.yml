@@ -1,4 +1,4 @@
-name: pull request on bundle update
+name: pull request on npm update
 on:
   push:
     paths:
@@ -10,10 +10,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v1
+        uses: actions/checkout@v2
+      - name: Setup Node
+        uses: actions/setup-node@v2
         with:
-          fetch-depth: 1
-      - name: pull request on bundle update
+          node-version: '14'
+      - run: npm init -y
+      - run: npm install
+      - name: pull request on npm update
         uses: woodcock3/pull-request-on-bundle-update@v1.0.1
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
