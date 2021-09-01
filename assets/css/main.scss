@@ -12,41 +12,40 @@
  * Documentation: https://taniarascia.github.io/primitive
  */
 
-/* 
+/* =================================
  * Configuration
  * =================================
  */
-
 @import 'base/variables';
 @import 'base/mixins';
 
-// =================================
-// Fonts
-// =================================
-
+/* =================================
+ * Fonts
+ * =================================
+ */
 @import 'fonts/webfonts';
 @import 'fonts/fontawesomesvg.scss';
 @import 'fonts/syntax-highlight';
 
-// =================================
-// Reset
-// =================================
-
+/* =================================
+ * Reset
+ * =================================
+ */
 @import 'base/normalize';
 @import 'base/reset';
 
-// =================================
-// Core
-// =================================
-
+/* =================================
+ * Core
+ * =================================
+ */
 @import 'core/scaffolding';
 @import 'core/grid';
 @import 'core/helpers';
 
-// =================================
-// Components
-// =================================
-
+/* =================================
+ * Components
+ * =================================
+ */
 @import 'components/colors';
 @import 'components/media';
 @import 'components/buttons';
@@ -58,10 +57,10 @@
 @import 'components/slider';
 @import 'components/timeline';
 
-// =================================
-// Layouts
-// =================================
-
+/* =================================
+ * Layouts
+ * =================================
+ */
 @import 'layouts/navigation';
 @import 'layouts/hero';
 @import 'layouts/footer';
