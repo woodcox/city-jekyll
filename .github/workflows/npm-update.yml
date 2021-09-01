@@ -2,7 +2,7 @@ name: pull request on npm update
 on:
   push:
     paths:
-      - 'Npm.txt'
+      - 'npm.txt'
 
 jobs:
   npm-update:
