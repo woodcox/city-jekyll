@@ -1,6 +1,8 @@
 Node Package Manager
 ====================
 
+Create package.json - run: npm init -y
+
 Installed:
   - sharp - run: npm install sharp
   - init   - run: npx sharp init
