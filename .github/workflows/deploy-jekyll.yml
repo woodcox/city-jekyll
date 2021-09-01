@@ -32,7 +32,8 @@ jobs:
         with:
           node-version: '14'
       # Install PurgeCSS (needs to be in your package.json)
-      - run: npm install
+      - run: npm init -y
+      - run: npm install sharp
       # - run: npm test ( this fails with exit code 1 - see package.json
       - name: Build site
       # use jekyll-action-ts to build
