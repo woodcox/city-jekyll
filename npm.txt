@@ -1,0 +1,5 @@
+Node Package Manager
+====================
+
+Installed:
+  - sharp
