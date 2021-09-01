@@ -17,56 +17,56 @@
  * =================================
  */
 
-@import 'base/variables';
-@import 'base/mixins';
+@import "base/variables";
+@import "base/mixins";
 
 /* =================================
  * Fonts
  * =================================
  */
 
-@import 'fonts/webfonts';
-@import 'fonts/fontawesomesvg.scss';
-@import 'fonts/syntax-highlight';
+@import "fonts/webfonts";
+@import "fonts/fontawesomesvg";
+@import "fonts/syntax-highlight";
 
 /* =================================
  * Reset
  * =================================
  */
 
-@import 'base/normalize';
-@import 'base/reset';
+@import "base/normalize";
+@import "base/reset";
 
 /* =================================
  * Core
  * =================================
  */
 
-@import 'core/scaffolding';
-@import 'core/grid';
-@import 'core/helpers';
+@import "core/scaffolding";
+@import "core/grid";
+@import "core/helpers";
 
 /* =================================
  * Components
  * =================================
  */
 
-@import 'components/colors';
-@import 'components/media';
-@import 'components/buttons';
-@import 'components/forms';
-@import 'components/tables';
-@import 'components/accordion';
-@import 'components/cards';
-@import 'components/animation';
-@import 'components/slider';
-@import 'components/timeline';
+@import "components/colors";
+@import "components/media";
+@import "components/buttons";
+@import "components/forms";
+@import "components/tables";
+@import "components/accordion";
+@import "components/cards";
+@import "components/animation";
+@import "components/slider";
+@import "components/timeline";
 
 /* =================================
  * Layouts
  * =================================
  */
 
-@import 'layouts/navigation';
-@import 'layouts/hero';
-@import 'layouts/footer';
+@import "layouts/navigation";
+@import "layouts/hero";
+@import "layouts/footer";
