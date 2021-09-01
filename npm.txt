@@ -8,4 +8,4 @@ Installed:
   - init   - run: npx sharp init
   - postcss-cli
   - nanocss
-  - post-scss
+  - postcss-scss
