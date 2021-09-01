@@ -7,3 +7,4 @@ Installed:
   - sharp - run: npm install sharp
   - init   - run: npx sharp init
   - postcss-cli
+  - nanocss
