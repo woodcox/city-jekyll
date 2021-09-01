@@ -16,6 +16,7 @@
  * Configuration
  * =================================
  */
+
 @import 'base/variables';
 @import 'base/mixins';
 
@@ -23,6 +24,7 @@
  * Fonts
  * =================================
  */
+
 @import 'fonts/webfonts';
 @import 'fonts/fontawesomesvg.scss';
 @import 'fonts/syntax-highlight';
@@ -31,6 +33,7 @@
  * Reset
  * =================================
  */
+
 @import 'base/normalize';
 @import 'base/reset';
 
@@ -38,6 +41,7 @@
  * Core
  * =================================
  */
+
 @import 'core/scaffolding';
 @import 'core/grid';
 @import 'core/helpers';
@@ -46,6 +50,7 @@
  * Components
  * =================================
  */
+
 @import 'components/colors';
 @import 'components/media';
 @import 'components/buttons';
@@ -61,6 +66,7 @@
  * Layouts
  * =================================
  */
+
 @import 'layouts/navigation';
 @import 'layouts/hero';
 @import 'layouts/footer';
