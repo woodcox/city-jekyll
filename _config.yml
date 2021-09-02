@@ -76,9 +76,9 @@ plugins:
   - jekyll-postcss
 
 ### autoprefixer 
-autoprefixer:
-  browsers:
-  - last 10 versions
+#autoprefixer:
+#  browsers:
+#  - last 10 versions
 
 
 ### Import a json feed as data
