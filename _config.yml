@@ -72,6 +72,9 @@ sass:
   sass_dir: '_sass'
   style: expanded
 
+plugins:
+  - jekyll-postcss
+
 ### autoprefixer 
 autoprefixer:
   browsers:
