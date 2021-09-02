@@ -41,7 +41,7 @@ jobs:
         uses: limjh16/jekyll-action-ts@v2
         with:
           enable_cache: true
-          custom_opts: 'JEKYLL_ENV=production'  #'--drafts --future'
+          custom_opts: 'JEKYLL_ENV=production NODE_ENV=production'  #'--drafts --future'
           ### If you need to specify any Jekyll build options, enable the above input
           ### Flags accepted can be found here https://jekyllrb.com/docs/configuration/options/#build-command-options
       # use actions-gh-pages to deploy
