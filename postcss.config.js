@@ -3,8 +3,6 @@
 module.exports = {
   syntax: 'postcss-scss',
   plugins: [
-    require('cssnano')({
-      preset: 'default',
-    }),
-  ],
+    require('cssnano')({ preset: 'default' }),
+  ]
 };
