@@ -1,8 +1,14 @@
 // postcss.config.js
 
 module.exports = {
-  syntax: "postcss-scss",
+  syntax: 'postcss-scss',
   plugins: [
-    require("cssnano")({ preset: "default" }),
-  ]
+    require('cssnano')({
+      preset: ['default', {
+        discardComments: {
+          removeAll: true,
+        },
+      }]
+    }),
+  ],
 };
