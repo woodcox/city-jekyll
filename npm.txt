@@ -3,9 +3,9 @@ Node Package Manager
 
 Create package.json - run: npm init -y
 
+Install packages - run: npm i -D postcss postcss-cli
+
 Installed:
-  - sharp - run: npm install sharp
-  - init   - run: npx sharp init
+  - postcss
   - postcss-cli
   - nanocss
-  - postcss-scss
