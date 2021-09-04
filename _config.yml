@@ -73,7 +73,7 @@ sass:
   style: expanded
 
 plugins:
-  - jekyll-postcss
+  - jekyll-postcss-v2
 
 ### autoprefixer 
 #autoprefixer:
