@@ -16,9 +16,7 @@ jobs:
         with:
           node-version: '14'
       - run: npm init -y
-      - run: npm install postcss postcss-cli
-      - run: npm install cssnano
-      - run: npm install postcss-scss
+      - run: npm i -D postcss postcss-cli cssnano
       - name: pull request on npm update
         uses: woodcock3/create-pull-request@v3
         with:
