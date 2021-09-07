@@ -8,4 +8,6 @@ Install packages - run: npm i -D postcss postcss-cli autoprefixer cssnano uglify
 Installed:
   - postcss
   - postcss-cli
+  - autoprefixer
   - nanocss
+  - uglify-js
