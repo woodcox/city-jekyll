@@ -3,7 +3,7 @@ Node Package Manager
 
 Create package.json - run: npm init -y
 
-Install packages - run: npm i -D postcss postcss-cli
+Install packages - run: npm i -D postcss postcss-cli autoprefixer cssnano uglify-js
 
 Installed:
   - postcss
