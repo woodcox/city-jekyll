@@ -11,7 +11,7 @@ module.exports = {
       }]
     }),
     require('autoprefixer'),
-    require('purgecss')({
+    require('@fullhuman/postcss-purgecss')({
       content: ['./**/*.html']
     })
   ],
