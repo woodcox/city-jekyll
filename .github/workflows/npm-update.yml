@@ -20,8 +20,7 @@ jobs:
       - name: pull request on npm update
         uses: woodcock3/create-pull-request@v3
         with:
-          git_user_name: ${{ secrets.HUB_USER }}
-          git_email: ${{ secrets.HUB_EMAIL }}
+          token: ${{ secrets.GITHUB_TOKEN }}
           commit-message: Update dependencies
           title: Update dependencies
           body: |
