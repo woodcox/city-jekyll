@@ -2,6 +2,9 @@
 
 module.exports = {
   plugins: [
+    require('@fullhuman/postcss-purgecss')({
+      content: ['./**/*.html']
+    }),
     require('cssnano')({
       preset: ['default', {
         svgo: true,
@@ -10,9 +13,6 @@ module.exports = {
         },
       }]
     }),
-    require('autoprefixer'),
-    require('@fullhuman/postcss-purgecss')({
-      content: ['./**/*.html']
-    })
+    require('autoprefixer')
   ],
 };
