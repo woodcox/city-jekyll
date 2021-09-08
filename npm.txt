@@ -4,12 +4,11 @@ Node Package Manager
 
 Create package.json - run: npm init -y
 
-Install packages - run: npm i -D postcss postcss-cli autoprefixer cssnano svgo purgecss
+Install packages - run: npm i -D postcss postcss-cli autoprefixer cssnano purgecss
 
 Installed:
   - postcss
   - postcss-cli
   - autoprefixer
-  - nanocss
-  - svgo
+  - cssnano
   - purgecss
