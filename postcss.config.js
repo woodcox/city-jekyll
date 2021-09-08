@@ -10,6 +10,9 @@ module.exports = {
         },
       }]
     }),
-    require('autoprefixer')
+    require('autoprefixer'),
+    require('purgecss')({
+      content: ['./**/*.html']
+    })
   ],
 };
