@@ -1,5 +1,6 @@
 Node Package Manager
 ====================
+# Altering this file causes the npm workflow to run
 
 Create package.json - run: npm init -y
 
@@ -10,4 +11,5 @@ Installed:
   - postcss-cli
   - autoprefixer
   - nanocss
-  - uglify-js
+  - svgo
+  - purgecss
