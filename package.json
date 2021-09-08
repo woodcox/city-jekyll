@@ -17,7 +17,7 @@
     "cssnano": "^5.0.8",
     "postcss": "^8.3.6",
     "postcss-cli": "^8.3.1",
-    "purgecss": "^4.0.3",
+    "purgecss": "^4.0.3"
   },
   "bugs": {
     "url": "https://github.com/woodcock3/city-jekyll/issues"
