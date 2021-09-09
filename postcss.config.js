@@ -2,6 +2,7 @@
 
 module.exports = {
   plugins: [
+    require('autoprefixer'),
     require('@fullhuman/postcss-purgecss')({
       content: ['./**/*.html', './**/site.js'],
       fontFace: true,
@@ -16,6 +17,5 @@ module.exports = {
         },
       }]
     }),
-    require('autoprefixer')
   ],
 };
