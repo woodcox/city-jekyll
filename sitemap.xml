@@ -61,12 +61,6 @@
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://woodcock3.github.io/city-jekyll/primitive/</loc>
-    <lastmod>2021-10-10T00:00:00+00:00</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.1</priority>
-  </url>
-  <url>
     <loc>https://woodcock3.github.io/city-jekyll/privacy/</loc>
     <lastmod>2021-10-10T00:00:00+00:00</lastmod>
     <changefreq>yearly</changefreq>
