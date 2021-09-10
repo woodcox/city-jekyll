@@ -72,7 +72,6 @@ footer:
       href: /beliefs/
     - text: Safeguarding
       href: /safeguarding/
-  sitemap:
+  external:
     - text: ChurchSuite Login
       href: https://login.churchsuite.co.uk/
-      external: true
