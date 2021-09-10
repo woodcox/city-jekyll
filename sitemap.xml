@@ -6,7 +6,7 @@ layout: null
   {%- for primary in site.data.nav.primary %}
     <url>
       <loc>{{ site.url }}{{ primary.href | relative_url }}</loc>
-      {%- if primary.lastmod == null -%}
+      {%- if primary.lastmod == null %}
         <lastmod>{{ "now" | date: "%Y-%m-%d %H:%M" | date_to_xmlschema }}</lastmod>
       {%- else %}
         <lastmod>{{ primary.lastmod | date_to_xmlschema }}</lastmod>
