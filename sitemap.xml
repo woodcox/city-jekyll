@@ -7,7 +7,7 @@ layout: null
     <url>
       <loc>{{ site.url }}{{ sectionpage.url | relative_url }}</loc>
       {% if sectionpage.lastmod == null %}
-        <lastmod>{{ sectionpage.date | date_to_xmlschema }}</lastmod>
+        <lastmod>{{ "now" | date: "%Y-%m-%d %H:%M" | date_to_xmlschema }}</lastmod>
       {% else %}
         <lastmod>{{ sectionpage.lastmod | date_to_xmlschema }}</lastmod>
       {% endif %}
