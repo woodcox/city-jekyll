@@ -7,7 +7,7 @@ bg-color: alternate-background
 sitemap: 
   lastmod: 10/10/2021
   changefreq: yearly
-  priority: 0.1
+  priority: 0.3
 ---
 
 
