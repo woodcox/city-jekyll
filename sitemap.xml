@@ -5,7 +5,7 @@ layout: null
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   {% for sectionpage in site.documents | where: "collection_type", type %}
     <url>
-      <loc>{{ site.url }}{{ sectionpage.url }}</loc>
+      <loc>{{ site.url }}{{ sectionpage.url | relative_url }}</loc>
       {% if sectionpage.lastmod == null %}
         <lastmod>{{ sectionpage.date | date_to_xmlschema }}</lastmod>
       {% else %}
