@@ -2,20 +2,20 @@
 layout: default
 ---
 
-{% assign type = page.collection_type %}
-{% assign webpage = site.documents | where: "collection_type", type %}
+{%- assign type = page.collection_type %}
+{%- assign webpage = site.documents | where: "collection_type", type %}
 <main class="content" id="main-content">
-{% include templates/docs-hero.html %}
-{% include modules/nav-back.html %}
-{% include templates/secondary-nav.html %}
-  {%- for page in webpage -%}{%- capture id -%}{{- page.id | remove:'/' | downcase -}}{%- endcapture -%}
+{%- include templates/docs-hero.html %}
+{%- include modules/nav-back.html %}
+{%- include templates/secondary-nav.html %}
+  {%- for page in webpage %}{%- capture id %}{{- page.id | remove:'/' | downcase }}{%- endcapture %}
   <section id="{{id}}" class="content-section {{ page.bg-color }}">
     <article>
       <div class="{{ page.container-size }}{% if page.container-size == "small" or page.container-size == "medium" %}-{% endif %}container {{ page.style }}">
-        {% if page.title %}<h{{ page.heading }}>{{ page.title | upcase }}</h{{ page.heading }}>{% endif %}
+        {%- if page.title %}<h{{ page.heading }}>{{ page.title | upcase }}</h{{ page.heading }}>{%- endif %}
         {{ page.content }}
       </div>
     </article>
   </section>
-  {%- endfor -%}
+  {%- endfor %}
 </main>
