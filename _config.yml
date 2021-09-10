@@ -74,6 +74,7 @@ sass:
 
 plugins:
   - jekyll-postcss-v2
+  - jekyll-last-modified.rb
 
 ### autoprefixer 
 #autoprefixer:
