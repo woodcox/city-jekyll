@@ -3,6 +3,11 @@ title: Safeguarding Policy
 layout: single-page
 permalink: /safeguarding/
 tag: policy
+
+sitemap: 
+  lastmod: 10/10/2021
+  changefreq: yearly
+  priority: 0.3
 ---
 
 ## 1. INTRODUCTION
