@@ -2,49 +2,49 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://woodcock3.github.io/city-jekyll/</loc>
-    <lastmod>2021-09-10T16:00:00+00:00</lastmod>
+    <lastmod>2021-09-10T16:01:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://woodcock3.github.io/city-jekyll/sunday/</loc>
-    <lastmod>2021-09-10T16:00:00+00:00</lastmod>
+    <lastmod>2021-09-10T16:01:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://woodcock3.github.io/city-jekyll/whats-on/</loc>
-    <lastmod>2021-09-10T16:00:00+00:00</lastmod>
+    <lastmod>2021-09-10T16:01:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://woodcock3.github.io/city-jekyll/about/</loc>
-    <lastmod>2021-09-10T16:00:00+00:00</lastmod>
+    <lastmod>2021-09-10T16:01:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://woodcock3.github.io/city-jekyll/connect/</loc>
-    <lastmod>2021-09-10T16:00:00+00:00</lastmod>
+    <lastmod>2021-09-10T16:01:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://woodcock3.github.io/city-jekyll/under18/</loc>
-    <lastmod>2021-09-10T16:00:00+00:00</lastmod>
+    <lastmod>2021-09-10T16:01:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://woodcock3.github.io/city-jekyll/students/</loc>
-    <lastmod>2021-09-10T16:00:00+00:00</lastmod>
+    <lastmod>2021-09-10T16:01:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://woodcock3.github.io/city-jekyll/media/</loc>
-    <lastmod>2021-09-10T16:00:00+00:00</lastmod>
+    <lastmod>2021-09-10T16:01:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -56,6 +56,12 @@
     </url>
     <url>
       <loc>https://woodcock3.github.io/docs/html-test/</loc>
+      <lastmod>2021-10-10T00:00:00+00:00</lastmod>
+      <changefreq>yearly</changefreq>
+      <priority>0.1</priority>
+    </url>
+    <url>
+      <loc>https://woodcock3.github.io/primitive/</loc>
       <lastmod>2021-10-10T00:00:00+00:00</lastmod>
       <changefreq>yearly</changefreq>
       <priority>0.1</priority>
