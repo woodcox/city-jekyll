@@ -15,9 +15,9 @@ layout: null
     <priority>1.0</priority>
   </url>
   {%- endfor %}
-  {%- for doc in site.documents %}
+  {%- for doc in site.documents where: 'sitemap' == true %}
   <url>
-    <loc>{{ site.url }}{{ doc.url | relative_url | where: 'sitemap' == true }}</loc>
+    <loc>{{ site.url }}{{ doc.url | relative_url }}</loc>
     {%- if doc.lastmod == null %}
     <lastmod>{{ "now" | date: "%Y-%m-%d %H:%M" | date_to_xmlschema }}</lastmod>
     {%- else %}
