@@ -14,7 +14,7 @@ layout: null
     <lastmod>{{ primary.lastmod | date_to_xmlschema }}</lastmod>
     {%- endif %}
     <changefreq>monthly</changefreq>
-    {%- if primary.text == 'home' %}
+    {%- if primary.text == "home" %}
     <priority>1.0</priority>
     {%- else %}
     <priority>0.7</priority>
