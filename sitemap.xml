@@ -3,10 +3,10 @@ layout: null
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  {% for primary in site.data.nav.primary %}
+  {%- for primary in site.data.nav.primary -%}
     <url>
       <loc>{{ site.url }}{{ primary.href | relative_url }}</loc>
-      {% if primary.lastmod == null %}
+      {%- if primary.lastmod == null -%}
         <lastmod>{{ "now" | date: "%Y-%m-%d %H:%M" | date_to_xmlschema }}</lastmod>
       {% else %}
         <lastmod>{{ primary.lastmod | date_to_xmlschema }}</lastmod>
