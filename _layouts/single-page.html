@@ -6,12 +6,12 @@ layout: default
   <section class="content-section {{ page.bg-color }}">
     <article>
       <div class="container {{ page.style }}">
-        {% if page.title %}
+        {%- if page.title %}
         <div class="text-center"
-          {% include modules/nav-back.html %}
+          {%- include modules/nav-back.html %}
         </div>
         <h1 class="outline-text">{{ page.title | upcase }}{% last_modified {{ page.path }} %}</h1>
-        {% endif %}
+        {%- endif %}
         {{ content }}
       </div>
     </article>
