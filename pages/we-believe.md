@@ -3,6 +3,11 @@ title: What we believe
 layout: single-page
 permalink: /beliefs/
 tag: policy
+
+sitemap: 
+  lastmod: 10/10/2021
+  changefreq: yearly
+  priority: 0.3
 ---
 
 Below is the core beliefs of our church. This is in line with the [FIEC statement](https://fiec.org.uk/who-we-are/beliefs) of faith that all [FIEC churches](https://fiec.org.uk/) are united around.
