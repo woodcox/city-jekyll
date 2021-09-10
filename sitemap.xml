@@ -1,0 +1,29 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  {% for sectionpage in site.documents | where: "collection_type", type %}
+    <url>
+      <loc>{{ site.url }}{{ sectionpage.url }}</loc>
+      {% if sectionpage.lastmod == null %}
+        <lastmod>{{ sectionpage.date | date_to_xmlschema }}</lastmod>
+      {% else %}
+        <lastmod>{{ sectionpage.lastmod | date_to_xmlschema }}</lastmod>
+      {% endif %}
+      <changefreq>monthly</changefreq>
+      <priority>1.0</priority>
+    </url>
+  {% endfor %}
+  {% for singlepage in site.pages %}
+    {% if singlepage.sitemap != null and singlepage.sitemap != empty %}
+      <url>
+        <loc>{{ site.url }}{{ singlepage.url }}</loc>
+        <lastmod>{{ singlepage.sitemap.lastmod | date_to_xmlschema }}</lastmod>
+        <changefreq>{{ singlepage.sitemap.changefreq }}</changefreq>
+        <priority>{{ singlepage.sitemap.priority }}</priority>
+       </url>
+    {% endif %}
+  {% endfor %}
+</urlset>
+       
