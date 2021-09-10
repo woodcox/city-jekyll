@@ -15,6 +15,19 @@ layout: null
     <priority>1.0</priority>
   </url>
   {%- endfor %}
+  >
+  {%- for doc in site.documents %}
+  <url>
+    <loc>{{ site.url }}{{ doc.permalink | relative_url }}</loc>
+    {%- if doc.lastmod == null %}
+    <lastmod>{{ "now" | date: "%Y-%m-%d %H:%M" | date_to_xmlschema }}</lastmod>
+    {%- else %}
+    <lastmod>{{ doc.lastmod | date_to_xmlschema }}</lastmod>
+    {%- endif %}
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  {%- endfor %}
   {%- for page in site.pages %}
   {%- if page.sitemap != null and page.sitemap != empty %}
   <url>
@@ -26,4 +39,3 @@ layout: null
   {%- endif %}
 {%- endfor %}
 </urlset>
-       
