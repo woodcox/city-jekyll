@@ -2,6 +2,11 @@
 layout: single-page
 title: Privacy Notice
 permalink: /privacy/
+
+sitemap: 
+  lastmod: 10/10/2021
+  changefreq: yearly
+  priority: 0.3
 ---
 
 City Evangelical Church is committed to protecting your privacy under the General Data Protection Regulations (GDPR) and we are registered with the Information Commissioner's Office under ref ZA383693.
