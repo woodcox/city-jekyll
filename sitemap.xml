@@ -16,7 +16,7 @@ layout: null
   </url>
   {%- endfor %}
   {%- for doc in site.documents %}
-  {% if doc.sitemap == true %}
+  {%- if doc.sitemap == true %}
   <url>
     <loc>{{ site.url }}{{ doc.url | relative_url }}</loc>
     {%- if doc.lastmod == null %}
