@@ -4,6 +4,7 @@ collection_type: "docs"
 layout: docs-layout
 container-size: medium
 heading: 2
+sitemap: true
 ---
 
 To begin, use the header template (_include/templates/header.html) to create a <a href="https://en.wikipedia.org/wiki/HTML5">HTML5</a> template that does the following:
