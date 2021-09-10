@@ -4,6 +4,10 @@ layout: single-page
 permalink: /cookies/
 tag: policy
 bg-color: alternate-background
+sitemap: 
+  lastmod: 10/10/2021
+  changefreq: yearly
+  priority: 0.1
 ---
 
 
