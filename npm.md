@@ -7,7 +7,7 @@ Create package.json - run: npm init -y
 DEVELOPMENT
 ===========
 Install packages - run: npm i -D postcss postcss-cli autoprefixer
-Jekyll-deploy - npm install
+Jekyll-deploy run: npm install
 
 Installed dev:
   - postcss
@@ -16,8 +16,8 @@ Installed dev:
 
 PRODUCTION
 ==========
-Install packages - run: npm i -D @fullhuman/postcss-purgecss postcss postcss-cli autoprefixer cssnano
-Jekyll-deploy - npm install --production
+Install packages - run: npm i -P @fullhuman/postcss-purgecss postcss postcss-cli autoprefixer cssnano
+Jekyll-deploy run: npm install --production
 
 Installed:
   - postcss
