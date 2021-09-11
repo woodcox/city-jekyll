@@ -49,6 +49,9 @@
   select {
     color: $alternate-color;
   }
+  a {
+    color: $background;
+  }
 }
 
 .alternate-background {
