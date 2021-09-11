@@ -12,7 +12,7 @@ on:
       - 'README.md'
       - 'LICENSE.md'
       - 'SECURITY.md'
-      - 'npm.txt'
+      - 'npm.md'
  
 # Build site using jekyll
 jobs:
