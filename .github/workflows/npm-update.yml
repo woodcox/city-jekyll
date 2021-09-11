@@ -2,7 +2,7 @@ name: pull request on npm update
 on:
   push:
     paths:
-      - 'npm.txt'
+      - 'npm.md'
 
 jobs:
   npm-update:
@@ -16,7 +16,7 @@ jobs:
         with:
           node-version: '14'
       - run: npm init -y
-      - run: npm i postcss postcss-cli autoprefixer
+      - run: npm i - P postcss postcss-cli autoprefixer
       - run: npm i -D @fullhuman/postcss-purgecss postcss postcss-cli autoprefixer cssnano
       - name: pull request on npm update
         uses: woodcock3/create-pull-request@v3
