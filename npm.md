@@ -1,17 +1,15 @@
 # Node Package Manager
-Altering this file causes the npm workflow to run
+**Altering this file causes the npm workflow to run**
 
 Create package.json - run: npm init -y
 
 ## DEVELOPMENT
 Install packages
-
 ~~~bash
 run: npm install --save-dev postcss postcss-cli autoprefixer
 ~~~
 
 Jekyll-deploy 
-
 ~~~bash
 run: npm install
 ~~~
@@ -23,7 +21,6 @@ Installed dev:
 
 ## PRODUCTION
 Install packages
-
 ~~~bash
 run: npm install --save-prod @fullhuman/postcss-purgecss postcss postcss-cli autoprefixer cssnano
 ~~~
