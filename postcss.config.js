@@ -13,7 +13,7 @@ const nano = require('cssnano')({
     discardComments: {
       removeAll: true,
     },
-  }]
+  }],
 }),
 
 module.exports = {
