@@ -11,9 +11,9 @@ const nano = require('cssnano')({
   preset: ['default', {
     svgo: true,
     discardComments: {
-      removeAll: true
+      removeAll: true,
     },
-  }]
+  }],
 });
 
 module.exports = {
