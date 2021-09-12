@@ -20,9 +20,7 @@ if(process.env.NODE_ENV === 'production') {
       }),
     ],
   },
-};
-
-else(module.exports = {
+} else(module.exports = {
   plugins: [
     require('autoprefixer')
   ],
