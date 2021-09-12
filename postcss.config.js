@@ -1,9 +1,9 @@
 // postcss.config.js
 
-if(process.env.NODE_ENV === 'production') {
-  module.exports = {
-    plugins: [
-      require('autoprefixer'),
+module.exports = {
+  plugins: [
+    require('autoprefixer'),
+    if(...process.env.NODE_ENV === 'production') {
       require('@fullhuman/postcss-purgecss')({
         content: ['./**/*.html', './**/site.js'],
         fontFace: true,
@@ -18,11 +18,7 @@ if(process.env.NODE_ENV === 'production') {
           },
         }]
       }),
-    ],
-  },
-} else(module.exports = {
-  plugins: [
-    require('autoprefixer')
+    }
   ],
 };
 
