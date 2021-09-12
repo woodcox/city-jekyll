@@ -4,7 +4,7 @@ module.exports = {
   plugins: [
     require('autoprefixer')
     if(...process.env.NODE_ENV === 'production') {
-      require('@fullhuman/postcss-purgecss')({
+      , require('@fullhuman/postcss-purgecss')({
         content: ['./**/*.html', './**/site.js'],
         fontFace: true,
         keyframes: true,
