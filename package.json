@@ -10,12 +10,9 @@
     "url": "git+https://github.com/woodcock3/city-jekyll.git"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "devDependencies": {
-    "autoprefixer": "^10.3.4",
-    "postcss": "^8.3.6",
-    "postcss-cli": "^8.3.1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "postcss postcss-cli autoprefixer",
+    "dev": "@fullhuman/postcss-purgecss postcss postcss-cli autoprefixer cssnano"
   },
   "bugs": {
     "url": "https://github.com/woodcock3/city-jekyll/issues"
@@ -24,6 +21,9 @@
   "keywords": [],
   "dependencies": {
     "@fullhuman/postcss-purgecss": "^4.0.3",
+    "autoprefixer": "^10.3.4",
     "cssnano": "^5.0.8"
+    "postcss": "^8.3.6",
+    "postcss-cli": "^8.3.1"
   }
 }
