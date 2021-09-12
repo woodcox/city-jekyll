@@ -32,8 +32,8 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: '14'
-      # Install PostCSS plugins (using your package.json)
-      - run: npm run dev  # or production
+      # Install PostCSS plugins (using script in package.json)
+      - run: npm run production  # or production
       # - run: npm test ( this fails with exit code 1 - see package.json
       - name: Build site
       # use jekyll-action-ts to build
