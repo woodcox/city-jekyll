@@ -2295,8 +2295,9 @@ caption {
 .flex-row-slider {
   flex-flow: row nowrap;
   position: relative;
-  -ms-scroll-snap-type: x mandatory;
-      scroll-snap-type: x mandatory;
+  -webkit-scroll-snap-type: x mandatory;
+      -ms-scroll-snap-type: x mandatory;
+          scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
   overflow-x: scroll;
   scroll-behaviour: smooth;
