@@ -5,10 +5,16 @@ Create package.json - run: npm init -y
 
 ## DEVELOPMENT
 Install packages
+
+~~~bash
 run: npm install --save-dev postcss postcss-cli autoprefixer
+~~~
 
 Jekyll-deploy 
+
+~~~bash
 run: npm install
+~~~
 
 Installed dev:
   - postcss
@@ -17,10 +23,15 @@ Installed dev:
 
 ## PRODUCTION
 Install packages
-run: npm install --save-prod @fullhuman/postcss-purgecss postcss postcss-cli autoprefixer cssnano
 
-Jekyll-deploy 
+~~~bash
+run: npm install --save-prod @fullhuman/postcss-purgecss postcss postcss-cli autoprefixer cssnano
+~~~
+
+Jekyll-deploy
+~~~bash
 run: npm install --production
+~~~
 
 Installed:
   - postcss
