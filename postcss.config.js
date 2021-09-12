@@ -2,7 +2,7 @@
 
 module.exports = {
   plugins: [
-    require('autoprefixer'),
+    require('autoprefixer')
     if(...process.env.NODE_ENV === 'production') {
       require('@fullhuman/postcss-purgecss')({
         content: ['./**/*.html', './**/site.js'],
