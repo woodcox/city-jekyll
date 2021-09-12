@@ -5,7 +5,7 @@ const purgecss = require('@fullhuman/postcss-purgecss')({
   fontFace: true,
   keyframes: true,
   variables: true
-});
+}),
 
 const cssnano = require('cssnano')({ 
   preset: ['default', {
@@ -14,7 +14,7 @@ const cssnano = require('cssnano')({
       removeAll: true,
     },
   }]
-});
+}),
 
 module.exports = {
   plugins: [
