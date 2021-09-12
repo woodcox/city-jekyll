@@ -12,7 +12,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "npm install -D",
-    "production": "export NODE_ENV=production npm install --production"
+    "production": "NODE_ENV=production npm install --production"
   },
   "bugs": {
     "url": "https://github.com/woodcock3/city-jekyll/issues"
