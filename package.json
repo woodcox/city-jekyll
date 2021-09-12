@@ -11,7 +11,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "npm install postcss postcss-cli autoprefixer",
+    "dev": "npm install --no-package-lock --no-save postcss postcss-cli autoprefixer",
     "production": "npm install"
   },
   "bugs": {
