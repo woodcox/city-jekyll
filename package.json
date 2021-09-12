@@ -11,8 +11,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "postcss postcss-cli autoprefixer",
-    "production": "@fullhuman/postcss-purgecss postcss postcss-cli autoprefixer cssnano"
+    "dev": "npm install postcss postcss-cli autoprefixer",
+    "production": "npm install"
   },
   "bugs": {
     "url": "https://github.com/woodcock3/city-jekyll/issues"
