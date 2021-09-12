@@ -11,7 +11,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "npm install",
+    "dev": "npm install -D",
     "production": "NODE_ENV=production npm install"
   },
   "bugs": {
