@@ -11,8 +11,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "npm install --no-package-lock --no-save postcss postcss-cli autoprefixer",
-    "production": "npm install"
+    "dev": "npm install",
+    "production": "NODE_ENV=production npm install"
   },
   "bugs": {
     "url": "https://github.com/woodcock3/city-jekyll/issues"
