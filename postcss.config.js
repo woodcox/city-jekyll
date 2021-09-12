@@ -14,7 +14,7 @@ const nano = require('cssnano')({
       removeAll: true,
     },
   }],
-}),
+});
 
 module.exports = {
   plugins: [
