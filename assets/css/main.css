@@ -594,7 +594,8 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
-  text-decoration: underline dotted;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
   /* 2 */
 }
 
@@ -1037,7 +1038,9 @@ pre {
   border-radius: 4px;
   background: transparent;
   padding: 1rem;
-  tab-size: 2;
+  -moz-tab-size: 2;
+    -o-tab-size: 2;
+       tab-size: 2;
   color: #404040;
   font-family: Menlo, monospace;
   font-size: 14px;
@@ -1500,8 +1503,19 @@ dd {
 }
 
 .fade {
-  animation-name: fade;
-  animation-duration: 2s;
+  -webkit-animation-name: fade;
+          animation-name: fade;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fade {
@@ -2032,7 +2046,8 @@ caption {
   background-size: cover;
   background-position: center;
   transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
-  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
   text-align: center;
   padding: 0px;
   min-height: 280px;
@@ -2056,7 +2071,8 @@ caption {
   display: block;
   opacity: .75;
   background-color: #259cd3;
-  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
   border-radius: 20px;
 }
 
@@ -2219,6 +2235,14 @@ caption {
 }
 
 /* Preloader screen */
+@-webkit-keyframes loading-fadeout {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 @keyframes loading-fadeout {
   0% {
     opacity: 1;
@@ -2240,12 +2264,18 @@ caption {
   z-index: 300;
   pointer-events: none;
   background: white;
-  animation-name: loading-fadeout;
-  animation-delay: 0.9s;
-  animation-duration: 0.3s;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-in-out;
-  animation-fill-mode: forwards;
+  -webkit-animation-name: loading-fadeout;
+          animation-name: loading-fadeout;
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 #splash > div {
@@ -2265,7 +2295,9 @@ caption {
 .flex-row-slider {
   flex-flow: row nowrap;
   position: relative;
-  scroll-snap-type: x mandatory;
+  -webkit-scroll-snap-type: x mandatory;
+      -ms-scroll-snap-type: x mandatory;
+          scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
   overflow-x: scroll;
   scroll-behaviour: smooth;
@@ -2363,12 +2395,14 @@ caption {
   cursor: pointer;
   transition: color 0.4s ease;
   color: #b4b4b4;
-  text-decoration-line: none;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
 }
 
 .animate-nav-link:active, .hamburger-wrapper .hamburger-menu > div > div > ul > li > a:active, .animate-nav-link:hover, .hamburger-wrapper .hamburger-menu > div > div > ul > li > a:hover {
   color: #be6d0c;
-  text-decoration-line: none;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
 }
 
 .animate-nav-link:active:after, .hamburger-wrapper .hamburger-menu > div > div > ul > li > a:active:after, .animate-nav-link:hover:after, .hamburger-wrapper .hamburger-menu > div > div > ul > li > a:hover:after {
@@ -2619,7 +2653,8 @@ caption {
 
 .nav-back a {
   color: #b4b4b4;
-  text-decoration-line: none;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
 }
 
 .nav-back a:hover {
@@ -2712,5 +2747,3 @@ footer .footer-bg-image svg {
 footer .footer-link-description {
   margin-bottom: 0.5rem;
 }
-
-/*# sourceMappingURL=main.css.map */
