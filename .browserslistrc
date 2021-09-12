@@ -1,5 +1,5 @@
 #browserlist autoprefixer
 > 0.5%
-last 2 versions
+last 10 versions
 Firefox ESR
 not dead
