@@ -16,8 +16,8 @@ jobs:
         with:
           node-version: '14'
       - run: npm init -y
-      - run: npm install postcss postcss-cli autoprefixer
-      - run: npm install -D fullhuman/postcss-purgecss postcss postcss-cli autoprefixer cssnano
+      - run: npm install -D postcss postcss-cli autoprefixer
+      - run: npm install fullhuman/postcss-purgecss cssnano
       - name: pull request on npm update
         uses: woodcock3/create-pull-request@v3
         with:
