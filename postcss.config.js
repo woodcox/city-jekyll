@@ -5,7 +5,7 @@ const purgecss = require('@fullhuman/postcss-purgecss')({
   fontFace: true,
   keyframes: true,
   variables: true
-}),
+});
 
 const nano = require('cssnano')({ 
   preset: ['default', {
@@ -19,7 +19,6 @@ const nano = require('cssnano')({
 module.exports = {
   plugins: [
     require('autoprefixer'),
-    ...(process.env.NODE_ENV === 'production' ? [purgecss] : []),
-    ...(process.env.NODE_ENV === 'production' ? [nano] : [])
+    ...(process.env.NODE_ENV === 'production' ? [purgecss, nano] : [])
   ]
 };
