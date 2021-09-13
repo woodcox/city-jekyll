@@ -4,7 +4,7 @@
 
 Please note this is a work in progress. The theme has not been created yet. This is what I am working towards. 
 
-Welcome to the **city-jekyll** theme! This is the theme for [City Evangelical Church](https://cecleeds.co.uk) website. It's built using [Jekyll](https://jekyllrb.com/) and [Primitive UI](https://taniarascia.github.io/primitive). The theme is a design toolkit for developing fast sass-y, responsive websites with browser-consistent styling.
+Welcome to the **city-jekyll** theme! This is the theme for [City Evangelical Church](https://cecleeds.co.uk) website. It's built using [Jekyll](https://jekyllrb.com/) and [Primitive UI](https://taniarascia.github.io/primitive). The theme is a design toolkit for developing fast sass-y, responsive websites with browser-consistent styling and postcss superpowers.
 
 Demo available: [here](http://woodcock3.github.io/city-jekyll/)
 
@@ -49,7 +49,16 @@ Or install it yourself as:
 ```
 City-jekyll    
 │
-├─── _includes   
+├─── _data
+|      ├─── contacts.yml
+|      └─── nav.yml
+│  
+├─── _includes
+│      ├─── components
+│      │     ├─── accent-accordion.html
+│      │     ├─── accordion.html
+│      │     ├─── analytics.js
+│      │     └─── audio-cards.html
 |      ├─── author.html
 |      ├─── comments.html
 |      ├─── date.html
@@ -57,13 +66,23 @@ City-jekyll
 |      ├─── header.html
 |      ├─── navbar.html
 │      └─── share.html
+│  
 ├─── _layouts
 │      ├─── compress.html
 │      ├─── default.html
+│      ├─── docs-layout.html
 │      ├─── home.html
-│      └─── post.html
+│      ├─── sectioned-page.html
+│      └─── single-page.html
+│  
 ├─── pages
-├─── _posts
+│      ├─── _drafts
+│      ├─── _posts
+│      ├─── _home
+|      ├─── cookies.md
+|      ├─── html-test.html
+|      ├─── primitive.html
+│      └─── template.html
 │
 ├─── _sass
 │      ├─── base
@@ -72,25 +91,56 @@ City-jekyll
 │      │     ├─── _reset.scss
 │      │     └─── _variables.scss
 │      │
-│      └─── components
-│             ├─── _buttons.scss
-│             ├─── _forms.scss
-│             ├─── _grid.scss
-│             ├─── _helpers.scss
-│             ├─── _layouts.scss
-│             ├─── _navigation.scss
-│             ├─── _scaffolding.scss
-│             └─── _tables.scss
-│     
-└─── assets
-     │
-     └─── css
-     │    └─── main.scss
-     └─── img
-     │    └─── icons
-     └─── js
-          ├─── init.js
-          └─── vendor
+│      ├─── components
+│      │      ├─── _accordion.scss
+│      │      ├─── _animation.scss
+│      │      ├─── _buttons.scss
+│      │      ├─── _cards.scss
+│      │      ├─── _colors.scss
+│      │      ├─── _forms.scss
+│      │      ├─── _media.scss
+│      │      ├─── _slider.scss
+│      │      ├─── _tables.scss
+│      │      └─── _timeline.scss
+│      │
+│      ├─── core
+│      │      ├─── _grid.scss
+│      │      ├─── _helpers.scss
+│      │      └─── _scaffolding.scss
+│      │
+│      ├─── fonts
+│      │      ├─── _fontawesome.scss
+│      │      ├─── _syntax-highlight.scss
+│      │      └─── _webfonts.scss
+│      │
+│      └─── layouts
+│             ├─── _footer.scss
+│             ├─── _hero.scss
+│             └─── _navigation.scss
+│
+├─── assets
+│    │
+│    ├─── css
+│    │    └─── main.scss
+│    ├─── img
+│    │    └─── faicons
+│    └─── js
+│         ├─── contacts.js
+│         ├─── site.js
+│         ├─── smoothscroll-polyfill.js
+│         └─── snap-slider.min.js
+│  
+├─── .browserslistrc
+├─── 404.md
+├─── gemfile
+├─── gemfile.lock
+├─── _config.yml
+├─── index.md
+├─── package-lock.json
+├─── package.json
+├─── postcss.config.js
+├─── robot.txt
+└─── sitemap.xml
 ```
 
 Now you can begin modifying variables in `variables.scss`. This file will define your colors, typography, sizes, breakpoints, buttons, borders, and more. Define all your variables here to keep your project organized.
