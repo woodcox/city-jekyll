@@ -1,8 +1,8 @@
 {
 	"version": 3,
-	"file": "main.css",
+	"file": "city.css",
 	"sources": [
-		"main.scss",
+		"city.scss",
 		"_sass/base/_variables.scss",
 		"_sass/base/_mixins.scss",
 		"_sass/fonts/_webfonts.scss",
