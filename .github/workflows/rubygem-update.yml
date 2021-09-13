@@ -1,4 +1,4 @@
-name: pull request on bundle update
+name: pull request on gemfile update
 on:
   push:
     paths:
