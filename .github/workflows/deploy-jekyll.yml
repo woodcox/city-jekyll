@@ -32,18 +32,17 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: '14'
-      # Install PostCSS plugins (using script in package.json)
-      - run: npm run production # dev or production
-      # - run: npm test ( this fails with exit code 1 - see package.json
-      - name: Build site
+      # Install PostCSS plugins using jekyll-postcss-v2, package.json and postcss.config.js
+      - run: npm ci  # run: npm run dev
       # use jekyll-action-ts to build
       # https://github.com/limjh16/jekyll-action-ts
+      - name: Build site
         uses: limjh16/jekyll-action-ts@v2
         with:
           enable_cache: true
           # custom_opts: '--verbose --trace'  #'--drafts --future'
-          ### If you need to specify any Jekyll build options, enable the above input
-          ### Flags accepted can be found here https://jekyllrb.com/docs/configuration/options/#build-command-options
+          ## If you need to specify any Jekyll build options, enable the above input
+          ## Flags accepted can be found here https://jekyllrb.com/docs/configuration/options/#build-command-options
         env:
           NODE_ENV: "development" # production or development - this affects minification of css in postcss.config.js
       # https://github.com/peaceiris/actions-gh-pages
