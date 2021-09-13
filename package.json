@@ -12,7 +12,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "npm install -D",
-    "production": "set NODE_ENV=production && npm ci"
+    "production": "npm ci"
   },
   "bugs": {
     "url": "https://github.com/woodcock3/city-jekyll/issues"
@@ -20,11 +20,6 @@
   "main": "index.js",
   "keywords": [],
   "devDependencies": {
-    "autoprefixer": "^10.3.4",
-    "postcss": "^8.3.6",
-    "postcss-cli": "^8.3.1"
-  },
-  "dependencies": {
     "@fullhuman/postcss-purgecss": "^4.0.3",
     "autoprefixer": "^10.3.4",
     "cssnano": "^5.0.8",
