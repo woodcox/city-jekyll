@@ -44,7 +44,8 @@ jobs:
           # custom_opts: '--verbose --trace'  #'--drafts --future'
           ### If you need to specify any Jekyll build options, enable the above input
           ### Flags accepted can be found here https://jekyllrb.com/docs/configuration/options/#build-command-options
-      # use actions-gh-pages to deploy
+        env:
+          NODE_ENV: "production"
       # https://github.com/peaceiris/actions-gh-pages
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
