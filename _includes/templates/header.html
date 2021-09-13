@@ -24,7 +24,7 @@
   <script src="{{ '/assets/js/contacts.js' | append: buildversion | relative_url }}"></script>
   {%- assign crumbs = page.url | remove:'/index.html' | split: '/' %}
   {%- assign current_page = crumbs.last | append: '/' %}
-  {%- if current_page == '/media/' %}<script src="//ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>{% endif %}
+  {%- if current_page == "/media/" %}<script src="//ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>{% endif %}
   
 </head>
 <body>
