@@ -22,8 +22,8 @@
     <meta name="theme-color" content="{{ site.colors.cityblue }}">
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
   <script src="{{ '/assets/js/contacts.js' | append: buildversion | relative_url }}"></script>
-  {%- assign crumbs = page.url | remove:'/index.html' | split: '/' %}
-  {%- assign current_page = crumbs.last %}
+  {% assign crumbs = page.url | remove:'/index.html' | split: '/' %}
+  {% assign current_page = crumbs.last %}
   {%- if current_page == "media" %}<script src="//ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>{% endif %}
   
 </head>
