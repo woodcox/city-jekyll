@@ -1,6 +1,6 @@
-# above fold inline scss - https://satyanash.net/software/2021/05/29/better-way-to-inline-sass-jekyll.html
+# Inline critical css - https://satyanash.net/software/2021/05/29/better-way-to-inline-sass-jekyll.html
 class InlineSassGenerator < Jekyll::Generator
-  SASS_FILE = './css/main.scss'
+  SASS_FILE = './css/critical.scss'
 
   def generate(site)
     site.find_converter_instance(Jekyll::Converters::Scss)
