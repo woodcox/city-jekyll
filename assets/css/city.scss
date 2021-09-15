@@ -2,54 +2,48 @@
 ---
 
 /*! 
- * Primitive UI | MIT License
+ * City-Jekyll | MIT License
  *
- * A minimalist front-end design toolkit built with Sass for developing 
- * responsive, browser-consistent web apps.
+ * Author: Woodcock3
+ * Source: https://github.com/woodcock3/city-jekyll
+ * Documentation: https://woodcock3.github.io/city-jekyll/docs/
  *
- * Author: Tania Rascia <hello@taniarascia.com>
- * Source: https://github.com/taniarascia/primitive
- * Documentation: https://taniarascia.github.io/primitive
+ * Credit: Tania Rascia | Primitive UI | https://github.com/taniarascia/primitive
  */
 
-/* =================================
+/* =============
  * Configuration
- * =================================
- */
+ * ============= */
 
 @import "base/variables";
 @import "base/mixins";
 
-/* =================================
+/* =====
  * Fonts
- * =================================
- */
+ * ===== */
 
 @import "fonts/webfonts";
 @import "fonts/fontawesomesvg";
 @import "fonts/syntax-highlight";
 
-/* =================================
+/* =====
  * Reset
- * =================================
- */
+ * ===== */
 
 @import "base/normalize";
 @import "base/reset";
 
-/* =================================
+/* ====
  * Core
- * =================================
- */
+ * ==== */
 
 @import "core/scaffolding";
 @import "core/grid";
 @import "core/helpers";
 
-/* =================================
+/* ==========
  * Components
- * =================================
- */
+ * ========== */
 
 @import "components/colors";
 @import "components/media";
@@ -62,10 +56,9 @@
 @import "components/slider";
 @import "components/timeline";
 
-/* =================================
+/* =======
  * Layouts
- * =================================
- */
+ * ======= */
 
 @import "layouts/navigation";
 @import "layouts/hero";
