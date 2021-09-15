@@ -45,7 +45,6 @@ jobs:
           ## Flags accepted can be found here https://jekyllrb.com/docs/configuration/options/#build-command-options
         env:
           NODE_ENV: "production" # production or development - this affects minification of css in postcss.config.js
-      - run: node critical.js
       # https://github.com/peaceiris/actions-gh-pages
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
