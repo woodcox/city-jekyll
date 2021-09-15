@@ -34,6 +34,7 @@ jobs:
           node-version: '14'
       # Install PostCSS plugins using jekyll-postcss-v2, package.json and postcss.config.js
       - run: npm ci  # run: npm run dev
+      - run: node critical.js
       # use jekyll-action-ts to build
       # https://github.com/limjh16/jekyll-action-ts
       - name: Build site
