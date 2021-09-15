@@ -1,7 +1,7 @@
 # Node Package Manager
 **Altering this file causes the npm workflow to run**
 
-To create package.json using the npm-update github action.
+To create package.json use the npm-update github action.
 ~~~bash
 run: npm init -y
 ~~~
@@ -18,15 +18,18 @@ Installed dev:
   - autoprefixer
   - cssnano
   - purgecss (@fullhuman/postcss-purgecss)
+  - postcss-critical-split
 
 ## PRODUCTION
-Jekyll-deploy
+Jekyll-deploy GitHub action
 ~~~bash
 run: npm ci
 ~~~
 
-In the Jekyll-Depoly .github/workflow - For production builds the NODE_ENV needs changing from "development" to "production". This will minify the css using cssnano and purgecss. The configuration is in the postcss.config.js file.
+For production builds the NODE_ENV needs changing from "development" to "production". 
+This will minify the css using cssnano and purgecss. 
+The configuration is in the postcss.config.js file.
 ~~~yml
 env:
-  NODE_ENV="production"
+  NODE_ENV: production
 ~~~
