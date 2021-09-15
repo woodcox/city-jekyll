@@ -34,7 +34,6 @@ jobs:
           node-version: '14'
       # Install PostCSS plugins using jekyll-postcss-v2, package.json and postcss.config.js
       - run: npm ci  # run: npm run dev
-      - run: node critical.js
       # use jekyll-action-ts to build
       # https://github.com/limjh16/jekyll-action-ts
       - name: Build site
@@ -46,6 +45,7 @@ jobs:
           ## Flags accepted can be found here https://jekyllrb.com/docs/configuration/options/#build-command-options
         env:
           NODE_ENV: "production" # production or development - this affects minification of css in postcss.config.js
+     - run: node critical.js
       # https://github.com/peaceiris/actions-gh-pages
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
