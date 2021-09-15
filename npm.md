@@ -2,13 +2,13 @@
 **Altering this file causes the npm workflow to run**
 
 To create package.json use the npm-update github action.
-~~~bash
+~~~yml
 run: npm init -y
 ~~~
 
 ## DEVELOPMENT
 Install packages
-~~~bash
+~~~yml
 run: npm install -D
 ~~~
 
@@ -19,10 +19,11 @@ Installed dev:
   - cssnano
   - purgecss (@fullhuman/postcss-purgecss)
   - postcss-critical-split
+  - merge
 
 ## PRODUCTION
 Jekyll-deploy GitHub action
-~~~bash
+~~~yml
 run: npm ci
 ~~~
 
@@ -31,5 +32,5 @@ This will minify the css using cssnano and purgecss.
 The configuration is in the postcss.config.js file.
 ~~~yml
 env:
-  NODE_ENV: production
+  NODE_ENV: "production"
 ~~~
