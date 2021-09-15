@@ -11,39 +11,39 @@
  * Credit: Tania Rascia | Primitive UI | https://github.com/taniarascia/primitive
  */
 
-/* =============
+/* ===========================
  * Configuration
- * ============= */
+ * =========================== */
 
 @import "base/variables";
 @import "base/mixins";
 
-/* =====
+/* ===========================
  * Fonts
- * ===== */
+ * =========================== */
 
 @import "fonts/webfonts";
 @import "fonts/fontawesomesvg";
 @import "fonts/syntax-highlight";
 
-/* =====
+/* ===========================
  * Reset
- * ===== */
+ * =========================== */
 
 @import "base/normalize";
 @import "base/reset";
 
-/* ====
+/* ===========================
  * Core
- * ==== */
+ * =========================== */
 
 @import "core/scaffolding";
 @import "core/grid";
 @import "core/helpers";
 
-/* ==========
+/* ===========================
  * Components
- * ========== */
+ * =========================== */
 
 @import "components/colors";
 @import "components/media";
@@ -56,9 +56,9 @@
 @import "components/slider";
 @import "components/timeline";
 
-/* =======
+/* ===========================
  * Layouts
- * ======= */
+ * =========================== */
 
 @import "layouts/navigation";
 @import "layouts/hero";
