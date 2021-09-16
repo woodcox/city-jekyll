@@ -6,7 +6,7 @@ const cssnanoConfig = {
     colormin: true,
     convertValues: true,
     cssDeclarationSorter: true,
-    discardComments: { removeAll: true },
+    discardComments: { removeAll: true, },
     discardDuplicates: true,
     discardEmpty: true,
     discardOverridden: true,
