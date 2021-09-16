@@ -293,6 +293,11 @@
   }
 }
 
+// Nav links
 .animate-nav-link {
   @extend %animate-href;
+}
+
+.active {
+  color: $accent-color;
 }
