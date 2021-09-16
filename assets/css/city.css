@@ -2662,6 +2662,10 @@ caption {
   list-style: none;
 }
 
+.active {
+  color: #cdcdcd;
+}
+
 .hero {
   /* flexbox */
   display: flex;
