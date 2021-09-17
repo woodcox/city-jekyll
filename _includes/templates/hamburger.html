@@ -12,7 +12,7 @@
     <div>
       <div>
         <ul>{% for link in site.data.nav.primary %}{% capture navhref %}{{ link.href | relative_url }}{% endcapture %}
-          <li><a href="{{ navhref }}" class="animate-nav-link{% if link.href == page.url %} active{% endif %}">{{ link.text }}</a></li>{% endfor %}
+          <li><a href="{{ navhref }}" class="animate-nav-link{% if link.href == page.url %} current{% endif %}">{{ link.text }}</a></li>{% endfor %}
         </ul>
       </div>
     </div>
