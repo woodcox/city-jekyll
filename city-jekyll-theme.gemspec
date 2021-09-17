@@ -4,7 +4,7 @@ Gem::Specification.new do |spec|
   spec.name          = "city-jekyll-theme"
   spec.version       = "1.0.0"
   spec.authors       = ["woodcock3"]
-  spec.email         = ["mmmm@mmmm.com"]
+  spec.email         = ["64870518+woodcock3@users.noreply.github.com"]
 
   spec.summary       = "City-Jekyll theme and style guide for a fast, sass-y responsive website with postcss superpowers."
   spec.homepage      = "https://woodcock3.github.io/city-jekyll/"
