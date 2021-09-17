@@ -229,6 +229,9 @@
               &:after {
                 z-index: 201;
               }
+              .active {
+                color: $accent-color;
+              }
             }
           }
         }
@@ -298,6 +301,3 @@
   @extend %animate-href;
 }
 
-.active {
-  color: $accent-color;
-}
