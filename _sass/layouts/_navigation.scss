@@ -229,9 +229,6 @@
               &:after {
                 z-index: 201;
               }
-              .current {
-                color: $secondary-color;
-              }
             }
           }
         }
@@ -299,5 +296,9 @@
 // Nav links
 .animate-nav-link {
   @extend %animate-href;
+}
+
+.current {
+  color: $secondary-color !important;
 }
 
