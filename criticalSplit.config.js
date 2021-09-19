@@ -15,8 +15,8 @@ postcss(criticalSplit({
 		'output': criticalSplit.output_types.CRITICAL_CSS
 	}))
     .process(css, {
-        'from': './build/css/city.css',
-        'to': './build/css/critical.css'
+        'from': 'assets/css/city.css',
+        'to': 'assets/css/critical.css'
     })
     .then(function(result) {
         saveCssFile("./build/css/critical.css", result);
