@@ -3,7 +3,7 @@
 const autoprefixer = require('autoprefixer');
 const cssnanoConfig = {
     autoprefixer: false,
-    discardComments: { removeAll: true, },
+    discardComments: {removeAll: true},
     svgo: true,
 };
 const cssnano = require('cssnano')({
