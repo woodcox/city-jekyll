@@ -18,7 +18,7 @@ const cssnanoConfig = {
     svgo: true,
 };
 const cssnano = require('cssnano')({
-  preset: ['default', { cssnanoConfig }
+  preset: ['advanced', { cssnanoConfig }
   ]
 });
 const purgecss = require('@fullhuman/postcss-purgecss')({
