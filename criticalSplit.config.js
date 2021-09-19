@@ -19,7 +19,7 @@ postcss(criticalSplit({
         'to': 'assets/css/critical.css'
     })
     .then(function(result) {
-        saveCssFile("./build/css/critical.css", result);
+        saveCssFile("assets/css/critical.css", result);
         console.log('file saved');
     });
 
