@@ -14,7 +14,7 @@ const purgecss = require('@fullhuman/postcss-purgecss')({
   content: ['./**/*.html', './**/site.js']
 });
 const postcss-critical-split = require('postcss-critical-split')({ 
-  criticalSplit.config.js 
+  'criticalSplit.config.js'
 });
 
 module.exports = {
