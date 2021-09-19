@@ -9,6 +9,9 @@
     <meta name="description" content="{{ site.description }}">
     <meta name="author" content="{{ site.author }}">
   <!-- CSS  -->{% assign buildversion = site.time | date:'?v=%s' %}
+  <style type="text/css">
+    {{ site.data.styles }}
+  </style>
   <link rel="stylesheet" href="{{ '/assets/css/city.css' | append: buildversion | relative_url }}" />
   {%- if site.touch_icon %}<link rel="apple-touch-icon" sizes="180x180" href="{{ site.touch_icon | relative_url }}" />{% endif %}
     {%- if site.favicon_32 %}<link rel="icon" type="image/png" sizes="32x32" href="{{ site.favicon_32 | relative_url }}" />{% endif %}
