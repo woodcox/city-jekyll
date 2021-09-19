@@ -17,7 +17,6 @@ Installed dev:
   - postcss-cli
   - autoprefixer
   - cssnano
-  - cssnano-preset-advanced
   - purgecss (@fullhuman/postcss-purgecss)
   - postcss-critical-split
   - merge
