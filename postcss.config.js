@@ -13,9 +13,12 @@ const cssnano = require('cssnano')({
 const purgecss = require('@fullhuman/postcss-purgecss')({
   content: ['./**/*.html', './**/site.js']
 });
-const postcss-critical-split = require('postcss-critical-split')({ 
-  'criticalSplit.config.js'
-});
+const postcss-critical-split = require('postcss-critical-split')({
+    'output': 'critical',
+    'startTag': 'defer:start',
+    'endTag': 'defer:end',
+    'blockTag': 'defer'
+  });
 
 module.exports = {
   plugins: [
