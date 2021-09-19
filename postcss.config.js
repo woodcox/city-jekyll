@@ -13,7 +13,7 @@ const cssnano = require('cssnano')({
 const purgecss = require('@fullhuman/postcss-purgecss')({
   content: ['./**/*.html', './**/site.js']
 });
-const postcss-critical-split = require('postcss-critical-split')({
+const criticalsplit = require('postcss-critical-split')({
     'output': 'critical',
     'startTag': 'defer:start',
     'endTag': 'defer:end',
@@ -23,6 +23,6 @@ const postcss-critical-split = require('postcss-critical-split')({
 module.exports = {
   plugins: [
     autoprefixer,
-    ...(process.env.NODE_ENV === "production" ? [purgecss, cssnano, postcss-critical-split] : [])
+    ...(process.env.NODE_ENV === "production" ? [purgecss, cssnano, criticalsplit] : [])
   ],
 };
