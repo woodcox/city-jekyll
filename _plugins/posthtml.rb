@@ -21,7 +21,7 @@ module PostHtml
         Jekyll.logger.error "PostHTML:",
                             "posthtml.config.js not found.
                              Make sure it exists in your Jekyll source."
-        Jekyll.logger.error "PostCSS v2:",
+        Jekyll.logger.error "PostHTML:",
                             "Couldn't find #{@config}"
         exit 1
       end
