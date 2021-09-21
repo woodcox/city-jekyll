@@ -2,9 +2,9 @@
 layout: default
 ---
 
-<main class="content" id="main-content">
+<main class="content {{ page.bg-color }}" id="main-content">
+  {%- include templates/navbar.html %}
   <section class="content-section {{ page.bg-color }}">
-    {%- include templates/navbar.html %}
     <article>
       <div class="container {{ page.style }}">
         {%- if page.title %}
