@@ -18,8 +18,6 @@ Installed dev:
   - autoprefixer
   - cssnano
   - purgecss (@fullhuman/postcss-purgecss)
-  - postcss-critical-split
-  - merge
 
 ## PRODUCTION
 Jekyll-deploy GitHub action
