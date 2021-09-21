@@ -11,7 +11,7 @@ Install/update/uninstall packages
 ~~~yml
 run: npm install -D @fullhuman/postcss-purgecss postcss postcss-cli autoprefixer cssnano
 run: npm update # update minor version
-run: npm uninstall merge postcss-critical-split
+run: npm uninstall 
 
 ~~~
 
