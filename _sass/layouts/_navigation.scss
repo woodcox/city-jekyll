@@ -298,7 +298,8 @@
   @extend %animate-href;
 }
 
-.current {
+.current,
+a.current {
   color: $secondary-color !important;
 }
 
