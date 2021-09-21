@@ -267,31 +267,26 @@
   }
 }
 
-// Nav back button 
-
-.nav-back {
-  font-family: Sanchez-regular;
-  font-size: 1.2rem;
-
-  a {
-    color: darken($accent-color, 10%);
-    text-decoration-line: none;
-
-    &:hover {
-      color: $menu-hover-color;
-    }
-  }
-}
-
-// Secondary nav 
-
+// Nav style
+.nav-back,
 .second-nav {
   font-family: Sanchez-regular;
   font-size: 1.2rem;
+}
 
-  ul { 
-    list-style: none;
+// Nav back link
+.nav-back a {
+  color: darken($accent-color, 10%);
+  text-decoration-line: none;
+
+  &:hover {
+    color: $menu-hover-color;
   }
+}
+
+// Secondary nav
+.second-nav ul { 
+  list-style: none;
 }
 
 // Nav links
@@ -303,4 +298,3 @@
 a.current {
   color: $secondary-color !important;
 }
-
