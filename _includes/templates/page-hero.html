@@ -1,7 +1,9 @@
 <section class="hero full-container ">
   {% include templates/navbar.html %}
   <div class="hero-text">
-    {% include modules/nav-back.html %}
+    <div class="text-center"
+      {%- include modules/nav-back.html %}
+    </div>
     <h1 class="hero-text-h1">{{ page.url | remove: '/' | upcase }}</h1>
     <h2 class="hero-text-h2">{{ page.url }}</h2>
   </div>
