@@ -7,9 +7,12 @@ run: npm init -y
 ~~~
 
 ## DEVELOPMENT
-Install packages
+Install/update/uninstall packages
 ~~~yml
-run: npm install -D
+run: npm install -D @fullhuman/postcss-purgecss postcss postcss-cli autoprefixer cssnano
+run: npm update # update minor version
+run: npm uninstall merge postcss-critical-split
+
 ~~~
 
 Installed dev:
