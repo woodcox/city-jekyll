@@ -21,6 +21,7 @@ Installed dev:
   - autoprefixer
   - cssnano
   - purgecss (@fullhuman/postcss-purgecss)
+  - ansi-regex (vulnerability fix)
 
 ## PRODUCTION
 Jekyll-deploy GitHub action
