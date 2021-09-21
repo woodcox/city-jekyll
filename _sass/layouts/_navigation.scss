@@ -274,16 +274,6 @@
   font-size: 1.2rem;
 }
 
-// Nav back link
-.nav-back a {
-  color: darken($accent-color, 10%);
-  text-decoration-line: none;
-
-  &:hover {
-    color: $menu-hover-color;
-  }
-}
-
 // Secondary nav
 .second-nav ul { 
   list-style: none;
