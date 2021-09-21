@@ -10,7 +10,7 @@
     </div>
     <div class="flex-medium med-one-fourth">
       <ul class="navbar-menu">{% for menu in site.data.nav.primary offset:4 %}{% capture menuhref %}{{ menu.href | relative_url }}{% endcapture %}
-        <li><a href="{{ menuhref }}" {% if menu.href == page.url %}class="current"{% endif %}>{{ menu.text }}</a></li>{% endfor %}
+        <li><a href="{{ menuhref }}" class="animate-nav-link{% if link.href == page.url %} current{% endif %}">{{ menu.text }}</a></li>{% endfor %}
       </ul>
     </div>
   </div>
