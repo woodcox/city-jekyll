@@ -1,4 +1,4 @@
-# 🏬 city-jekyll
+# 🏬 City-Jekyll
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
@@ -22,13 +22,13 @@ https://github.com/taniarascia/primitive.git
 Add this line to your Jekyll site's `Gemfile`:
 
 ```ruby
-gem "city-jekyll"
+gem "city-jekyll-theme"
 ```
 
 And add this line to your Jekyll site's `_config.yml`:
 
 ```yaml
-theme: city-jekyll
+theme: city-jekyll-theme
 ```
 
 And then execute:
@@ -37,7 +37,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install city-jekyll
+    $ gem install city-jekyll-theme
 
 
 > Since [November 2017](https://blog.github.com/2017-11-29-use-any-theme-with-github-pages/) you can use this theme by adding: `remote_theme: woodcock3/city-jekyll` to your `_config.yml` file.
@@ -47,10 +47,11 @@ Or install it yourself as:
 
 ### Project tree:
 ```
-City-jekyll    
+City-jekyll
 │
 ├─── _data
 |      ├─── contacts.yml
+|      ├─── cookies-used.yml
 |      └─── nav.yml
 │  
 ├─── _includes
@@ -77,12 +78,10 @@ City-jekyll
 │  
 ├─── pages
 │      ├─── _drafts
-│      ├─── _posts
 │      ├─── _home
+│      ├─── _posts
 |      ├─── cookies.md
-|      ├─── html-test.html
-|      ├─── primitive.html
-│      └─── template.html
+│      └─── html-test.html
 │
 ├─── _sass
 │      ├─── base
@@ -145,7 +144,7 @@ City-jekyll
 
 Now you can begin modifying variables in `variables.scss`. This file will define your colors, typography, sizes, breakpoints, buttons, borders, and more. Define all your variables here to keep your project organized.
 
-You can view `dist/test.html` or `docs/template.html` to see some example elements as you make changes.
+You can view `city-jekyll/docs/html-test/` or `city-jekyll/docs/` to see some example elements as you make changes.
 
 This gem offers some *main* layouts that can be used/edited:
 - The `_layouts/default.html`, is the skeleton of the pages, where header,footer, assets are called. It should be used in most of the other layouts,
@@ -154,7 +153,7 @@ This gem offers some *main* layouts that can be used/edited:
 
 Inside the `_includes/` directory there are the partials that are used inside the layouts.
 
-To edit the current JavaScript functions of the gem, the file you are looking for is in `assets/js/init.js`.
+To edit the current JavaScript functions of the gem, the file you are looking for is in `assets/js/site.js`.
 
 Your blog posts (`*.md` files) should be put in the `_posts` directory.
 
