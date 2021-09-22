@@ -232,7 +232,7 @@ $hamburger-menu-border-radius: 2em !default;
 $hamburger-menu-bg-color: rgba($primary-color, 0.75) !default;
 $hamburger-menu-line-height: 4px;
 $hover-line-height: $hamburger-menu-line-height;
-$menu-text-color: $button-color !important;
+$menu-text-color: $button-color !default;
 $menu-hover-color: $link-hover-color !default;
 $content-bg-color: rgba($alternate-background, 0.97) !default;
 $anim-duration: 0.4s;
