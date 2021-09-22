@@ -1,6 +1,6 @@
-<nav class="bg-dark">
-  <div class="second-nav container">
-    <ul class="flex-row justify-center">
+<nav>
+  <div class="second-nav container black-bg">
+    <ul class="flex-row text-center">
       {%- for node in webpage %}
       {%- capture id %}{{ node.id | remove:'/' | downcase }}{% endcapture %}
         <li class="p-{{id}} flex-small justify-center"><a class="animate-nav-link" href="#{{id}}">{{node.title}}</a></li>
