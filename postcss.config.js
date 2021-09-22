@@ -11,7 +11,9 @@ const cssnano = require('cssnano')({
   ]
 });
 const purgecss = require('@fullhuman/postcss-purgecss')({
-  content: ['./**/*.html', './**/site.js']
+  content: ['./**/*.html', './**/site.js'],
+  safelist: ['::-webkit-scrollbar', '::-webkit-scrollbar-thumb', '::-webkit-scroll-track']
+})
 });
 
 module.exports = {
