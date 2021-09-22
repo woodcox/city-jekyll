@@ -4,6 +4,7 @@
       {%- for node in webpage %}
       {%- capture id %}{{ node.id | remove:'/' | downcase }}{% endcapture %}
         <li class="p-{{id}} flex-small justify-center"><a class="animate-nav-link" href="#{{id}}">{{node.title}}</a></li>
+        <hr>
       {%- endfor %}
     </ul>
   </div>
