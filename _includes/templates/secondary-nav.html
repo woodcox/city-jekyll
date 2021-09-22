@@ -1,10 +1,10 @@
 <nav class="bg-dark">
   <div class="second-nav container">
     <ul class="flex-row justify-center">
-      {% for node in webpage %}
-      {% capture id %}{{ node.id | remove:'/' | downcase }}{% endcapture %}
+      {%- for node in webpage %}
+      {%- capture id %}{{ node.id | remove:'/' | downcase }}{% endcapture %}
         <li class="p-{{id}} flex-small justify-center"><a class="animate-nav-link" href="#{{id}}">{{node.title}}</a></li>
-      {% endfor %}
+      {%- endfor %}
     </ul>
   </div>
 </nav>
