@@ -1,5 +1,5 @@
-<nav>
-  <div class="second-nav container alternate-background">
+<nav class="bg-dark">
+  <div class="second-nav container">
     <ul class="flex-row justify-center">
       {% for node in webpage %}
       {% capture id %}{{ node.id | remove:'/' | downcase }}{% endcapture %}
