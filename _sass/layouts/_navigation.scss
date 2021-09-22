@@ -130,7 +130,6 @@
     border-radius: $hamburger-menu-border-radius;
     cursor: pointer;
     transition: box-shadow $anim-duration ease;
-    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     display: flex;
     align-items: center;
@@ -174,7 +173,6 @@
     pointer-events: none;
     visibility: hidden;
     overflow: hidden;
-    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     outline: 1px solid transparent;
     display: flex;
@@ -191,7 +189,6 @@
       transition: all $anim-duration ease;
       flex: none;
       transform: scale(0);
-      -webkit-backface-visibility: hidden;
       backface-visibility: hidden;
       overflow: hidden;
       display: flex;
