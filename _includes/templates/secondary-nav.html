@@ -1,5 +1,5 @@
 <nav>
-  <div class="second-nav medium-container padding-top {% if page.bg-color == "alternate-background" %}alternate-background">{% endif %}
+  <div class="second-nav medium-container padding-top {% for node in webpage %}{% capture bg %}{{ node.bg-color | first }}{% endcapture %}{% if bg == "alternate-background" %}alternate-background">{% endif %}{% endfor %}
     <ul class="flex-row text-center">
       {%- for node in webpage %}
       {%- capture id %}{{ node.id | remove:'/' | downcase }}{% endcapture %}
