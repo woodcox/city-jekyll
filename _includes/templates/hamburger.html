@@ -3,12 +3,12 @@
 <div class="logo">
   <a href="{{ site.url | relative_url }}" class="brand-logo"><div id="svgColor">{% include svg/city-vector.svg %}</div></a>
 </div>
-<nav class="hamburger-wrapper">
+<div class="hamburger-wrapper">
   <input class="checkbox-toggle" type="checkbox" id="prim-menu-checkbox" onclick="logoToggle()"/>
   <div class="hamburger">
     <div></div>
   </div>
-  <div class="hamburger-menu">
+  <nav class="hamburger-menu">
     <div>
       <div>
         <ul>{% for link in site.data.nav.primary %}{% capture navhref %}{{ link.href | relative_url }}{% endcapture %}
@@ -16,6 +16,6 @@
         </ul>
       </div>
     </div>
-  </div>
-</nav>
+  </nav>
+</div>
 
