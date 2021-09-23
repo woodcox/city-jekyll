@@ -1,6 +1,6 @@
 .hero {
   /* flexbox */
-  @include flex-config(column nowrap, space-between);
+  @include flex-config(column nowrap, flex-end);
   //flex:1
   
   /* Sizing */
