@@ -1,4 +1,4 @@
-<div class="container navbar-wrapper{% if page.title == "404" %} hide{% endif %}">
+<div class="container navbar-wrapper">
   <div class="flex-row">
     <div class="flex-medium">
       <div></div>
@@ -10,7 +10,7 @@
     </div>
     <div class="flex-medium med-one-fourth">
       <ul class="navbar-menu">{% for menu in site.data.nav.primary offset:4 %}{% capture menuhref %}{{ menu.href | relative_url }}{% endcapture %}
-        <li><a href="{{ menuhref }}" class="animate-nav-link{% if menu.href == page.url %} current{% endif %}">{{ menu.text }}</a></li>{% endfor %}
+        <li><a href="{{ menuhref }}" class="animate-nav-link{% if menu.href == page.url %} current{% elsif page.layout == "single-page" and page.bg-color != "alternate-background" %} black-menu{% endif %}">{{ menu.text }}</a></li>{% endfor %}
       </ul>
     </div>
   </div>
