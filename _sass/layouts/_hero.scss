@@ -38,21 +38,21 @@
 
 @include small-breakpoint {
   .hero {
-    height: 85vh;
+    height: 70vh;
     background-image: linear-gradient(rgba($primary-color, 0.95),rgba($primary-color, 0.40)), url('../img/800/city-building-corner.jpg');
   }
 }
 
 @include medium-breakpoint {
   .hero {
-    height: 85vh;
+    height: 70vh;
     background-image: linear-gradient(rgba($primary-color, 0.95),rgba($primary-color, 0.40)), url('../img/1000/city-building-corner.jpg');
   }
 }
 
 @include large-breakpoint {
   .hero {
-    height: 85vh;
+    height: 70vh;
     background-image: linear-gradient(rgba($primary-color, 0.95),rgba($primary-color, 0.40)), url('../img/1160/city-building-corner.jpg');
   }
 }
