@@ -8,7 +8,7 @@
   <div class="hamburger">
     <div></div>
   </div>
-  <nav class="hamburger-menu">
+  <div class="hamburger-menu">
     <div>
       <div>
         <ul>{% for link in site.data.nav.primary %}{% capture navhref %}{{ link.href | relative_url }}{% endcapture %}
@@ -16,6 +16,6 @@
         </ul>
       </div>
     </div>
-  </nav>
+  </div>
 </div>
 
