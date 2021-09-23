@@ -1,8 +1,7 @@
-<nav>
-  <div class="nav-back {% if page.title == "404" %}invisible{% elsif page.url == "/" %}invisible{% endif %}">
-    {%- assign crumbs = page.url | remove:'/index.html' | split: '/' %}
-    {%- assign current_page = crumbs.last | append: '/' %}
-    {%- assign previous = page.url | remove: current_page %}
-    <a class="arrow-left-icon animate-nav-link" href="{{ previous | relative_url }}"> {% if previous == '/' %}HOME{% else %}{{ previous | upcase | remove: '/' }}{% endif %}</a>
-  </div>
-</nav>
+<div class="nav-back {% if page.title == "404" %}invisible{% elsif page.url == "/" %}invisible{% endif %}">
+  {%- assign crumbs = page.url | remove:'/index.html' | split: '/' %}
+  {%- assign current_page = crumbs.last | append: '/' %}
+  {%- assign previous = page.url | remove: current_page %}
+  <a class="arrow-left-icon animate-nav-link" href="{{ previous | relative_url }}"> {% if previous == '/' %}HOME{% else %}{{ previous | upcase | remove: '/' }}{% endif %}</a>
+</div>
+
