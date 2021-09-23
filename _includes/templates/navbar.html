@@ -5,7 +5,7 @@
     </div>
     <div class="flex-medium med-one-fourth">
       <ul class="navbar-menu">{% for menu in site.data.nav.primary limit:4 %}{% capture menuhref %}{{ menu.href | relative_url }}{% endcapture %}
-        <li><a href="{{ menuhref }}" class="animate-nav-link{% if menu.href == page.url %} current{% else page.layout == "single-page" %} black-menu{% endif %}">{{ menu.text }}</a></li>{% endfor %}
+        <li><a href="{{ menuhref }}" class="animate-nav-link{% if menu.href == page.url %} current{% elsif page.layout == "single-page" %} black-menu{% endif %}">{{ menu.text }}</a></li>{% endfor %}
       </ul>
     </div>
     <div class="flex-medium med-one-fourth">
