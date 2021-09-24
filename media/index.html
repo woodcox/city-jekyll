@@ -29,14 +29,14 @@
 }
 
   </style>
-  <link rel="stylesheet" href="/city-jekyll/assets/css/city.css?v=1632450822" /><link rel="apple-touch-icon" sizes="180x180" href="/city-jekyll/assets/img/favicon/apple-touch-icon.png" /><link rel="icon" type="image/png" sizes="32x32" href="/city-jekyll/assets/img/favicon/favicon-32x32.png" /><link rel="icon" type="image/png" sizes="16x16" href="/city-jekyll/assets/img/favicon/favicon-16x16.png" />
+  <link rel="stylesheet" href="/city-jekyll/assets/css/city.css?v=1632453405" /><link rel="apple-touch-icon" sizes="180x180" href="/city-jekyll/assets/img/favicon/apple-touch-icon.png" /><link rel="icon" type="image/png" sizes="32x32" href="/city-jekyll/assets/img/favicon/favicon-32x32.png" /><link rel="icon" type="image/png" sizes="16x16" href="/city-jekyll/assets/img/favicon/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" /><link rel="mask-icon" href="/city-jekyll/assets/img/favicon/safari-pinned-tab.svg" color="#f19426" /><link rel="shortcut icon" href="/city-jekyll/assets/img/favicon/favicon.ico" />
     <link rel="sitemap" type="application/xml" title="Sitemap" href="/city-jekyll/sitemap.xml" />
     <meta name="msapplication-TileColor" content="#259cd3">
     <meta name="msapplication-config" content="/city-jekyll/browserconfig.xml">
     <meta name="theme-color" content="#259cd3">
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
-  <script src="/city-jekyll/assets/js/contacts.js?v=1632450822"></script>
+  <script src="/city-jekyll/assets/js/contacts.js?v=1632453405"></script>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
@@ -349,25 +349,34 @@
 <div class="flex-row">
   <div class="flex-tiny ty-half">
     <div class="icontain">
-      <iframe class="lozad" title="City Evangelical Church morning service  19th September 2021" data-src="https://www.youtube-nocookie.com/embed/F_EWvV0A2jg" allowfullscreen="">
+      <iframe class="lozad" id="video-F_EWvV0A2jg" title="City Evangelical Church morning service  19th September 2021" data-src="https://www.youtube-nocookie.com/embed/F_EWvV0A2jg" allowfullscreen="">
       </iframe>
     </div>
   </div>
   <div class="flex-tiny ty-half">
+  <a id="play-video-F_EWvV0A2jg" href="#">Play Video</a>
     <p>Morning service</p>
     <p>19 Sep 2021</p>
   </div>
 </div>
 <hr />
 
-<h2>Catch up videos</h2>
+<script>
+  $('#play-video F_EWvV0A2jg').on('click', function(ev) {
+
+    $("#video-F_EWvV0A2jg")[0].src += "&autoplay=1";
+    ev.preventDefault();
+
+});
+
+## Catch up videos
 
 <div class="slider-wrapper">
   <ul class="flex-row-slider align-stretch" data-snap-slider="video-slider-link"> 
     <li class="flex-small sm-half flex-medium med-one-third flex-large lg-one-fourth">
       <div class="card-audio carousel-snap" id="yt-play-button">
         <div class="icontain-border-radius-top">
-          <iframe class="lozad" id="yt-play" title="City Evangelical Church morning service  12th September 2021" data-src="https://www.youtube-nocookie.com/embed/Xx32uY5H4II?enablejsapi=1" allowfullscreen="">
+          <iframe class="lozad" id="yt-play" title="City Evangelical Church morning service  12th September 2021" data-src="https://www.youtube-nocookie.com/embed/Xx32uY5H4II?enablejsapi=1" allowfullscreen>
           </iframe>
         </div>
         <article>
@@ -381,7 +390,7 @@
     <li class="flex-small sm-half flex-medium med-one-third flex-large lg-one-fourth">
       <div class="card-audio carousel-snap" id="yt-play-button">
         <div class="icontain-border-radius-top">
-          <iframe class="lozad" id="yt-play" title="City Evangelical Church morning service  26th September 2021" data-src="https://www.youtube-nocookie.com/embed/kFZOX-WLgqk?enablejsapi=1" allowfullscreen="">
+          <iframe class="lozad" id="yt-play" title="City Evangelical Church morning service  26th September 2021" data-src="https://www.youtube-nocookie.com/embed/kFZOX-WLgqk?enablejsapi=1" allowfullscreen>
           </iframe>
         </div>
         <article>
@@ -395,7 +404,7 @@
     <li class="flex-small sm-half flex-medium med-one-third flex-large lg-one-fourth">
       <div class="card-audio carousel-snap" id="yt-play-button">
         <div class="icontain-border-radius-top">
-          <iframe class="lozad" id="yt-play" title="City Evangelical Church morning service  5th September 2021" data-src="https://www.youtube-nocookie.com/embed/83w30jaBUr4?enablejsapi=1" allowfullscreen="">
+          <iframe class="lozad" id="yt-play" title="City Evangelical Church morning service  5th September 2021" data-src="https://www.youtube-nocookie.com/embed/83w30jaBUr4?enablejsapi=1" allowfullscreen>
           </iframe>
         </div>
         <article>
@@ -409,7 +418,7 @@
     <li class="flex-small sm-half flex-medium med-one-third flex-large lg-one-fourth">
       <div class="card-audio carousel-snap" id="yt-play-button">
         <div class="icontain-border-radius-top">
-          <iframe class="lozad" id="yt-play" title="City Evangelical Church morning service  29th August 2021" data-src="https://www.youtube-nocookie.com/embed/cH4CH_snLhY?enablejsapi=1" allowfullscreen="">
+          <iframe class="lozad" id="yt-play" title="City Evangelical Church morning service  29th August 2021" data-src="https://www.youtube-nocookie.com/embed/cH4CH_snLhY?enablejsapi=1" allowfullscreen>
           </iframe>
         </div>
         <article>
@@ -423,7 +432,7 @@
     <li class="flex-small sm-half flex-medium med-one-third flex-large lg-one-fourth">
       <div class="card-audio carousel-snap" id="yt-play-button">
         <div class="icontain-border-radius-top">
-          <iframe class="lozad" id="yt-play" title="City Evangelical Church morning service  22nd August 2021" data-src="https://www.youtube-nocookie.com/embed/WI9X2t-MlNs?enablejsapi=1" allowfullscreen="">
+          <iframe class="lozad" id="yt-play" title="City Evangelical Church morning service  22nd August 2021" data-src="https://www.youtube-nocookie.com/embed/WI9X2t-MlNs?enablejsapi=1" allowfullscreen>
           </iframe>
         </div>
         <article>
@@ -437,7 +446,7 @@
     <li class="flex-small sm-half flex-medium med-one-third flex-large lg-one-fourth">
       <div class="card-audio carousel-snap" id="yt-play-button">
         <div class="icontain-border-radius-top">
-          <iframe class="lozad" id="yt-play" title="City Evangelical Church morning service  15th August 2021" data-src="https://www.youtube-nocookie.com/embed/wYR5RxUm0O4?enablejsapi=1" allowfullscreen="">
+          <iframe class="lozad" id="yt-play" title="City Evangelical Church morning service  15th August 2021" data-src="https://www.youtube-nocookie.com/embed/wYR5RxUm0O4?enablejsapi=1" allowfullscreen>
           </iframe>
         </div>
         <article>
@@ -451,7 +460,7 @@
     <li class="flex-small sm-half flex-medium med-one-third flex-large lg-one-fourth">
       <div class="card-audio carousel-snap" id="yt-play-button">
         <div class="icontain-border-radius-top">
-          <iframe class="lozad" id="yt-play" title="City Evangelical Church morning service  8th August 2021" data-src="https://www.youtube-nocookie.com/embed/KbNqcEewdvw?enablejsapi=1" allowfullscreen="">
+          <iframe class="lozad" id="yt-play" title="City Evangelical Church morning service  8th August 2021" data-src="https://www.youtube-nocookie.com/embed/KbNqcEewdvw?enablejsapi=1" allowfullscreen>
           </iframe>
         </div>
         <article>
@@ -465,7 +474,7 @@
     <li class="flex-small sm-half flex-medium med-one-third flex-large lg-one-fourth">
       <div class="card-audio carousel-snap" id="yt-play-button">
         <div class="icontain-border-radius-top">
-          <iframe class="lozad" id="yt-play" title="City Evangelical Church morning service  1st August 2021" data-src="https://www.youtube-nocookie.com/embed/cZeoA7uu0XU?enablejsapi=1" allowfullscreen="">
+          <iframe class="lozad" id="yt-play" title="City Evangelical Church morning service  1st August 2021" data-src="https://www.youtube-nocookie.com/embed/cZeoA7uu0XU?enablejsapi=1" allowfullscreen>
           </iframe>
         </div>
         <article>
@@ -479,7 +488,7 @@
     <li class="flex-small sm-half flex-medium med-one-third flex-large lg-one-fourth">
       <div class="card-audio carousel-snap" id="yt-play-button">
         <div class="icontain-border-radius-top">
-          <iframe class="lozad" id="yt-play" title="City Evangelical Church morning service  25th July 2021" data-src="https://www.youtube-nocookie.com/embed/bVJb-W2XM6s?enablejsapi=1" allowfullscreen="">
+          <iframe class="lozad" id="yt-play" title="City Evangelical Church morning service  25th July 2021" data-src="https://www.youtube-nocookie.com/embed/bVJb-W2XM6s?enablejsapi=1" allowfullscreen>
           </iframe>
         </div>
         <article>
@@ -497,6 +506,7 @@
   </ul>
 </div>
 
+</script>
 
       </div>
     </article>
@@ -554,9 +564,9 @@
 </footer>
 
 
-<script src="/city-jekyll/assets/js/snap-slider.min.js?v=1632450822"></script>
-<script src="/city-jekyll/assets/js/site.js?v=1632450822"></script>
-<script src="/city-jekyll/assets/js/smoothscroll-polyfill.js?v=1632450822"></script>
+<script src="/city-jekyll/assets/js/snap-slider.min.js?v=1632453405"></script>
+<script src="/city-jekyll/assets/js/site.js?v=1632453405"></script>
+<script src="/city-jekyll/assets/js/smoothscroll-polyfill.js?v=1632453405"></script>
 
 <style>
   #cookie-notice {
