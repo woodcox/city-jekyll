@@ -14,6 +14,8 @@ layout: null
   videodate: {{ video-date }}
   passage: {{ media[1] }}{% if media[0] contains media[1] %}{% else %} - {{ media[0] | slice: 13, 100 }}{% endif %}
   preacher: {{ talk.author | split: "(" | last | remove: ")" }}
+  youtube_id: {{ mp4.guid | remove: "yt:video:" }}
+  sermon_url: {{ talk.enclosure.link }}
 {%- endif %}
 {%- endfor %}
 {%- endif %}
