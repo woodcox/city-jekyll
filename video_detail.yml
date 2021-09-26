@@ -1,0 +1,15 @@
+---
+layout: null
+---
+
+{% for talk in site.data.sermons.items %}
+{% for mp4 in site.data.YouTube.items limit: 1 %}
+{% assign media = talk.title | split: " - " %}
+{% assign sermon-date = talk.pubDate | date: "%-d %b %Y - %I:%M %p" %}
+{% assign video-date = mp4.title | remove: "City Evangelical Church" | date: "%-d %b %Y" %}
+- videodate: {{ video-date }} - 10:30 AM
+  talkdate: {{ sermon-date }}
+  passage: {{ media[1] }}{% if media[0] contains media[1] %}{% else %} - {{ media[0] | slice: 13, 100 }}{% endif %}
+  preacher: {{ talk.author | split: "(" | last | remove: ")" }}
+{% endfor %}
+{% endfor %}
