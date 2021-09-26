@@ -1,5 +1,4 @@
 ---
-layout: null
 ---
 {%- for talk in site.data.sermons.items %}
 {%- assign sermon-date-time = talk.pubDate | date: "%-d %b %Y - %I:%M %p" %}
