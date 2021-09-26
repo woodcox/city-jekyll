@@ -7,7 +7,7 @@
 {%- for mp4 in site.data.YouTube.items %}
 {%- assign media = talk.title | split: " - " %}
 {%- assign video-date = mp4.title | remove: "City Evangelical Church" | date: "%-d %b %Y" %}
-{%- captured  passage %}{{ media[1] }}{% if media[0] contains media[1] %}{% else %} - {{ media[0] | slice: 13, 100 }}{% endif %}{% endcapture %}
+{%- capture passage %}{{ media[1] }}{% if media[0] contains media[1] %}{% else %} - {{ media[0] | slice: 13, 100 }}{% endif %}{% endcapture %}
 {%- assign preacher = talk.author | split: "(" | last | remove: ")" %}
 {%- assign youtube_id = mp4.guid | remove: "yt:video:" %}
 {%- if sermon-date == video-date %}
