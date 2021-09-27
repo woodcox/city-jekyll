@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.homepage      = "https://woodcock3.github.io/city-jekyll/"
   spec.license       = "MIT"
 
-  spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r{^(assets|_layouts|_includes|LICENSE|README|404|_data|index|package|package-lock|postcss|robot|sitemap)}i) }
+  spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r{^(assets|_layouts|_includes|LICENSE|README|404|_data|index|robot|sitemap)}i) }
 
   spec.metadata      = {
     "changelog_uri"     => "https://woodcock3.github.io/city-jekyll/updates/",
