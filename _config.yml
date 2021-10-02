@@ -6,7 +6,7 @@ safe: false
 
 
 ### site serving configuration ###
-exclude: [CNAME, README.md, npm.md, SECURITY.md, LICENSE.md, .gitignore, package.json, package-lock.json, postcss.config.js, .browserslistrc]
+exclude: [CNAME, README.md, npm.md, SECURITY.md, LICENSE.md, .gitignore, package.json, package-lock.json, postcss.config.js, .browserslistrc, city-jekyll-theme.gemspec]
 permalink: /:title ## disables post output
 url: "https://woodcock3.github.io"
 baseurl: "/city-jekyll"
