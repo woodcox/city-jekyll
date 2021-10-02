@@ -85,7 +85,7 @@ plugins:
 ### Uses https://rss2json.com
 jekyll_get_json:
   - data: calendar
-    json: {{ site.env.CALENDAR_TEST }}
+    json: {{ site.env.CALENDAR_TEST | liquify }}
   - data: growthgroup
     json: 'https://cecleeds.churchsuite.co.uk/embed/smallgroups/json'
   - data: sermons
