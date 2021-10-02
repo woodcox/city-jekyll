@@ -34,6 +34,17 @@ jobs:
           node-version: '14'
       # Install PostCSS plugins using jekyll-postcss-v2, package.json and postcss.config.js
       - run: npm ci  # run: npm run dev
+      # Update yaml config file with SECRETS!!
+      # path:
+      #   to:
+      #     the:
+      #       - value: hello
+      #       - value: world
+      #     nested: |
+      #       abc: 123
+      # e.g. propertyPath: 'path.to.the.0.value' = to change 'hello'
+      # e.g. propertyPath: 'path.to.the.1.value' = to change 'world'
+      # e.g. propertyPath: 'path.to.nested.abc' = to change '123'
       - name: Update yaml values
         uses: woodcock3/yaml-update-action@master
         with:
