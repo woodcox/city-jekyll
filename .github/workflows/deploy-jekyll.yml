@@ -34,6 +34,14 @@ jobs:
           node-version: '14'
       # Install PostCSS plugins using jekyll-postcss-v2, package.json and postcss.config.js
       - run: npm ci  # run: npm run dev
+      - name: Update yaml values
+        uses: woodcock3/yaml-update-action@master
+        with:
+          valueFile: '_config.yml'
+          propertyPath: 'jekyll_get_json.0.json'
+          value: 'https://cecleeds.churchsuite.co.uk/embed/calendar/json'
+          commitChange: false
+          updateFile: true
       # use jekyll-action-ts to build
       # https://github.com/limjh16/jekyll-action-ts
       - name: Build site
