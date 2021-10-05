@@ -4,6 +4,6 @@
     {% include modules/nav-back.html %}
   </div>
   <div class="hero-text">
-    <h1 class="hero-text-h1">{% capture title %}{% for menu in site.data.nav.primary %}{% if menu.href == page.url %}{{ menu.text | upcase }}{% endif %}{% endfor %}{% endcapture %}{% if title == menu.text %}{% title %}{% else %}{{ page.url | remove: '/' | replace: "-", " " | replace: "_", " " | upcase }}{% endif %}</h1>
+    <h1 class="hero-text-h1">{% capture title %}{% for menu in site.data.nav.primary %}{% if menu.href == page.url %}{{ menu.text | upcase }}{% endif %}{% endfor %}{% endcapture %}{% if title == "" %}{{ page.url | remove: '/' | replace: "-", " " | replace: "_", " " | upcase }}{% else %}{% title %}{% endif %}</h1>
   </div>
 </section>
