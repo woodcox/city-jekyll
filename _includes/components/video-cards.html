@@ -10,7 +10,7 @@
 {%- assign youtube_id = mp4.guid | remove: "yt:video:" %}
 {%- if sermon-date == video-date %}
 <div class="slider-wrapper">
-  <ul class="flex-row-slider align-stretch" data-snap-slider="video-slider-link"> {% for mp4 in site.data.YouTube.items offset:1 %}
+  <ul class="flex-row-slider align-stretch" data-snap-slider="video-slider-link">
     <li class="flex-small sm-half flex-medium med-one-third flex-large lg-one-fourth">
       <div class="card-audio carousel-snap" id="yt-play-button">
         <div class="icontain-border-radius-top">
