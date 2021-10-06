@@ -1,15 +1,26 @@
+{%- for talk in site.data.sermons.items %}
+{%- assign sermon-date-time = talk.pubDate | date: "%-d %b %Y - %I:%M %p" %}
+{%- assign sermon-date = sermon-date-time | date: "%-d %b %Y" %}
+{%- if sermon-date-time contains "10:45" %}
+{%- for mp4 in site.data.YouTube.items %}
+{%- assign media = talk.title | split: " - " %}
+{%- assign video-date = mp4.title | remove: "City Evangelical Church" | date: "%-d %b %Y" %}
+{%- capture passage %}{{ media[1] }}{% if media[0] contains media[1] %}{% else %} - {{ media[0] | slice: 13, 100 }}{% endif %}{% endcapture %}
+{%- assign preacher = talk.author | split: "(" | last | remove: ")" %}
+{%- assign youtube_id = mp4.guid | remove: "yt:video:" %}
+{%- if sermon-date == video-date %}
 <div class="slider-wrapper">
   <ul class="flex-row-slider align-stretch" data-snap-slider="video-slider-link"> {% for mp4 in site.data.YouTube.items offset:1 %}
     <li class="flex-small sm-half flex-medium med-one-third flex-large lg-one-fourth">
       <div class="card-audio carousel-snap" id="yt-play-button">
         <div class="icontain-border-radius-top">
-          <iframe class="lozad" id="yt-play" title="City Evangelical Church morning service {{ mp4.title | remove: "City Evangelical Church" }}" data-src="https://www.youtube-nocookie.com/embed/{{ mp4.guid | remove: "yt:video:" }}?enablejsapi=1" allowfullscreen>
+          <iframe class="lozad" id="yt-play" title="City Evangelical Church morning service on {{ video-date }}" data-src="https://www.youtube-nocookie.com/embed/https://www.youtube-nocookie.com/embed/{{ youtube_id }}?enablejsapi=1" allowfullscreen>
           </iframe>
         </div>
         <article>
           <button class="muted-button">
-            <h2> Morning service on {{ mp4.title | remove: "City Evangelical Church" }}</h2>
-            <span>{{ talk.pubDate | date: "%-d %b %Y - %I:%M %p" }}{{ talk.author | split: "(" | last | remove: ")" }}</span>
+            <h2> Morning service on {{ video-date }}</h2>
+            <span><strong>Passage:</strong> {{ passage }} | <strong>Preacher:</strong> {{ preacher }}</span>
           </button>
         </article>
       </div>
