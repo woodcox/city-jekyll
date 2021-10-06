@@ -1,3 +1,4 @@
+{%- if id != "" %}
 <nav>
   <div class="second-nav medium-container padding-top{% for background in webpage %}{% capture bg %}{{ background.bg-color | first }}{% endcapture %}{% if bg == "alternate-background" %} alternate-background{% endif %}{% endfor %}">
     <ul class="flex-row text-center">
@@ -9,3 +10,4 @@
     <hr>
   </div>
 </nav>
+{% endif %}
