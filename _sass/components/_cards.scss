@@ -237,6 +237,10 @@ $card-font-color: white;
     margin: 1rem 0 0 0;
   }
   thumb-title {
-    @extend .card-image.span;
+    &:hover,
+    &:active,
+    &:focus {
+      text-decoration: none;
+    }
   }
 }
