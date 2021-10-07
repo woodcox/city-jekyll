@@ -832,6 +832,13 @@ $encoding-reference: (
   }
 }
 
+.external-black-icon {
+  &:after {
+    content: '';
+    @include fa($fa-external-link, $link-color);
+  }
+}
+
 .github-icon {
   &:after {
     content: '';
