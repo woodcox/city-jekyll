@@ -9,9 +9,9 @@
     </h2>
   </div>
   <div class="hero-buttons small-container">
-    <div class="flex-row">
+    <div class="text-center">
       {%- for hero-btn in site.data.nav.home_hero_buttons %}
-      <a class="flex-small sm-one-third button muted-button full-button" href="{{ hero-btn.href | relative_url }}">{{ hero-btn.text }}</a>
+      <a class="button muted-button full-button" href="{{ hero-btn.href | relative_url }}">{{ hero-btn.text }}</a>
       {%- endfor %}
     </div>
   </div>
