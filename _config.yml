@@ -28,6 +28,10 @@ favicon_32:         "/assets/img/favicon/favicon-32x32.png"
 touch_icon:         "/assets/img/favicon/apple-touch-icon.png" ## City logo as apple touch icon
 safari_pinned_tab:  "/assets/img/favicon/safari-pinned-tab.svg" ## put safari pinned tab svg icon here
 
+typewriter:  ### Hero typewriter message on homepage 
+  - hero_message: "Welcome"
+  - hero_message: "A city church with a community presence"
+
 google_analytics_key: ## put YOUR key here to enable tracking! (blank to disable)
 
 
