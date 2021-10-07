@@ -834,7 +834,7 @@ $encoding-reference: (
 
 .external-black-icon {
   &:after {
-    content: '';
+    content: ' ';
     @include fa($fa-external-link, $link-color);
   }
 }
