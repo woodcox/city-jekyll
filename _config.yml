@@ -39,19 +39,11 @@ google_analytics_key: ## put YOUR key here to enable tracking! (blank to disable
 
 ### template colors, used site-wide via css ###
 colors:
-  white:        '#f8f8f8'
-  black:        '#2e2e2e'
   ckyellow:     '#febd2e'
   ckblue:       '#01a8ff'
-  teal:         '#009688'
   cityorange:   '#f19426'
   cityblue:     '#259cd3'
   citygreen:    '#06892f'
-  grey:         '#cdcdcd'
-  darkgrey:     '#404040'
-  whiteish:     '#fafafa'
-  jetblack:     'black'
-  sowhite:      'white'
 
 kramdown:
   auto_ids:  false
