@@ -1,4 +1,4 @@
-<section class="hero full-container ">
+<section class="hero full-container">
   {% include templates/navbar.html %}
   <div class="hero-text">
     <h1 class="hero-text-h1">City Evangelical Church</h1>
@@ -8,11 +8,9 @@
       </a>
     </h2>
   </div>
-  <div class="hero-buttons">
-    <div class="text-center">
-      {%- for hero-btn in site.data.nav.home_hero_buttons %}
-      <a class="button muted-button" href="{{ hero-btn.href | relative_url }}">{{ hero-btn.text }}</a>
-      {%- endfor %}
-    </div>
+  <div class="hero-buttons text-center">
+    {%- for hero-btn in site.data.nav.home_hero_buttons %}
+    <a class="button muted-button" href="{{ hero-btn.href | relative_url }}">{{ hero-btn.text }}</a>
+    {%- endfor %}
   </div>
 </section>
