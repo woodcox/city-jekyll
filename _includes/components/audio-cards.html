@@ -46,7 +46,7 @@
 <div class="slider-wrapper">
   <ul class="flex-row-slider align-stretch" data-snap-slider="media-slider-link">{% for talk in site.data.sermons.items %}
     <li class="flex-tiny ty-half flex-small sm-one-third flex-medium med-one-fourth flex-large lg-one-sixth">
-      <a class="card-audio carousel-snap" href="{{ talk.enclosure.link }}">
+      <a class="card-media carousel-snap" href="{{ talk.enclosure.link }}">
         <div class="thumb" style="background: radial-gradient({{ site.colors.cityblue }}, {{ site.colors.citygreen }});">
           <h2 class="thumb-title outline-text-primary">{% assign media = talk.title | split: " - " %}{{ media[1] | slice: 0, 5 }}</h2>
         </div>
