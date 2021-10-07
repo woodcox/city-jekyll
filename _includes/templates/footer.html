@@ -3,9 +3,8 @@
     <div class="contacts-wrapper">
       <h3>Contact us</h3>{% for cec in site.data.contact.office %}
       <p class="footer-link-description external-link-icon">{{ cec.address }} - {{ cec.maplocation }} </p>
-      <p class="footer-link-description">{{ cec.phone }}</p>
-      <p class="footer-link-description">{{ cec.mailing }}{% endfor %}</p>
-      <p class="footer-link-description">{% for ml in site.data.contact.pastor %}{{ ml.mailing }}{% endfor %}</p>
+      <p class="footer-link-description">E: {{ cec.mailing }}{% endfor %} or {% for ml in site.data.contact.pastor %}{{ ml.mailing }}{% endfor %}</p>
+      <p class="footer-link-description">T: {{ cec.phone }}</p>
       <p class="footer-link-description external-link-icon"><a href="https://login.churchsuite.co.uk/" target="_blank" rel="noopener">ChurchSuite login</a> </p>
     </div>
     <div class="social-wrapper">
