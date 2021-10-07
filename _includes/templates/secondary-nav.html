@@ -1,12 +1,13 @@
 {% capture jumplinks %}
 {%- for node in webpage %}
-{%- if forloop.length > 2 %}
+{%- assign link_number = forloop.length %}
+{%- if link_number > 2 %}
 {%- capture id %}{{ node.id | remove:'/' | downcase }}{% endcapture %}
 <li class="p-{{id}} flex-small justify-center"><a class="animate-nav-link" href="#{{id}}">{{node.title}}</a></li>
 {%- endif %}
 {%- endfor %}
 {% endcapture %}
-{%- if jumplinks != "" %}
+{%- if link_number > 2 %}
 <nav>
   <div class="second-nav medium-container padding-top{% for background in webpage %}{% capture bg %}{{ background.bg-color | first }}{% endcapture %}{% if bg == "alternate-background" %} alternate-background{% endif %}{% endfor %}">
     <ul class="flex-row text-center">
