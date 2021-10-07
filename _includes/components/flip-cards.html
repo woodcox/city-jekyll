@@ -10,7 +10,7 @@
         <div class="back">
           <div class="inner">
             <p>{{ item.content }}</p>
-            <a class="button accent-button arrow-right-icon">More about {{ item.title | downcase }} </a>
+            <a class="button accent-button arrow-right-icon" href="{{ item.href | relative_url }}">More about {{ item.title | downcase }} </a>
           </div>
         </div>
       </div>
