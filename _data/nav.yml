@@ -18,7 +18,7 @@ primary:
   - text: Media
     href: /media/
 
-home_header_buttons:
+home_hero_buttons:
   - text: Sunday
     href: /sunday/
   - text: I'm new
