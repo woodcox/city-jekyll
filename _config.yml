@@ -30,7 +30,7 @@ safari_pinned_tab:  "/assets/img/favicon/safari-pinned-tab.svg" ## put safari pi
 
 typewriter:  ### Hero typewriter message on homepage 
   - message: "Welcome"
-  - message: "Sundays - 10:45am and 6:30pm"
+  - message: "Sundays: 10:45am and 6:30pm"
   - message: "A city church with a community presence."
   - message: "We believe Jesus is good news."
 
