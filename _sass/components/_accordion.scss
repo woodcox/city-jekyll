@@ -17,13 +17,12 @@
     label {
       display: flex;
       cursor: pointer;
-      padding: 0.75rem 2.4rem 0.75rem 0;
+      padding: 0.75rem 2.4rem 0.75rem 1.1rem;
       margin: 0;
       color: $accordion-color;
       background: $accordion-background;
       border-radius: $accordion-border-radius;
       margin-bottom: 3px;
-      padding-left: 1.1rem;
       &:hover {
           background: darken($accordion-background, 10%);
       }
