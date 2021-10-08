@@ -1,5 +1,5 @@
 <div class="timeline">
-  <ul>{% for event in site.data.calendar limit:10 %}
+  <ul>{% for event in site.data.calendar limit:8 %}
     <li>
       <div class="date">
         <span>{{ event.datetime_start | split: " " | first | slice: -2, 2 }}</span>
