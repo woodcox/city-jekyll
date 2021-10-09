@@ -57,8 +57,6 @@ jobs:
       # https://github.com/limjh16/jekyll-action-ts
      
       - name: Build site
-        env:
-          JEKYLL_ENV: development
         uses: woodcock3/jekyll-action-ts@master
         with:
           enable_cache: true
@@ -67,6 +65,7 @@ jobs:
           ## If you need to specify any Jekyll build options, enable the above input
           ## Flags accepted can be found here https://jekyllrb.com/docs/configuration/options/#build-command-options
         env:
+          JEKYLL_ENV: development
           NODE_ENV: production # production or development - this affects minification of css in postcss.config.js
       # https://github.com/peaceiris/actions-gh-pages
       - name: Deploy
