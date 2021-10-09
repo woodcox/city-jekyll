@@ -55,6 +55,8 @@ jobs:
           updateFile: true
       # use jekyll-action-ts to build
       # https://github.com/limjh16/jekyll-action-ts
+      env:
+        JEKYLL_ENV: development
       - name: Build site
         uses: woodcock3/jekyll-action-ts@master
         with:
