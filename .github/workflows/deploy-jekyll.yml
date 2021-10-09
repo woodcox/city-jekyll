@@ -59,8 +59,8 @@ jobs:
         uses: woodcock3/jekyll-action-ts@master
         with:
           enable_cache: true
-          # custom_opts: '--verbose --trace'  #'--drafts --future'
           jekyll_env: development
+          custom_opts: '--verbose --trace'  #'--drafts --future'
           ## If you need to specify any Jekyll build options, enable the above input
           ## Flags accepted can be found here https://jekyllrb.com/docs/configuration/options/#build-command-options
         env:
