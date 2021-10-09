@@ -56,7 +56,7 @@ jobs:
       # use jekyll-action-ts to build
       # https://github.com/limjh16/jekyll-action-ts
       - name: Build site
-        uses: woodcock3/jekyll-action-ts@v2
+        uses: woodcock3/jekyll-action-ts@master
         with:
           enable_cache: true
           # custom_opts: '--verbose --trace'  #'--drafts --future'
