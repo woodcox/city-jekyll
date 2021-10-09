@@ -2,4 +2,4 @@
 layout: none
 ---
 User-agent: *
-Sitemap: {{ site.url }}{{ 'sitemap.xml' | relative_url }}
+Sitemap: {% if site.environment == "deployment" %}{{ site.deployurl }}{{ 'sitemap.xml' | relative_url }}{% else %}{{ site.url }}{{ 'sitemap.xml' | relative_url }}{% endif %}
