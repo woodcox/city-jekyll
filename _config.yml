@@ -10,7 +10,8 @@ exclude: [CNAME, README.md, npm.md, SECURITY.md, LICENSE.md, .gitignore, package
 permalink: /:title ## disables post output
 url: "https://woodcock3.github.io"
 baseurl: "/city-jekyll"
-deployurl: ## use if deploying site to an external server 
+deployurl: ## use if deploying site to an external server
+environment: development
 timezone: null
 lsi: false
 markdown: kramdown
