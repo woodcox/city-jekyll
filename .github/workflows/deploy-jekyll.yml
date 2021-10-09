@@ -55,17 +55,14 @@ jobs:
           updateFile: true
       # use jekyll-action-ts to build
       # https://github.com/limjh16/jekyll-action-ts
-     
       - name: Build site
-        uses: woodcock3/jekyll-action-ts@master
+        uses: limjh16/jekyll-action-ts@v2
         with:
           enable_cache: true
-          jekyll_env: deployment
           custom_opts: '--verbose --trace'  #'--drafts --future'
           ## If you need to specify any Jekyll build options, enable the above input
           ## Flags accepted can be found here https://jekyllrb.com/docs/configuration/options/#build-command-options
         env:
-          JEKYLL_ENV: deployment
           NODE_ENV: production # production or development - this affects minification of css in postcss.config.js
       # https://github.com/peaceiris/actions-gh-pages
       - name: Deploy
