@@ -42,12 +42,10 @@
   </div>
 </footer>
 
-{% assign buildversion = site.time | date:'?v=%s' %}
+{%- assign buildversion = site.time | date:'?v=%s' %}
 <script src="{{ '/assets/js/snap-slider.min.js' | append: buildversion | relative_url }}"></script>
 <script src="{{ '/assets/js/site.js' | append: buildversion | relative_url }}"></script>
 <script src="{{ '/assets/js/smoothscroll-polyfill.js' | append: buildversion | relative_url }}"></script>
-
-{% include modules/cookie-consent.html %}
-
+{%- include modules/cookie-consent.html %}
 </body>
 </html>
