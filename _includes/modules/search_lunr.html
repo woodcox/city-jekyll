@@ -2,7 +2,7 @@
 
 <script>
 {% assign counter = 0 %}
-var documents = [{% assign searchable_docs = site.documents | where: "layout", "all_collections" %}{% for page in searchable_docs %}{% if page.url contains '.xml' or page.url contains 'assets' %}{% else %}{
+var documents = [{% assign searchable_docs = site.documents | where: "layout", "sectioned-page" %}{% for page in searchable_docs %}{% if page.url contains '.xml' or page.url contains 'assets' %}{% else %}{
     "id": {{ counter }},
     "url": "{{ site.url }}{{ page.url }}{{ page.id | replace: "/", "#"}}",
     "title": "{{ page.title }}",
