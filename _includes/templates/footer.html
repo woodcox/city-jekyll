@@ -43,7 +43,7 @@
 </footer>
 
 {% assign buildversion = site.time | date:'?v=%s' %}
-{% if site.document contains "data-snap-slider" %}<script src="{{ '/assets/js/snap-slider.min.js' | append: buildversion | relative_url }}"></script>{% endif %}
+<script src="{{ '/assets/js/snap-slider.min.js' | append: buildversion | relative_url }}"></script>
 <script src="{{ '/assets/js/site.js' | append: buildversion | relative_url }}"></script>
 <script src="{{ '/assets/js/smoothscroll-polyfill.js' | append: buildversion | relative_url }}"></script>
 
