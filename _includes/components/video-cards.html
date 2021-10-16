@@ -1,32 +1,26 @@
- <div class="slider-wrapper">
-  <ul class="flex-row-slider align-stretch" data-snap-slider="video-slider-link">
-    {%- for talk in site.data.sermons.items %}
-    {%- assign sermon-date-time = talk.pubDate | date: "%-d %b %Y - %I:%M %p" %}
-    {%- assign sermon-date = sermon-date-time | date: "%-d %b %Y" %}
-    {%- if sermon-date-time contains "10:45" %}
-    {%- for mp4 in site.data.YouTube.items %}
-    {%- assign media = talk.title | split: " - " %}
-    {%- assign video-date = mp4.title | remove: "City Evangelical Church" | date: "%-d %b %Y" %}
-    {%- capture passage %}{{ media[1] }}{% if media[0] contains media[1] %}{% else %} - {{ media[0] | slice: 13, 100 }}{% endif %}{% endcapture %}
-    {%- assign preacher = talk.author | split: "(" | last | remove: ")" %}
-    {%- assign youtube_id = mp4.guid | remove: "yt:video:" %}
-    {%- if sermon-date == video-date %}
-    <li class="flex-small sm-half flex-medium med-one-third flex-large lg-one-fourth">
-      <div class="card-media carousel-snap" id="yt-play-button">
-        <div class="icontain-border-radius-top">
-          <iframe class="lozad" id="yt-play" title="City Evangelical Church morning service on {{ video-date }}" data-src="https://www.youtube-nocookie.com/embed/{{ youtube_id }}" allowfullscreen>
-          </iframe>
-        </div>
-        <article>
-          <h2>Morning service on {{ video-date }}</h2>
-          <p>{{ passage }}</p>
-          <span><strong>Preacher:</strong> {{ preacher }}</span>
-        </article>
+<div class="flex-row align-stretch">
+  {%- for talk in site.data.sermons.items %}
+  {%- assign sermon-date-time = talk.pubDate | date: "%-d %b %Y - %I:%M %p" %}
+  {%- assign sermon-date = sermon-date-time | date: "%-d %b %Y" %}
+  {%- if sermon-date-time contains "10:45" %}
+  {%- for mp4 in site.data.YouTube.items %}
+  {%- assign media = talk.title | split: " - " %}
+  {%- assign video-date = mp4.title | remove: "City Evangelical Church" | date: "%-d %b %Y" %}
+  {%- capture passage %}{{ media[1] }}{% if media[0] contains media[1] %}{% else %} - {{ media[0] | slice: 13, 100 }}{% endif %}{% endcapture %}
+  {%- assign preacher = talk.author | split: "(" | last | remove: ")" %}
+  {%- assign youtube_id = mp4.guid | remove: "yt:video:" %}
+  {%- if sermon-date == video-date %}
+  <div class="flex-small sm-half flex-medium med-one-third flex-large lg-one-fourth">
+    <div class="card-media">
+      <div class="icontain-border-radius-top">
+        <iframe class="lozad" title="City Evangelical Church morning service on {{ video-date }}" data-src="https://www.youtube-nocookie.com/embed/{{ youtube_id }}" allowfullscreen>
+        </iframe>
       </div>
-    </li>{% endif %}{% endfor %}{% endif %}{% endfor %}
-  </ul>
-  <ul class="slider-nav" data-snap-slider-nav="video-slider-link">
-    <li><button class="muted-button" type="button">&#10096;<span class="screen-reader-text">Previous filmed service</span></button></li>
-    <li><button class="muted-button" type="button">&#10097;<span class="screen-reader-text">Next filmed service</span></button></li>
-  </ul>
+      <article>
+        <h2>Morning service on {{ video-date }}</h2>
+        <p>{{ passage }}</p>
+        <span><strong>Preacher:</strong> {{ preacher }}</span>
+      </article>
+    </div>
+  </div>{% endif %}{% endfor %}{% endif %}{% endfor %}
 </div>
