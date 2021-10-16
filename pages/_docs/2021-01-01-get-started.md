@@ -7,7 +7,7 @@ heading: 2
 sitemap: true
 ---
 
-To begin, use the header template (_include/templates/header.html) to create a <a href="https://en.wikipedia.org/wiki/HTML5">HTML5</a> template that does the following:
+To begin, use the head template (_include/templates/head.html) to create a <a href="https://en.wikipedia.org/wiki/HTML5">HTML5</a> template that does the following:
 
 - Sets the <a href="http://www.w3schools.com/tags/ref_language_codes.asp" target="_blank">default language</a> and <a href="https://en.wikipedia.org/wiki/UTF-8">character set</a>.
 - Uses the latest <a href="https://msdn.microsoft.com/en-us/library/jj676915(v=vs.85).aspx">Internet Explorer rendering mode</a>.
