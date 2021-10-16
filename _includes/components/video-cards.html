@@ -1,4 +1,5 @@
-  <ul class="flex-row align-stretch">
+ <div class="slider-wrapper">
+  <ul class="flex-row-slider align-stretch" data-snap-slider="video-slider-link">
     {%- for talk in site.data.sermons.items %}
     {%- assign sermon-date-time = talk.pubDate | date: "%-d %b %Y - %I:%M %p" %}
     {%- assign sermon-date = sermon-date-time | date: "%-d %b %Y" %}
@@ -11,9 +12,9 @@
     {%- assign youtube_id = mp4.guid | remove: "yt:video:" %}
     {%- if sermon-date == video-date %}
     <li class="flex-small sm-half flex-medium med-one-third flex-large lg-one-fourth">
-      <div class="card-media carousel-snap">
+      <div class="card-media carousel-snap" id="yt-play-button">
         <div class="icontain-border-radius-top">
-          <iframe class="lozad" title="City Evangelical Church morning service on {{ video-date }}" data-src="https://www.youtube-nocookie.com/embed/{{ youtube_id }}" allowfullscreen>
+          <iframe class="lozad" id="yt-play" title="City Evangelical Church morning service on {{ video-date }}" data-src="https://www.youtube-nocookie.com/embed/{{ youtube_id }}" allowfullscreen>
           </iframe>
         </div>
         <article>
@@ -24,3 +25,8 @@
       </div>
     </li>{% endif %}{% endfor %}{% endif %}{% endfor %}
   </ul>
+  <ul class="slider-nav" data-snap-slider-nav="video-slider-link">
+    <li><button class="muted-button" type="button">&#10096;<span class="screen-reader-text">Previous filmed service</span></button></li>
+    <li><button class="muted-button" type="button">&#10097;<span class="screen-reader-text">Next filmed service</span></button></li>
+  </ul>
+</div>
