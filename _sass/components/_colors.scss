@@ -52,9 +52,18 @@
   p a {
     color: $secondary-color;
   }
+  .text-blue {
+    colour: $primary-color;
+  }
 }
 
-.alternate-background {
+.alternate-background, 
+.bg-navy,
+.bg-black,
+.bg-dark,
+.bg-primary,
+.bg-secondary,
+.bg-third {
   @extend %alternate-background;
 }
 
