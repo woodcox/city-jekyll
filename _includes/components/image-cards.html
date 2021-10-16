@@ -1,3 +1,16 @@
+<div class="flex-row justify-center align-stretch">{% for card in page.image-card %}
+  <div class="flex-small sm-half flex-medium med-one-third">
+    <div class="card-image">
+      <div class="thumb" style="background-image: url({{ card.image }});"></div>
+      <article>
+        <h2>{{ card.title }}</h2>
+        <p>{{ card.info }}</p>
+        <span>{{ card.author }}</span>
+      </article>
+    </div>
+  </div>{% endfor %}
+</div>
+
 <div class="flex-row justify-center align-stretch">
   <div class="flex-small sm-half flex-medium med-one-third">
       <a class="card-image" href="https://design.tutsplus.com/articles/international-artist-feature-malaysia--cms-26852">
