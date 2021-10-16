@@ -64,7 +64,7 @@ City-jekyll
 |      ├─── comments.html
 |      ├─── date.html
 |      ├─── footer.html
-|      ├─── header.html
+|      ├─── head.html
 |      ├─── navbar.html
 │      └─── share.html
 │  
