@@ -162,12 +162,16 @@ mark {
 
 // Blockquote
 blockquote {
-  margin: 0;
+  margin: 0 0 $margins 0;
   border-left: $bq-border;
   border-radius: $border-radius;
   padding: 0.7rem 1.5rem;
   font-style: italic;
   background: $bq-background;
+
+  p {
+    margin-bottom: 0;
+  }
 
   cite {
     display: block;
