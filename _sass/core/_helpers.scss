@@ -127,8 +127,8 @@
 }
 
 // font styles
-.font-sanchez {
+.font-impact {
   font-family: Sanchez-regular;
   font-size: 1.1rem;
-  color: grey;
+  color: darken($accent-color, 10%);
 }
