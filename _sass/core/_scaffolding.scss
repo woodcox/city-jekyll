@@ -169,7 +169,11 @@ blockquote {
   font-style: italic;
   background: $bq-background;
 
-  p {
+  p,
+  ol,
+  ul,
+  dl,
+  table {
     margin-bottom: 0;
   }
 
