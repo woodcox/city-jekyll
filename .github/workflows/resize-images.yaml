@@ -15,6 +15,9 @@ jobs:
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v2
+      # Create pull request
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v3
       # Resize images
       - name: Image Resize to 400x
         uses: sharadcodes/img-resizer@v1.1
