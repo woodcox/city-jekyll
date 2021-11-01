@@ -1,4 +1,4 @@
-name: Compress & Resize Images
+name: Compress Images
 on:
   pull_request:
     # Run Image Actions when pull request to master branch.
