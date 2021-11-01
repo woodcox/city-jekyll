@@ -20,7 +20,7 @@ jobs:
         uses: peter-evans/create-pull-request@v3
         with:
           # GITHUB_TOKEN secret is set up automatically
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.PAT }}
       # Resize images
       - name: Image Resize to 400x
         uses: sharadcodes/img-resizer@v1.1
