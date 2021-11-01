@@ -15,12 +15,6 @@ jobs:
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v2
-      # Create pull request
-      - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v3
-        with:
-          # GITHUB_TOKEN secret is set up automatically
-          token: ${{ secrets.PAT }}
       # Resize images
       - name: Image Resize to 400x
         uses: sharadcodes/img-resizer@v1.1
@@ -52,3 +46,9 @@ jobs:
           image-folder: 'assets/img/master' # This has original images
           new-resolution: '1160x' # default is 400x
           output-folder: "assets/img/1160"
+       # Create pull request
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v3
+        with:
+          # GITHUB_TOKEN secret is set up automatically
+          token: ${{ secrets.PAT }}
