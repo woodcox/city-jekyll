@@ -1,4 +1,4 @@
-name: Compress & Resize Images
+name: Resize Images
 on:
   pull_request:
     # Run Image Actions when pull request to master branch.
@@ -18,6 +18,9 @@ jobs:
       # Create pull request
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v3
+        with:
+          # GITHUB_TOKEN secret is set up automatically
+          github_token: ${{ secrets.GITHUB_TOKEN }}
       # Resize images
       - name: Image Resize to 400x
         uses: sharadcodes/img-resizer@v1.1
