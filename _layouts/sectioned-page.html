@@ -12,6 +12,8 @@ layout: default
     <article>
       <div class="{{ page.container-size }}{%- if page.container-size == "small" or page.container-size == "medium" %}-{%- endif %}container {{ page.style }}">
         {%- if page.title %}<h{{ page.heading }}>{{ page.title | upcase }}</h{{ page.heading }}>{% endif %}
+        {%- capture font %}{% include components/impact-font.html %}{% endcapture %}
+        {%- if page.impact-font %}{{ font }}{%- endif %}
         {{ page.content }}
       </div>
     </article>
