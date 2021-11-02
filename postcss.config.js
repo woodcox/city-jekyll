@@ -4,7 +4,7 @@ const autoprefixer = require('autoprefixer');
 const cssnanoConfig = {
     autoprefixer: false,
     discardComments: {removeAll: true},
-    svgo: true,
+    svgo: true
 };
 const cssnano = require('cssnano')({
   preset: ['default', { cssnanoConfig }
