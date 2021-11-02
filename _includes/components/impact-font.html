@@ -1,3 +1,3 @@
 <div class="text-center">{% for item in page.impact-font %}
-  <p class="font-impact no-margin-bottom">{{ item.content }}</p>{% endfor %}
+  <p class="font-impact {% unless forloop.last %}no-margin-bottom{% endunless %}">{{ item.content }}</p>{% endfor %}
 </div>
