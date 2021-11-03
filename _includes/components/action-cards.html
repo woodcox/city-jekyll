@@ -1,0 +1,9 @@
+<div class="flex-row justify-center align-stretch"> for item in page.action-card %}
+  <div class="flex-small sm-one-third">
+    <div class="card {{ item.bg }} text-center">
+      <h2>{{ item.title }}</h2>
+      <p>{{ item.content }}</p>
+      <a class="button muted-button arrow-right-icon" href="{{ item.href }}">Find out more </a>
+    </div>
+  </div>{% endfor %}
+</div>
