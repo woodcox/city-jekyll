@@ -57,6 +57,23 @@
   }
 }
 
+.timeline {
+  color: $calendar-color;
+    
+  ul li {
+    .date {
+      color: $calendar-black;
+    }
+    .calendar-title {
+      border-bottom: 1px solid $calendar-color;
+    
+      #calendar-subtitle {
+        color: $calendar-accent-color;
+      }
+    }
+  }
+}
+
 .alternate-background, 
 .bg-navy,
 .bg-black,
