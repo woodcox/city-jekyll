@@ -1,25 +1,20 @@
+{%- if page.table %}
 <div class="contain-table">
   <table class="striped-table">
     <thead>
-      <tr>{% for head in page.table %}
-        <th>Head 1</th>
-        <th>Head 2</th>
-        <th>Head 3</th>{% endfor %}
+      <tr>{% for head in page.table.heading %}
+        <th>{{ head.title }}</th>{% endfor %}
       </tr>
-    </thead>
+    </thead>{% if page.table.footer %}
     <tfoot>
-      <tr>
-        <th>Footer 1</th>
-        <th>Footer 2</th>
-        <th>Footer 3</th>
+      <tr>{% for foot in page.table.footer %}
+        <th>{{ foot.total }}</th>{% endfor %}
       </tr>
-    </tfoot>
+    </tfoot>{% endif %}
     <tbody>
-      <tr>
-        <td>Description 1</td>
-        <td>Description 2</td>
-        <td>Description 3</td>
+      <tr>{% for box in page.table.body %}
+        <td>{{ box.content }}</td>{% endfor %}
       </tr>
     </tbody>
   </table>
-</div>
+</div>{% endif %}
