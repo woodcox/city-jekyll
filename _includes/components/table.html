@@ -11,10 +11,10 @@
         <th>{{ foot.total }}</th>{% endfor %}
       </tr>
     </tfoot>{% endif %}
-    <tbody>
-      <tr>{% for box in page.table.body %}
-        <td>{{ box.content }}</td>{% endfor %}
-      </tr>
+    <tbody>{% for row in page.table.rows %}
+      <tr>{% for column in page.table.rows.columns %}
+        <td>{{ column.content }}</td>{% endfor %}
+      </tr>{% endfor %}
     </tbody>
   </table>
 </div>{% endif %}
