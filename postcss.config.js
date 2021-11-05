@@ -7,26 +7,19 @@ const cssnanoConfig = {
     svgo: true
 };
 const cssnano = require('cssnano')({
-  preset: ['default', { cssnanoConfig }
-  ]
+  preset: ['default', { cssnanoConfig }]
 });
 
-import purgeJs from 'purgecss-from-js';
-import purgeHtml from 'purgecss-from-html';
+import purgeJs from 'purgecss-from-js'
+import purgeHtml from 'purgecss-from-html'
 
 const purgecss = require('@fullhuman/postcss-purgecss')({
   content: ['**/*.html', '**/*.js'],
   css: ['city.css'],
   safelist: ['::-webkit-scrollbar', '::-webkit-scrollbar-thumb', '::-webkit-scroll-track'],
   extractors: [
-    {
-      extractor: purgeJs,
-      extensions: ['js']
-    },
-    {
-      extractor: purgeHtml,
-      extensions: ['html']
-    }
+    { extractor: purgeJs, extensions: ['js'] },
+    { extractor: purgeHtml, extensions: ['html'] }
   ]
 }
 
