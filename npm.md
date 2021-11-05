@@ -21,7 +21,6 @@ Installed dev:
   - autoprefixer
   - cssnano
   - purgecss (@fullhuman/postcss-purgecss)
-  - postcss-purifycss
 
 ## PRODUCTION
 Jekyll-deploy GitHub action
