@@ -24,6 +24,8 @@
     "autoprefixer": "^10.4.0",
     "cssnano": "^5.0.9",
     "postcss": "^8.3.11",
-    "postcss-cli": "^9.0.2"
+    "postcss-cli": "^9.0.2",
+    "purgecss-from-html": "^4.0.3",
+    "purgecss-from-js": "^1.0.0"
   }
 }
