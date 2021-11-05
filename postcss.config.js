@@ -21,7 +21,7 @@ const purgecss = require('@fullhuman/postcss-purgecss')({
   //  { extractor: purgeJs, extensions: ['js'] },
   //  { extractor: purgeHtml, extensions: ['html'] }
   // ]
-}
+});
 
 module.exports = {
   plugins: [
