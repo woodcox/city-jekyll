@@ -11,9 +11,6 @@ const cssnano = require('cssnano')({
   ]
 });
 
-const uncss = require('postcss-uncss')({
-  html: ['**/*.html']
-});
 const purgecss = require('@fullhuman/postcss-purgecss')({
   content: ['**/*.html', '**/*.js'],
   safelist: ['::-webkit-scrollbar', '::-webkit-scrollbar-thumb', '::-webkit-scroll-track']
@@ -22,6 +19,6 @@ const purgecss = require('@fullhuman/postcss-purgecss')({
 module.exports = {
   plugins: [
     autoprefixer,
-    ...(process.env.NODE_ENV === "production" ? [uncss, cssnano] : [])
+    ...(process.env.NODE_ENV === "production" ? [cssnano] : [])
   ],
 };
