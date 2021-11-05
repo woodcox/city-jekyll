@@ -10,8 +10,8 @@ const cssnano = require('cssnano')({
   preset: ['default', { cssnanoConfig }]
 });
 
-import purgeJs from 'purgecss-from-js'
-import purgeHtml from 'purgecss-from-html'
+// import purgeJs from 'purgecss-from-js'
+// import purgeHtml from 'purgecss-from-html'
 
 const purgecss = require('@fullhuman/postcss-purgecss')({
   content: ['**/*.html', '**/*.js'],
