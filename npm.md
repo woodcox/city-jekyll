@@ -22,7 +22,7 @@ Installed dev:
   - cssnano
   - purgecss (@fullhuman/postcss-purgecss)
   - postcss-uncss
-  - ansi-regex (vulnerability fix)
+  - uncss
 
 ## PRODUCTION
 Jekyll-deploy GitHub action
