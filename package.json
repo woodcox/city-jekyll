@@ -1,22 +1,24 @@
 {
   "name": "city-jekyll",
   "version": "1.0.0",
-  "description": "[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)",
-  "main": "postcss.config.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "description": "City-Jekyll is design toolkit for developing fast sass-y, responsive websites with browser-consistent styling and postcss superpowers.",
+  "author": "woodcock3",
+  "license": "MIT",
+  "homepage": "https://github.com/woodcock3/city-jekyll",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/woodcock3/city-jekyll.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npm install -D",
+    "prod": "npm ci"
+  },
   "bugs": {
     "url": "https://github.com/woodcock3/city-jekyll/issues"
   },
-  "homepage": "https://github.com/woodcock3/city-jekyll#readme",
+  "main": "postcss.config.js",
+  "keywords": [],
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^4.0.3",
     "autoprefixer": "^10.4.0",
