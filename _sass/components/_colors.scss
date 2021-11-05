@@ -55,20 +55,19 @@
   .text-link {
     color: $link-color;
   }
-}
-
-.timeline {
-  color: $calendar-color;
+  .timeline {
+    color: $alternate-color;
     
-  ul li {
-    .date {
-      color: $calendar-black;
-    }
-    .calendar-title {
-      border-bottom: 1px solid $calendar-color;
+    ul li {
+      .date {
+        color: $calendar-black;
+      }
+      .calendar-title {
+        border-bottom: 1px solid $alternate-color;
     
-      #calendar-subtitle {
-        color: $calendar-accent-color;
+        #calendar-subtitle {
+          color: $calendar-accent-color;
+        }
       }
     }
   }
