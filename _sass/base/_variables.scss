@@ -131,8 +131,8 @@ $accent-button-color: #ffffff !default;
 $accent-button-color-hover: #ffffff !default;
 
 // Muted Buttons
-$muted-border: 1px solid $almost-white !default;
-$muted-border-hover: 1px solid $almost-white !default;
+$muted-border: 1px solid $alternate-color !default;
+$muted-border-hover: 1px solid $alternate-color !default;
 $muted-background: transparent !default;
 $muted-background-hover: rgba($secondary-color, 0.75);
 $muted-color: $alternate-color;
