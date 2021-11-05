@@ -11,9 +11,19 @@ const cssnano = require('cssnano')({
   ]
 });
 const purgecss = require('@fullhuman/postcss-purgecss')({
-  content: ['*.html', '**/*.html', '**/*.js'],
+  content: ['**/*.html', '**/*.js'],
   safelist: ['::-webkit-scrollbar', '::-webkit-scrollbar-thumb', '::-webkit-scroll-track']
-});
+}
+
+const fs = require('fs');
+
+const options = {
+  html: ['**/*.html']
+};
+
+fs.readFile('css/index.css','utf8', (err, css) => {
+  postcss([require('postcss-uncss')(options)])
+    .process(css, { from: 'css/app.css', to: 'css/filtered.css' })
 
 module.exports = {
   plugins: [
