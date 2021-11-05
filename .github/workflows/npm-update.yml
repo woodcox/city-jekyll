@@ -16,7 +16,7 @@ jobs:
         with:
           node-version: '14'
       - run: npm init -y
-      - run: npm install -D @fullhuman/postcss-purgecss postcss postcss-cli autoprefixer cssnano
+      - run: npm install -D @fullhuman/postcss-purgecss postcss postcss-cli autoprefixer cssnano purgecss-from-html purgecss-from-js
       # - run: npm uninstall
       # - run: npm update # update packages
       - name: pull request on npm update
