@@ -11,9 +11,23 @@ const cssnano = require('cssnano')({
   ]
 });
 
+import purgeJs from 'purgecss-from-js'
+import purgeHtml from 'purgecss-from-html'
+
 const purgecss = require('@fullhuman/postcss-purgecss')({
   content: ['**/*.html', '**/*.js'],
-  safelist: ['::-webkit-scrollbar', '::-webkit-scrollbar-thumb', '::-webkit-scroll-track']
+  css: ['city.css'],
+  safelist: ['::-webkit-scrollbar', '::-webkit-scrollbar-thumb', '::-webkit-scroll-track'],
+  extractors: [
+    {
+      extractor: purgeJs,
+      extensions: ['js']
+    },
+    {
+      extractor: purgeHtml,
+      extensions: ['html']
+    }
+  ]
 }
 
 module.exports = {
