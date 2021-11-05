@@ -1,13 +1,6 @@
 $card-font-color: white;
 
-// Gradient Cards
-.card__exit,
-.card__icon {
-  position: relative;
-  text-decoration: none;
-  color: rgba(255, 255, 255, 0.9);
-}
-
+// Basic Cards
 .card {
   padding: 20px;
   height: 100%;
@@ -21,19 +14,6 @@ $card-font-color: white;
     box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
     transform: scale(1.03);
   }
-}
-
-.card__icon {
-  font-size: 2em;
-}
-
-.card__title {
-  font-weight: 400;
-  color: $card-font-color;
-}
-
-.card__apply {
-  align-self: left;
 }
 
 // Flip Card
@@ -200,7 +180,7 @@ $card-font-color: white;
   span {
     font-size: 0.75rem;
     font-weight: bold;
-    color: $almost-white;
+    color: $alternate-color;
     text-transform: uppercase;
     letter-spacing: .05em;
     margin: 1.5rem 0 0 0;
@@ -223,7 +203,7 @@ $card-font-color: white;
     padding-top: 15%;
   }
   .thumb-title {
-    color: $almost-white;
+    color: $alternate-color;
     font-size: 1rem;
   }
   h2 {
