@@ -60,14 +60,10 @@
     
     ul li {
       .date {
-        color: $calendar-black;
+        color: $calendar-white;
       }
       .calendar-title {
         border-bottom: 1px solid $alternate-color;
-    
-        #calendar-subtitle {
-          color: $calendar-accent-color;
-        }
       }
     }
   }
