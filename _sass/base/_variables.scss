@@ -136,8 +136,8 @@ $muted-border: 1px solid $almost-white !default;
 $muted-border-hover: 1px solid $almost-white !default;
 $muted-background: transparent !default;
 $muted-background-hover: rgba($secondary-color, 0.75);
-$muted-color: $almost-white;
-$muted-color-hover: $almost-white !default;
+$muted-color: $alternate-color;
+$muted-color-hover: $alternate-color !default;
 
 // Round Buttons
 $round-buttons: 40px !default;
