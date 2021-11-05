@@ -21,6 +21,7 @@ Installed dev:
   - autoprefixer
   - cssnano
   - purgecss (@fullhuman/postcss-purgecss)
+  - postcss-uncss
   - ansi-regex (vulnerability fix)
 
 ## PRODUCTION
