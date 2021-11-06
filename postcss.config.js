@@ -11,7 +11,6 @@ const cssnano = require('cssnano')({
 });
 
 const purgeHTML = require('purgecss-from-html');
-const purgeJS = require('purgecss-from-js');
 const purgecss = require('@fullhuman/postcss-purgecss')({
   content: ['**/*.html', '**/*.js'],
   css: ['city.css'],
