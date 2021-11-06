@@ -17,9 +17,10 @@ const purgecss = require('@fullhuman/postcss-purgecss')({
   css: ['city.css'],
   safelist: ['::-webkit-scrollbar', '::-webkit-scrollbar-thumb', '::-webkit-scroll-track'],
   extractors: [
-    { extractor: purgeJs, extensions: ['js'] },
-    { extractor: purgeHtml, extensions: ['html'] }
-  ]
+    { 
+      extractor: purgeHtml, extensions: ['html']
+    }
+  ],
 });
 
 module.exports = {
