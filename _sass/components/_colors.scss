@@ -37,7 +37,7 @@
 
 // Backgrounds
 %alternate-background {
-  background: $alternate-background;
+  background-color: $alternate-background;
  
   .text-link {
     color: $link-color;
@@ -112,25 +112,30 @@
 
 // Gradient backgrounds 
 .bg-navy {
-  background: radial-gradient(lighten(#113a5c, 15%), darken(#113a5c, 20%));
+  background-color: #113a5c;
+  background-color: radial-gradient(lighten(#113a5c, 15%), darken(#113a5c, 20%));
 }
 
 .bg-secondary {
-  background: radial-gradient(lighten($secondary-color, 15%), darken($secondary-color, 20%));
+  background-color: $secondary-color;
+  background-color: radial-gradient(lighten($secondary-color, 15%), darken($secondary-color, 20%));
 }
 
 .bg-third {
-  background: radial-gradient($third-color, darken($third-color, 20%));
+  background-color: $third-color;
+  background-color: radial-gradient($third-color, darken($third-color, 20%));
 }
 
 .bg-primary {
-  background: radial-gradient(lighten($primary-color, 15%), darken($primary-color, 20%));
+  background-color: $primary-color;
+  background-color: radial-gradient(lighten($primary-color, 15%), darken($primary-color, 20%));
 }
 
 .bg-dark {
-  background: radial-gradient(darken($accent-color, 20%), black);
+  background-color: darken($accent-color, 50%);
+  background-color: radial-gradient(darken($accent-color, 20%), black);
 }
 
 .bg-black {
-  background: black;
+  background-color: black;
 }
