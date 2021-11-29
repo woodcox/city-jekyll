@@ -3,7 +3,7 @@
     <div class="card {{ item.bg }} text-center">
       <h2>{{ item.title }}</h2>
       <p>{{ item.content }}</p>
-      <a class="button muted-button arrow-right-icon" href="{{ item.href }}">Find out more </a>
+      {% if item.href %}<a class="button muted-button arrow-right-icon" href="{{ item.href }}">{% if item.link text %}{{ item.link text }}{% else %}Find out more{% endif %} </a>{% endif %}
     </div>
   </div>{% endfor %}
 </div>
