@@ -11,10 +11,7 @@ const cssnano = require('cssnano')({
 });
 
 const purgecss = require('@fullhuman/postcss-purgecss')({
-  content: [
-    // Jekyll output directory
-    './_site/**/*.html', './_site/**/*.js'
-    ],
+  content: ['**/*.html', '**/*.js'],
   defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || [],
   css: ['city.css'],
   safelist: ['::-webkit-scrollbar', '::-webkit-scrollbar-thumb', '::-webkit-scroll-track'],
