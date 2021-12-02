@@ -16,7 +16,7 @@ const purgecss = require('@fullhuman/postcss-purgecss')({
   css: ['city.css'],
   safelist: {
     standard: ['::-webkit-scrollbar', '::-webkit-scrollbar-thumb', '::-webkit-scroll-track', 'gradient-text'],
-    greedy: [/bg$/]
+    greedy: [/^bg-/]
   }
 });
 
