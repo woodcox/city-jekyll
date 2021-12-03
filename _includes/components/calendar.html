@@ -7,7 +7,7 @@
       </div>
       <div class="calendar-title">
         <span>{{ event.name }}</span><br>{% capture startdate %}{{ event.datetime_start | split: " " | first | date: "%d/%m/%Y" }}{% endcapture %}{% capture enddate %}{{ event.datetime_end | split: " " | first | date: "%d/%m/%Y" }}{% endcapture %}
-        <span id="calendar-subtitle">{{ event.datetime_start | split: " " | last | date: "%l:%M %p" }} to {% unless startdate == enddate %}{{ enddate }} {% endunless %}{{ event.datetime_end | split: " " | last | date: "%l:%M %p" }}</span>
+        <span id="calendar-subtitle">{{ event.datetime_start | split: " " | last | date: "%l:%M %p" }} to {% unless startdate == enddate %}{{ enddate }} at {% endunless %}{{ event.datetime_end | split: " " | last | date: "%l:%M %p" }}</span>
       </div>
     </li>{% endfor %}
   </ul>
