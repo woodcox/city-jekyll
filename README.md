@@ -58,15 +58,46 @@ City-jekyll
 │      ├─── components
 │      │     ├─── accent-accordion.html
 │      │     ├─── accordion.html
+│      │     ├─── action-cards.html
 │      │     ├─── analytics.js
-│      │     └─── audio-cards.html
-|      ├─── author.html
-|      ├─── comments.html
-|      ├─── date.html
-|      ├─── footer.html
-|      ├─── head.html
-|      ├─── navbar.html
-│      └─── share.html
+│      │     ├─── audio-cards.html
+│      │     ├─── calendar.html
+│      │     ├─── contact-button.html
+│      │     ├─── flip-cards.html
+│      │     ├─── image-cards.html
+│      │     ├─── impact-font.html
+│      │     ├─── lazy-images.html
+│      │     ├─── muted-accordion.html
+│      │     ├─── profile-cards.html
+│      │     ├─── round-accordion.html
+│      │     ├─── sermons-list.html
+│      │     ├─── square-accordion.html
+│      │     ├─── srcset-images.html
+│      │     ├─── table.html
+│      │     ├─── video-cards.html
+│      │     └─── youtube-video.html
+│      │
+|      ├─── modules
+│      │     ├─── breadcrumbs.html
+│      │     ├─── cookies-consent.html
+│      │     ├─── nav-back.html
+│      │     ├─── preloader.html
+│      │     ├─── scroll-up.html
+│      │     └─── search_lunr.html
+│      │
+|      ├─── svg
+│      │     ├─── cec-building-curved.svg
+│      │     ├─── city-vector.svg
+│      │     └─── fiec.svg
+│      │
+|      └─── templates
+│            ├─── docs-hero.html
+│            ├─── footer.html
+│            ├─── head.html
+│            ├─── hero.html
+│            ├─── navbar.html
+│            ├─── page-hero.html
+│            └─── secondary-nav.html
 │  
 ├─── _layouts
 │      ├─── compress.html
@@ -75,7 +106,10 @@ City-jekyll
 │      ├─── home.html
 │      ├─── sectioned-page.html
 │      └─── single-page.html
-│  
+│
+├─── _plugins
+│      └─── inline-sass.rb
+│
 ├─── pages
 │      ├─── _drafts
 │      ├─── _home
@@ -108,7 +142,7 @@ City-jekyll
 │      │      └─── _scaffolding.scss
 │      │
 │      ├─── fonts
-│      │      ├─── _fontawesome.scss
+│      │      ├─── _fontawesomesvg.scss
 │      │      ├─── _syntax-highlight.scss
 │      │      └─── _webfonts.scss
 │      │
@@ -120,7 +154,7 @@ City-jekyll
 ├─── assets
 │    │
 │    ├─── css
-│    │    └─── main.scss
+│    │    └─── city.scss
 │    ├─── img
 │    │    └─── faicons
 │    └─── js
