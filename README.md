@@ -4,7 +4,7 @@
 
 **Please note this is a work in progress. The theme has not been created yet. This is what I am working towards.**
 
-Welcome to the **city-jekyll** theme! This is the theme for [City Evangelical Church](https://cecleeds.co.uk) website. It's built using [Jekyll](https://jekyllrb.com/), [github actions](https://github.com/features/actions) and [Primitive UI](https://taniarascia.github.io/primitive). The theme is a design toolkit for developing fast [sass-y](https://sass-lang.com/), responsive websites with browser-consistent styling and [postcss](https://postcss.org/) superpowers.
+Welcome to the **city-jekyll** theme! This is the theme for [City Evangelical Church](https://cecleeds.co.uk) website. It's built using [Jekyll](https://jekyllrb.com/), some clever [Github Actions](https://github.com/features/actions), [NPM](https://www.npmjs.com/) and [Primitive UI](https://taniarascia.github.io/primitive). The theme is a design toolkit for developing fast [sass-y](https://sass-lang.com/), responsive websites with browser-consistent styling and [postcss](https://postcss.org/) superpowers.
 
 Demo available: [here](http://woodcock3.github.io/city-jekyll/)
 
