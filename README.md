@@ -110,13 +110,6 @@ City-jekyll
 ├─── _plugins
 │      └─── inline-sass.rb
 │
-├─── pages
-│      ├─── _drafts
-│      ├─── _home
-│      ├─── _posts
-|      ├─── cookies.md
-│      └─── html-test.html
-│
 ├─── _sass
 │      ├─── base
 │      │     ├─── _mixins.scss
@@ -156,23 +149,55 @@ City-jekyll
 │    ├─── css
 │    │    └─── city.scss
 │    ├─── img
-│    │    └─── faicons
-│    └─── js
-│         ├─── contacts.js
-│         ├─── site.js
-│         ├─── smoothscroll-polyfill.js
-│         └─── snap-slider.min.js
-│  
+│    │    ├─── 1000
+│    │    ├─── 1160
+│    │    ├─── 400
+│    │    ├─── 600
+│    │    ├─── 800
+│    │    ├─── faicons
+│    │    └─── master
+│    ├─── js
+│    │    ├─── contacts.js
+│    │    ├─── site.js
+│    │    ├─── smoothscroll-polyfill.js
+│    │    └─── snap-slider.min.js
+│    └─── webfonts
+│         ├─── icons
+│         └─── sanchez
+│
+├─── pages
+│      ├─── _docs
+│      ├─── _drafts
+│      ├─── _home
+│      ├─── _media
+│      ├─── _posts
+│      ├─── _sunday
+|      ├─── cookies.md
+│      ├─── html-test.html
+│      ├─── primitive.html
+│      ├─── privacy.md
+│      ├─── safeguarding.md
+│      ├─── template.html
+│      └─── we-beleive.md
+│ 
 ├─── .browserslistrc
+├─── .gitignore
 ├─── 404.md
 ├─── gemfile
 ├─── gemfile.lock
+├─── LICENCE.md
+├─── README.md
+├─── SECURITY.md
 ├─── _config.yml
+├─── browserconfig.xml
+├─── city-jekyll-theme.gemspec
 ├─── index.md
+├─── npm.md
 ├─── package-lock.json
 ├─── package.json
 ├─── postcss.config.js
 ├─── robot.txt
+├─── site.webmanifest
 └─── sitemap.xml
 ```
 
