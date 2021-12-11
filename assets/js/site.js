@@ -34,39 +34,6 @@ function logoToggle() {
   }
 }
 
-//========================================
-// Change logo color when in footer
-//========================================
-var logoTarget = document.querySelector("footer");
-
-const config = {
-  root: null, // avoiding 'root' or setting it to 'null' sets it to default value: viewport
-  rootMargin: '0px',
-  threshold: 0.58
-};
-
-function logoColorChange (entries, observerLogo) {
-  // The callback will return an array of entries, even if you are only observing a single item
-  entries.forEach(entry => {
-    // Check hamburger not open
-    if (document.getElementById("prim-menu-checkbox").checked == false) { 
-      if (entry.isIntersecting) {
-        // Change logo color
-        svgElement.classList.add("toggle-svg")
-      } else {
-        // Remove logo color
-        svgElement.classList.remove("toggle-svg")
-      }
-    }
-  });
-}
-
-// Next we instantiate the observer with the function we created above. This takes an optional configuration
-// object via config
-let observerLogo = new IntersectionObserver(logoColorChange, config);
-// Finally start observing the target element
-observerLogo.observe(logoTarget);
-
 //=====================================================
 // Smooth scroll (plus polyfill)
 //=====================================================
