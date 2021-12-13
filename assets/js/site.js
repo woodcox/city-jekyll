@@ -38,6 +38,15 @@ function logoToggle() {
 }
 
 //=====================================================
+// Show or hide contact buttons
+//=====================================================
+
+function myFunction() {
+  var element = document.getElementById("contactBTN");
+  element.classList.toggle("hidden");
+}
+
+//=====================================================
 // Smooth scroll (plus polyfill)
 //=====================================================
 const links = document.querySelectorAll("nav ul a");
