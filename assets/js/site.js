@@ -41,7 +41,7 @@ function logoToggle() {
 // Show or hide contact buttons
 //=====================================================
 
-function showBTN() {
+function showBTNS() {
   var element = document.getElementById("contactBTN");
   element.classList.toggle("hidden");
 }
