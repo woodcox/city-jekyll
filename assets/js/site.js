@@ -46,6 +46,11 @@ function showBTNS() {
   element.classList.toggle("hidden");
 }
 
+function hideBTN() {
+  var element = document.getElementById("contactBTN");
+  element.classList.toggle("opaque");
+}
+
 //=====================================================
 // Smooth scroll (plus polyfill)
 //=====================================================
