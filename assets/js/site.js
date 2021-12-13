@@ -47,7 +47,7 @@ function showBTNS() {
 }
 
 function hideBTN() {
-  var element = document.getElementById("contactBTN");
+  var element = document.getElementById("emailBTN");
   element.classList.toggle("opaque");
 }
 
