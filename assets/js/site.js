@@ -70,7 +70,7 @@ aioMailing.forEach(copyemail => {
       document.execCommand('copy');
       selection.removeAllRanges();
 
-      const original = contact-buttons.textContent;
+      const original = copyemail.textContent;
       copyemail.textContent = 'Copied!';
       copyemail.classList.add('success');
 
