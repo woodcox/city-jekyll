@@ -52,13 +52,13 @@ function hideBTN() {
 // Copy contact button
 //=====================================================
 
-const aioContact = document.querySelectorAll('.copy-email span');
+const aioContact = document.querySelectorAll('.copyemail span');
 
-aioContact.forEach(copy-email => {
-  copy-email.addEventListener('click', () => {
+aioContact.forEach(copyemail => {
+  copyemail.addEventListener('click', () => {
     const selection = window.getSelection();
     const range = document.createRange();
-    range.selectNodeContents(copy-email);
+    range.selectNodeContents(copyemail);
     selection.removeAllRanges();
     selection.addRange(range);
 
@@ -67,12 +67,12 @@ aioContact.forEach(copy-email => {
       selection.removeAllRanges();
 
       const original = copy-email.textContent;
-      copy-email.textContent = 'Copied!';
-      copy-email.classList.add('success');
+      copyemail.textContent = 'Copied!';
+      copyemail.classList.add('success');
 
       setTimeout(() => {
-        copy-email.textContent = original;
-        copy-email.classList.remove('success');
+        copyemail.textContent = original;
+        copyemail.classList.remove('success');
       }, 1200);
     } catch(e) {
       const errorMsg = document.querySelector('.error-msg');
