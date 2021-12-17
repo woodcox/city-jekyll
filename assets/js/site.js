@@ -59,7 +59,7 @@ aioMailing.forEach(copyemail => {
  copyemail.addEventListener('click', () => {
     const selection = window.getSelection();
     const range = document.createRange();
-    range.selectNodeContents(contact-buttons);
+    range.selectNodeContents(copyemail);
     selection.removeAllRanges();
     selection.addRange(range);
 
