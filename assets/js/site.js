@@ -56,7 +56,7 @@ const aioContact = document.querySelectorAll('.copyemail span');
 const aioMailing = document.querySelectorAll('.contact-buttons span');
 
 aioMailing.forEach(contact-buttons => {
-  contact-buttons.addEventListener('click', () => {
+  contactbuttons.addEventListener('click', () => {
     const selection = window.getSelection();
     const range = document.createRange();
     range.selectNodeContents(contact-buttons);
