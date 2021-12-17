@@ -58,7 +58,7 @@ function hideBTN() {
 const aioContact = document.querySelectorAll('.copyemail span');
 const aioMailing = document.querySelectorAll('.contact-buttons span');
 
-aioMailing.forEach(contact-buttons => {
+aioMailing.forEach(contactbuttons => {
   contactbuttons.addEventListener('click', () => {
     const selection = window.getSelection();
     const range = document.createRange();
