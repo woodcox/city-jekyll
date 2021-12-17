@@ -57,11 +57,11 @@ function hideBTN() {
 
 const aioContact = document.querySelectorAll('.copy-email span');
 
-aioContact.forEach(color => {
-  color.addEventListener('click', () => {
+aioContact.forEach(copy-email => {
+  copy-email.addEventListener('click', () => {
     const selection = window.getSelection();
     const range = document.createRange();
-    range.selectNodeContents(color);
+    range.selectNodeContents(copy-email);
     selection.removeAllRanges();
     selection.addRange(range);
 
@@ -74,8 +74,8 @@ aioContact.forEach(color => {
       color.classList.add('success');
 
       setTimeout(() => {
-        color.textContent = original;
-        color.classList.remove('success');
+        copy-email.textContent = original;
+        copy-email.classList.remove('success');
       }, 1200);
     } catch(e) {
       const errorMsg = document.querySelector('.error-msg');
