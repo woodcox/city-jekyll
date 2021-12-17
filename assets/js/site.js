@@ -67,7 +67,7 @@ aioMailing.forEach(copyemail => {
       document.execCommand('copy');
       selection.removeAllRanges();
 
-      const original = copyemail.textContent;
+      const original = contact-buttons.textContent;
       copyemail.textContent = 'Copied!';
       copyemail.classList.add('success');
 
