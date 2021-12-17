@@ -52,9 +52,9 @@ function hideBTN() {
 // Copy contact button
 //=====================================================
 
-const aioColors = document.querySelectorAll('.color span');
+const aioContact = document.querySelectorAll('.copy-email span');
 
-aioColors.forEach(color => {
+aioContact.forEach(color => {
   color.addEventListener('click', () => {
     const selection = window.getSelection();
     const range = document.createRange();
@@ -66,7 +66,7 @@ aioColors.forEach(color => {
       document.execCommand('copy');
       selection.removeAllRanges();
 
-      const original = color.textContent;
+      const original = copy-email.textContent;
       color.textContent = 'Copied!';
       color.classList.add('success');
 
