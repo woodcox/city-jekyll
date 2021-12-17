@@ -67,8 +67,8 @@ aioContact.forEach(copy-email => {
       selection.removeAllRanges();
 
       const original = copy-email.textContent;
-      color.textContent = 'Copied!';
-      color.classList.add('success');
+      copy-email.textContent = 'Copied!';
+      copy-email.classList.add('success');
 
       setTimeout(() => {
         copy-email.textContent = original;
