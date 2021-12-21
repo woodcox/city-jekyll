@@ -6,7 +6,7 @@ youtube: "https://www.youtube.com/channel/UCALb0SwFaFdPY2gwOesvb_g"
 office:
   - address: City Evangelical Church, Cemetery Road, Beeston, Leeds, LS11 8SX
     phone: <a href="tel:+441132708568">0113 2708568</a>
-    mailing: <div class="contact1"><script>contact1("office","cecleeds",10,"")</script><noscript>You must enable JavaScript to view this text.</noscript></div>
+    mailing: <script>contact1("office","cecleeds",10,"")</script><noscript>You must enable JavaScript to view this text.</noscript>
     maplocation: <a href="https://goo.gl/maps/EoD83hYx9Lob5TpK6">Get directions</a>
 
 pastor:
