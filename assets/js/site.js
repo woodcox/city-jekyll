@@ -43,12 +43,12 @@ function logoToggle() {
 
 function showBTNS() {
   var element = document.getElementById("contactBTN");
-  element.classList.toggle("hidden");
+  element.classList.toggle("hide");
 }
 
 function hideBTN() {
   var element = document.getElementById("emailBTN");
-  element.classList.toggle("hidden");
+  element.classList.toggle("hide");
 }
 
 //=====================================================
