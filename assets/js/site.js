@@ -53,17 +53,17 @@ function hideBTN() {
 //=====================================================
 
 
-const copyEmailBtn = document.querySelector('.js-emailcopybtn-office');
+var copyEmailBtn = document.querySelector('.js-emailcopybtn-office');
 
-const copyEmailBtn = document.querySelector('.js-emailcopybtn-pastor');
+var copyEmailBtn = document.querySelector('.js-emailcopybtn-pastor');
 
  
 copyEmailBtn.addEventListener('click', function(event) {  
   // Select the email link anchor text
   
-  const emailLink = document.querySelector('.js-emaillink-office');
+  var emailLink = document.querySelector('.js-emaillink-office');
   
-  const emailLink = document.querySelector('.js-emaillink-pastor');
+  var emailLink = document.querySelector('.js-emaillink-pastor');
   
   const selection = window.getSelection(); 
   const range = document.createRange();  
