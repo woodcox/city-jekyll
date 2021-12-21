@@ -92,9 +92,8 @@ copyEmailBtn.addEventListener('click', function(event) {
 //=====================================================
 // Decryption
 //=====================================================
-const node47 = document.querySelectorAll('decrypted');
 function r(a,b){return++b?String.fromCharCode((a=a.charCodeAt()+47,a>126?a-94:a)):a.replace(/[^ ]/g,r)};
-document.getElementById( "decrypted" ).innerHTML = r(node47.textContent);
+document.getElementById( "decrypted" ).innerHTML = r('@77:46o464=665D]4@]F<');
 
 //=====================================================
 // Smooth scroll (plus polyfill)
