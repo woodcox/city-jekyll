@@ -15,7 +15,7 @@ var d_ = ".";
 
 function contact1(name, dom, tl, params){
   var s = e(name,dom,tl);
-  document.querySelectorAll('.contact1').innerHTML('<a href="'+m_+s+params+'">'+s+'</a>');
+  document.write('<a href="'+m_+s+params+'">'+s+'</a>');
 }
 function contact2(name, dom, tl, params, display){
   document.write('<a href="'+m_+e(name,dom,tl)+params+'">'+display+'</a>');
