@@ -105,13 +105,13 @@ copyEmailBtn.addEventListener('click', function(event) {
     const successful = document.execCommand('copy');
     selection.removeAllRanges();
 
-    const original = copyemail.textContent;
-    copyemail.textContent = 'Copied!';
-    copyemail.classList.add('success');
+    const original = copyEmailBtn.textContent;
+    copyEmailBtn.textContent = 'Copied!';
+    copyEmailBtn.classList.add('success');
 
     setTimeout(() => {
-      copyemail.textContent = original;
-      copyemail.classList.remove('success');
+      copyEmailBtn.textContent = original;
+      copyEmailBtn.classList.remove('success');
     }, 1200);
   } catch(e) {
     const errorMsg = document.querySelector('.error-msg');
