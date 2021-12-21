@@ -52,40 +52,6 @@ function hideBTN() {
 // Copy contact button
 //=====================================================
 
-const aioContact = document.querySelectorAll('.copyemail span');
-const aioMailing = document.querySelectorAll('.contact-buttons span');
-
-aioMailing.forEach(copyemail => {
- copyemail.addEventListener('click', () => {
-    const selection = window.getSelection();
-    const range = document.createRange();
-    range.selectNodeContents(copyemail);
-    selection.removeAllRanges();
-    selection.addRange(range);
-
-    try {
-      document.execCommand('copy');
-      selection.removeAllRanges();
-
-      const original = copyemail.textContent;
-      copyemail.textContent = 'Copied!';
-      copyemail.classList.add('success');
-
-      setTimeout(() => {
-        copyemail.textContent = original;
-        copyemail.classList.remove('success');
-      }, 1200);
-    } catch(e) {
-      const errorMsg = document.querySelector('.error-msg');
-      errorMsg.classList.add('show');
-
-      setTimeout(() => {
-        errorMsg.classList.remove('show');
-      }, 1200);
-    }
-  });
-});
-
 const copyEmailBtn = document.querySelector('.js-emailcopybtn'); 
  
 copyEmailBtn.addEventListener('click', function(event) {  
