@@ -89,7 +89,7 @@ aioMailing.forEach(copyemail => {
   });
 });
 
-const copyEmailBtn = document.querySelectorAll('.js-emailcopybtn'); 
+const copyEmailBtn = document.querySelector('.js-emailcopybtn'); 
  
 copyEmailBtn.addEventListener('click', function(event) {  
   // Select the email link anchor text  
