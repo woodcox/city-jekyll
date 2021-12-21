@@ -20,6 +20,11 @@ function contact1(name, dom, tl, params){
 function contact2(name, dom, tl, params, display){
   document.write('<a href="'+m_+e(name,dom,tl)+params+'">'+display+'</a>');
 }
+
+function contact3(name, dom, tl, params){
+  document.write('href="'+m_+s+params+'" target="_blank">');
+}
+
 function e(name, dom, tl){
   var s = name+a_;
   if (tl!=-2){
