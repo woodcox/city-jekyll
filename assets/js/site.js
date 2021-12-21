@@ -89,26 +89,38 @@ aioMailing.forEach(copyemail => {
   });
 });
 
-var copyEmailBtn = document.querySelector('.js-emailcopybtn');  
+const copyEmailBtn = document.querySelectorAll('.js-emailcopybtn'); 
+ 
 copyEmailBtn.addEventListener('click', function(event) {  
   // Select the email link anchor text  
-  var emailLink = document.querySelector('.js-emaillink');  
-  var range = document.createRange();  
-  range.selectNode(emailLink);  
-  window.getSelection().addRange(range);  
+  const emailLink = document.querySelector('.js-emaillink');
+  const selection = window.getSelection(); 
+  const range = document.createRange();  
+  range.selectNode(emailLink);
+  selection.removeAllRanges();
+  selection.addRange(range);  
 
   try {  
     // Now that we've selected the anchor text, execute the copy command  
-    var successful = document.execCommand('copy');  
-    var msg = successful ? 'successful' : 'unsuccessful';  
-    console.log('Copy email command was ' + msg);  
-  } catch(err) {  
-    console.log('Oops, unable to copy');  
-  }  
+    const successful = document.execCommand('copy');
+    selection.removeAllRanges();
 
-  // Remove the selections - NOTE: Should use
-  // removeRange(range) when it is supported  
-  window.getSelection().removeAllRanges();  
+    const original = copyemail.textContent;
+    copyemail.textContent = 'Copied!';
+    copyemail.classList.add('success');
+
+    setTimeout(() => {
+      copyemail.textContent = original;
+      copyemail.classList.remove('success');
+    }, 1200);
+  } catch(e) {
+    const errorMsg = document.querySelector('.error-msg');
+    errorMsg.classList.add('show');
+
+    setTimeout(() => {
+      errorMsg.classList.remove('show');
+    }, 1200);
+  }
 });
 
 //=====================================================
