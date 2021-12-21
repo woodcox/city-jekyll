@@ -102,7 +102,7 @@ copyEmailBtn.addEventListener('click', function(event) {
 
   try {  
     // Now that we've selected the anchor text, execute the copy command  
-    const successful = document.execCommand('copy');
+    document.execCommand('copy');
     selection.removeAllRanges();
 
     const original = copyEmailBtn.textContent;
