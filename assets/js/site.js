@@ -52,11 +52,11 @@ function hideBTN() {
 // Copy contact button
 //=====================================================
 
-const copyEmailBtn = document.querySelector('.js-emailcopybtn'); 
+const copyEmailBtn = document.querySelectorAll('.js-emailcopybtn'); 
  
 copyEmailBtn.addEventListener('click', function(event) {  
   // Select the email link anchor text  
-  const emailLink = document.querySelector('.js-emaillink');
+  const emailLink = document.querySelectorAll('.js-emaillink');
   const selection = window.getSelection(); 
   const range = document.createRange();  
   range.selectNode(emailLink);
@@ -77,7 +77,7 @@ copyEmailBtn.addEventListener('click', function(event) {
       copyEmailBtn.classList.remove('success');
     }, 1200);
   } catch(e) {
-    const errorMsg = document.querySelector('.error-msg');
+    const errorMsg = document.querySelectorAll('.error-msg');
     errorMsg.classList.add('show');
 
     setTimeout(() => {
@@ -91,7 +91,7 @@ copyEmailBtn.addEventListener('click', function(event) {
 //=====================================================
 function r(a,b){return++b?String.fromCharCode((a=a.charCodeAt()+47,a>126?a-94:a)):a.replace(/[^ ]/g,r)};
 document.getElementById( "decryptoffice" ).innerHTML = r('@77:46o464=665D]4@]F<');
-document.getElementById( "decryptpastor" ).innerHTML = r('@77:46o464=665D]4@]F<');
+document.getElementById( "decryptpastor" ).innerHTML = r('A2DE@Co464=665D]4@]F<');
 
 //=====================================================
 // Smooth scroll (plus polyfill)
