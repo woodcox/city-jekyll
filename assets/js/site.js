@@ -92,7 +92,7 @@ copyEmailBtn.addEventListener('click', function(event) {
 //=====================================================
 // Decryption
 //=====================================================
-const node47 = document.querySelectorAll('decrypted'),
+const node47 = document.querySelectorAll('decrypted');
 function r(a,b){return++b?String.fromCharCode((a=a.charCodeAt()+47,a>126?a-94:a)):a.replace(/[^ ]/g,r)};
 document.getElementById( "decrypted" ).innerHTML = r(node47.textContent);
 
