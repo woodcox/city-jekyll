@@ -1,9 +1,9 @@
 <div class="text-center">{% for item in site.data.contact.footer %}
   <div id="emailBTN">
-    <button id="decrypt{{ item.email }}" class="round-button muted-button js-emaillink-{{ item.email }}" onclick="showBTNS(); hideBTN();"></button>
+    <button id="decrypt{{ item.email }}" class="round-button muted-button js-emaillink" onclick="showBTNS(); hideBTN();"></button>
   </div>
   <div class="hide" id="contactBTN">
-    <button class="muted-button js-emailcopybtn-{{ item.email }}">Copy Email</button>
+    <button class="muted-button js-emailcopybtn">Copy Email</button>
     <script>contact3("{{ item.email }}","cecleeds",10,"","Send Email")</script><noscript>You must enable JavaScript to view this text.</noscript>
     <p class="errorMsg hide"><strong>Sorry the email address can't be copied.</strong></p>
   </div>{% endfor %}
