@@ -52,19 +52,11 @@ function hideBTN() {
 // Copy contact button
 //=====================================================
 
-
-var copyEmailBtn = document.querySelector('.js-emailcopybtn-office');
-
-var copyEmailBtn = document.querySelector('.js-emailcopybtn-pastor');
-
+var copyEmailBtn = document.querySelectorAll('.js-emailcopybtn-office, .js-emailcopybtn-pastor');
  
 copyEmailBtn.addEventListener('click', function(event) {  
   // Select the email link anchor text
-  
-  var emailLink = document.querySelector('.js-emaillink-office');
-  
-  var emailLink = document.querySelector('.js-emaillink-pastor');
-  
+  var emailLink = document.querySelectorAll('.js-emaillink-office, .js-emaillink-pastor');
   const selection = window.getSelection(); 
   const range = document.createRange();  
   range.selectNode(emailLink);
