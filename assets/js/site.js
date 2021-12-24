@@ -37,7 +37,6 @@ function logoToggle() {
 //=====================================================
 // Show or hide contact buttons
 //=====================================================
-
 function showBTNS() {
   var element = document.getElementById("contactBTN");
   element.classList.toggle("hide");
@@ -51,7 +50,6 @@ function hideBTN() {
 //=====================================================
 // Copy contact button
 //=====================================================
-
 var copyEmailBtn = document.querySelectorAll('.js-emailcopybtn-office, .js-emailcopybtn-pastor');
  
 copyEmailBtn.addEventListener('click', function(event) {  
