@@ -51,7 +51,13 @@ function hideBTN() {
 // Copy contact button
 //=====================================================
 var copyEmailBtn = document.querySelector('.js-emailcopybtn-office', '.js-emailcopybtn-pastor');
- 
+
+const aioColors = document.querySelectorAll('.color span');
+
+aioColors.forEach(color => {
+  color.addEventListener('click', () => {
+    const selection = window.getSelection();
+
 copyEmailBtn.addEventListener('click', function(event) {  
   // Select the email link anchor text
   var emailLink = document.querySelector('.js-emaillink-office', '.js-emaillink-pastor');
