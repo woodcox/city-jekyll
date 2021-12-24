@@ -55,15 +55,12 @@ function hideBTN() {
 // Copy contact button
 //=====================================================
 
-{% for item in site.data.contact.footer %}
-var copyEmailBtn = document.querySelector('.js-emailcopybtn-{{ item.email }}');
-{% endfor %}
+var copyEmailBtn = document.querySelectorAll('{%- for var in site.data.contact.footer %}.js-emailcopybtn-{{ var.email }}{% unless forloop.last %}, {% endunless %}{% endfor %}');
  
 copyEmailBtn.addEventListener('click', function(event) {  
   // Select the email link anchor text
   {% for item in site.data.contact.footer %}
-  var emailLink = document.querySelector('.js-emaillink-{{ item.email }}');
-  {% endfor %}
+  var emailLink = document.querySelectorAll('{%- for var in site.data.contact.footer %}.js-emaillink-{{ var.email }}{% unless forloop.last %}, {% endunless %}{% endfor %}');
   const selection = window.getSelection(); 
   const range = document.createRange();  
   range.selectNode(emailLink);
