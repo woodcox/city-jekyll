@@ -46,10 +46,10 @@ function showBTNS{{ var.email}}() {
   element.classList.toggle("hide");
 }
 
-function hideBTN() {
+function hideBTN{{ var.email}}() {
   var element = document.getElementById("emailBTN{{ var.email}}");
   element.classList.toggle("hide");
-}
+}{% endfor %}
 
 //=====================================================
 // Copy contact button
