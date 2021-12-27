@@ -40,13 +40,14 @@ function logoToggle() {
 //=====================================================
 // Show or hide contact buttons
 //=====================================================
-function showBTNS() {
-  var element = document.getElementById("contactBTN");
+{% for var in site.data.contact.footer %}
+function showBTNS{{ var.email}}() {
+  var element = document.getElementById("contactBTN{{ var.email}}");
   element.classList.toggle("hide");
 }
 
 function hideBTN() {
-  var element = document.getElementById("emailBTN");
+  var element = document.getElementById("emailBTN{{ var.email}}");
   element.classList.toggle("hide");
 }
 
