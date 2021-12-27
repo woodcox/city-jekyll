@@ -58,7 +58,7 @@ var contactEmailBtn = document.querySelectorAll('.js-emailcopybtn');
 contactEmailBtn.forEach(copyEmailBtn => {
   copyEmailBtn.addEventListener('click', function(event) {  
     // Select the email link anchor text
-    var emailLink = document.querySelectorAll('.js-emaillink');
+    var emailLink = document.querySelector('.js-emaillink');
     const selection = window.getSelection(); 
     const range = document.createRange();  
     range.selectNode(emailLink);
