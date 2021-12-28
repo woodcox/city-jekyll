@@ -37,13 +37,23 @@ function logoToggle() {
 //=====================================================
 // Show or hide contact buttons
 //=====================================================
-function showBTNS() {
-  var element = document.getElementById("contactBTN");
+
+function showBTNSoffice() {
+  var element = document.getElementById("contactBTNoffice");
   element.classList.toggle("hide");
 }
 
-function hideBTN() {
-  var element = document.getElementById("emailBTN");
+function hideBTNoffice() {
+  var element = document.getElementById("emailBTNoffice");
+  element.classList.toggle("hide");
+}
+function showBTNSpastor() {
+  var element = document.getElementById("contactBTNpastor");
+  element.classList.toggle("hide");
+}
+
+function hideBTNpastor() {
+  var element = document.getElementById("emailBTNpastor");
   element.classList.toggle("hide");
 }
 
@@ -55,7 +65,7 @@ var contactEmailBtn = document.querySelectorAll('.js-emailcopybtn');
 contactEmailBtn.forEach(copyEmailBtn => {
   copyEmailBtn.addEventListener('click', function(event) {  
     // Select the email link anchor text
-    var emailLink = document.querySelectorAll('.js-emaillink');
+    var emailLink = document.querySelector('.js-emaillink');
     const selection = window.getSelection(); 
     const range = document.createRange();  
     range.selectNode(emailLink);
