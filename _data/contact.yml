@@ -8,27 +8,23 @@ footer:
 
 office:
   - address: City Evangelical Church, Cemetery Road, Beeston, Leeds, LS11 8SX
-    phone: <a href="tel:+441132708568">0113 2708568</a>
-    sr_phone: zero one one three two seven zero eight five six eight
+    phone: <a aria-label="Phone number zero one one three two seven zero eight five six eight" href="tel:+441132708568">0113 2708568</a>
     mailing: <script>contact1("office","cecleeds",10,"")</script><noscript>You must enable JavaScript to view this text.</noscript>
     maplocation: <a href="https://goo.gl/maps/EoD83hYx9Lob5TpK6">Get directions</a>
 
 pastor:
   - name: Michael Luehrmann
-    phone: <a href="tel:+447584437380">07584437380</a>
-    sr_phone: zero seven five eight four four three seven three eight zero
+    phone: <a aria-label="Phone number zero seven five eight four four three seven three eight zero" href="tel:+447584437380">07584437380</a>
     mailing: <script>contact1("pastor","cecleeds",10,"")</script><noscript>You must enable JavaScript to view this text.</noscript>
 
 safeguard_lead:
   - name: Lianna Smith
-    phone: <a href="tel:+447828113957">07828113957</a>
-    sr_phone: zero seven eight two eight one one three nine five seven
+    phone: <a aria-label="Phone number zero seven eight two eight one one three nine five seven" href="tel:+447828113957">07828113957</a>
     mailing: <script>contact1("lianna.smith","cecleeds",10,"")</script><noscript>You must enable JavaScript to view this text.</noscript>
 
 deputy_safeguard: 
   - name: Mark Molloy
-    phone: <a href="tel:+447434626002">07434626002</a>
-    sr_phone: zero seven four three four six two six zero zero two
+    phone: <a a aria-label="Phone number zero seven four three four six two six zero zero two" href="tel:+447434626002">07434626002</a>
     mailing: <script>contact1("mark.molloy","cecleeds",10,"")</script><noscript>You must enable JavaScript to view this text.</noscript>
  
 citykidsmail: <script>contact1("hello","cecleeds",10,"")</script><noscript>You must enable JavaScript to view this text.</noscript>
