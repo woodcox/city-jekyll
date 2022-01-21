@@ -3,7 +3,7 @@
     <div class="contacts-wrapper">
       <h3>Contact us</h3>{% for cec in site.data.contact.office %}
       <p class="footer-link external-link-icon">{{ cec.address }} - {{ cec.maplocation }} </p>
-      <p class="footer-link">{{ cec.phone }}</p>
+      <p class="footer-link" aria-label="Phone number {{ cec.phone }}">{{ cec.phone }}</p>
       <p class="footer-link">{{ cec.mailing }}{% endfor %}</p>
       <p class="footer-link">{% for ml in site.data.contact.pastor %}{{ ml.mailing }}{% endfor %}</p>
       {% include components/contact-button.html %}<a class="button muted-button round-button external-link-icon" href="https://login.churchsuite.co.uk/" target="_blank" rel="noopener">ChurchSuite Login </a>
