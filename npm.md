@@ -6,7 +6,7 @@ To create package.json use the npm-update github action.
 run: npm init -y
 ~~~
 
-## DEVELOPMENT
+## DEVELOPMENT:
 Install/update/uninstall packages
 ~~~yml
 run: npm install -D @fullhuman/postcss-purgecss postcss postcss-cli autoprefixer cssnano
