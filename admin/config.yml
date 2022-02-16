@@ -9,7 +9,7 @@ public_folder: "assets/img/master" # The src attribute for uploaded media will b
 collections:
   - name: "Home" # Used in routes, e.g., /admin/collections/blog
     label: "Home" # Used in the UI
-    folder: "_home" # The path to the folder where the documents are stored
+    folder: "pages/_home" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "/" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
@@ -21,22 +21,37 @@ collections:
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "Sunday" # Used in routes, e.g., /admin/collections/blog
     label: "Sunday" # Used in the UI
-    folder: "_sunday" # The path to the folder where the documents are stored
+    folder: "pages/_sunday" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "/sunday" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
-
+      - {label: "Layout", name: "layout", widget: "hidden", default: "sunday"}
+      - {label: "Collection_type", name: "collection_type", widget: "hidden", default: "sunday"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Container-size", name: "container-size", widget: "string", default: "medium"}
+      - {label: "Heading", name: "heading", widget: "string", default: "1"}
+      - {label: "Body", name: "body", widget: "markdown"}
   - name: "Media" # Used in routes, e.g., /admin/collections/blog
     label: "Media" # Used in the UI
-    folder: "_media" # The path to the folder where the documents are stored
+    folder: "pages/_media" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "/media" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
-
+      - {label: "Layout", name: "layout", widget: "hidden", default: "media"}
+      - {label: "Collection_type", name: "collection_type", widget: "hidden", default: "media"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Container-size", name: "container-size", widget: "string", default: "medium"}
+      - {label: "Heading", name: "heading", widget: "string", default: "1"}
+      - {label: "Body", name: "body", widget: "markdown"}
   - name: "Docs" # Used in routes, e.g., /admin/collections/blog
     label: "Docs" # Used in the UI
     folder: "_docs" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "/docs" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
-
+      - {label: "Layout", name: "layout", widget: "hidden", default: "docs"}
+      - {label: "Collection_type", name: "collection_type", widget: "hidden", default: "docs"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Container-size", name: "container-size", widget: "string", default: "medium"}
+      - {label: "Heading", name: "heading", widget: "string", default: "1"}
+      - {label: "Body", name: "body", widget: "markdown"}
