@@ -7,11 +7,11 @@ media_folder: "assets/img/master" # Where Media files will be stored in the repo
 public_folder: "assets/img/master" # The src attribute for uploaded media will begin with /assets/img/master
 
 collections:
-  - name: "blog" # Used in routes, e.g., /admin/collections/blog
-    label: "Blog" # Used in the UI
-    folder: "_posts/blog" # The path to the folder where the documents are stored
+  - name: "Home" # Used in routes, e.g., /admin/collections/blog
+    label: "Home" # Used in the UI
+    folder: "_home" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    slug: "/" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
       - {label: "Title", name: "title", widget: "string"}
@@ -19,3 +19,24 @@ collections:
       - {label: "Featured Image", name: "thumbnail", widget: "image"}
       - {label: "Rating (scale of 1-5)", name: "rating", widget: "number"}
       - {label: "Body", name: "body", widget: "markdown"}
+  - name: "Sunday" # Used in routes, e.g., /admin/collections/blog
+    label: "Sunday" # Used in the UI
+    folder: "_sunday" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "/sunday" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+
+  - name: "Media" # Used in routes, e.g., /admin/collections/blog
+    label: "Media" # Used in the UI
+    folder: "_media" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "/media" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+
+  - name: "Docs" # Used in routes, e.g., /admin/collections/blog
+    label: "Docs" # Used in the UI
+    folder: "_docs" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "/docs" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+
