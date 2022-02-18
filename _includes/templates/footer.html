@@ -46,6 +46,8 @@
 <script src="{{ '/assets/js/snap-slider.min.js' | append: buildversion | relative_url }}"></script>
 <script src="{{ '/assets/js/site.js' | append: buildversion | relative_url }}"></script>
 <script src="{{ '/assets/js/smoothscroll-polyfill.js' | append: buildversion | relative_url }}"></script>
+<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "{{ site.cloudflare-analytics }}"}'></script><!-- End Cloudflare Web Analytics -->
+
 {%- include modules/cookie-consent.html %}
 </body>
 </html>
