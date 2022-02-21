@@ -34,7 +34,7 @@ typewriter:  ### Hero typewriter message on homepage
   - message: "A city church with a community presence."
   - message: "We believe Jesus is good news."
 
-counter_web_analytics: ## put YOUR counter.dev key here to enable tracking! (blank to disable)
+counter_web_analytics: rusticola ## put YOUR counter.dev key here to enable tracking! (blank to disable)
 
 
 ### template colors, used site-wide via css ###
