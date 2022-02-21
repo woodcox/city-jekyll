@@ -46,7 +46,7 @@
 <script src="{{ '/assets/js/snap-slider.min.js' | append: buildversion | relative_url }}"></script>
 <script src="{{ '/assets/js/site.js' | append: buildversion | relative_url }}"></script>
 <script src="{{ '/assets/js/smoothscroll-polyfill.js' | append: buildversion | relative_url }}"></script>
-{%- if site.counter_web_analytics %}<!-- Counter.dev Web Analytics --><script defer src='' data-cf-beacon='{"token": "{{ site.counter_web_analytics }}"}'></script><!-- End Counter.dev Web Analytics -->{% endif %}
+{%- if site.counter_web_analytics %}<!-- Counter.dev Web Analytics --><script>if(!sessionStorage.getItem("_swa")&&document.referrer.indexOf(location.protocol+"//"+location.host)!== 0){fetch("https://counter.dev/track?"+new URLSearchParams({referrer:document.referrer,screen:screen.width+"x"+screen.height,user:"rusticola",utcoffset:"0"}))};sessionStorage.setItem("_swa","1");</script><!-- End Counter.dev Web Analytics -->{% endif %}
 
 {%- include modules/cookie-consent.html %}
 </body>
