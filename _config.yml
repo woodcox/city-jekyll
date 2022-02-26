@@ -35,6 +35,7 @@ typewriter:  ### Hero typewriter message on homepage
   - message: "We believe Jesus is good news."
 
 counter_web_analytics: rusticola ## put YOUR counter.dev key here to enable tracking! (blank to disable)
+netlify: true ## put true if using NetlifyCMS
 
 
 ### template colors, used site-wide via css ###
