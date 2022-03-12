@@ -37,7 +37,7 @@ function logoToggle() {
   }
 }
 
-{% if site.testing = true %}
+{% if site.testing == true %}
 //=====================================================
 // Show or hide contact buttons
 //=====================================================
