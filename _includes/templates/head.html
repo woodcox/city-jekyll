@@ -25,9 +25,6 @@
     <meta name="theme-color" content="{{ site.colors.cityblue }}">
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
   <script src="{{ '/assets/js/contacts.js' | append: buildversion | relative_url }}"></script>
-  {%- if site.netlify %}
-  <!-- Script for Netlify Identity Service -->
-  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>{% endif %}
   {%- if site.counter_web_analytics %}<!-- Counter.dev Web Analytics -->
   <script>if(!sessionStorage.getItem("_swa")&&document.referrer.indexOf(location.protocol+"//"+location.host)!== 0){fetch("https://counter.dev/track?"+new URLSearchParams({referrer:document.referrer,screen:screen.width+"x"+screen.height,user:"{{ site.counter_web_analytics }}",utcoffset:"0"}))};sessionStorage.setItem("_swa","1");</script><!-- End Counter.dev Web Analytics -->{% endif %}
   {% assign crumbs = page.url | remove:'/index.html' | split: '/' %}
