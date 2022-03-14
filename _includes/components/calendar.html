@@ -3,11 +3,11 @@
     <li>
       <div class="date">
         <span>{{ event.datetime_start | split: " " | first | slice: -2, 2 }}</span>
-        <span id="month">{{ event.datetime_start | split: " " | first | date: "%b" }}</span>
+        <span class="month">{{ event.datetime_start | split: " " | first | date: "%b" }}</span>
       </div>
       <div class="calendar-title">
         <span>{{ event.name }}</span><br>{% capture startdate %}{{ event.datetime_start | split: " " | first | date: "%d/%m/%Y" }}{% endcapture %}{% capture enddate %}{{ event.datetime_end | split: " " | first | date: "%d/%m/%Y" }}{% endcapture %}
-        <span id="calendar-subtitle">{{ event.datetime_start | split: " " | last | date: "%l:%M%P" | remove: ":00" }} to {% unless startdate == enddate %}{{ enddate }} at {% endunless %}{{ event.datetime_end | split: " " | last | date: "%l:%M%P" | remove: ":00" }}</span>
+        <span class="calendar-subtitle">{{ event.datetime_start | split: " " | last | date: "%l:%M%P" | remove: ":00" }} to {% unless startdate == enddate %}{{ enddate }} at {% endunless %}{{ event.datetime_end | split: " " | last | date: "%l:%M%P" | remove: ":00" }}</span>
       </div>
     </li>{% endfor %}
   </ul>
