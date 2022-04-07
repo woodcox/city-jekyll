@@ -7,5 +7,5 @@ group :jekyll_plugins do
   gem 'jekyll-get-json'
   gem 'jekyll-liquify'
   gem 'jekyll-redirect-from'
-  gem 'jekyll-postcss-v2', git: 'https://github.com/woodcock3/jekyll-postcss-v2.git', branch: 'Patch-1'
+  gem 'jekyll-postcss-v2', git: 'https://github.com/woodcock3/jekyll-postcss-v2.git', branch: 'patch-1'
 end
