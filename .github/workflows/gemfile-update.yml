@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: work around permission issue
-        run: git config --global --add safe.directory /__w/woodcock3/pull-request-on-bundle-update@v1.0.1
+        run: git config --global --add safe.directory /github/workspace
       - name: Checkout
         uses: actions/checkout@v1
         with:
