@@ -9,12 +9,12 @@ jobs:
     name: bundle update
     runs-on: ubuntu-latest
     steps:
-      - name: work around permission issue
-        run: git config --global --add safe.directory "%(prefix)/$GITHUB_WORKSPACE"
       - name: Checkout
-        uses: actions/checkout@v1
+        uses: actions/checkout@v2
         with:
           fetch-depth: 1
+      - name: work around permission issue
+        run: git config --global --add safe.directory "%(prefix)/$GITHUB_WORKSPACE"
       - name: pull request on bundle update
         uses: woodcock3/pull-request-on-bundle-update@v1.0.1
         with:
