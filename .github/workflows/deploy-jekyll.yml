@@ -6,7 +6,7 @@ on:
     - cron:  '30 5 * * *'
   push:
     branches:
-      - fix-deploy-issue
+      - main
     paths-ignore:
       - 'Gemfile'
       - 'README.md'
