@@ -903,15 +903,3 @@ $encoding-reference: (
     @include fa($fa-arrow-right, $accent-button-color);
   }
 }
-
-.phone-icon {
-  @include fa($fa-phone);
-}
-
-.email-icon {
-  @include fa($fa-envelope-o);
-}
-
-.whatsapp-icon {
-  @include fa($fa-whatsapp);
-}
