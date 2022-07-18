@@ -1,6 +1,6 @@
 <?php include("/home/ceclee/public_html/php/sermons/include.php"); ?>
 
-<div class="flex-row">
+<div class="flex-row justify-center">
   <a class="flex-tiny ty-half" aria-label="Listen on Apple Podcasts" target="_blank" href="https://podcasts.apple.com/us/podcast/city-evangelical-church-sermons/id1537249782">{% include svg/apple-podcast.svg %}</a>
   <a class="flex-tiny ty-half" aria-label="Listen on Amazon Music" target="_blank" href="https://music.amazon.co.uk/podcasts/cfd1efb8-db38-4a35-a90a-cc20787b6fd7/City-Evangelical-Church-Sermons">{% include svg/amazon-podcast.svg %}</a>
   <a class="flex-tiny ty-half" aria-label="Listen on Google Podcasts" target="_blank" href="https://www.google.com/podcasts?feed=aHR0cHM6Ly9jZWNsZWVkcy5jby51ay9zZXJtb25zLnBocA%3D%3D">{% include svg/google-podcast.svg %}</a>
