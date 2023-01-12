@@ -10,7 +10,7 @@ testing: true
 ### site serving configuration ###
 exclude: [CNAME, README.md, npm.md, SECURITY.md, LICENSE.md, .gitignore, package.json, package-lock.json, postcss.config.js, .browserslistrc, city-jekyll-theme.gemspec]
 permalink: /:title ## disables post output
-url: "https://woodcock3.github.io"
+url: "https://woodcox.github.io"
 baseurl: "/city-jekyll"
 timezone: null
 lsi: false
@@ -22,8 +22,8 @@ highlighter: rouge
 title:              "City-Jekyll"
 keywords:           "City, evangelical, church, Leeds, best, christian, Jesus, bible, gospel, Christ, God, Faith, Lord"
 description:        "A Jekyll theme &amp; Sass Boilerplate"
-author:             "woodcock3"
-source_link:        "https://github.com/woodcock3/city-jekyll"
+author:             "woodcox"
+source_link:        "https://github.com/woodcox/city-jekyll"
 favicon:            "/assets/img/favicon/favicon.ico"
 favicon_16:         "/assets/img/favicon/favicon-16x16.png"
 favicon_32:         "/assets/img/favicon/favicon-32x32.png"
