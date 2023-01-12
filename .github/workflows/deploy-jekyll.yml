@@ -94,7 +94,7 @@ jobs:
 #        with:
 #          fetch-depth: 2
 #      - name: FTP-Deploy-Action
-#        uses: woodcock3/FTP-Deploy-Action
+#        uses: woodcox/FTP-Deploy-Action
 #        with:
 #          ftp-server: ftp://ftp.cecleeds.co.uk
 #          ftp-username: ${{ secrets.FTP_USER }}
