@@ -14,7 +14,7 @@ jobs:
         with:
           fetch-depth: 1
       - name: pull request on bundle update
-        uses: woodcock3/pull-request-on-bundle-update@v1.0.1
+        uses: woodcox/pull-request-on-bundle-update@v1.0.1
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           git_user_name: ${{ secrets.HUB_USER }}
