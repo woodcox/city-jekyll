@@ -4,7 +4,7 @@
 
 Welcome to the **city-jekyll** theme! This is the theme for [City Evangelical Church](https://cecleeds.co.uk) website. It's built using [Jekyll](https://jekyllrb.com/), some clever [Github Actions](https://github.com/features/actions), [NPM](https://www.npmjs.com/) and [Primitive UI](https://taniarascia.github.io/primitive). The theme is a design toolkit for developing fast [sass-y](https://sass-lang.com/), responsive websites with browser-consistent styling and [postcss](https://postcss.org/) superpowers.
 
-Demo available: [here](http://woodcock3.github.io/city-jekyll/)
+Demo available: [here](http://woodcox.github.io/city-jekyll/)
 
 ## Primitive UI
 
@@ -216,7 +216,7 @@ Your blog posts (`*.md` files) should be put in the `_posts` directory.
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/woodcock3/city-jekyll. This project is welcomes collaboration, but contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/woodcox/city-jekyll. This project is welcomes collaboration, but contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## Development
 
