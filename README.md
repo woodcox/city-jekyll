@@ -38,7 +38,7 @@ Or install it yourself as:
     $ gem install city-jekyll-theme
 
 
-> Since [November 2017](https://blog.github.com/2017-11-29-use-any-theme-with-github-pages/) you can use this theme by adding: `remote_theme: woodcock3/city-jekyll` to your `_config.yml` file.
+> Since [November 2017](https://blog.github.com/2017-11-29-use-any-theme-with-github-pages/) you can use this theme by adding: `remote_theme: woodcox/city-jekyll` to your `_config.yml` file.
 
 
 ## Usage
