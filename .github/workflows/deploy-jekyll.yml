@@ -46,7 +46,7 @@ jobs:
       # e.g. propertyPath: 'path.to.the.1.value' = to change 'world'
       # e.g. propertyPath: 'path.to.nested.abc' = to change '123'
       - name: Update yaml values
-        uses: woodcock3/yaml-update-action@master
+        uses: woodcox/yaml-update-action@master
         with:
           valueFile: '_config.yml'
           propertyPath: 'jekyll_get_json.0.json'
