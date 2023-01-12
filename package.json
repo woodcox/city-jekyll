@@ -2,12 +2,12 @@
   "name": "city-jekyll",
   "version": "1.0.0",
   "description": "City-Jekyll is design toolkit for developing fast sass-y, responsive websites with browser-consistent styling and postcss superpowers.",
-  "author": "woodcock3",
+  "author": "woodcox",
   "license": "MIT",
-  "homepage": "https://github.com/woodcock3/city-jekyll",
+  "homepage": "https://github.com/woodcox/city-jekyll",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/woodcock3/city-jekyll.git"
+    "url": "git+https://github.com/woodcox/city-jekyll.git"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -15,7 +15,7 @@
     "prod": "npm ci"
   },
   "bugs": {
-    "url": "https://github.com/woodcock3/city-jekyll/issues"
+    "url": "https://github.com/woodcox/city-jekyll/issues"
   },
   "main": "postcss.config.js",
   "keywords": [],
