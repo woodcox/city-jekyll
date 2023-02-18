@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://woodcock3.github.io/city-jekyll/sitemap.xml
+Sitemap: https://woodcox.github.io/city-jekyll/sitemap.xml
